@@ -1,9 +1,9 @@
 
 :root {
-  --color-white: #fdf9ef;
-  --color-cream: #fdf0d5;
-  --color-gray: #b1abab;
-  --color-navy: #003049;
+  --color-font: #FFFFFF;
+  --color-header: #28536B;
+  --color-coral:#C2948A;
+  --color-botones: #7EA8BE;
 
   --font-primary: 'Playfair Display', serif;
 }
@@ -12,7 +12,8 @@
 header {
   
   z-index: 1000;
-  background-color: var(--color-cream);
+  
+  background: --color-header;
   border-bottom: 1px solid var(--color-gray);
   padding: 10px 20px;
   font-family: var(--font-primary);
@@ -103,6 +104,7 @@ h1{
   border-radius: 12px; 
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); 
   margin-bottom: 2rem;
+  
 }
 .hero::after {
   content: "";

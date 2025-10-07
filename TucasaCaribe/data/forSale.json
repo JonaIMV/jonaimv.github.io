@@ -65,11 +65,7 @@
     "image": "images/puntavista.webp",
     "alt": "Gate community house",
     "location": "Puesrto Morelos",
-    "images": [
-      "images/puntavista1.webp",
-      "images/puntavista2.webp",
-      "images/puntavista3.webp"
-    ]
+    "virtualTour": "virtualtours/puntavista/index.html"
   },
   {
     "id": 6,

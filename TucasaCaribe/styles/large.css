@@ -1,12 +1,22 @@
 @media (max-width: 768px) {
+  :root {
+  --color-font: #FFFFFF;
+  --color-header: #28536B;
+  --color-coral:#C2948A;
+  --color-botones: #7EA8BE;
+
+  --font-primary: 'Playfair Display', serif;
+}
+
   .menu-toggle {
     display: block;
   }
 
+
   .nav-menu {
     display: none;
     flex-direction: column;
-    background-color: var(--color-white);
+    background-color: var(--color-header);
     position: absolute;
     top: 80px;
     right: 20px;
