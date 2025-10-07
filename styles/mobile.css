@@ -1,40 +1,46 @@
 
 :root {
   --color-font: #FFFFFF;
-  --color-header: #28536B;
+  --color-header: #BBB193;
   --color-coral:#C2948A;
   --color-botones: #7EA8BE;
-
-  --font-primary: 'Playfair Display', serif;
+  --color-contrast:#222e50;
+  --font-body: 'Raleway', Helvetica, Arial, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
 }
+
+
 
 /* header styles */
 header {
   
   z-index: 1000;
-  
-  background: --color-header;
-  border-bottom: 1px solid var(--color-gray);
+  background: var(--color-header);
+  border-bottom: 1px solid var(--color-header);
   padding: 10px 20px;
-  font-family: var(--font-primary);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color : var(--color-font);
 }
 .brand {
   display: flex;
   align-items: center; 
 }
 
+
 .brand h2 {
-  color: var(--color-navy);
-  margin-left: 10px; 
-  font-size: 24px;
+   
+  font-family: var(--font-heading);
+  font-size: 30px;
   font-weight: 700;
+  margin-left: 10px;
   display: inline-block;
-  
+  letter-spacing: .000005px;
 }
 
 .logo img {
-  height: 60px;
-  width: 60px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%; 
   display: block; 
 }
@@ -75,7 +81,7 @@ body{
 }
 
 .nav-menu a:hover {
-  color: #750000;
+  color:var(--color-contrast);
 }
 
 
@@ -89,7 +95,7 @@ body{
 }
 /*wayFinding styles*/
 .nav-menu a.active {
-  color: #750000;
+  color: var(--color-contrast);
   border-bottom: 2px solid var(--color-navy);
 }
 h1{
