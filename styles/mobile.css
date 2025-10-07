@@ -1,10 +1,10 @@
 
 :root {
   --color-font: #FFFFFF;
-  --color-header: #BBB193;
+  --color-header: #34B1BF;
   --color-coral:#C2948A;
   --color-botones: #7EA8BE;
-  --color-contrast:#222e50;
+  --color-contrast:#000000;
   --font-body: 'Raleway', Helvetica, Arial, sans-serif;
   --font-heading: 'Playfair Display', Georgia, serif;
 }
@@ -16,11 +16,13 @@ header {
   
   z-index: 1000;
   background: var(--color-header);
-  border-bottom: 1px solid var(--color-header);
-  padding: 10px 20px;
+  border-bottom:10px solid#F2C335;
+  padding: 0px 0px;
   font-family: var(--font-heading);
   font-weight: 700;
   color : var(--color-font);
+  background-image: url('/images/hypnotize.png');
+  background-blend-mode: multiply;
 }
 .brand {
   display: flex;
@@ -60,6 +62,7 @@ body{
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 /* logo*/
@@ -75,7 +78,7 @@ body{
 
 .nav-menu a {
   text-decoration: none;
-  color: var(--color-navy);
+  color: #FFF0A6;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -98,28 +101,15 @@ body{
   color: var(--color-contrast);
   border-bottom: 2px solid var(--color-navy);
 }
-h1{
-    text-align: center;
-}
 /* Hero Section */
 .hero {
   position: relative;
   overflow: hidden;
   height: 60vh;
-  max-height: 600px;
-  border-radius: 12px; 
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); 
-  margin-bottom: 2rem;
-  
+  max-height: 600px; 
+  margin-bottom: 2rem;  
 }
-.hero::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-navy, #003049); 
-  margin-top: 1rem;
-}
+
 
 .hero-slider {
   position: relative;
@@ -127,30 +117,30 @@ h1{
   height: 100%;
 }
 
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
+.video-local-container {
+    /* Asegura que el contenedor de video ocupe todo el espacio */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+    position: relative;
 }
-
-.slide.active {
-  opacity: 1;
-  z-index: 0;
+.video-local-container video {
+    /* Propiedades para que el video cubra todo el contenedor sin estirarse */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el video perfectamente */
 }
-
-/* CTA Button */
 .hero-cta-button {
   position: absolute;
   bottom: 30px;
   left: 30px;
   padding: 12px 24px;
-  background-color: var(--color-navy, #003049);
+  background-color:#BF754B ;
   color: var(--color-white, #ffffff);
   text-decoration: none;
   font-weight: bold;
@@ -161,7 +151,7 @@ h1{
 }
 
 .hero-cta-button:hover {
-  background-color:   #0056b3;
+  background-color:  #F2C335;
 }
 /*Cards container section*/
 
