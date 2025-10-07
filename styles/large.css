@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   :root {
   --color-font: #FFFFFF;
-  --color-header: #28536B;
+  --color-header:#34B1BF;
   --color-coral:#C2948A;
   --color-botones: #7EA8BE;
 
@@ -26,7 +26,7 @@
     z-index: 1000;
   }
   .nav-menu a{
-    color: var();
+    color: var(--color-font);
   }
   .nav-menu.show {
     display: flex;
@@ -51,6 +51,54 @@
     flex: 1;
     margin-right: 2rem;
   }
+  .services-offered .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+/* Estilos para cada tarjeta de servicio */
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Pequeño efecto al pasar el ratón */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-contrast);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-family: var(--font-body);
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.service-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-botones); /* Tu color de botón (ej: #7EA8BE) */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
 
   .property-cards-container {
     flex: 2;
@@ -68,6 +116,5 @@
         flex: 1 1 100%;
         min-width: unset;
     }
-
+  }
     
-}

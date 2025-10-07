@@ -57,6 +57,8 @@ body{
     box-sizing: border-box;
     font-family: var(--font-primary);
     background-color:#FDFBEF;
+    background-image: url('/images/cream_dust.webp');
+    background-blend-mode: multiply;
 }
 .navbar {
   display: flex;
@@ -80,7 +82,7 @@ body{
 
 .nav-menu a {
   text-decoration: none;
-  color: #FFF0A6;
+  color:var(--color-font);
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -96,12 +98,12 @@ body{
   border: none;
   cursor: pointer;
   display: none;
-  color: var(--color-navy);
+  color: var(--color-contrast);
 }
 /*wayFinding styles*/
 .nav-menu a.active {
   color: var(--color-contrast);
-  border-bottom: 2px solid var(--color-navy);
+  border-bottom: 2px solid var(--color-header);
 }
 /* Hero Section */
 .hero {
@@ -231,6 +233,29 @@ h3 {
   font-weight: bold;
   color: var(--navy);
   text-align: right;
+}
+/* Estilos para la sección de servicios */
+.services-offered {
+     position: relative;
+    z-index: 100;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FDFBEF; /* Fondo sutilmente diferente al blanco de la página */
+    background-image: url('/images/cream_dust.webp');
+    background-blend-mode: multiply;
+}
+
+.services-offered h2 {
+    font-family: var(--font-heading);
+    margin-bottom: 40px;
+}
+
+/* Contenedor Flexbox/Grid para las tarjetas */
+.services-offered .cards-container {
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .property-cards-container {
   display: flex;
