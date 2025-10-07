@@ -7,6 +7,9 @@ import { initPropertyModal, showLastViewedProperty } from './property-modal.js';
 import { loadExchangeRates } from './exchange-rates.js';
 import { initContactForm } from './form-handler.js';
 import { initThankYouPage } from './thankyou.js';
+import { displayReview, initReviews } from './reviews.js';
+
+window.displayReview = displayReview;
 
 document.addEventListener("DOMContentLoaded", async () => {
   initMenuToggle();

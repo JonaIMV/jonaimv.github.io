@@ -67,16 +67,54 @@
                 </div>
             <a href="contact-us.html" class="hero-cta-button">Contact us</a>
         </div>
-        <section class="testimonial-properties">
-            <h3>Our clients said</h3>
-            <div class="testimonial">
-                <blockquote>
-                “We found our dream home thanks to TuCasa Caribe Realty. The team was helpful, knowledgeable, and truly cared!”
-                </blockquote>
-                <p>– Francis</p>
-            </div>
-            <div id="property-carousel" class="property-cards-container">  
-            </div>
+       <section class="testimonial-properties">
+        <h3>Your Next Success Story</h3>
+        <p class="subtitle">You Are the Next Success Story. Find Out Why.</p>
+        
+        <div id="review-display" class="testimonial">
+        <blockquote>
+
+            </blockquote>
+        <p class="reviewer-name">– </p>
+    </div>
+
+    <div id="client-portraits" class="portrait-container">
+        
+        <img 
+            src="images/sarah-tom.webp" 
+            alt="Sarah and Tom" 
+            class="client-portrait" 
+            data-name="Sarah & Tom" 
+            data-review="The TuCasa Caribe team made our investment in Tulum seamless. Their knowledge of the market and legal advice was invaluable. We highly recommend them!"
+            onclick="displayReview(this)">
+
+        <img 
+            src="images/alejandro.webp" 
+            alt="Alejandro V." 
+            class="client-portrait" 
+            data-name="Alejandro V." 
+            data-review="Selling my condo with them was surprisingly fast and easy. Professional, transparent, and always available. The best experience I've had in the Riviera Maya."
+            onclick="displayReview(this)">
+
+        <img 
+            src="images/elisa.webp" 
+            alt="Elisa R." 
+            class="client-portrait" 
+            data-name="Elisa R." 
+            data-review="I was looking for a vacation rental property in Playa del Carmen, and they found the perfect spot, managing everything from financing to closing. Five stars!"
+            onclick="displayReview(this)">
+            
+        <img 
+            src="images/mark.webp" 
+            alt="Mark D." 
+            class="client-portrait" 
+            data-name="Mark D." 
+            data-review="From finding the land to closing the deal, Jonathan and his team handled every detail. They truly live up to their promise: Live Where Others Vacation."
+            onclick="displayReview(this)">
+        </div>
+    
+        <div id="property-carousel" class="property-cards-container">
+        </div>
         </section>
     </main>
    <footer>
@@ -94,14 +132,6 @@
             <a href="#" aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="LinkedIn icon">
             </a>
-        </div>
-
-        <div class="video-link">
-            <p>Watch the project video:  
-                <a href="https://youtu.be/Fo0Z5KOK80g" target="_blank" rel="noopener noreferrer">
-                    https://youtu.be/Fo0Z5KOK80g
-                </a>
-            </p>
         </div>
     </footer>
     <script type="module" src="scripts/main.js"></script>

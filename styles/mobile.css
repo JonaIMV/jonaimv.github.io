@@ -179,6 +179,39 @@ h3 {
   font-family: var(--font-primary);
   user-select: none; 
 }
+.portrait-container {
+    display: flex;
+    justify-content: center; /* Centra los retratos */
+    gap: 30px; /* Espacio entre los retratos */
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.client-portrait {
+    width: 80px; /* Tamaño del retrato */
+    height: 80px;
+    border-radius: 50%; /* CLAVE: Para que sean circulares */
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid transparent; /* Borde sutil */
+    transition: all 0.3s ease;
+}
+.client-portrait:hover {
+    transform: scale(1.1);
+    border-color: #F2C335; /* Color que contraste al pasar el ratón (tu color dorado) */
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.testimonial.animate {
+    animation: slideIn 0.5s ease-out;
+}
 
 .testimonial {
   background-color: var(--cream); 
@@ -492,7 +525,7 @@ h4::after {
 
 /*footer styles*/
 footer {
-  background-color: var(--color-navy);
+  background-color: #F2E6D0;
   color: var(--color-white);
   padding: 1rem;
   display: flex;
@@ -503,6 +536,10 @@ footer {
   font-family: var(--font-primary);
   text-align: center;
   margin-top: 2rem;
+  background-image:url('/images/hypnotize.png');
+  background-blend-mode: multiply;
+  border-top:10px solid #F2C335 ;
+
 }
 
 .footer-info {
