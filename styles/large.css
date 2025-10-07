@@ -26,7 +26,7 @@
     z-index: 1000;
   }
   .nav-menu a{
-    color: var(--color-navy);
+    color: var();
   }
   .nav-menu.show {
     display: flex;
