@@ -1,3 +1,10 @@
+    @media (min-width: 769px) { 
+    /* Coloca las tarjetas en 3 columnas en vistas grandes */
+    .services-offered .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
   :root {
   --color-font: #FFFFFF;
@@ -117,4 +124,3 @@
         min-width: unset;
     }
   }
-    
