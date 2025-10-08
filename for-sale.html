@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jonathan Isai Morales Valencia">
-        <meta name="description" content="Find your dream home in the Mexican Caribbean with TuCasa Caribe Realty. Homes, condos, and land for sale or rent. Personalized real estate services.">
-        <meta name="keywords" content="real estate, Riviera Maya, homes for sale, condos, Tulum, Playa del Carmen, property investment, TuCasa Caribe Realty">
-        <meta property="og:title" content="TuCasa Caribe Realty - Live Where Others Vacation">
-        <meta property="og:description" content="Experts in real estate in the Mexican Caribbean. Buy, sell, or rent your property with us.">
-        <meta property="og:image" content="https://jonaimv.github.io/wdd231/final/images/og-tucasa.jpg">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://jonaimv.github.io/wdd231/final/og-tucasa.jpg">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="TuCasa Caribe Realty - Live Where Others Vacation">
-        <meta name="twitter:description" content="Experts in real estate in the Mexican Caribbean. Buy, sell, or rent your property with us.">
-        <meta name="twitter:image" content="https://tucasacaribe.com/images/og-image.jpg">
-        <link rel="canonical" href="https://tucasacaribe.com/">
-        <link rel="icon" href="tucasa.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/mobile.css">
-        <link rel="stylesheet" href="styles/large.css">
-        <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jonathan Isai Morales Valencia">
+    <meta name="description" content="Find your dream home in the Mexican Caribbean with TuCasa Caribe Realty. Homes, condos, and land for sale or rent. Personalized real estate services.">
+    <meta name="keywords" content="real estate, Riviera Maya, homes for sale, condos, Tulum, Playa del Carmen, property investment, TuCasa Caribe Realty">
+    <meta property="og:title" content="TuCasa Caribe Realty - Live Where Others Vacation">
+    <meta property="og:description" content="Experts in real estate in the Mexican Caribbean. Buy, sell, or rent your property with us.">
+    <meta property="og:image" content="https://tucasacaribe.com/images/og-tucasa.jpg"> 
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jonaimv.github.io/wdd231/final/og-tucasa.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TuCasa Caribe Realty - Live Where Others Vacation">
+    <meta name="twitter:description" content="Experts in real estate in the Mexican Caribbean. Buy, sell, or rent your property with us.">
+    <meta name="twitter:image" content="https://tucasacaribe.com/images/og-image.jpg">
+    <link rel="canonical" href="https://tucasacaribe.com/">
+    <link rel="icon" href="tucasa.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/for-sale.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
 </head>
 <body>
     <header>
@@ -48,21 +49,39 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h1>For sale</h1>
-        <div class="hero">
-            <div class="hero-slider">
-            <img src="images/brisas.webp" alt="Brisas beach condo" class="slide active">
-            <img src="images/arrecifes.webp" alt="Residential villa" class="slide">
-            <img src="images/puerto-aventuras.webp" alt="Condo with pool" class="slide">
+   <main>
+    <h1>Propiedades en Venta</h1>
+    <section class="filter-controls">
+        <label for="sort-by">Ordenar por:</label>
+        <select id="sort-by">
+            <option value="price-desc">Precio (Mayor a Menor)</option>
+            <option value="price-asc">Precio (Menor a Mayor)</option>
+            <option value="name-asc">Nombre (A-Z)</option>
+        </select>
+
+        <label for="filter-type">Tipo:</label>
+        <select id="filter-type">
+            <option value="all">Todos</option>
+            <option value="house">Casa</option>
+            <option value="condo">Condominio</option>
+            <option value="land">Terreno</option>
+        </select>
+    </section>
+    <section class="properties-section">
+        <div id="properties-container" class="properties-grid" ></div>
+    </section>
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-details">
+                <h2 id="modal-title"></h2>
+                <p id="modal-price"></p>
+                <div id="virtual-tour-container">
+                    </div>
+                <p id="modal-description"></p>
             </div>
-            <a href="contact-us.html" class="hero-cta-button">Contact us</a>
         </div>
-        <section class="properties-section">
-            <h4>Find your slice of paradise</h4>
-            <div id="lastViewedPropertyContainer" class="last-viewed-section" aria-live="polite"></div>   
-            <div id="properties-container" class="properties-grid" ></div>
-         </section>
+    </div>
     </main>
     <footer>
         <div class="footer-info">
@@ -79,14 +98,6 @@
             <a href="#" aria-label="LinkedIn">
                 <img src="images/linkedin.svg" alt="LinkedIn icon">
             </a>
-        </div>
-
-        <div class="video-link">
-            <p>Watch the project video:  
-                <a href="https://youtu.be/Fo0Z5KOK80g" target="_blank" rel="noopener noreferrer">
-                    https://youtu.be/Fo0Z5KOK80g
-                </a>
-            </p>
         </div>
     </footer>
     <script type="module" src="scripts/main.js"></script>

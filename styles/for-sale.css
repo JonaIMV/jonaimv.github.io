@@ -30,3 +30,61 @@
   font-weight: bold;
   color: var(--color-navy, #003049);
 }
+main{
+    padding-top: 100px;
+}
+main h1 {
+    margin-top: 0;
+    padding-top: 20px; /* Un poco de espacio extra encima del título */
+    text-align: center;
+}
+/* Estilos para el contenedor de filtros */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea en móvil */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+    background-color: #F8F8F8; /* Un fondo sutil para distinguirlo del blanco de la página */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para las etiquetas */
+.filter-controls label {
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: #444;
+    margin-right: 5px;
+}
+
+/* Estilos para los selectores (dropdowns) */
+.filter-controls select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
+    appearance: none; /* Elimina los estilos nativos del sistema operativo */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="gray"><polygon points="0,0 10,0 5,10"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 8px;
+}
+
+/* Ajuste de alineación en móvil */
+@media (max-width: 600px) {
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filter-controls label {
+        margin-top: 10px;
+    }
+    .filter-controls select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
