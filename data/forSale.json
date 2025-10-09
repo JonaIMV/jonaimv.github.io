@@ -2,16 +2,13 @@
   {
     "id": 1,
     "title": "Brisas Beach Condo",
-    "description": "Beautiful condo with ocean views, 1 bedroom,1 bath.",
+    "description": "Beautiful condo with ocean views, 1 bedroom, 1 bath.",
     "price": "$350,000",
     "image": "images/brisas.webp",
     "alt": "Brisas beach condo",
     "location": "Cancun Hotel Zone",
-    "images": [
-      "images/brisas1.webp",
-      "images/brisas2.webp",
-      "images/brisas3.webp"
-    ]
+    "type": "condo",
+    "virtualTourUrl": ""
   },
   {
     "id": 2,
@@ -21,11 +18,8 @@
     "image": "images/arrecifes.webp",
     "alt": "Residential villa",
     "location": "Puerto Morelos",
-    "images": [
-      "images/arrecifes1.webp",
-      "images/arrecifes2.webp",
-      "images/arrecifes3.webp"
-    ]
+    "type": "house",
+    "virtualTourUrl": ""
   },
   {
     "id": 3,
@@ -35,14 +29,10 @@
     "image": "images/puerto-aventuras.webp",
     "alt": "Condo with pool",
     "location": "Puerto Aventuras",
-    "images": [
-      "images/puerto1.webp",
-      "images/puerto2.webp",
-      "images/puerto3.webp"
-    ]
+    "type": "condo",
+    "virtualTourUrl": ""
   },
   {
-    
     "id": 4,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
     "description": "Cozy apartment in gated community, 2 bedrooms, 1 bath.",
@@ -50,12 +40,8 @@
     "image": "images/downtown.webp",
     "alt": "Apartment in gated community",
     "location": "Puerto Morelos",
-    "images": [
-      "images/downtown1.webp",
-      "images/downtown2.webp",
-      "images/downtown3.webp"
-    ]
-    
+    "type": "condo",
+    "virtualTourUrl": ""
   },
   {
     "id": 5,
@@ -64,8 +50,9 @@
     "price": "$360,000",
     "image": "images/puntavista.webp",
     "alt": "Gate community house",
-    "location": "Puesrto Morelos",
-    "virtualTour": "virtualtours/puntavista/index.html"
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "virtualtours/puntavista/index.html"
   },
   {
     "id": 6,
@@ -75,11 +62,8 @@
     "image": "images/selva9b.webp",
     "alt": "Charming house with garden",
     "location": "Puerto Morelos",
-    "images": [
-      "images/selva1.webp",
-      "images/selva2.webp",
-      "images/selva3.webp"
-    ]
+    "type": "condo",
+    "virtualTourUrl": ""
   },
   {
     "id": 7,
@@ -89,11 +73,8 @@
     "image": "images/regatta.webp",
     "alt": "Elegant house with pool",
     "location": "Puerto Morelos",
-    "images": [
-      "images/regatta1.webp",
-      "images/regatta2.webp",
-      "images/regatta3.webp"
-    ]
+    "type": "land",
+    "virtualTourUrl": ""
   },
   {
     "id": 8,
@@ -103,9 +84,7 @@
     "image": "images/puntavista-lot.webp",
     "alt": "Beachfront house",
     "location": "Puerto Morelos",
-    "images": [
-      "images/puntavista-lot1.webp",
-      "images/puntavista-lot2.webp"
-    ]
+    "type": "land",
+    "virtualTourUrl": ""
   }
 ]

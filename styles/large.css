@@ -107,12 +107,7 @@
     font-weight: 600;
 }
 
-  .property-cards-container {
-    flex: 2;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+ 
   .contact-container {
         flex-direction: column;
         padding: 0 0.8rem; /* Menos espacio en móviles */

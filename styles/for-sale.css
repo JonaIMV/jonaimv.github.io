@@ -1,34 +1,69 @@
-
-.property-cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
+/* Estilo para cada tarjeta individual */
 .property-card {
-  background-color: var(--color-cream, #fdf0d5);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+       display: flex;
+    flex-direction: column;   
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+    text-align: left;
+    cursor: pointer; 
+     background-color: var(--color-cream);
   padding: 1rem;
-  width: 300px;
-  transition: transform 0.3s;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
+.property-card-content p:not(.price):not(.location) {
+    color: #444; /* Un gris oscuro, forzando la visibilidad */
+    margin-bottom: 10px;
+}
+div.property-card-content p { 
+    color: black !important; /* Fuerza el color a negro para que se vea */
+    visibility: visible !important; /* Asegura que no está oculto */
+}
+/* Efecto de elevación al pasar el ratón */
 .property-card:hover {
-  transform: translateY(-4px);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Imagen de la Tarjeta */
 .property-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+    width: 100%;
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover;
   border-radius: 6px;
+  margin-bottom: 0.75rem;
+  object-fit: cover;
 }
 
+/* Contenido de la Tarjeta */
+.property-card-content {
+    padding: 0 15px 15px 15px; /* Espacio interno, menos arriba */
+}
+
+.property-card-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-contrast);
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.property-card-content p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Precio */
 .property-card .price {
-  font-weight: bold;
-  color: var(--color-navy, #003049);
+    font-weight: 700;
+    color: var(--color-coral); /* Usa un color destacado para el precio */
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 main{
     padding-top: 100px;
@@ -73,7 +108,108 @@ main h1 {
     background-position: right 10px top 50%;
     background-size: 8px;
 }
+/* Estilos para la sección de propiedades */
+.properties-section {
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.properties-section h4 {
+    font-family: var(--font-heading);
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de la Cuadrícula de Propiedades */
+.properties-grid {
+    /* 1. Responsividad Automática: 
+       Ajusta el número de columnas basado en el ancho de 300px por tarjeta. */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    padding: 0 20px; /* Asegura espacio lateral */
+}
+
+.card-actions {
+    /* Le da espacio al botón y asegura que se centre o se alinee */
+    padding: 0 15px 15px 15px; 
+    text-align: center;
+    margin-top: auto; /* IMPORTANTE: Empuja el botón hacia el fondo si usas flexbox */
+    display: flex;
+}
+.btn-tour-trigger {
+    /* 1. COMPORTAMIENTO: Hace que el enlace se comporte como un bloque y ocupe el ancho */
+    display: block;
+    width: 100%;
+    
+    /* 2. COLOR: Define el fondo coral y el texto blanco */
+    background-color: var(--color-coral, #C2948A); 
+    color: white;
+    
+    /* 3. FORMA: Elimina el subrayado y da forma de botón */
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    
+    /* Tipografía sencilla */
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+.btn-tour-trigger:hover {
+    background-color: #A97A6D;
+}
+/* 3. Estilos para la Ubicación */
+.property-card .location {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-botones, #7EA8BE); /* Usa un color de acento o secundario */
+    font-weight: 600;
+    margin-top: -5px; /* Acércalo a la descripción/precio */
+    margin-bottom: 15px; /* Sepáralo del botón */
+}
+
+/* Estilos para el botón deshabilitado (Tour No Disponible) */
+.btn-tour-trigger.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.property-card-content p {
+font-family: var(--font-body);
+ font-size: 0.95rem;
+ color: #666; /* Color gris */
+margin-bottom: 5px;
+}
+
+/* Estilos para el CTA FINAL al final del contenido */
+.final-cta {
+    display: block;
+    max-width: 350px; /* Limita el ancho del botón */
+    margin: 40px auto; /* Lo centra y le da buen espacio vertical */
+    text-align: center;
+    
+    /* Apariencia de Botón Fuerte */
+    padding: 15px 30px;
+    background-color: var(--color-coral, #C2948A); /* Usamos tu color de acento */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.final-cta:hover {
+    background-color: #A97A6D; 
+    transform: translateY(-2px);
+}
 /* Ajuste de alineación en móvil */
 @media (max-width: 600px) {
     .filter-controls {
