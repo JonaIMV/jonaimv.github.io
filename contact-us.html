@@ -29,6 +29,7 @@
     <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
 </head>
 <body>
+ 
     <div id="cookie-banner" class="cookie-consent-banner" style="display: none;">
     <div class="banner-content">
         <p>
@@ -59,45 +60,43 @@
         </div>
     </header>
     <main class="contact-page">
+    <h1>Contáctanos y Hablemos de Inversiones</h1>
+    
+    <div class="contact-container">
         
-        <div class="contact-container">
+        <div class="personal-contact-info">
+            <h2>Hola, soy Jonathan M. Valencia</h2>
             
-            <form class="contact-form">
-                <label for="name">Full name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Type your message here"></textarea>
-
-                <label for="property">Property of interest</label>
-                <textarea name="property" id="property" required placeholder="Name of the property"></textarea>
-
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-
-            <aside class="exchange-rates">
-                <h2>Exchange Rates</h2>
-                <ul id="rates-list">
-                    <li>USD → MXN: <span id="usd-rate">Loading...</span></li>
-                    <li>EUR → MXN: <span id="eur-rate">Loading...</span></li>
-                    <li>CAD → MXN: <span id="cad-rate">Loading...</span></li>
-                </ul>
-
-                <div class="converter">
-                    <h3>Currency Converter</h3>
-                    <input type="number" id="amount" placeholder="Amount" min="0" step="0.01">
-                    <select id="from-currency"></select>
-                    <select id="to-currency"></select>
-                    <button id="convert-btn">Convert</button>
-                    <p id="conversion-result">Result: --</p>
-                </div>
-            </aside>
-
+            <img src="images/perfil.jpg" alt="Foto de perfil de Jonathan Isai Morales Valencia" class="profile-photo" loading="lazy">
+            
+            <p>Como tu asesor inmobiliario en la Riviera Maya, mi objetivo es asegurar que encuentres la propiedad perfecta, ya sea para inversión o para vivir el sueño caribeño. Con más de 5 años de experiencia en Tulum y Playa del Carmen, estoy aquí para guiarte en cada paso del proceso.</p>
+            
+            <div class="direct-contact-links">
+                <p>📞 **WhatsApp Directo:** <a href="https://wa.me/message/JBXWUNDKU54XP1">+52 998 190 03 60</a></p>
+                <p>✉️ **Correo Electrónico:**<a href="mailto:jonaimv@gmail.com">jonaimv@gmail.com</a></p>
+                <p>📍 **Ubicación:** Quintana Roo, México</p>
+            </div>
+            
         </div>
-    </main>
+        <aside class="exchange-rates">
+            <h2>Exchange Rates</h2>
+            <ul id="rates-list">
+                <li>USD → MXN: <span id="usd-rate">Loading...</span></li>
+                <li>EUR → MXN: <span id="eur-rate">Loading...</span></li>
+                <li>CAD → MXN: <span id="cad-rate">Loading...</span></li>
+            </ul>
+
+            <div class="converter">
+                <h3>Currency Converter</h3>
+                <input type="number" id="amount" placeholder="Amount" min="0" step="0.01">
+                <select id="from-currency"></select>
+                <select id="to-currency"></select>
+                <button id="convert-btn">Convert</button>
+                <p id="conversion-result">Result: --</p>
+            </div>
+        </aside>
+    </div>
+</main>
     <footer>
         <div class="footer-info">
             <p>&copy; <span id="year"></span> Jonathan Isai Morales Valencia<br>Quintana Roo, Mexico</p>
