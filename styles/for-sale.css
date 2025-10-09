@@ -69,9 +69,12 @@ main{
     padding-top: 100px;
 }
 main h1 {
-    margin-top: 0;
-    padding-top: 20px; /* Un poco de espacio extra encima del título */
-    text-align: center;
+    /* Mantenemos tus estilos existentes */
+margin-top: 0;
+ padding-top: 45px; 
+ text-align: center;
+    /* Añadimos un poco de margen inferior para separarlo de los filtros */
+    margin-bottom: 20px; 
 }
 /* Estilos para el contenedor de filtros */
 .filter-controls {
