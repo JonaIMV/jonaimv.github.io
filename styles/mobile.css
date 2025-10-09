@@ -69,7 +69,14 @@ body{
   
 }
 
-/* logo*/
+main h1 {
+    /* Mantenemos tus estilos existentes */
+margin-top: 0;
+ padding-top: 20px; 
+ text-align: center;
+    /* Añadimos un poco de margen inferior para separarlo de los filtros */
+    margin-bottom: 20px; 
+}
 
 /* nav menu */
 .nav-menu ul {
@@ -167,6 +174,7 @@ body{
   background-image: url('/images/cream_dust.webp');
   background-blend-mode: multiply;
 }
+
 h3 {
   margin: 0 0 1rem 1rem; 
   color: var(--color-navy);
@@ -401,7 +409,7 @@ footer {
 }
 
 .contact-form button {
-    background-color:var(--color-navy);
+    background-color:var(--color-coral);
     color: white;
     font-size: 1rem;
     cursor: pointer;
@@ -409,7 +417,8 @@ footer {
 }
 
 .contact-form button:hover {
-    background-color: #003366;
+    background-color: #A97A6D; 
+    transform: translateY(-2px);
 }
 
 /* Exchange rates */
