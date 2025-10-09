@@ -69,6 +69,7 @@ body{
   
 }
 
+
 main h1 {
     /* Mantenemos tus estilos existentes */
 margin-top: 0;
@@ -331,6 +332,20 @@ footer {
   background-blend-mode: multiply;
   border-top:10px solid #F2C335 ;
 
+}
+/* Estilo para el enlace 'Aviso de Privacidad' en el footer */
+.footer-info .privacy-link {
+    /* Usa tu color de acento o un color que contraste con el fondo */
+    color: var(--color-gold, #F2C335); 
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-info .privacy-link:hover {
+    /* Resalta el enlace al pasar el ratón */
+    color: var(--color-coral, #C2948A); 
 }
 /* Estilos para el nuevo bloque de información de contacto en el footer */
 .footer-contact {
