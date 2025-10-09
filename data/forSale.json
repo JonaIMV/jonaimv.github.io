@@ -1,16 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Brisas Beach Condo",
-    "description": "Beautiful condo with ocean views, 1 bedroom, 1 bath.",
-    "price": "$350,000",
-    "image": "images/brisas.webp",
-    "alt": "Brisas beach condo",
-    "location": "Cancun Hotel Zone",
-    "type": "condo",
-    "virtualTourUrl": ""
-  },
-  {
     "id": 2,
     "title": "House at Selva Escondida Arrecifes Street",
     "description": "Spacious villa with garden and pool, 4 bedrooms, 3 baths.",
@@ -21,17 +10,7 @@
     "type": "house",
     "virtualTourUrl": ""
   },
-  {
-    "id": 3,
-    "title": "Puerto Aventuras Condo",
-    "description": "Modern condo with pool access, 3 bedrooms, 2 baths.",
-    "price": "$250,000",
-    "image": "images/puerto-aventuras.webp",
-    "alt": "Condo with pool",
-    "location": "Puerto Aventuras",
-    "type": "condo",
-    "virtualTourUrl": ""
-  },
+
   {
     "id": 4,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
