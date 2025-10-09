@@ -9,7 +9,71 @@
   --font-heading: 'Playfair Display', Georgia, serif;
 }
 
+.cookie-consent-banner {
+    /* Fija el banner en la parte inferior */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    /* Diseño visual */
+    background-color: var(--color-contrast, #333); /* Fondo oscuro */
+    color: white; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9000; /* Asegura que esté sobre todo, pero debajo del modal si se abre */
+    font-family: var(--font-body, 'Raleway', sans-serif);
+}
 
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.banner-content p {
+    flex-grow: 1; /* Permite que el texto ocupe la mayor parte del espacio */
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.banner-content a {
+    color: var(--color-gold, #F2C335);
+    text-decoration: underline;
+}
+
+.cookie-btn {
+    /* Estilo del botón de aceptar */
+    flex-shrink: 0; /* Evita que el botón se haga pequeño */
+    padding: 8px 15px;
+    background-color: var(--color-coral, #C2948A); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+    background-color: #A97A6D;
+}
+
+/* Ajuste para móvil: Apila el texto y el botón si la pantalla es muy pequeña */
+@media (max-width: 550px) {
+    .banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    .cookie-btn {
+        width: 100%; /* El botón ocupa todo el ancho abajo */
+        margin-top: 10px;
+    }
+}
 
 /* header styles */
 header {
@@ -515,3 +579,22 @@ footer {
     color: #003366;
 }
 
+/* Limpia el header fijo y centra el contenido para facilitar la lectura */
+.privacy-container {
+    padding-top: 100px; /* Ajuste para el header fijo */
+    padding-bottom: 50px;
+    margin: 0 auto;
+    max-width: 850px; /* Ancho máximo para una lectura cómoda (no más de 80 caracteres por línea) */
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+/* Título Principal */
+.privacy-container h1 {
+    font-family: var(--font-heading, 'Playfair Display', serif);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    color: var(--color-contrast, #333);
+    margin-bottom: 30px;
+    text-align: center;
+}

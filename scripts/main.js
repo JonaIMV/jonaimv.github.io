@@ -1,12 +1,12 @@
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
-// ELIMINADO: import { initHeroSlider } from './hero-slide.js';
 import { loadProperties } from './properties.js';
 import { showLastViewedProperty } from './property-modal.js';
 import { loadExchangeRates } from './exchange-rates.js';
 import { initContactForm } from './form-handler.js';
 import { initThankYouPage } from './thankyou.js';
 import { displayReview, initReviews } from './reviews.js';
+import { initCookieConsent } from './cookie-consent.js';
 
 // AGREGADO: Importar la futura lógica de filtrado
 import { initPropertyFilters } from './property-filters.js'; 
@@ -14,9 +14,12 @@ import { initPropertyFilters } from './property-filters.js';
 
 window.displayReview = displayReview;
 
+
 document.addEventListener("DOMContentLoaded", async () => {
     initMenuToggle();
     highlightCurrentPage();
+    initCookieConsent(); 
+
 
     // La inicialización del Hero Slider solo se llama en la página principal (index.html)
     // Usamos una verificación condicional para evitar errores en for-sale.html
