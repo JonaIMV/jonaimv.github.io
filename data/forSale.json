@@ -20,7 +20,7 @@
     "alt": "Apartment in gated community",
     "location": "Puerto Morelos",
     "type": "condo",
-    "virtualTourUrl": "virtualtours/selva26-H/index.html"
+    "virtualTourUrl": "virtualtours/selva26-H/selva_H.html"
   },
   {
     "id": 5,
@@ -31,7 +31,7 @@
     "alt": "Gate community house",
     "location": "Puerto Morelos",
     "type": "house",
-    "virtualTourUrl": "virtualtours/puntavista/index.html"
+    "virtualTourUrl": "virtualtours/puntavista/puntavista.html"
   },
   {
     "id": 6,
