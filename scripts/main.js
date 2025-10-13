@@ -8,6 +8,7 @@ import { initThankYouPage } from './thankyou.js';
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 
+
 // AGREGADO: Importar la futura lógica de filtrado
 import { initPropertyFilters } from './property-filters.js'; 
 
@@ -21,22 +22,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCookieConsent(); 
 
 
-    // La inicialización del Hero Slider solo se llama en la página principal (index.html)
-    // Usamos una verificación condicional para evitar errores en for-sale.html
+    
     if (document.querySelector('.hero-slider')) {
-        // Debes reimportar initHeroSlider si lo necesitas en index.html,
-        // pero lo quitamos aquí para la limpieza de for-sale.html. 
-        // Si el archivo principal es para ambas páginas, podemos añadir la verificación aquí:
-        // initHeroSlider(); 
+       
     }
     
-    // Inicialización de la lógica de reviews (solo en index.html)
+    
     if (document.getElementById('client-portraits')) {
         initReviews();
     }
 
 
-    // Lógica de Tasa de Cambio (si los elementos existen)
+    
     if (
         document.getElementById('usd-rate') ||
         document.getElementById('eur-rate') ||
@@ -78,5 +75,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     const yearEl = document.getElementById("year");
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
+    }
+
+     if (typeof ScrollReveal !== 'undefined') {
+        ScrollReveal().reveal('.reveal', { 
+            delay: 200,     
+            duration: 800, 
+            easing: 'ease-in-out',
+            interval: 60,   
+            origin: 'bottom',
+            distance: '20px',
+            mobile: true 
+        });
     }
 });

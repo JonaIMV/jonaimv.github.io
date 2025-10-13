@@ -61,7 +61,7 @@
     </header>
    <main>
     <h1>Propiedades en Venta</h1>
-    <section class="filter-controls">
+    <section class="filter-controls reveal">
         <label for="sort-by">Ordenar por:</label>
         <select id="sort-by">
             <option value="price-desc">Precio (Mayor a Menor)</option>
@@ -77,7 +77,7 @@
             <option value="land">Terreno</option>
         </select>
     </section>
-    <section class="properties-section">
+    <section class="properties-section reveal">
         <div id="properties-container" class="properties-grid" ></div>
     </section>
     <div id="propertyModal" class="modal">
@@ -120,6 +120,7 @@
             </a>
         </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
