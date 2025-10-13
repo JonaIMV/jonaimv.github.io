@@ -1,18 +1,8 @@
 [
-  {
-    "id": 2,
-    "title": "House at Selva Escondida Arrecifes Street",
-    "description": "Spacious villa with garden and pool, 4 bedrooms, 3 baths.",
-    "price": "$150,000",
-    "image": "images/arrecifes.webp",
-    "alt": "Residential villa",
-    "location": "Puerto Morelos",
-    "type": "house",
-    "virtualTourUrl": ""
-  },
+ 
 
   {
-    "id": 4,
+    "id": 1,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
     "description": "Cozy apartment in gated community, 2 bedrooms, 1 bath.",
     "price": "$125,000",
@@ -23,7 +13,7 @@
     "virtualTourUrl": "virtualtours/selva26-H/selva_H.html"
   },
   {
-    "id": 5,
+    "id": 2,
     "title": "PuntaVista house Puerto Morelos",
     "description": "Beautiful house in gate community, 3 bedroom, 3 bath.",
     "price": "$360,000",
@@ -34,7 +24,7 @@
     "virtualTourUrl": "virtualtours/puntavista/puntavista.html"
   },
   {
-    "id": 6,
+    "id": 3,
     "title": "Selva Escondida apartment 9B Puerto Morelos",
     "description": "Charming Apartment, 2 bedrooms, 1 baths.",
     "price": "$110,000",
@@ -45,7 +35,7 @@
     "virtualTourUrl": ""
   },
   {
-    "id": 7,
+    "id": 4,
     "title": "Lot for sale Regatta Puerto Morelos",
     "description": "Eco lot at Regatta gate community.",
     "price": "$50,000",
@@ -56,7 +46,7 @@
     "virtualTourUrl": ""
   },
   {
-    "id": 8,
+    "id": 5,
     "title": "Eco lot for sale in Puntavista Puerto Morelos",
     "description": "Eco lot in Puntavista gate community.",
     "price": "$85,000",
