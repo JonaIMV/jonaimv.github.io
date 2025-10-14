@@ -91,7 +91,7 @@
     border: 3px solid var(--color-coral, #C2948A); /* Borde de marca */
 }
 
-/* Estilo para la Descripción */
+
 .personal-contact-info p {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -101,7 +101,7 @@
     margin-bottom: 25px;
 }
 
-/* Estilos para los Enlaces Directos */
+
 .direct-contact-links {
     padding: 15px;
     border: 1px dashed var(--color-coral, #C2948A);
@@ -125,7 +125,6 @@
     text-decoration: underline;
 }
 
-/* Ajuste para móvil: Apila el texto y el botón si la pantalla es muy pequeña */
 @media (max-width: 550px) {
     .banner-content {
         flex-direction: column;
@@ -133,7 +132,7 @@
         padding: 15px 20px;
     }
     .cookie-btn {
-        width: 100%; /* El botón ocupa todo el ancho abajo */
+        width: 100%; 
         margin-top: 10px;
     }
 }
@@ -230,12 +229,11 @@ body{
 
 
 main h1 {
-    /* Mantenemos tus estilos existentes */
+   
 margin-top: 0;
  padding-top: 45px; 
  text-align: center;
-    /* Añadimos un poco de margen inferior para separarlo de los filtros */
-    margin-bottom: 20px; 
+ margin-bottom: 20px; 
 }
 
 /* nav menu */
@@ -287,14 +285,14 @@ margin-top: 0;
 
 
 .video-local-container {
-    /* Asegura que el contenedor de video ocupe todo el espacio */
+    
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+    overflow: hidden; 
     position: relative;
 }
 .video-local-container video {
-    /* Propiedades para que el video cubra todo el contenedor sin estirarse */
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -302,7 +300,7 @@ margin-top: 0;
     top: 50%;
     bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra el video perfectamente */
+    transform: translate(-50%, -50%); 
 }
 .hero-cta-button {
   position: absolute;
@@ -353,23 +351,23 @@ h3 {
 }
 .portrait-container {
     display: flex;
-    justify-content: center; /* Centra los retratos */
-    gap: 30px; /* Espacio entre los retratos */
+    justify-content: center; 
+    gap: 30px; 
     margin-top: 40px;
     margin-bottom: 60px;
 }
 .client-portrait {
-    width: 80px; /* Tamaño del retrato */
+    width: 80px;
     height: 80px;
-    border-radius: 50%; /* CLAVE: Para que sean circulares */
+    border-radius: 50%; 
     object-fit: cover;
     cursor: pointer;
-    border: 3px solid transparent; /* Borde sutil */
+    border: 3px solid transparent; 
     transition: all 0.3s ease;
 }
 .client-portrait:hover {
     transform: scale(1.1);
-    border-color: #F2C335; /* Color que contraste al pasar el ratón (tu color dorado) */
+    border-color: #F2C335; 
 }
 @keyframes slideIn {
     from {
@@ -402,67 +400,44 @@ h3 {
   color: var(--navy);
   text-align: right;
 }
-/* Estilos para la sección de servicios */
-.services-offered {
-     position: relative;
-    z-index: 100;
+/* Estilos para la Guía de Inversión */
+.investment-guide-section {
     padding: 60px 20px;
     text-align: center;
-    background-color: #FDFBEF; /* Fondo sutilmente diferente al blanco de la página */
-    background-image: url('/images/cream_dust.webp');
-    background-blend-mode: multiply;
+    background-color: #FDFBEF; 
+    position: relative;
+    z-index: 90;
 }
 
-.services-offered h2 {
-    font-family: var(--font-heading);
+.guide-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: #666;
     margin-bottom: 40px;
 }
 
-/* Contenedor Flexbox/Grid para las tarjetas */
-.services-offered .cards-container {
-    display: flex;
-    flex-direction: column;
+.guide-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    max-width: 1100px;
     margin: 0 auto;
-    max-width: 1200px; 
-    
-    
-}
-/* Estilos para cada tarjeta de servicio */
-.service-card {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    text-align: center;
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-   padding: 40px 30px;
-}
-.service-card img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 20px;  
-    display: inline-block; 
-}
-.service-card:hover {
-  transform: translatey(-5px); /* Pequeño efecto al pasar el ratón */
- box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); 
-}
-.service-cta {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: var(--color-botones); 
-    color: white;
-    text-decoration: none;
-     border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-.service-cta:visited, .service-cta:active {
-    color: white;
 }
 
+.guide-step {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+
+.guide-step i {
+    font-size: 3rem;
+    color: var(--color-coral, #C2948A);
+    margin-bottom: 15px;
+}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
   .modal-content {
@@ -492,28 +467,28 @@ footer {
   border-top:10px solid #F2C335 ;
 
 }
-/* Estilo para el enlace 'Aviso de Privacidad' en el footer */
+
 .footer-info .privacy-link {
-    /* Usa tu color de acento o un color que contraste con el fondo */
+   
     color: var(--color-gold, #F2C335); 
-    text-decoration: none; /* Quita el subrayado por defecto */
+    text-decoration: none; 
     font-weight: 600;
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 .footer-info .privacy-link:hover {
-    /* Resalta el enlace al pasar el ratón */
+    
     color: var(--color-coral, #C2948A); 
 }
-/* Estilos para el nuevo bloque de información de contacto en el footer */
+
 .footer-contact {
-    /* Define el color del texto para que contraste con el fondo del footer */
+    
     color: var(--color-contrast, white); 
     text-align: center;
     padding: 10px 20px;
     
-    /* Asegura que el contenido esté organizado */
+    
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -523,7 +498,7 @@ footer {
     font-family: var(--font-heading);
     font-size: 1.2rem;
     margin: 0 0 10px 0;
-    color: var(--color-, #F2C335); /* Usa tu color de acento */
+    color: var(--color-, #F2C335); 
 }
 
 .footer-contact p {
@@ -533,14 +508,14 @@ footer {
 }
 
 .footer-contact a {
-    /* Estilo para los enlaces de email/teléfono */
+    
     color: var(--color-contrast, white );
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-contact a:hover {
-    color: var(--color-gold, #F2C335); /* Resaltar al pasar el ratón */
+    color: var(--color-gold, #F2C335); 
 }
 .footer-info {
   flex: 1 1 200px;
@@ -567,119 +542,14 @@ footer {
   filter: brightness(0.8) invert(1); 
 }
 
-/*contact page styles*/
 
 
-.contact-container {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 0 1rem; 
-    box-sizing: border-box;
-}
 
-/* Form */
-.contact-form {
-    flex: 2;
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    min-width: 280px;
-    box-sizing: border-box;
-}
-
-.contact-form label {
-    display: block;
-    margin-top: 1rem;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    background-color:var(--color-coral);
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-}
-
-.contact-form button:hover {
-    background-color: #A97A6D; 
-    transform: translateY(-2px);
-}
-
-/* Exchange rates */
-.exchange-rates {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 320px;
-    font-weight: bold;
-    margin: 0 auto;
-}
-
-.exchange-rates h2, .exchange-rates h3 {
-    margin-bottom: 10px;
-    color: #003366;
-}
-
-.exchange-rates ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 15px;
-}
-
-.exchange-rates li {
-    padding: 4px 0;
-}
-
-.converter input, 
-.converter select, 
-.converter button {
-    display: block;
-    width: 100%;
-    margin-bottom: 8px;
-    padding: 6px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.converter button {
-    background-color:var(--color-navy);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.converter button:hover {
-    background-color: #003366;
-}
-
-#conversion-result {
-    margin-top: 8px;
-    color: #003366;
-}
-
-/* Limpia el header fijo y centra el contenido para facilitar la lectura */
 .privacy-container {
-    padding-top: 100px; /* Ajuste para el header fijo */
+    padding-top: 100px; 
     padding-bottom: 50px;
     margin: 0 auto;
-    max-width: 850px; /* Ancho máximo para una lectura cómoda (no más de 80 caracteres por línea) */
+    max-width: 850px; 
     padding-left: 20px;
     padding-right: 20px;
     text-align: left;

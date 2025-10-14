@@ -8,9 +8,8 @@ import { initThankYouPage } from './thankyou.js';
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
-
-
-// AGREGADO: Importar la futura lógica de filtrado
+import { initScrollReveal } from './scroll-reveal-config.js';
+import { initRoiCalculator } from './roi-calculator.js'; 
 import { initPropertyFilters } from './property-filters.js'; 
 
 
@@ -22,6 +21,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     highlightCurrentPage();
     initCookieConsent(); 
     initHeaderScroll();
+    initScrollReveal();
+    initRoiCalculator();
 
     
     if (document.querySelector('.hero-slider')) {
