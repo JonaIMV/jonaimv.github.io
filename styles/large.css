@@ -3,6 +3,10 @@
     .services-offered .cards-container {
         grid-template-columns: repeat(3, 1fr);
     }
+     .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        height: 150px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -131,5 +135,6 @@
     .exchange-rates {
         flex: 1 1 100%;
         min-width: unset;
-    }
+     }
+     
   }

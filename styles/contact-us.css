@@ -1,14 +1,13 @@
 /*contact page styles*/
 
 
-/* Estilos para el Bloque de Información Personal (Reemplazo del Formulario) */
+/* Estilos para el Bloque de Información Personal  */
 .personal-contact-info {
-    /* Mantenemos el mismo estilo de contenedor que el formulario anterior */
     padding: 25px;
     background-color: #fefefe;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    flex: 2; /* Ocupa 2/3 del espacio en escritorio, similar al formulario */
+    flex: 2; 
 }
 
 .personal-contact-info h2 {
@@ -23,13 +22,12 @@
     display: block;
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Hace que la foto sea circular */
+    border-radius: 50%; 
     object-fit: cover;
-    margin: 0 auto 20px auto; /* Centra la foto y agrega margen inferior */
-    border: 3px solid var(--color-coral, #C2948A); /* Borde de marca */
+    margin: 0 auto 20px auto; 
+    border: 3px solid var(--color-coral, #C2948A); 
+
 }
-
-
 .personal-contact-info p {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -38,31 +36,103 @@
     text-align: center;
     margin-bottom: 25px;
 }
-
-
-.direct-contact-links {
-    padding: 15px;
-    border: 1px dashed var(--color-coral, #C2948A);
-    border-radius: 8px;
+.about-me-details {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; 
+    text-align: left;
+}
+.about-me-details h3 {
+    font-family: var(--font-heading);
+    color: var(--color-coral, #C2948A);
+    margin-bottom: 15px;
     text-align: center;
 }
-
-.direct-contact-links p {
+.about-me-details h4 {
+    font-family: var(--font-body);
+    color: var(--color-contrast, #333);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+    text-align: center;
+}
+.about-me-details p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+.about-me-details ul {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 25px;
+    width: fit-content; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+.about-me-details ul li {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-me-details ul li i {
+    color: var(--color-botones, #7EA8BE); 
     font-size: 1.1rem;
-    font-weight: 500;
-    margin: 10px 0;
+    min-width: 20px;
+    text-align: center;
+    
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.gallery-grid img:hover {
+    transform: scale(1.03); 
 }
 
-.direct-contact-links a {
-    color: var(--color-coral, #C2948A);
-    text-decoration: none;
-    font-weight: 700;
+
+
+/* Estilo para cada línea de contacto */
+
+.direct-contact {
+    max-width: 650px; 
+    margin: 30px auto; 
+    padding: 0 20px; 
+    text-align: center; 
 }
 
-.direct-contact-links a:hover {
-    text-decoration: underline;
+/* Estilos para el contenedor de los enlaces directos */
+.direct-contact-links {
+    padding: 25px; 
+    border: 2px solid var(--color-coral, #C2948A); 
+    border-radius: 12px;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
 }
-
+.direct-contact-links p {
+    font-size: 1.15rem; 
+    margin: 0;
+    /
+}
 @media (max-width: 550px) {
     .banner-content {
         flex-direction: column;
