@@ -7,6 +7,7 @@ import { initContactForm } from './form-handler.js';
 import { initThankYouPage } from './thankyou.js';
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
+import { initHeaderScroll } from './scroll.js';
 
 
 // AGREGADO: Importar la futura lógica de filtrado
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initMenuToggle();
     highlightCurrentPage();
     initCookieConsent(); 
-
+    initHeaderScroll();
 
     
     if (document.querySelector('.hero-slider')) {

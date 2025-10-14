@@ -24,7 +24,7 @@
   .nav-menu {
     display: none;
     flex-direction: column;
-    background-color: var(--color-header);
+    background-color: var(--color-font);
     position: absolute;
     top: 80px;
     right: 20px;
@@ -32,12 +32,26 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     z-index: 1000;
   }
+ header.scrolled .nav-menu.show {
+        
+        background-color: white; 
+        
+ }
+    
+    
+    header.scrolled .nav-menu a {
+        color: var(--color-contrast, #333); 
+    }
   .nav-menu a{
-    color: var(--color-font);
+    color: var(--color-header);
   }
   .nav-menu.show {
     display: flex;
   }
+  .nav-menu a.active {
+  color: #000000;
+  border-bottom: 2px solid var(--color-header);
+}
 
   .nav-menu ul {
     flex-direction: column;

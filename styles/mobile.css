@@ -61,6 +61,8 @@
 .cookie-btn:hover {
     background-color: #A97A6D;
 }
+
+
 /* Estilos para el Bloque de Información Personal (Reemplazo del Formulario) */
 .personal-contact-info {
     /* Mantenemos el mismo estilo de contenedor que el formulario anterior */
@@ -138,19 +140,51 @@
 
 /* header styles */
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: var(--color-header);
-  border-bottom:10px solid#F2C335;
-  padding: 0px 0px;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  color : var(--color-font);
-  background-image: url('/images/hypnotize.png');
-  background-blend-mode: multiply;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+   
+    background-color: var(--color-header, #34B1BF); 
+    
+    
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    
+    
+    padding: 1rem 0; 
+    border-bottom: 10px solid var(--color-gold, #F2C335); 
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-font, white);
 }
+
+header.scrolled {
+    
+    background-color: rgba(52, 177, 191, 0.1); 
+    border-bottom-color: transparent; 
+
+   
+    padding: 0.5rem 0; 
+}
+header.scrolled .logo img {
+    height: 70px; 
+    width: 70px;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+header.scrolled .nav-menu a,
+header.scrolled .brand h2 {
+   
+    color: var(--color-contrast, #333333); 
+}
+
+
+header.scrolled .menu-toggle {
+    color: var(--color-contrast, #333333);
+}
+
+
 .brand {
   display: flex;
   align-items: center; 
