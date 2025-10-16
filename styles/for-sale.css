@@ -135,58 +135,91 @@ margin-top: 0;
     padding: 0 20px; /* Asegura espacio lateral */
 }
 
+.property-card .card-actions-group {
+    display: flex; 
+    gap: 10px;    /* Espacio entre los dos botones */
+    padding: 0 15px 15px 15px;
+    border-top: 1px solid #eee;
+    margin-top: auto; /* IMPORTANTE: Empuja el grupo de botones al fondo de la tarjeta */
+
+}
+/* ELIMINA ESTE BLOQUE ANTIGUO:
 .card-actions {
-    /* Le da espacio al botón y asegura que se centre o se alinee */
-    padding: 0 15px 15px 15px; 
-    text-align: center;
-    margin-top: auto; /* IMPORTANTE: Empuja el botón hacia el fondo si usas flexbox */
-    display: flex;
+     padding: 0 15px 15px 15px; 
+     text-align: center;
+     margin-top: auto; 
+     display: flex; 
 }
-.btn-tour-trigger {
-    /* 1. COMPORTAMIENTO: Hace que el enlace se comporte como un bloque y ocupe el ancho */
-    display: block;
-    width: 100%;
-    
-    /* 2. COLOR: Define el fondo coral y el texto blanco */
-    background-color: var(--color-coral, #C2948A); 
-    color: white;
-    
-    /* 3. FORMA: Elimina el subrayado y da forma de botón */
-    text-decoration: none; 
-    padding: 10px 20px;
+*/
+
+/* ---------------------------------------------------- */
+/* 🎯 CÓDIGO A AGREGAR/REEMPLAZAR EN TU ARCHIVO CSS */
+/* ---------------------------------------------------- */
+
+/* Contenedor Flex para los dos botones (Más Detalles y Tour Virtual) */
+.property-card .card-actions-group {
+    display: flex; 
+    gap: 10px;    /* Espacio entre los dos botones */
+    padding: 0 15px 15px 15px;
+    border-top: 1px solid #eee;
+    margin-top: auto; /* IMPORTANTE: Empuja el grupo de botones al fondo de la tarjeta */
+}
+
+/* ---------------------------------------------------- */
+/* ESTILOS DE BOTONES INDIVIDUALES */
+/* ---------------------------------------------------- */
+
+/* Estilo base para ambos botones de acción */
+.property-card .btn-detail-trigger,
+.property-card .btn-tour-trigger {
+    flex-grow: 1; /* Permite que ambos ocupen el mismo espacio horizontal */
+    text-align: center;
+    padding: 10px 15px;
     border-radius: 5px;
-    border: none;
-    text-align: center;
+    text-decoration: none; 
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     cursor: pointer;
-    
-    /* Tipografía sencilla */
     font-family: var(--font-body);
-    font-weight: 600;
 }
 
-.btn-tour-trigger:hover {
+/* 1. Botón "Más detalles" (Enlace principal) */
+.property-card .btn-detail-trigger {
+    background-color: var(--color-coral, #C2948A); /* Color primario fuerte */
+    color: white;
+    border: 1px solid var(--color-coral, #C2948A);
+}
+
+.property-card .btn-detail-trigger:hover {
     background-color: #A97A6D;
-}
-/* 3. Estilos para la Ubicación */
-.property-card .location {
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    color: var(--color-botones, #7EA8BE); /* Usa un color de acento o secundario */
-    font-weight: 600;
-    margin-top: -5px; /* Acércalo a la descripción/precio */
-    margin-bottom: 15px; /* Sepáralo del botón */
+    border-color: #A97A6D;
 }
 
-/* Estilos para el botón deshabilitado (Tour No Disponible) */
-.btn-tour-trigger.disabled {
-    background-color: #ccc;
+/* 2. Botón "Tour Virtual 360°" (Acción secundaria) */
+.property-card .btn-tour-trigger {
+    background-color: white; 
+    color: var(--color-coral, #C2948A); 
+    border: 1px solid var(--color-coral, #C2948A);
+}
+
+.property-card .btn-tour-trigger:hover {
+    background-color: var(--color-coral-light, #f0f8ff); 
+    color: #A97A6D;
+}
+
+/* 3. Estilos para el botón deshabilitado (Tour No Disponible) */
+.property-card .btn-tour-trigger.disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    border: 1px solid #adb5bd;
     cursor: not-allowed;
 }
-.property-card-content p {
-font-family: var(--font-body);
- font-size: 0.95rem;
- color: #666; /* Color gris */
-margin-bottom: 5px;
+
+/* Ajuste de alineación en móvil para apilar los botones */
+@media (max-width: 600px) {
+    .property-card .card-actions-group {
+        flex-direction: column; 
+    }
 }
 
 /* Estilos para el CTA FINAL al final del contenido */
@@ -230,13 +263,13 @@ margin-bottom: 5px;
 }
 
 
+
 /* ===================================================
    1. ESTILOS BASE Y CONTENEDOR DE DETALLE
    =================================================== */
-/* El artículo principal que contiene todo el detalle */
 .property-detail-page {
     max-width: 1200px; /* Limita el ancho del contenido principal */
-    margin: 40px auto; /* Centra el contenido en pantallas grandes */
+    margin: 40px auto; 
     padding: 20px;
 }
 
@@ -261,14 +294,16 @@ margin-bottom: 5px;
 .property-detail-page h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2em;
-    color: #007bff; /* Color primario de marca */
+    /* Usamos tu variable de contraste (o un gris oscuro seguro) */
+    color: var(--color-contrast, #333); 
     margin-bottom: 5px;
 }
 
 .property-detail-page .property-price {
     font-size: 1.5em;
     font-weight: bold;
-    color: #28a745; /* Color para destacar el precio */
+    /* Usamos tu color de acento para destacar el precio */
+    color: var(--color-coral); 
     margin-bottom: 20px;
 }
 
@@ -282,19 +317,18 @@ margin-bottom: 5px;
 /* Contenedor de la galería para usar un grid */
 .property-detail-page .photo-grid {
     display: grid;
-    /* En móviles, 1 columna. En escritorio, 2 o 3 columnas */
+    /* 2 o 3 columnas en escritorio */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px; /* Espacio entre las imágenes */
+    gap: 15px; 
 }
 
 /* Estilos de las imágenes de la galería */
 .property-detail-page .photo-grid img {
     width: 100%;
-    height: 300px; /* Alto fijo para uniformidad */
-    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* No se requiere CSS para ampliar (lightbox), ya que se pidió omitirlo */
 }
 
 /* ===================================================
@@ -305,7 +339,8 @@ margin-bottom: 5px;
     margin-bottom: 30px;
     padding: 15px;
     background-color: #f8f9fa;
-    border-left: 5px solid #007bff;
+    /* Usamos tu variable de color para la línea de acento */
+    border-left: 5px solid var(--color-botones, #007bff); 
     border-radius: 4px;
 }
 
@@ -320,10 +355,10 @@ margin-bottom: 5px;
 
 /* Estilo para las listas de características/amenidades */
 .features-list {
-    list-style-type: none; /* Quita los bullets por defecto */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Distribuye las características en columnas */
+    display: flex; 
     flex-wrap: wrap;
     gap: 10px;
 }
@@ -333,7 +368,7 @@ margin-bottom: 5px;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.95em;
-    flex-grow: 1; /* Permite que los ítems se expandan si es necesario */
+    flex-grow: 1; 
     text-align: center;
 }
 
@@ -346,18 +381,17 @@ margin-bottom: 5px;
 
 /* Contenedor para el mapa, que controlará el tamaño */
 .map-container {
-    /* Limita el ancho del mapa a un porcentaje o ancho fijo */
-    max-width: 900px; /* Ejemplo: se verá más pequeño que el contenedor principal */
-    margin: 20px auto; /* Centra el contenedor del mapa */
+    /* Limita el ancho del mapa a 900px */
+    max-width: 900px; 
+    margin: 20px auto; 
     border: 1px solid #ccc;
     border-radius: 8px;
-    overflow: hidden; /* Asegura que el iframe no se salga */
+    overflow: hidden; 
 }
 
 .map-container iframe {
-    /* El iframe siempre debe tomar el 100% de su contenedor padre (.map-container) */
     width: 100%;
-    height: 450px; /* Define una altura cómoda */
+    height: 450px; 
     display: block;
 }
 
@@ -365,7 +399,8 @@ margin-bottom: 5px;
     display: block;
     text-align: center;
     padding: 10px;
-    background: #007bff;
+    /* Usamos tu variable de color para el enlace del mapa */
+    background: var(--color-botones, #007bff); 
     color: white;
     text-decoration: none;
     font-weight: bold;
