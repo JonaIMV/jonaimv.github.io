@@ -1,59 +1,142 @@
 [
- 
-
   {
     "id": 1,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
     "description": "Cozy apartment in gated community, 2 bedrooms, 1 bath.",
+    "extendedDescription": "Acogedor apartamento ubicado en el tranquilo residencial Selva Escondida. Perfecto para rentas vacacionales o residencia permanente. Disfrute de seguridad 24/7 y acceso a una gran alberca común y palapa. Se vende semi-amueblado y listo para habitar.",
     "price": "$125,000",
     "image": "images/downtown.webp",
     "alt": "Apartment in gated community",
     "location": "Puerto Morelos",
     "type": "condo",
-    "virtualTourUrl": "virtualtours/selva26-H/selva_H.html"
+    "virtualTourUrl": "virtualtours/selva26-H/selva_H.html",
+    "galleryPhotos": [
+      "images/prop1/sala.webp",
+      "images/prop1/cocina.webp",
+      "images/prop1/recamara1.webp"
+    ],
+    "features": [
+      "2 Recámaras",
+      "1 Baño completo",
+      "55 m² de construcción",
+      "Aires Acondicionados"
+    ],
+    "amenities": [
+      "Alberca común",
+      "Palapa y área social",
+      "Seguridad 24h",
+      "Estacionamiento asignado"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sSelva%20Escondida%20Residencial%2C%2077580%20Puerto%20Morelos%2C%20Q.R.!5e0!3m2!1sen!2smx!4v1678888888888"
   },
   {
     "id": 2,
     "title": "PuntaVista house Puerto Morelos",
     "description": "Beautiful house in gate community, 3 bedroom, 3 bath.",
+    "extendedDescription": "Residencia de lujo en el exclusivo fraccionamiento Punta Vista. Diseño moderno, amplios jardines y acabados de alta calidad. Ideal para familias grandes que buscan privacidad y un entorno seguro.",
     "price": "$360,000",
     "image": "images/puntavista.webp",
     "alt": "Gate community house",
     "location": "Puerto Morelos",
     "type": "house",
-    "virtualTourUrl": "virtualtours/puntavista/puntavista.html"
+    "virtualTourUrl": "virtualtours/puntavista/puntavista.html",
+    "galleryPhotos": [
+      "images/prop2/fachada.webp",
+      "images/prop2/patio.webp",
+      "images/prop2/cocina.webp"
+    ],
+    "features": [
+      "3 Recámaras (principal con vestidor)",
+      "3 Baños completos",
+      "180 m² de construcción",
+      "200 m² de terreno"
+    ],
+    "amenities": [
+      "Doble seguridad 24h",
+      "Casa club",
+      "Áreas deportivas",
+      "Cisterna y tinaco"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15581.54716183313!2d-86.8756087!3d20.8501237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e444444444444%3A0x6a0f444444444444!2sResidencial%20Punta%20Vista!5e0!3m2!1sen!2smx!4v1678888888889"
   },
   {
     "id": 3,
     "title": "Selva Escondida apartment 9B Puerto Morelos",
     "description": "Charming Apartment, 2 bedrooms, 1 baths.",
+    "extendedDescription": "Apartamento en planta baja con acceso rápido a las áreas verdes. Es una unidad ideal para remodelar y personalizar. Ubicación inmejorable cerca del acceso principal y vigilancia. Excelente oportunidad de inversión.",
     "price": "$110,000",
     "image": "images/selva9b.webp",
     "alt": "Charming house with garden",
     "location": "Puerto Morelos",
     "type": "condo",
-    "virtualTourUrl": ""
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/prop3/vista.webp",
+      "images/prop3/bano.webp"
+    ],
+    "features": [
+      "2 Recámaras",
+      "1 Baño",
+      "55 m² de construcción",
+      "Sin amueblar"
+    ],
+    "amenities": [
+      "Alberca común",
+      "Seguridad 24h",
+      "Cercanía a la entrada"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sSelva%20Escondida%20Residencial%2C%2077580%20Puerto%20Morelos%2C%20Q.R.!5e0!3m2!1sen!2smx!4v1678888888888"
   },
   {
     "id": 4,
     "title": "Lot for sale Regatta Puerto Morelos",
     "description": "Eco lot at Regatta gate community.",
+    "extendedDescription": "Terreno residencial con uso de suelo unifamiliar. Ubicado en el corazón del desarrollo Regatta, conocido por su enfoque ecológico y sustentable. Listo para construir la casa de tus sueños.",
     "price": "$50,000",
     "image": "images/regatta.webp",
-    "alt": "Elegant house with pool",
+    "alt": "Eco lot at Regatta gate community",
     "location": "Puerto Morelos",
     "type": "land",
-    "virtualTourUrl": ""
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/prop4/lote1.webp"
+    ],
+    "features": [
+      "Terreno unifamiliar",
+      "160 m²",
+      "Libre de gravamen"
+    ],
+    "amenities": [
+      "Acceso a club de playa (convenio)",
+      "Áreas verdes protegidas",
+      "Seguridad y acceso controlado"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sRegatta%20Residencial!5e0!3m2!1sen!2smx!4v1678888888888"
   },
   {
     "id": 5,
     "title": "Eco lot for sale in Puntavista Puerto Morelos",
     "description": "Eco lot in Puntavista gate community.",
+    "extendedDescription": "Lote en privada dentro de Punta Vista, ideal para construir una residencia de dos niveles con todas las comodidades. Disfrute de la infraestructura de un residencial de lujo a un precio de oportunidad.",
     "price": "$85,000",
     "image": "images/puntavista-lot.webp",
-    "alt": "Beachfront house",
+    "alt": "Eco lot in Puntavista gate community",
     "location": "Puerto Morelos",
     "type": "land",
-    "virtualTourUrl": ""
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/prop5/lote.webp"
+    ],
+    "features": [
+      "Terreno en privada",
+      "250 m²",
+      "Uso de suelo residencial"
+    ],
+    "amenities": [
+      "Casa club con alberca",
+      "Canchas deportivas",
+      "Vigilancia 24/7"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15581.54716183313!2d-86.8756087!3d20.8501237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e444444444444%3A0x6a0f444444444444!2sResidencial%20Punta%20Vista!5e0!3m2!1sen!2smx!4v1678888888889"
   }
 ]
