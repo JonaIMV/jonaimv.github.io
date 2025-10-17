@@ -138,5 +138,40 @@
       "Vigilancia 24/7"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15581.54716183313!2d-86.8756087!3d20.8501237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e444444444444%3A0x6a0f444444444444!2sResidencial%20Punta%20Vista!5e0!3m2!1sen!2smx!4v1678888888889"
+  },
+  {
+    "id": 6,
+    "title": "Departamento Naay Selva Escondida 34B Puerto Morelos",
+    "description": "Departamento en Venta Selva Escondida Naay planta baja.",
+    "extendedDescription": "Increible departamento en la Rivera Maya, con 2 habitaciones, 2 baños completos, amueblado y listo para vivir, a 10 minutos de la playa de Puerto Morelos, a 30 minutos del aeropuerto internacional de Cancun, encontraras tranquilidad y silencio en esta unidad ya que se encuentra en una ubicacion increible, junto a la zona de selva. Ahí mismo encontraras contacto con la naturaleza y un espacio seguro para descansar despues de un dia de tours.",
+    "price": "$2,500,000 MXN",
+    "image": "images/naay/fachada-naay.webp",
+    "alt": "Naay Selva escondida",
+    "location": "Puerto Morelos",
+    "type": "condo",
+    "virtualTourUrl": "virtualtours/naay-34-B/naay.html",
+    "galleryPhotos": [
+      "images/naay/sala-naay.webp",
+      "images/naay/cocina-naay.webp",
+      "images/naay/sala2-naay.webp",
+      "images/naay/baño-naay.webp",
+      "images/naay/habitacion-naay.webp",
+      "images/naay/barra-naay.webp"
+    ],
+    "features": [
+      "2 Recámaras",
+      "2 Baños completos",
+      "70 m² de construcción",
+      "Aires Acondicionados"
+    ],
+    "amenities": [
+      "Alberca común",
+      "Seguridad 24h",
+      "Gimnasio",
+      "Estacionamiento asignado",
+      "Area de asador"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760742673574!6m8!1m7!1szicz57swGACyTP-3XLE5aw!2m2!1d20.87040780617195!2d-86.9059090304031!3f178.07151176737258!4f-15.077935848906023!5f0.7820865974627469"
   }
+
 ]
