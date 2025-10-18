@@ -6,7 +6,6 @@ import { loadProperties, renderProperties, renderPropertyDetail } from './proper
 import { showLastViewedProperty } from './property-modal.js';
 import { loadExchangeRates } from './exchange-rates.js';
 import { initContactForm } from './form-handler.js';
-import { initThankYouPage } from './thankyou.js';
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
@@ -17,11 +16,6 @@ import { initPropertyFilters } from './property-filters.js';
 
 window.displayReview = displayReview;
 
-
-/**
- * Obtiene el ID de la propiedad desde los parámetros de la URL (e.g., ?id=1).
- * Retorna el ID como un número o null si no existe.
- */
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -52,25 +46,25 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (window.location.pathname.endsWith('thankyou.html')) {
         initThankYouPage();
     }
-    // ----------------------------
     
-    // 🔑 LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO 🔑
+    
+    //  LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO 
     const propertiesContainer = document.getElementById('properties-container');
     const mainElement = document.querySelector('main');
     const propertyId = getPropertyIdFromUrl();
 
-    // Solo cargamos los datos si estamos en la página 'for-sale.html' o similar
+    
     if (mainElement && (window.location.pathname.includes('for-sale.html') || propertyId)) {
         
-        // 1. Cargamos el array completo de propiedades (lo necesitamos tanto para el listado como para el detalle)
+        
         const allProperties = await loadProperties(null, 'data/forSale.json');
 
         if (allProperties.length > 0) {
             if (propertyId) {
-                // RUTA DE DETALLE: Hay un ID en la URL
+                
                 const property = allProperties.find(p => p.id === propertyId);
                 
-                // Limpiamos el main para inyectar el detalle (asumiendo que <main> contiene el #properties-container)
+                
                 mainElement.innerHTML = ''; 
 
                 if (property) {
@@ -81,12 +75,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
                 
             } else if (propertiesContainer) {
-                // RUTA DE LISTADO: No hay ID en la URL, y el contenedor existe (mostramos el listado principal)
                 
-                // 1. Renderizamos el listado en el contenedor #properties-container
+                
+                
                 renderProperties(allProperties, propertiesContainer); 
 
-                // 2. Pasamos los datos cargados al módulo de filtrado y ordenamiento
+                
                 initPropertyFilters(allProperties);
             }
         } else if (propertiesContainer) {
@@ -94,7 +88,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
 
-    // Última Propiedad Vista (Esta funcionalidad debe ser revisada ya que antes usabas un modal)
+   
     const lastViewedContainer = document.getElementById('lastViewedPropertyContainer');
     if (lastViewedContainer) {
         showLastViewedProperty();

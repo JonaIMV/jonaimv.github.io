@@ -1,5 +1,4 @@
     @media (min-width: 769px) { 
-    /* Coloca las tarjetas en 3 columnas en vistas grandes */
     .services-offered .cards-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -92,7 +91,7 @@
 }
 
 .service-card:hover {
-    transform: translateY(-5px); /* Pequeño efecto al pasar el ratón */
+    transform: translateY(-5px); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -118,7 +117,7 @@
 .service-cta {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--color-botones); /* Tu color de botón (ej: #7EA8BE) */
+    background-color: var(--color-botones); 
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -128,7 +127,7 @@
  
   .contact-container {
         flex-direction: column;
-        padding: 0 0.8rem; /* Menos espacio en móviles */
+        padding: 0 0.8rem; 
     }
 
     .contact-form,

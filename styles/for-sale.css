@@ -15,12 +15,12 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .property-card-content p:not(.price):not(.location) {
-    color: #444; /* Un gris oscuro, forzando la visibilidad */
+    color: #444;
     margin-bottom: 10px;
 }
 div.property-card-content p { 
-    color: black !important; /* Fuerza el color a negro para que se vea */
-    visibility: visible !important; /* Asegura que no está oculto */
+    color: black !important; 
+    visibility: visible !important; 
 }
 /* Efecto de elevación al pasar el ratón */
 .property-card:hover {
@@ -31,7 +31,7 @@ div.property-card-content p {
 /* Imagen de la Tarjeta */
 .property-card img {
     width: 100%;
-    height: 200px; /* Altura fija para uniformidad */
+    height: 200px; 
     object-fit: cover;
   border-radius: 6px;
   margin-bottom: 0.75rem;
@@ -40,7 +40,7 @@ div.property-card-content p {
 
 /* Contenido de la Tarjeta */
 .property-card-content {
-    padding: 0 15px 15px 15px; /* Espacio interno, menos arriba */
+    padding: 0 15px 15px 15px; 
 }
 
 .property-card-content h3 {
@@ -61,7 +61,7 @@ div.property-card-content p {
 /* Precio */
 .property-card .price {
     font-weight: 700;
-    color: var(--color-coral); /* Usa un color destacado para el precio */
+    color: var(--color-coral);
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
@@ -69,22 +69,20 @@ main{
     padding-top: 130px;
 }
 main h1 {
-    /* Mantenemos tus estilos existentes */
 margin-top: 0;
  padding-top: 45px; 
  text-align: center;
-    /* Añadimos un poco de margen inferior para separarlo de los filtros */
-    margin-bottom: 20px; 
+ margin-bottom: 20px; 
 }
 /* Estilos para el contenedor de filtros */
 .filter-controls {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea en móvil */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 20px;
     padding: 20px 40px;
     margin-bottom: 30px;
-    background-color: #F8F8F8; /* Un fondo sutil para distinguirlo del blanco de la página */
+    background-color: #F8F8F8;
     border-bottom: 1px solid #ddd;
 }
 
@@ -105,7 +103,7 @@ margin-top: 0;
     font-size: 1rem;
     cursor: pointer;
     background-color: white;
-    appearance: none; /* Elimina los estilos nativos del sistema operativo */
+    appearance: none; 
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="gray"><polygon points="0,0 10,0 5,10"/></svg>');
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
@@ -127,12 +125,10 @@ margin-top: 0;
 
 /* Contenedor de la Cuadrícula de Propiedades */
 .properties-grid {
-    /* 1. Responsividad Automática: 
-       Ajusta el número de columnas basado en el ancho de 300px por tarjeta. */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px;
-    padding: 0 20px; /* Asegura espacio lateral */
+    padding: 0 20px; 
 }
 
 .property-card .card-actions-group {
@@ -143,36 +139,21 @@ margin-top: 0;
     margin-top: auto; /* IMPORTANTE: Empuja el grupo de botones al fondo de la tarjeta */
 
 }
-/* ELIMINA ESTE BLOQUE ANTIGUO:
-.card-actions {
-     padding: 0 15px 15px 15px; 
-     text-align: center;
-     margin-top: auto; 
-     display: flex; 
-}
-*/
 
-/* ---------------------------------------------------- */
-/* 🎯 CÓDIGO A AGREGAR/REEMPLAZAR EN TU ARCHIVO CSS */
-/* ---------------------------------------------------- */
 
-/* Contenedor Flex para los dos botones (Más Detalles y Tour Virtual) */
 .property-card .card-actions-group {
     display: flex; 
-    gap: 10px;    /* Espacio entre los dos botones */
+    gap: 10px;    
     padding: 0 15px 15px 15px;
     border-top: 1px solid #eee;
-    margin-top: auto; /* IMPORTANTE: Empuja el grupo de botones al fondo de la tarjeta */
+    margin-top: auto; 
 }
 
-/* ---------------------------------------------------- */
 /* ESTILOS DE BOTONES INDIVIDUALES */
-/* ---------------------------------------------------- */
-
 /* Estilo base para ambos botones de acción */
 .property-card .btn-detail-trigger,
 .property-card .btn-tour-trigger {
-    flex-grow: 1; /* Permite que ambos ocupen el mismo espacio horizontal */
+    flex-grow: 1; 
     text-align: center;
     padding: 10px 15px;
     border-radius: 5px;
@@ -185,7 +166,7 @@ margin-top: 0;
 
 /* 1. Botón "Más detalles" (Enlace principal) */
 .property-card .btn-detail-trigger {
-    background-color: var(--color-coral, #C2948A); /* Color primario fuerte */
+    background-color: var(--color-coral, #C2948A); 
     color: white;
     border: 1px solid var(--color-coral, #C2948A);
 }
@@ -225,13 +206,13 @@ margin-top: 0;
 /* Estilos para el CTA FINAL al final del contenido */
 .final-cta {
     display: block;
-    max-width: 350px; /* Limita el ancho del botón */
-    margin: 40px auto; /* Lo centra y le da buen espacio vertical */
+    max-width: 350px; 
+    margin: 40px auto; 
     text-align: center;
     
     /* Apariencia de Botón Fuerte */
     padding: 15px 30px;
-    background-color: var(--color-coral, #C2948A); /* Usamos tu color de acento */
+    background-color: var(--color-coral, #C2948A); 
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -261,14 +242,11 @@ margin-top: 0;
         margin-bottom: 10px;
     }
 }
-
-
-
 /* ===================================================
    1. ESTILOS BASE Y CONTENEDOR DE DETALLE
    =================================================== */
 .property-detail-page {
-    max-width: 1200px; /* Limita el ancho del contenido principal */
+    max-width: 1200px; 
     margin: 40px auto; 
     padding: 20px;
 }
@@ -294,7 +272,6 @@ margin-top: 0;
 .property-detail-page h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2em;
-    /* Usamos tu variable de contraste (o un gris oscuro seguro) */
     color: var(--color-contrast, #333); 
     margin-bottom: 5px;
 }
@@ -302,7 +279,6 @@ margin-top: 0;
 .property-detail-page .property-price {
     font-size: 1.5em;
     font-weight: bold;
-    /* Usamos tu color de acento para destacar el precio */
     color: var(--color-coral); 
     margin-bottom: 20px;
 }
@@ -317,12 +293,10 @@ margin-top: 0;
 /* Contenedor de la galería para usar un grid */
 .property-detail-page .photo-grid {
     display: grid;
-    /* 2 o 3 columnas en escritorio */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px; 
 }
 
-/* Estilos de las imágenes de la galería */
 .property-detail-page .photo-grid img {
     width: 100%;
     height: 300px; 
@@ -339,7 +313,6 @@ margin-top: 0;
     margin-bottom: 30px;
     padding: 15px;
     background-color: #f8f9fa;
-    /* Usamos tu variable de color para la línea de acento */
     border-left: 5px solid var(--color-botones, #007bff); 
     border-radius: 4px;
 }
@@ -381,7 +354,6 @@ margin-top: 0;
 
 /* Contenedor para el mapa, que controlará el tamaño */
 .map-container {
-    /* Limita el ancho del mapa a 900px */
     max-width: 900px; 
     margin: 20px auto; 
     border: 1px solid #ccc;
@@ -399,7 +371,6 @@ margin-top: 0;
     display: block;
     text-align: center;
     padding: 10px;
-    /* Usamos tu variable de color para el enlace del mapa */
     background: var(--color-botones, #007bff); 
     color: white;
     text-decoration: none;

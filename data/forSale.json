@@ -3,89 +3,104 @@
     "id": 1,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
     "description": "Cozy apartment in gated community, 2 bedrooms, 1 bath.",
-    "extendedDescription": "Acogedor apartamento ubicado en el tranquilo residencial Selva Escondida. Perfecto para rentas vacacionales o residencia permanente. Disfrute de seguridad 24/7 y acceso a una gran alberca común y palapa. Se vende semi-amueblado y listo para habitar.",
-    "price": "$125,000",
-    "image": "images/downtown.webp",
+    "extendedDescription": "Acogedor apartamento ubicado en el tranquilo residencial Selva Escondida. Perfecto para rentas vacacionales o residencia permanente. Disfrute de seguridad 24/7 y acceso a una gran alberca común y palapa. Se vende semi-amueblado y listo para habitar. Visita el tour virtual para conocer mas de esta propiedad.",
+    "price": "$2,300,000 MXN",
+    "image": "images/selva-26-h/selva26H.webp",
     "alt": "Apartment in gated community",
     "location": "Puerto Morelos",
     "type": "condo",
     "virtualTourUrl": "virtualtours/selva26-H/selva_H.html",
     "galleryPhotos": [
-      "images/prop1/sala.webp",
-      "images/prop1/cocina.webp",
-      "images/prop1/recamara1.webp"
+      "images/selva-26-h/sala.webp",
+      "images/selva-26-h/cocina.webp",
+      "images/selva-26-h/habitacion.webp",
+      "images/selva-26-h/habitacion2.webp",
+      "images/selva-26-h/baño.webp",
+      "images/selva-26-h/comedor-cocina.webp"
+
+
     ],
     "features": [
       "2 Recámaras",
       "1 Baño completo",
-      "55 m² de construcción",
-      "Aires Acondicionados"
+      "65 m² de construcción",
+      "3 Aires Acondicionados"
     ],
     "amenities": [
       "Alberca común",
       "Palapa y área social",
       "Seguridad 24h",
-      "Estacionamiento asignado"
+      "Estacionamiento asignado",
+      "Asadores"
     ],
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sSelva%20Escondida%20Residencial%2C%2077580%20Puerto%20Morelos%2C%20Q.R.!5e0!3m2!1sen!2smx!4v1678888888888"
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469"
   },
   {
     "id": 2,
-    "title": "PuntaVista house Puerto Morelos",
-    "description": "Beautiful house in gate community, 3 bedroom, 3 bath.",
-    "extendedDescription": "Residencia de lujo en el exclusivo fraccionamiento Punta Vista. Diseño moderno, amplios jardines y acabados de alta calidad. Ideal para familias grandes que buscan privacidad y un entorno seguro.",
-    "price": "$360,000",
-    "image": "images/puntavista.webp",
-    "alt": "Gate community house",
+    "title": "Casa Jabin Puerto Morelos",
+    "description": "Hermosa casa nueva en residencial Puntavista Puerto Morelos.",
+    "extendedDescription": "Residencia de lujo en el exclusivo fraccionamiento Punta Vista. Diseño moderno, amplios jardines y acabados de alta calidad. Ideal para familias grandes que buscan privacidad y un entorno seguro. A 10 minutos de la playa, a 30 minutos de Cancun, a 20 minutos del aeropuerto internacional de Cancun, una increible sensasion de tranquilidad rodea esta propiedad. Visita el tour virtual para conocer mas de ella.",
+    "price": "$6,400,000 MXN",
+    "image": "images/puntavista/puntavista.webp",
+    "alt": "Gate community house puerto morelos Puntavista",
     "location": "Puerto Morelos",
     "type": "house",
     "virtualTourUrl": "virtualtours/puntavista/puntavista.html",
     "galleryPhotos": [
-      "images/prop2/fachada.webp",
-      "images/prop2/patio.webp",
-      "images/prop2/cocina.webp"
+      "images/puntavista/puntavista.webp",
+      "images/puntavista/sala.webp",
+      "images/puntavista/cocina.webp",
+      "images/puntavista/habitacion2.webp",
+      "images/puntavista/baño.webp",
+      "images/puntavista/alberca.webp"
     ],
     "features": [
       "3 Recámaras (principal con vestidor)",
-      "3 Baños completos",
-      "180 m² de construcción",
-      "200 m² de terreno"
+      "3y medio Baños completos",
+      "210 m² de construcción",
+      "200 m² de terreno",
+      "4 Aires Acondicionados",
+      "Se entrega amueblada o sin amueblar"
     ],
     "amenities": [
-      "Doble seguridad 24h",
-      "Casa club",
-      "Áreas deportivas",
-      "Cisterna y tinaco"
+      "Seguridad 24h",
+      "Palapa",
+      "Alberca"
     ],
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15581.54716183313!2d-86.8756087!3d20.8501237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e444444444444%3A0x6a0f444444444444!2sResidencial%20Punta%20Vista!5e0!3m2!1sen!2smx!4v1678888888889"
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760750648307!6m8!1m7!1sl1wkU47Q_4zgd8FN7QjADQ!2m2!1d20.87425405153533!2d-86.89008811513162!3f70.47935738288757!4f-12.262008620005489!5f0.7820865974627469" 
   },
   {
     "id": 3,
-    "title": "Selva Escondida apartment 9B Puerto Morelos",
-    "description": "Charming Apartment, 2 bedrooms, 1 baths.",
-    "extendedDescription": "Apartamento en planta baja con acceso rápido a las áreas verdes. Es una unidad ideal para remodelar y personalizar. Ubicación inmejorable cerca del acceso principal y vigilancia. Excelente oportunidad de inversión.",
-    "price": "$110,000",
-    "image": "images/selva9b.webp",
-    "alt": "Charming house with garden",
+    "title": "Casa Residencial El Faro Puerto Morelos",
+    "description": "Bonita casa 2 habitaciones 1 baño.",
+    "extendedDescription": "Casa en Venta en Residencial El Faro Puerto Morelos. Es una unidad ideal para remodelar, personalizar y darle tu propio estilo. Ubicación inmejorable cerca de la alberca y la salida. Ya sea que la habites o la rentes es una excelente oportunidad de inversión. Visita el tour virtual para conocer mas de ella.",
+    "price": "$2,250,000 MXN",
+    "image": "images/maracaibo-7/fachada.webp",
+    "alt": "Charming house with patio puerto morelos El Faro",
     "location": "Puerto Morelos",
-    "type": "condo",
-    "virtualTourUrl": "",
+    "type": "house",
+    "virtualTourUrl": "virtualtours/maracaibo-7/maracaibo.html",
     "galleryPhotos": [
-      "images/prop3/vista.webp",
-      "images/prop3/bano.webp"
+      "images/maracaibo-7/fachada.webp",
+      "images/maracaibo-7/sala.webp",
+      "images/maracaibo-7/sala-comedor.webp",
+      "images/maracaibo-7/habitacion1.webp",
+      "images/maracaibo-7/habitacion.webp",
+      "images/maracaibo-7/detalle.webp",
+      "images/maracaibo-7/adorno.webp"
     ],
     "features": [
       "2 Recámaras",
       "1 Baño",
-      "55 m² de construcción",
-      "Sin amueblar"
+      "65 m² de construcción",
+      "Amueblada"
     ],
     "amenities": [
       "Alberca común",
       "Seguridad 24h",
       "Cercanía a la entrada"
     ],
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sSelva%20Escondida%20Residencial%2C%2077580%20Puerto%20Morelos%2C%20Q.R.!5e0!3m2!1sen!2smx!4v1678888888888"
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760752238359!6m8!1m7!1scgtdBYeYDm4ejxgrbJ5tTA!2m2!1d20.87198891776686!2d-86.90112488175393!3f3.074719195244711!4f2.8572826360244363!5f0.7820865974627469"
   },
   {
     "id": 4,

@@ -1,23 +1,21 @@
-// properties.js
 
 /**
- * Función para renderizar el contenido HTML de una lista de propiedades.
- * @param {Array<Object>} propertiesArray - El array de objetos de propiedades.
- * @param {HTMLElement} container - El contenedor donde se inyectarán las tarjetas.
+ @param {Array<Object>} propertiesArray 
+ * @param {HTMLElement} container 
  */
 function renderProperties(propertiesArray, container) {
     if (!container) return;
     container.innerHTML = ''; 
 
     propertiesArray.forEach(prop => {
-        // Lógica condicional para el botón de Tour Virtual
+        
         const tourButtonHtml = prop.virtualTourUrl 
             ? `<a href="${prop.virtualTourUrl}" target="_blank" rel="noopener noreferrer" class="btn-tour-trigger">Tour Virtual 360°</a>`
             : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
 
         const card = document.createElement('div');
         card.classList.add('property-card');
-        // Usamos el ID para construir el enlace de detalle
+       
         card.dataset.propId = prop.id; 
 
         card.innerHTML = `
@@ -41,29 +39,29 @@ function renderProperties(propertiesArray, container) {
 }
 
 /**
- * Renderiza la vista detallada de una propiedad específica en el elemento <main>.
- * @param {object} property - El objeto de la propiedad con datos extendidos.
- * @param {HTMLElement} mainContainer - El elemento <main> donde se inyectará el HTML.
+ *
+ * @param {object} property - 
+ * @param {HTMLElement} mainContainer 
  */
 function renderPropertyDetail(property, mainContainer) {
     if (!mainContainer) return;
 
-    // Actualiza el título del documento para SEO
+    
     document.title = `${property.title} | Detalles | TuCasa Caribe Realty`;
 
-    // 1. Manejo de fotos de la galería
+    
     const photosHtml = (property.galleryPhotos || []).map(photo => 
         `<img src="${photo}" alt="Galería de ${property.title}" loading="lazy">`
     ).join('');
 
-    // 2. Manejo de features y amenities
+    
     const featuresList = [
         ...(property.features || []), 
         ...(property.amenities || [])
     ];
     const featuresHtml = featuresList.map(item => `<li>${item}</li>`).join('');
 
-    // 3. Generación del HTML de la "página" de detalle
+    
     mainContainer.innerHTML = `
         <article class="property-detail-page">
             <button class="back-button" onclick="window.location.href='for-sale.html'">← Volver al Listado</button>
@@ -102,16 +100,13 @@ function renderPropertyDetail(property, mainContainer) {
         </article>
     `;
     
-    // Opcional: Re-inicializar ScrollReveal para que las animaciones funcionen en el contenido dinámico
     if (typeof ScrollReveal !== 'undefined') {
         ScrollReveal().sync(); 
     }
 }
 
-/**
- * Carga las propiedades del JSON y las renderiza inicialmente.
- * Retorna el array de propiedades.
- */
+
+ 
 export async function loadProperties(containerId, jsonUrl) {
     try {
         const response = await fetch(jsonUrl);
@@ -120,7 +115,7 @@ export async function loadProperties(containerId, jsonUrl) {
         const properties = await response.json();
         const container = document.getElementById(containerId);
         
-        // Solo renderiza si el contenedor existe (la lógica de ruteo lo manejará)
+        
         if (container) {
             renderProperties(properties, container); 
         }

@@ -1,6 +1,5 @@
-/* Limpia el header fijo y establece el ancho para el contenido de detalles */
 .property-detail-page {
-    padding-top: 100px; /* Ajuste para el header fijo */
+    padding-top: 100px; 
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -133,7 +132,6 @@
     cursor: pointer;
     margin-right: 15px;
 }
-
 .virtual-tour-btn {
     /* Tu estilo de botón secundario/enlace */
     color: var(--color-coral);

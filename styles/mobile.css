@@ -10,17 +10,14 @@
 }
 
 .cookie-consent-banner {
-    /* Fija el banner en la parte inferior */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    
-    /* Diseño visual */
-    background-color: var(--color-contrast, #333); /* Fondo oscuro */
+    background-color: var(--color-contrast, #333); 
     color: white; 
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 9000; /* Asegura que esté sobre todo, pero debajo del modal si se abre */
+    z-index: 9000;
     font-family: var(--font-body, 'Raleway', sans-serif);
 }
 
@@ -35,7 +32,7 @@
 }
 
 .banner-content p {
-    flex-grow: 1; /* Permite que el texto ocupe la mayor parte del espacio */
+    flex-grow: 1; 
     margin: 0;
     font-size: 0.9rem;
 }
@@ -46,8 +43,7 @@
 }
 
 .cookie-btn {
-    /* Estilo del botón de aceptar */
-    flex-shrink: 0; /* Evita que el botón se haga pequeño */
+    flex-shrink: 0; 
     padding: 8px 15px;
     background-color: var(--color-coral, #C2948A); 
     color: white;
@@ -65,12 +61,11 @@
 
 /* Estilos para el Bloque de Información Personal (Reemplazo del Formulario) */
 .personal-contact-info {
-    /* Mantenemos el mismo estilo de contenedor que el formulario anterior */
     padding: 25px;
     background-color: #fefefe;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    flex: 2; /* Ocupa 2/3 del espacio en escritorio, similar al formulario */
+    flex: 2; 
 }
 
 .personal-contact-info h2 {
@@ -85,13 +80,11 @@
     display: block;
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Hace que la foto sea circular */
+    border-radius: 50%; 
     object-fit: cover;
-    margin: 0 auto 20px auto; /* Centra la foto y agrega margen inferior */
-    border: 3px solid var(--color-coral, #C2948A); /* Borde de marca */
+    margin: 0 auto 20px auto; 
+    border: 3px solid var(--color-coral, #C2948A); 
 }
-
-
 .personal-contact-info p {
     font-family: var(--font-body);
     font-size: 1rem;
@@ -100,8 +93,6 @@
     text-align: center;
     margin-bottom: 25px;
 }
-
-
 .direct-contact-links {
     padding: 15px;
     border: 1px dashed var(--color-coral, #C2948A);
@@ -139,19 +130,12 @@
 
 /* header styles */
 header {
-    
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    
-   
     background-color: var(--color-header, #34B1BF); 
-    
-    
     transition: background-color 0.3s ease, padding 0.3s ease;
-    
-    
     padding: 1rem 0; 
     border-bottom: 10px solid var(--color-gold, #F2C335); 
     font-family: var(--font-heading);
@@ -163,8 +147,6 @@ header.scrolled {
     
     background-color: rgba(52, 177, 191, 0.1); 
     border-bottom-color: transparent; 
-
-   
     padding: 0.5rem 0; 
 }
 header.scrolled .logo img {
@@ -178,18 +160,13 @@ header.scrolled .brand h2 {
     color: var(--color-contrast, #333333); 
 }
 
-
 header.scrolled .menu-toggle {
     color: var(--color-contrast, #333333);
 }
-
-
 .brand {
   display: flex;
   align-items: center; 
 }
-
-
 .brand h2 {
    
   font-family: var(--font-heading);
@@ -206,8 +183,6 @@ header.scrolled .menu-toggle {
   border-radius: 50%; 
   display: block; 
 }
-
-
 body{
    overflow-x: hidden;
     margin: 0;
@@ -226,8 +201,6 @@ body{
   margin: 0 auto;
   
 }
-
-
 main h1 {
    
 margin-top: 0;
@@ -255,8 +228,6 @@ margin-top: 0;
 .nav-menu a:hover {
   color:var(--color-contrast);
 }
-
-
 .menu-toggle {
   font-size: 28px;
   background: none;
@@ -279,10 +250,8 @@ margin-top: 0;
   width: 100%;
   z-index: 50;
    overflow: hidden;
-  height: 60vh;
-    
+  height: 60vh;   
 }
-
 
 .video-local-container {
     
@@ -448,8 +417,6 @@ h3 {
     height: 250px;
   }
 }
-
-
 /*footer styles*/
 footer {
   background-color: #F2E6D0;
@@ -487,8 +454,6 @@ footer {
     color: var(--color-contrast, white); 
     text-align: center;
     padding: 10px 20px;
-    
-    
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -541,9 +506,6 @@ footer {
 .social-icons a:hover img {
   filter: brightness(0.8) invert(1); 
 }
-
-
-
 
 .privacy-container {
     padding-top: 100px; 
