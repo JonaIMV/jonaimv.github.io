@@ -104,55 +104,62 @@
   },
   {
     "id": 4,
-    "title": "Lot for sale Regatta Puerto Morelos",
-    "description": "Eco lot at Regatta gate community.",
-    "extendedDescription": "Terreno residencial con uso de suelo unifamiliar. Ubicado en el corazón del desarrollo Regatta, conocido por su enfoque ecológico y sustentable. Listo para construir la casa de tus sueños.",
-    "price": "$50,000",
-    "image": "images/regatta.webp",
-    "alt": "Eco lot at Regatta gate community",
+    "title": "Terrenos en venta en Regatta Puerto Morelos",
+    "description": "2 terrenos juntos en venta en Puerto Morelos .",
+    "extendedDescription": "2 Terrenos en residencial con uso de suelo unifamiliar. Ubicados en el corazón del desarrollo Regatta, conocido por su enfoque ecológico y sustentable. Listos para construir la casa de tus sueños.",
+    "price": "$1,800,000 MXN",
+    "image": "images/regatta/amenidades.webp",
+    "alt": "Eco lot at Regatta gate community mangrove view puerto morelos",
     "location": "Puerto Morelos",
     "type": "land",
     "virtualTourUrl": "",
     "galleryPhotos": [
-      "images/prop4/lote1.webp"
+      "images/regatta/aerea.webp",
+      "images/regatta/aerea-2.webp",
+      "images/regatta/aerea-1.webp",
+      "images/regatta/alberca.webp",
+      "images/regatta/entrada.webp"
     ],
     "features": [
       "Terreno unifamiliar",
-      "160 m²",
+      "160 m² cada uno",
       "Libre de gravamen"
     ],
     "amenities": [
-      "Acceso a club de playa (convenio)",
+      "Alberca familiar",
       "Áreas verdes protegidas",
       "Seguridad y acceso controlado"
     ],
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15582.45931758229!2d-86.8778368823293!3d20.84024346808794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e437c3a078e47%3A0xc6c7689033333333!2sRegatta%20Residencial!5e0!3m2!1sen!2smx!4v1678888888888"
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3134.7249163431684!2d-86.88802479761543!3d20.878612213486928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1760809591391!5m2!1ses-419!2smx"
   },
   {
     "id": 5,
-    "title": "Eco lot for sale in Puntavista Puerto Morelos",
-    "description": "Eco lot in Puntavista gate community.",
+    "title": "Eco lote en Venta Puntavista Puerto Morelos",
+    "description": "Eco lotes con vista al manglar.",
     "extendedDescription": "Lote en privada dentro de Punta Vista, ideal para construir una residencia de dos niveles con todas las comodidades. Disfrute de la infraestructura de un residencial de lujo a un precio de oportunidad.",
-    "price": "$85,000",
-    "image": "images/puntavista-lot.webp",
-    "alt": "Eco lot in Puntavista gate community",
+    "price": "$1,450,000 MXN",
+    "image": "images/lotes-puntavista/alberca.webp",
+    "alt": "Eco lot in Puntavista gate community mangroove view",
     "location": "Puerto Morelos",
     "type": "land",
     "virtualTourUrl": "",
     "galleryPhotos": [
-      "images/prop5/lote.webp"
+      "images/lotes-puntavista/aerea-1.webp",
+      "images/lotes-puntavista/aerea-2.webp",
+      "images/lotes-puntavista/frontal.webp",
+      "images/lotes-puntavista/alberca.webp"
     ],
     "features": [
       "Terreno en privada",
-      "250 m²",
+      "160 m²",
       "Uso de suelo residencial"
     ],
     "amenities": [
-      "Casa club con alberca",
-      "Canchas deportivas",
+      "Palapa ",
+      "Alberca",
       "Vigilancia 24/7"
     ],
-    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15581.54716183313!2d-86.8756087!3d20.8501237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e444444444444%3A0x6a0f444444444444!2sResidencial%20Punta%20Vista!5e0!3m2!1sen!2smx!4v1678888888889"
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.820253575808!2d-86.88905414385414!3d20.874043327098708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2be0fd97f931%3A0x63caff9188902318!2sResidencial%20Puntavista!5e0!3m2!1ses-419!2smx!4v1760809705620!5m2!1ses-419!2smx"
   },
   {
     "id": 6,
