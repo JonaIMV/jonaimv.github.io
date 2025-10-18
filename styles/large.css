@@ -135,5 +135,53 @@
         flex: 1 1 100%;
         min-width: unset;
      }
+    body.theme-fall .brand h2::after { 
+        content: '';
+        display: inline-block; 
+        vertical-align: middle;
+        width: 40px; 
+        height: 40px;
+        margin-left: 10px;         
+        background-image: url('../images/decor/arbol.svg'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+    
      
   }
+  body.theme-winter .brand h2::after { 
+        content: '';
+        display: inline-block; 
+        vertical-align: middle; 
+        width: 40px; 
+        height: 40px;
+        margin-left: 10px; 
+        background-image: url('../images/decor/winter.svg'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     body.theme-spring .brand h2::after { 
+        content: '';
+        display: inline-block; 
+        vertical-align: middle; 
+        width: 40px; 
+        height: 40px;
+        margin-left: 10px; 
+        background-image: url('../images/decor/primavera.svg'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    body.theme-summer .brand h2::after { 
+        content: '';
+        display: inline-block; 
+        vertical-align: middle; 
+        width: 40px; 
+        height: 40px;
+        margin-left: 10px; 
+        background-image: url('../images/decor/verano.svg'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+     
+  }
+     
+

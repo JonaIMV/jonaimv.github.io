@@ -11,7 +11,8 @@ import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
 import { initScrollReveal } from './scroll-reveal-config.js';
 import { initRoiCalculator } from './roi-calculator.js'; 
-import { initPropertyFilters } from './property-filters.js'; 
+import { initPropertyFilters } from './property-filters.js';
+import { determineAndApplySeason } from './seasonal-theme.js'; 
 
 
 window.displayReview = displayReview;
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initHeaderScroll();
     initScrollReveal();
     initRoiCalculator();
+    determineAndApplySeason();
 
     // ... otros inicializadores ...
     if (document.getElementById('client-portraits')) {
@@ -117,4 +119,5 @@ document.addEventListener("DOMContentLoaded", async () => {
             mobile: true 
         });
     }
+    
 });

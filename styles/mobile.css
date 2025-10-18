@@ -525,3 +525,47 @@ footer {
     margin-bottom: 30px;
     text-align: center;
 }
+
+/* --- ESTILOS DE ADORNOS ESTACIONALES --- */
+@media (max-width: 768px) {
+    header::after {
+        content: none !important; /* Deshabilita el adorno fijo que choca con el toggle */
+    }
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    
+    right: 15px;
+    width: 70px; 
+    height: 70px;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1001; 
+    pointer-events: none; 
+}
+
+
+body.theme-fall header::after {
+    
+    background-image: url('../images/decor/arbol.svg');
+}
+
+
+body.theme-winter header::after {
+    
+    background-image: url('..images/decor/winter.svg');
+    right: 25px; 
+}
+
+
+body.theme-spring header::after {
+    background-image: url('..images/decor/primavera.svg');
+}
+
+
+body.theme-summer header::after {
+    background-image: url('..images/decor/verano.svg'); 
+}
