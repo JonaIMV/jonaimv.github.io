@@ -25,6 +25,7 @@ function generateDetailHtml(property) {
     const featuresHtml = featuresList.map(item => `<li class="reveal-bottom">✅ ${item}</li>`).join('');
 
     const tourHtml = property.virtualTourUrl ? `
+    
         <section class="location-section reveal-bottom">
             <h2>Recorrido Virtual 360°</h2>
             <div class="virtual-tour-iframe-wrapper">
@@ -40,6 +41,7 @@ function generateDetailHtml(property) {
     ` : '';
     
     const mapHtml = property.googleMapsEmbedUrl ? `
+    
         <section class="location-section reveal-bottom">
             <h2>Ubicación en el Mapa</h2>
             <div class="map-container">
@@ -56,6 +58,7 @@ function generateDetailHtml(property) {
     ` : '';
 
     return `
+    
         <article class="property-detail-article">
             <h1 class="reveal-bottom">${property.title}</h1>
             <p class="property-price-tag reveal-bottom">${property.price}</p>
