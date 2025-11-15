@@ -12,7 +12,7 @@ function displayReview(element) {
         return;
     }
 
-    // 1. Aplicar animación (reinicio)
+    // 1. Aplicar animación
     reviewDisplay.classList.remove('animate');
     void reviewDisplay.offsetWidth; 
     reviewDisplay.classList.add('animate');
@@ -22,14 +22,11 @@ function displayReview(element) {
     reviewDisplay.querySelector('.reviewer-name').textContent = `– ${reviewerName}`;
     
     // -------------------------------------------------------------
-    // 🚨 INTEGRACIÓN WEGLOT 🚨
-    // 3. Si Weglot está inicializado, fuerza la traducción del bloque inyectado.
-    if (typeof Weglot !== 'undefined' && Weglot.initialized) {
-        // Usa onContextChange para asegurarse de que la traducción se aplique correctamente
-        Weglot.onContextChange(function() {
-            // Llama a la función translate() de Weglot para traducir el elemento
-            Weglot.translate(reviewDisplay); 
-        });
+    // 🚨 INTEGRACIÓN WEGLOT CORREGIDA 🚨
+    // Llama directamente a Weglot.translate() para traducir el bloque.
+    if (typeof Weglot !== 'undefined') {
+        // La forma más compatible de forzar la traducción de un bloque
+        Weglot.translate(reviewDisplay); 
     }
     // -------------------------------------------------------------
 }
