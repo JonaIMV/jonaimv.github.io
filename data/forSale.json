@@ -228,6 +228,44 @@
       "Cercanía a la playa"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469"
+
+  },
+
+  {
+    "id": 8,
+    "title": "Casa en Venta en Residencial Aldea Umm",
+    "description": "Casa en venta en residencial privado Aldea Umm.",
+    "extendedDescription": "Hermosa casa en venta ubicada en el exclusivo residencial Aldea Umm, Puerto Morelos. Esta propiedad cuenta con 4 habitaciones, 4 baños completos, cocina equipada y Alberca. Aldea Umm ofrece seguridad las 24 horas, áreas verdes y amenidades para toda la familia.",
+    "price": "$6,250,000 MXN",
+    "image": "images/aldea-umm/fachada.webp",
+    "alt": "Casa en Aldea Umm Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "virtualtours/aldea-umm/aldea-umm.html",
+    "galleryPhotos": [
+      "images/aldea-umm/sala.webp",
+      "images/aldea-umm/cocina.webp",
+      "images/aldea-umm/habitacion.webp",
+      "images/aldea-umm/baño.webp",
+      "images/aldea-umm/alberca.webp",
+      "images/aldea-umm/comedor.webp",
+      "images/aldea-umm/habitacion-master.webp",
+      "images/aldea-umm/sala-tv.webp",
+      "images/aldea-umm/baño-master.webp"
+    ],
+    "features": [
+      "4 Recámaras",
+      "4 Baños completos",
+      "200 m² de construcción",
+      "160 m² de terreno",
+      "Aires Acondicionados"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Áreas verdes"
+      
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.1234567890123!2d-86.91234567890123!3d20.87654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2be0fd97f931%3A0xabcdef1234567890!2sResidencial%20La%20Joya!5e0!3m2!1"
   }
 
 ]
