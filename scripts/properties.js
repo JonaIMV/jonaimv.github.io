@@ -108,21 +108,34 @@ function renderPropertyDetail(property, mainContainer) {
 
  
 export async function loadProperties(containerId, jsonUrl) {
+    const container = document.getElementById(containerId);
     try {
         const response = await fetch(jsonUrl);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-
-        const properties = await response.json();
-        const container = document.getElementById(containerId);
         
-        
-        if (container) {
-            renderProperties(properties, container); 
+        if (!response.ok) {
+            // Si el JSON no se encuentra (404) o hay un error de red
+            throw new Error(`Error al cargar datos: HTTP ${response.status}`);
         }
 
+        const properties = await response.json();
+
+        if (container) {
+            // Si todo va bien, renderiza
+            renderProperties(properties, container); 
+        }
+        
         return properties; 
+
     } catch (error) {
-        console.error('Error loading properties:', error);
+        console.error('Error al cargar propiedades:', error);
+        
+        // 🚨 Muestra el error al usuario si el contenedor existe
+        if (container) {
+             container.innerHTML = `<p style="color: red; text-align: center; margin-top: 50px;">
+                                        ⚠️ Error: No se pudieron cargar las propiedades. 
+                                        Revise la ruta del archivo JSON.
+                                    </p>`;
+        }
         return [];
     }
 }
