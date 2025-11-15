@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
-    "description": "Cozy apartment in gated community, 2 bedrooms, 1 bath.",
+    "description": "Bonito departamento en residencial privado, 2 habitaciones 1 baño.",
     "extendedDescription": "Acogedor apartamento ubicado en el tranquilo residencial Selva Escondida. Perfecto para rentas vacacionales o residencia permanente. Disfrute de seguridad 24/7 y acceso a una gran alberca común y palapa. Se vende semi-amueblado y listo para habitar. Visita el tour virtual para conocer mas de esta propiedad.",
     "price": "$2,300,000 MXN",
     "image": "images/selva-26-h/selva26H.webp",
@@ -194,6 +194,40 @@
       "Area de asador"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760742673574!6m8!1m7!1szicz57swGACyTP-3XLE5aw!2m2!1d20.87040780617195!2d-86.9059090304031!3f178.07151176737258!4f-15.077935848906023!5f0.7820865974627469"
+  },
+
+  {
+    "id": 7,
+    "title": "Departamento en Renta y en Venta",
+    "description": "Bonito departamento en residencial privado, 2 habitaciones 1 baño.",
+    "extendedDescription": "Hermoso departamento en RENTA y VENTA ubicada en el exclusivo residencial Selva Escondida, Puerto Morelos. Esta propiedad cuenta con 2 habitaciones, 1 baño completo, cocina equipada y un acogedora sala. Selva Escondida  ofrece seguridad las 24 horas, áreas verdes y amenidades para toda la familia.",
+    "price": "$2,400,000 MXN/15,900 MXN mes",
+    "image": "images/selva-16-g/16-g.webp",
+    "alt": "Departamento en Selva escondida",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "virtualtours/selva-16g/selva-16g.html",
+    "galleryPhotos": [
+      "images/selva-16-g/sala.webp",
+      "images/selva-16-g/cocina.webp",
+      "images/selva-16-g/comedor.webp",
+      "images/selva-16-g/habitacion.webp",
+      "images/selva-16-g/habitacion-1.webp",
+      "images/selva-16-g/baño.webp"
+    ],
+    "features": [
+      "3 Recámaras",
+      "2 Baños completos",
+      "150 m² de construcción",
+      "250 m² de terreno",
+      "Aires Acondicionados"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Áreas verdes",
+      "Cercanía a la playa"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469"
   }
 
 ]
