@@ -82,6 +82,7 @@ function generateDetailHtml(property) {
             ${mapHtml}
         </article>
     `;
+    
 }
 
 async function loadPropertyDetails() {

@@ -253,6 +253,7 @@
       "images/aldea-umm/sala-tv.webp",
       "images/aldea-umm/baño-master.webp"
     ],
+    
     "features": [
       "4 Recámaras",
       "4 Baños completos",
@@ -266,6 +267,8 @@
       
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1317.8364416635986!2d-86.88170802101804!3d20.89604615661797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1763233339251!5m2!1ses!2smx"
+
+  
   }
 
 ]
