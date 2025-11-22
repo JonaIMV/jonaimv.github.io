@@ -33,6 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/roi-calculator.css">
     <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
 </head>
 <body>
@@ -134,6 +135,11 @@ No tengo palabras para agradecerle todo el acompañamiento y la orientación dur
             data-review="Gracias a Jonathan siempre hemos encontrado excelentes inquilinos en muy poco tiempo . Muy profesiónal y te acompaña en todo el proceso haciendo la experiencia de rentar muy llevadera. También nos ha ayudado a vender propiedades y se encarga de hacer el proceso fluido y rápido. Para cualquier tema relacionado con bienes raíces siempre recurrimos a Jonathan como primera opción!."
             onclick="displayReview(this)">
         </div>
+        <div class="testimonial-cta-wrapper">
+        <a href="for-sale.html" class="final-cta">
+            Propiedades Disponibles
+        </a>
+    </div>
          </section>
          <section class="investment-guide-section">
             <h2>3 Pasos Clave para Invertir en el Caribe</h2>
@@ -156,6 +162,51 @@ No tengo palabras para agradecerle todo el acompañamiento y la orientación dur
                     <p>Se realiza el pago final y la firma de la escritura pública ante notario. Nuestro equipo te acompaña hasta la entrega de llaves y te asesora en la administración o renta de la propiedad posterior al cierre. ¡Felicidades, eres dueño en el Caribe!</p>
                 </div>
 
+            </div>
+        </section>
+        <section class="roi-home-section reveal-bottom">
+            <div class="roi-calculator-wrapper">
+                <h2>Calcula la Rentabilidad </h2>
+                <p class="roi-description">Obtén una proyección estimada de ingresos por renta vacacional en la Riviera Maya.</p>
+                
+                <div class="roi-input-group">
+                    <label for="property-price-home">Precio de la Propiedad (USD)</label>
+                    <input type="number" id="property-price-home" min="100000" step="1000" placeholder="Ej: 250000">
+                </div>
+                
+                <div class="roi-input-group">
+                    <label for="monthly-rent-home">Renta Mensual Estimada (USD)</label>
+                    <input type="number" id="monthly-rent-home" min="100" step="50" placeholder="Ej: 1800">
+                </div>
+
+                <div class="roi-input-group">
+                    <label for="occupancy-rate-home">Tasa de Ocupación (%)</label>
+                    <input type="number" id="occupancy-rate-home" min="10" max="100" step="1" placeholder="Ej: 70">
+                </div>
+                
+                <button id="calculate-roi-home-btn" class="submit-btn">Calcular ROI</button>
+                
+                <table id="roi-results-table-home">
+                    <thead>
+                        <tr>
+                            <th colspan="2">Proyección Anual</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingreso Anual Bruto:</td>
+                            <td id="annual-gross-home">--</td>
+                        </tr>
+                        <tr>
+                            <td>Retorno Anual (ROI):</td>
+                            <td id="annual-roi-home" class="result-highlight">--</td>
+                        </tr>
+                        <tr>
+                            <td>Período de Recuperación:</td>
+                            <td id="payback-period-home">--</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
@@ -182,5 +233,13 @@ No tengo palabras para agradecerle todo el acompañamiento y la orientación dur
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="scripts/main.js"></script>
+    <div id="featuredModal" class="modal-featured">
+    <div class="modal-content-featured">
+        <span class="close-featured-btn">&times;</span>
+        
+        <div id="featured-content">
+            </div>
+    </div>
+</div>
 </body>
 </html>

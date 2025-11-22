@@ -525,11 +525,14 @@ footer {
     text-align: center;
 }
 
+
 /* --- ESTILOS DE ADORNOS ESTACIONALES --- */
 @media (max-width: 768px) {
     header::after {
         content: none !important; /* Deshabilita el adorno fijo que choca con el toggle */
     }
+    
+
 }
 
 header::after {
@@ -567,4 +570,103 @@ body.theme-spring header::after {
 
 body.theme-summer header::after {
     background-image: url('..images/decor/verano.svg'); 
+}
+/* Estilos para el Modal Flotante */
+.modal-featured {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 2000; /* Alto z-index para estar sobre todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    overflow: auto;
+}
+
+.modal-content-featured {
+    background-color: white;
+    margin: 10% auto; /* Centrado verticalmente */
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 650px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+.close-featured-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.featured-card h3 {
+    font-family: var(--font-heading);
+    color: var(--color-coral);
+    margin-top: 0;
+}
+.featured-card a {
+   
+    display: inline-block;
+    background-color: var(--color-botones);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* 1. Contenedor de la Tarjeta Destacada (Padre) */
+.featured-card {
+    /* 🚨 CLAVE 1: Oculta cualquier cosa que se salga del contenedor */
+    overflow: hidden; 
+    
+    /* Asegura que la tarjeta use todo el ancho del modal (que ya tiene max-width) */
+    width: 100%; 
+    padding: 0; /* Elimina cualquier padding interno que cause confusión */
+    
+    /* ... (otros estilos de borde y sombra) ... */
+}
+
+/* 2. Imagen dentro de la Tarjeta */
+.featured-card img {
+    /* 🚨 CLAVE 2: Forzar el escalado y el ajuste */
+    width: 100% !important;    /* Debe ser 100% del padre (que está en overflow: hidden) */
+    height: auto !important;   /* Mantiene la proporción */
+    max-width: 100% !important; /* Máxima prioridad */
+    
+    /* Opcional: Asegura que la imagen llene el espacio sin distorsión (si el contenedor tiene altura fija) */
+    object-fit: cover; 
+    
+    /* Estilos visuales */
+    border-radius: 8px;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+}
+.testimonial-cta-wrapper {
+    display:inline-block;
+    padding:.5rem 1rem;
+    background:var(--color-botones);
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:700;
+}
+.final-cta:hover,
+.final-cta:focus,
+.final-cta:visited {
+    color: #fff !important; /* Forzar el color blanco en todos los estados de enlace */
+}
+/* El estilo de .final-cta ya se aplica, pero reforzamos que sea un bloque para centrarlo */
+.testimonial-cta-wrapper .final-cta {
+    display: inline-block;
+    max-width: 400px; /* Limita el ancho para que no se extienda en exceso */
 }

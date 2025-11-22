@@ -2,123 +2,90 @@
 
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
-import { loadProperties, renderProperties, renderPropertyDetail } from './properties.js'; 
-import { showLastViewedProperty } from './property-modal.js';
+import { loadProperties, renderProperties, renderPropertyDetail } from './properties.js';
+
 import { loadExchangeRates } from './exchange-rates.js';
-import { initContactForm } from './form-handler.js';
+
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
 import { initScrollReveal } from './scroll-reveal-config.js';
-import { initRoiCalculator } from './roi-calculator.js'; 
+import { initRoiCalculator } from './roi-calculator.js'; // Contact Page ROI
 import { initPropertyFilters } from './property-filters.js';
 import { determineAndApplySeason } from './seasonal-theme.js';
+import { initFeaturedModal } from './featured-modal.js';
+import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; // Homepage ROI
+ 
 
 
 window.displayReview = displayReview;
 
 function getPropertyIdFromUrl() {
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get('id');
-    return id ? parseInt(id) : null;
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    return id ? parseInt(id) : null;
 }
 
-
 document.addEventListener("DOMContentLoaded", async () => {
-    initMenuToggle();
-    highlightCurrentPage();
-    initCookieConsent(); 
-    initHeaderScroll();
-    initScrollReveal();
-    initRoiCalculator();
-    determineAndApplySeason();
-    
-    // ... otros inicializadores ...
-    if (document.getElementById('client-portraits')) {
-        initReviews();
-    }
-    if (
-        document.getElementById('usd-rate') ||
-        document.getElementById('eur-rate') ||
-        document.getElementById('cad-rate')
-    ) {
-        loadExchangeRates();
-    }
-    initContactForm();
-    if (window.location.pathname.endsWith('thankyou.html')) {
-        initThankYouPage();
-    }
-    
-    
-    //  LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO 
-    const propertiesContainer = document.getElementById('properties-container');
-    const mainElement = document.querySelector('main');
-    const propertyId = getPropertyIdFromUrl();
+    
+    // 1. Inicializaciones Globales y Estacionales
+    initMenuToggle();
+    highlightCurrentPage();
+    initCookieConsent(); 
+    initHeaderScroll();
+    initScrollReveal();
+    determineAndApplySeason();
+    
+    // Si estamos en la Home Page (index.html)
+    if (document.getElementById('client-portraits')) {
+        initReviews();
+        initFeaturedModal();
+        
+        // 🚨 INTEGRACIÓN SEGURA DE ROI HOME 🚨
+        if (document.getElementById('calculate-roi-home-btn')) {
+            initRoiCalculatorHome(); // Solo se inicializa si el botón existe
+        }
+    }
 
-    
-    if (mainElement && (window.location.pathname.includes('for-sale.html') || propertyId)) {
-        
-        
-        const allProperties = await loadProperties(null, 'data/forSale.json');
+    // Si estamos en la Contact Page (Calculadora de Contacto y Exchange Rates)
+    if (document.getElementById('calculate-roi-btn')) { // Botón principal de ROI en Contacto
+        initRoiCalculator(); 
+    }
+    
+    if (document.getElementById('usd-rate')) { // Indicador de que estamos en una página con herramientas
+        loadExchangeRates();
+    }
+    
+    // ... (El resto de tu lógica de propiedades y ruteo dinámico) ...
+    const propertiesContainer = document.getElementById('properties-container');
+    const mainElement = document.querySelector('main');
+    const propertyId = getPropertyIdFromUrl();
+    
+    // 2. LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO
+    if (window.location.pathname.includes('for-sale.html') || propertyId) { 
+        
+        const allProperties = await loadProperties(null, 'data/forSale.json');
 
-        if (allProperties.length > 0) {
-            if (propertyId) {
-                
-                const property = allProperties.find(p => p.id === propertyId);
-                
-                
-                mainElement.innerHTML = ''; 
-
-                if (property) {
-                    renderPropertyDetail(property, mainElement);
-                } else {
-                    mainElement.innerHTML = `<h1>Propiedad no encontrada. ID: ${propertyId}</h1>`;
-                    document.title = 'Error 404 | TuCasa Caribe Realty';
-                }
-                
-            } else if (propertiesContainer) {
-                
-                
-                
-                renderProperties(allProperties, propertiesContainer); 
-
-                
-                initPropertyFilters(allProperties);
-            }
-        } else if (propertiesContainer) {
-            propertiesContainer.innerHTML = '<p>Lo sentimos, no hay propiedades disponibles en este momento.</p>';
-        }
-    }
-
-   
-    const lastViewedContainer = document.getElementById('lastViewedPropertyContainer');
-    if (lastViewedContainer) {
-        showLastViewedProperty();
-    }
-
-    // Lógica del Footer
-    const lastModifiedEl = document.getElementById("lastModified");
-    if (lastModifiedEl) {
-        lastModifiedEl.textContent = `Last Modified: ${document.lastModified}`;
-    }
-
-    const yearEl = document.getElementById("year");
-    if (yearEl) {
-        yearEl.textContent = new Date().getFullYear();
-    }
-    
-    // Inicialización final de ScrollReveal
-    if (typeof ScrollReveal !== 'undefined') {
-        ScrollReveal().reveal('.reveal', { 
-            delay: 200,     
-            duration: 800, 
-            easing: 'ease-in-out',
-            interval: 60,   
-            origin: 'bottom',
-            distance: '20px',
-            mobile: true 
-        });
-        
-    }
-    
+        if (allProperties.length > 0) {
+            
+            if (propertyId && mainElement) { // PÁGINA DE DETALLE
+                const property = allProperties.find(p => p.id === propertyId);
+                
+                if (property) {
+                    mainElement.innerHTML = ''; 
+                    renderPropertyDetail(property, mainElement);
+                } else {
+                    mainElement.innerHTML = `<h1>Propiedad no encontrada. ID: ${propertyId}</h1>`;
+                }
+            
+            } else if (propertiesContainer) { // PÁGINA DE LISTADO
+                renderProperties(allProperties, propertiesContainer); 
+                initPropertyFilters(allProperties);
+            }
+        }
+    }
+    
+    // ... (Inicializadores finales: showLastViewedProperty, initThankYouPage, Footer Logic) ...
+    // Asegúrate de que las llamadas a estas funciones estén fuera de los bloques 'if' de la página.
+    // ...
 });
