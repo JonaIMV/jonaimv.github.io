@@ -278,8 +278,8 @@
     "extendedDescription": "Increible departamento en la Rivera Maya, con 2 habitaciones, 2 baños completos, amueblado y listo para vivir, rentar en Airbnb  a 5 minutos de la playa y caleta de Akumal, encontraras tranquilidad y silencio en esta unidad ya que se encuentra en una ubicacion increible, junto a la zona de selva. Ahí mismo encontraras contacto con la naturaleza y un espacio seguro para descansar despues de un dia de tours.",
     "price": "$300,000 USD",
     "image": "images/yal-ku/caleta.webp",
-    "alt": "Naay Selva escondida departamento planta alta",
-    "location": "Puerto Morelos",
+    "alt": "Departamento Akumal Yal-Ku caleta Yal-ku",
+    "location": "Akumal",
     "type": "condo",
     "virtualTourUrl": "virtualtours/yal-ku/yalku.html",
     "galleryPhotos": [
@@ -297,8 +297,10 @@
     "features": [
       "2 Recámaras",
       "2 Baños completos",
-      "70 m² de construcción",
-      "Aires Acondicionados"
+      "99.95 m² de construcción",
+      "Aires Acondicionados",
+      "381 m² de terreno",
+      "Planta baja"
     ],
     "amenities": [
       "Alberca común",
@@ -308,6 +310,42 @@
       "Area de asador"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5288.141387410195!2d-87.30780572066075!3d20.411635795928458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1763830371016!5m2!1ses!2smx"
+},
+{
+    "id": 10,
+    "title": "Casa en Venta Xcaret Playa del Carmen",
+    "description": "Increible casa en venta en la exclusiva area de los parques de  Xcaret Playa del Carmen.",
+    "extendedDescription": "Casa en VENTA en paseo de los sentidos en direccion a Xenses  y Xcaret. Encontraras seguridad las 24 horas, naturaleza al rededor , acceso directo a los parques, con la membresia anual de Xcaret podras acceder todos los dias al parque, te incluimos dos años de membresia. La casa es un increible lugar para vacacionar y una excelente opcion para negocio en renta vacacional.",
+    "price": "$880,000. USD",
+    "image": "images/piedra/fachada.webp",
+    "alt": "Terreno en Aldea Umm Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "virtualtours/piedra/casa-piedra.html",
+    "galleryPhotos": [
+      "images/piedra/fachada.webp",
+      "images/piedra/sala.webp",
+      "images/piedra/comedor.webp",
+      "images/piedra/alberca.webp",
+      "images/piedra/habitacion.webp",
+      "images/piedra/master.webp",
+      "images/piedra/balcon.webp",
+      "images/piedra/sala-tv.webp"
+    ],
+    
+    "features": [
+      "661 m² de terreno",
+      "Uso de suelo residencial",
+      "391 m² de construcción",
+      "Alberca",
+      "Jardin privado"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Acceso directo a los parques Xcaret"
+      
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233.43572281161303!2d-87.12929633600481!3d20.589218800174407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1764105319623!5m2!1ses!2smx"
 }
 
 ]

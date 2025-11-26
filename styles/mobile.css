@@ -571,22 +571,22 @@ body.theme-spring header::after {
 body.theme-summer header::after {
     background-image: url('..images/decor/verano.svg'); 
 }
-/* Estilos para el Modal Flotante */
+
 .modal-featured {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: fixed;
-    z-index: 2000; /* Alto z-index para estar sobre todo */
+    z-index: 2000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     overflow: auto;
 }
 
 .modal-content-featured {
     background-color: white;
-    margin: 10% auto; /* Centrado verticalmente */
+    margin: 10% auto;
     padding: 30px;
     border-radius: 10px;
     width: 90%;
@@ -624,29 +624,17 @@ body.theme-summer header::after {
     margin-top: 10px;
 }
 
-/* 1. Contenedor de la Tarjeta Destacada (Padre) */
-.featured-card {
-    /* 🚨 CLAVE 1: Oculta cualquier cosa que se salga del contenedor */
-    overflow: hidden; 
-    
-    /* Asegura que la tarjeta use todo el ancho del modal (que ya tiene max-width) */
-    width: 100%; 
-    padding: 0; /* Elimina cualquier padding interno que cause confusión */
-    
-    /* ... (otros estilos de borde y sombra) ... */
-}
 
-/* 2. Imagen dentro de la Tarjeta */
+.featured-card {
+    overflow: hidden; 
+    width: 100%; 
+    padding: 0; 
+}
 .featured-card img {
-    /* 🚨 CLAVE 2: Forzar el escalado y el ajuste */
-    width: 100% !important;    /* Debe ser 100% del padre (que está en overflow: hidden) */
-    height: auto !important;   /* Mantiene la proporción */
-    max-width: 100% !important; /* Máxima prioridad */
-    
-    /* Opcional: Asegura que la imagen llene el espacio sin distorsión (si el contenedor tiene altura fija) */
+    width: 100% !important;   
+    height: auto !important; 
+    max-width: 100% !important; 
     object-fit: cover; 
-    
-    /* Estilos visuales */
     border-radius: 8px;
     margin-top: 15px; 
     margin-bottom: 15px;
@@ -663,10 +651,9 @@ body.theme-summer header::after {
 .final-cta:hover,
 .final-cta:focus,
 .final-cta:visited {
-    color: #fff !important; /* Forzar el color blanco en todos los estados de enlace */
+    color: #fff !important; 
 }
-/* El estilo de .final-cta ya se aplica, pero reforzamos que sea un bloque para centrarlo */
 .testimonial-cta-wrapper .final-cta {
     display: inline-block;
-    max-width: 400px; /* Limita el ancho para que no se extienda en exceso */
+    max-width: 400px; 
 }
