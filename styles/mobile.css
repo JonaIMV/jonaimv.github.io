@@ -558,7 +558,7 @@ body.theme-fall header::after {
 
 body.theme-winter header::after {
     
-    background-image: url('..images/decor/winter.svg');
+    background-image: url('../images/decor/winter.svg');
     right: 25px; 
 }
 
