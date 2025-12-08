@@ -346,6 +346,49 @@
       
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233.43572281161303!2d-87.12929633600481!3d20.589218800174407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1764105319623!5m2!1ses!2smx"
+},
+{
+    "id": 11,
+    "title": "Casa en Venta Puntarena Puerto Morelos",
+    "description": "Hermosa casa en venta en residencial privado Puntarena Puerto Morelos.",
+    "extendedDescription": "Casa en VENTA en el exclusivo residencial Puntarena,en el corazón de Puerto Morelos. Encontraras seguridad las 24 horas, naturaleza al rededor , ubicacion privilegiada, ideal para familias que buscan un lugar seguro y tranquilo para vivir o vacacionar. La casa cuenta con acabados de lujo y un diseño moderno. La comunidad de Puntarena es increiblemente unida y segura, ideal para familias con niños.",
+    "price": "$11,200,000 MXN",
+    "image": "images/puntarena/fachada-1.webp",
+    "alt": "Casa en venta Puntarena Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/puntarena/fachada-1.webp",
+      "images/puntarena/recibidor.webp",
+      "images/puntarena/comedor.webp",
+      "images/puntarena/sala.webp",
+      "images/puntarena/comedor-2.webp",
+      "images/puntarena/cocina.webp",
+      "images/puntarena/balcon-cocina.webp",
+      "images/puntarena/fachada-trasera.webp",
+      "images/puntarena/bañera.webp",
+      "images/puntarena/master.webp",
+      "images/puntarena/baño-master.webp",
+      "images/puntarena/recamara.webp",
+      "images/puntarena/habitacion.webp",
+      "images/puntarena/xala.webp"
+    ],
+    
+    "features": [
+      "160 m² de terreno",
+      "7 Aires Acondicionados inverter",
+      "4 Recámaras (principal con vestidor)"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Áreas verdes",
+      "5 minutos de la playa",
+      "Pickleball court",
+      "Alberca"
+      
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2217.0013728957097!2d-86.89984016586983!3d20.850394345058245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1765211455498!5m2!1ses!2smx"
 }
 
 ]
