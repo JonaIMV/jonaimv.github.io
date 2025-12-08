@@ -1,9 +1,9 @@
 
 const featuredData = {
-    title: " Propiedad Destacada de la Semana",
-    description: "Super oportunidad en Yal-Ku: Departamento de 2 recámaras con acceso privado a la caleta, planta baja y acceso a alberca. ¡Ideal para vivir o vacacionar!",
-    image: "images/yal-ku/caleta.webp", // Cambiamos imagen
-    link: "for-sale.html?id=9" // Cambiamos ID
+    title: " 🔥Propiedad Destacada 🔥",
+    description: "📢!!Casa completamente equipada y lista para habitar. Justo lo que necesita tu familia, nietos hijos o amigos. Alberca propia y con un área para practicar yoga. Ubicada en una zona tranquila y segura!!!.",
+    image: "images/puntarena/fachada-1.webp", // Cambiamos imagen
+    link: "for-sale.html?id=11" // Cambiamos ID
 };
 
 // Determina el contenido a mostrar
