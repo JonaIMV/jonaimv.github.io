@@ -27,7 +27,7 @@ function handleModal(action) {
         // Asegurarse de que solo se muestre una vez por sesión
         if (!sessionStorage.getItem('modalShown')) {
             document.getElementById('featured-content').innerHTML = getFeaturedContent();
-            // Usamos 'flex' (si tu CSS lo define) o 'block' para mostrar
+            // Usamos 'flex'  o 'block' para mostrar
             modal.style.display = 'block';
             sessionStorage.setItem('modalShown', 'true');
         }

@@ -129,7 +129,7 @@ export async function loadProperties(containerId, jsonUrl) {
     } catch (error) {
         console.error('Error al cargar propiedades:', error);
         
-        // 🚨 Muestra el error al usuario si el contenedor existe
+        //  Muestra el error al usuario si el contenedor existe
         if (container) {
              container.innerHTML = `<p style="color: red; text-align: center; margin-top: 50px;">
                                         ⚠️ Error: No se pudieron cargar las propiedades. 

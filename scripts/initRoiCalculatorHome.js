@@ -14,7 +14,7 @@ function formatCurrency(value) {
 }
 
 export function initRoiCalculatorHome() {
-    // 🚨 NOTA: Todos los IDs buscan el sufijo '-home' 🚨
+    //  NOTA: Todos los IDs buscan el sufijo '-home' 
     const calculateBtn = document.getElementById('calculate-roi-home-btn');
     
     // Verificación de existencia del botón principal

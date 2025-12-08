@@ -1,4 +1,4 @@
-// main.js
+
 
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         initReviews();
         initFeaturedModal();
         
-        // 🚨 INTEGRACIÓN SEGURA DE ROI HOME 🚨
+        // INTEGRACIÓN SEGURA DE ROI HOME 
         if (document.getElementById('calculate-roi-home-btn')) {
             initRoiCalculatorHome(); // Solo se inicializa si el botón existe
         }
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         loadExchangeRates();
     }
     
-    // ... (El resto de tu lógica de propiedades y ruteo dinámico) ...
+    
     const propertiesContainer = document.getElementById('properties-container');
     const mainElement = document.querySelector('main');
     const propertyId = getPropertyIdFromUrl();
@@ -85,7 +85,4 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }
     
-    // ... (Inicializadores finales: showLastViewedProperty, initThankYouPage, Footer Logic) ...
-    // Asegúrate de que las llamadas a estas funciones estén fuera de los bloques 'if' de la página.
-    // ...
 });
