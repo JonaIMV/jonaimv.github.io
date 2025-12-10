@@ -1160,7 +1160,7 @@ aside .submit-btn {
 .bento-sub {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columnas pequeñas */
-    grid-template-rows: 1fr 1fr;    /* 2 filas pequeñas */
+    grid-template-rows: 1fr 1fr;    
     gap: 10px;
 }
 
@@ -1169,11 +1169,10 @@ aside .submit-btn {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* CAMBIO CLAVE: Enfocar al centro exacto para las miniaturas */
     object-position: center center; 
     cursor: pointer;
     transition: opacity 0.3s;
-    border-radius: 4px; /* Pequeño redondeo en miniaturas */
+    border-radius: 4px; 
 }
 
 .bento-sub img:hover {
@@ -1195,7 +1194,7 @@ aside .submit-btn {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    background-color: rgba(0, 0, 0, 0.5);
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -1224,7 +1223,7 @@ aside .submit-btn {
     /* Estado inicial: Oculto */
     display: none; 
     opacity: 0;
-    transition: opacity 0.3s ease; /* Transición suave controlada por JS */
+    transition: opacity 0.3s ease; 
     
     justify-content: center;
     align-items: center;
@@ -1239,7 +1238,6 @@ aside .submit-btn {
 }
 
 .lightbox-content img {
-    /* Mismas reglas de protección para verticales que vimos antes */
     width: auto !important;
     height: auto !important;
     max-width: 95vw;
@@ -1247,7 +1245,7 @@ aside .submit-btn {
     object-fit: contain;
     border: 2px solid #fff;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    transition: transform 0.2s ease, opacity 0.2s ease; /* Para el efecto de zoom del script */
+    transition: transform 0.2s ease, opacity 0.2s ease; 
 }
 
 /* Botones del Lightbox */
@@ -1327,7 +1325,7 @@ aside .submit-btn {
 .youtube-iframe-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Ratio 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     border-radius: var(--border-radius);
@@ -1349,26 +1347,21 @@ aside .submit-btn {
     border: none;
 }
 .internal-page-container {
-    
     padding-top: 120px; 
-    
-    /* Centramos el contenido y limitamos el ancho para que no se vea desparramado */
     max-width: var(--container-width, 1200px); 
     margin: 0 auto; 
     padding-left: 20px;
     padding-right: 20px;
-    
-    /* Asegura altura mínima para que el footer no flote a mitad de pantalla si hay pocas casas */
     min-height: 80vh; 
 }
 
 /* 2. Título de Página (Luxury Style) */
 .page-title {
-    font-family: var(--font-heading); /* Playfair Display */
-    color: var(--primary-color);      /* Tu color Turquesa */
+    font-family: var(--font-heading); 
+    color: var(--primary-color);      
     font-size: 2.5rem;
-    text-align: center;               /* Centrado se ve más elegante */
-    margin-bottom: 40px;              /* Espacio antes de los filtros */
+    text-align: center;               
+    margin-bottom: 40px;              
     position: relative;
 }
 
@@ -1378,60 +1371,62 @@ aside .submit-btn {
     display: block;
     width: 60px;
     height: 3px;
-    background-color: var(--accent-color); /* Dorado */
+    background-color: var(--accent-color); 
     margin: 15px auto 0;
 }
 
 /* 3. Ajuste de Filtros (Para que también se alineen bien) */
 .filter-controls {
     display: flex;
-    justify-content: center; /* Centrar los filtros */
+    justify-content: center;
     gap: 20px;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Para que en móvil bajen */
+    flex-wrap: wrap; 
 }
-/* --- NOTIFICACIÓN DESLIZANTE (Slide-in Lateral) --- */
+/* --- NOTIFICACIÓN DESLIZANTE (Slide-in Lateral - Estilo Luxury) --- */
 
 /* 1. El Contenedor (Posición Fija Abajo Derecha) */
 .modal-featured {
-    display: none; /* Controlado por JS */
+    display: none; 
     position: fixed; 
     z-index: 2000; 
-    bottom: 30px; /* Separación del fondo */
-    right: 30px;  /* Separación de la derecha */
+    bottom: 30px; 
+    right: 30px; 
     width: auto; 
     height: auto;
-    /* Quitamos el fondo oscuro para no bloquear la vista */
     background-color: transparent; 
-    pointer-events: none; /* Permite hacer clic en la web a través del espacio vacío */
+    pointer-events: none; 
 }
 
 /* 2. La Tarjeta (El contenido) */
 .modal-content-featured {
-    pointer-events: auto; /* Reactivamos clics solo en la tarjeta */
+    pointer-events: auto; 
     background-color: #fff;
-    width: 450px; /* Un poco más angosta para que no estorbe */
-    padding: 40px 35px;
+    
+    /* TAMAÑO ACTUALIZADO */
+    width: 450px; 
+    padding: 40px 35px; 
+    
     text-align: center;
     position: relative;
     border-radius: 8px;
     
-    /* Sombra fuerte para que se distinga bien del fondo de la web */
+    /* Sombra fuerte para destacar sobre el sitio */
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0,0,0,0.05); /* Borde sutil */
+    border: 1px solid rgba(0,0,0,0.05);
     
     /* ANIMACIÓN: Entra desde la derecha */
     animation: slideInRight 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* Definición de la animación lateral */
+
 @keyframes slideInRight {
     0% {
-        transform: translateX(120%); /* Empieza fuera de la pantalla (derecha) */
+        transform: translateX(120%); 
         opacity: 0;
     }
     100% {
-        transform: translateX(0);    /* Termina en su sitio */
+        transform: translateX(0);   
         opacity: 1;
     }
 }
@@ -1440,7 +1435,7 @@ aside .submit-btn {
 .close-featured-btn {
     color: #ccc;
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 15px;
     font-size: 24px;
     line-height: 1;
@@ -1450,11 +1445,11 @@ aside .submit-btn {
 .close-featured-btn:hover { color: var(--primary-color); }
 
 
-/* --- TIPOGRAFÍA (Ajustada para tamaño compacto) --- */
+/* --- TIPOGRAFÍA Y CONTENIDO --- */
 
 .popup-title {
     font-family: var(--font-heading);
-    font-size: 1.5rem; /* Un poco más chico */
+    font-size: 1.6rem; 
     color: var(--text-dark);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1465,10 +1460,10 @@ aside .submit-btn {
 .popup-script-accent {
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--accent-color);
     margin-top: -5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .popup-description {
@@ -1476,10 +1471,10 @@ aside .submit-btn {
     color: var(--text-light);
     font-size: 0.95rem;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* Imagen compacta */
+/* Imagen (Ajustada al nuevo ancho) */
 .popup-image-container img {
     width: 100%;
     height: 200px; 
@@ -1488,30 +1483,32 @@ aside .submit-btn {
     margin-bottom: 20px;
 }
 
-/* Botones */
+/* Botón de Acción (Full Width) */
 .popup-cta-btn {
-    display: block; /* Botón ancho completo */
+    display: block; 
     width: 100%;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 12px 0;
+    padding: 14px 0;
     font-family: var(--font-body);
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-decoration: none;
     transition: background-color 0.3s;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 .popup-cta-btn:hover { background-color: var(--primary-light); }
 
+/* Enlace "No gracias" */
 .popup-close-link {
     background: none;
     border: none;
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: #999;
     cursor: pointer;
     text-decoration: underline;
@@ -1519,6 +1516,7 @@ aside .submit-btn {
     display: block;
     width: 100%;
 }
+.popup-close-link:hover { color: var(--text-dark); }
 /* =========================================
    MEDIA QUERIES (MÓVIL - MAX 768PX)
    ========================================= */
@@ -1526,15 +1524,27 @@ aside .submit-btn {
 
     /* --- 1. NAVBAR & MENÚ --- */
     .navbar {
-        padding: 15px 20px; /* Padding reducido */
+        padding: 15px 20px;
     }
     
     .menu-toggle {
-        display: block; /* Aparece la hamburguesa */
+        display: block; 
     }
-
+    .brand {
+        display: flex;          
+        align-items: center;    
+        gap: 12px;              
+    }
+    .logo img {
+        height: 45px;
+        width: auto;            
+        object-fit: contain;    
+        display: block;         
+    }
     .brand-name {
-        font-size: 1rem; /* Nombre más pequeño para que quepa */
+        font-size: 1.1rem;      
+        margin: 0;              
+        line-height: 1.2;
     }
     .nav-menu {
         display: none; 
@@ -1648,18 +1658,27 @@ aside .submit-btn {
         align-items: center;
     }
     .modal-featured {
+        /* En móvil ocupa todo el ancho y se pega abajo */
         right: 0;
         bottom: 0;
         left: 0;
         width: 100%;
-        display: flex;
+        display: flex; /* Para centrar el contenido */
         justify-content: center;
-        padding-bottom: 20px;
+        align-items: flex-end; /* Pegado al fondo */
+        padding-bottom: 0;
+        pointer-events: none;
     }
 
     .modal-content-featured {
-        width: 90%; /* Ocupa casi todo el ancho */
-        animation: slideUpBottom 0.6s ease-out forwards; /* Cambiamos animación */
+        width: 100%; /* Full width en móvil */
+        border-radius: 15px 15px 0 0; /* Solo bordes superiores redondeados */
+        margin-bottom: 0;
+        padding: 30px 20px;
+        pointer-events: auto;
+        
+        /* Animación: Sube desde abajo */
+        animation: slideUpBottom 0.6s ease-out forwards;
     }
 
     @keyframes slideUpBottom {
