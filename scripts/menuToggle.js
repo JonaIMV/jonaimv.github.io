@@ -7,7 +7,9 @@ export function initMenuToggle() {
   if (!toggleButton || !navMenu) return;
 
   toggleButton.addEventListener("click", function () {
-    const isOpen = navMenu.classList.toggle("show");
+    // CAMBIO AQUÍ: Cambiamos "show" por "active" para coincidir con el CSS
+    const isOpen = navMenu.classList.toggle("active");
+    
     toggleButton.setAttribute("aria-expanded", isOpen);
   });
 }

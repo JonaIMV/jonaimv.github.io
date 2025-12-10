@@ -3,9 +3,7 @@
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
 import { loadProperties, renderProperties, renderPropertyDetail } from './properties.js';
-
 import { loadExchangeRates } from './exchange-rates.js';
-
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
@@ -15,6 +13,7 @@ import { initPropertyFilters } from './property-filters.js';
 import { determineAndApplySeason } from './seasonal-theme.js';
 import { initFeaturedModal } from './featured-modal.js';
 import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; // Homepage ROI
+import { initLightbox } from './lightbox.js';
  
 
 
@@ -35,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initHeaderScroll();
     initScrollReveal();
     determineAndApplySeason();
+    initLightbox();
     
     // Si estamos en la Home Page (index.html)
     if (document.getElementById('client-portraits')) {
@@ -83,6 +83,11 @@ document.addEventListener("DOMContentLoaded", async () => {
                 initPropertyFilters(allProperties);
             }
         }
+    }
+    if (typeof ScrollReveal !== 'undefined') {
+        // Inicializamos o sincronizamos para animar el contenido recién inyectado
+        initScrollReveal(); 
+        ScrollReveal().sync();
     }
     
 });
