@@ -1,34 +1,57 @@
-
+// Datos de la Propiedad Destacada (Estilo Luxury)
 const featuredData = {
-    title: " ¡¡Propiedad Destacada !!",
-    description: "!!Casa completamente equipada y lista para habitar. Justo lo que necesita tu familia, nietos hijos o amigos. Alberca propia y con un área para practicar yoga. Ubicada en una zona tranquila y segura!!!.",
-    image: "images/puntarena/fachada-1.webp", // Cambiamos imagen
-    link: "for-sale.html?id=11" // Cambiamos ID
+    title: "VIVE EN PUNTARENA", 
+    subtitle: "Puerto Morelos", // El texto que saldrá en cursiva/dorado
+    description: "Casa completamente equipada con alberca propia y área de yoga. Ubicada en una zona tranquila y segura, ideal para disfrutar con tu familia.",
+    image: "images/puntarena/fachada-1.webp", // Asegúrate de que esta ruta sea correcta
+    link: "for-sale.html?id=11"
 };
 
-// Determina el contenido a mostrar
+// Genera el HTML interior del modal con la nueva estructura
 function getFeaturedContent() {
     return `
-    <div class="featured-card">
-            <h3>${featuredData.title}</h3>
-            <p>${featuredData.description}</p>
-            
-            <img src="${featuredData.image}" alt="Propiedad Destacada" class="featured-img-override">
-            
-            <a href="${featuredData.link}">Ver Oferta Exclusiva →</a>
+    <div class="luxury-popup-inner">
+        <h3 class="popup-title">${featuredData.title}</h3>
+        
+        <div class="popup-script-accent">${featuredData.subtitle}</div>
+        
+        <p class="popup-description">${featuredData.description}</p>
+        
+        <div class="popup-image-container">
+            <img src="${featuredData.image}" alt="Propiedad Destacada en Puerto Morelos">
         </div>
+        
+        <a href="${featuredData.link}" class="popup-cta-btn">Ver Detalles</a>
+        
+        <button class="popup-close-link" id="btn-close-text">No gracias, solo quiero ver</button>
+    </div>
     `;
 }
 
-// Muestra u oculta el modal
+// Función interna para mostrar/ocultar
 function handleModal(action) {
     const modal = document.getElementById('featuredModal');
+    if (!modal) return;
+
     if (action === 'show') {
-        // Asegurarse de que solo se muestre una vez por sesión
+        // Verifica si ya se mostró en esta sesión para no ser molesto
         if (!sessionStorage.getItem('modalShown')) {
-            document.getElementById('featured-content').innerHTML = getFeaturedContent();
-            // Usamos 'flex'  o 'block' para mostrar
+            // Inyectamos el contenido
+            const contentContainer = document.getElementById('featured-content');
+            if (contentContainer) {
+                contentContainer.innerHTML = getFeaturedContent();
+                
+                // Agregamos listener al botón de texto "No gracias" que acabamos de crear
+                const textCloseBtn = document.getElementById('btn-close-text');
+                if(textCloseBtn) {
+                    textCloseBtn.addEventListener('click', () => handleModal('hide'));
+                }
+            }
+            
+            // Mostramos el modal
             modal.style.display = 'block';
+            
+            // Marcamos en sesión que ya se vio
             sessionStorage.setItem('modalShown', 'true');
         }
     } else if (action === 'hide') {
@@ -36,18 +59,24 @@ function handleModal(action) {
     }
 }
 
+// Función principal que se exporta e inicializa todo
 export function initFeaturedModal() {
     const modal = document.getElementById('featuredModal');
-    if (!modal) return; // Salir si el HTML no tiene el modal
+    if (!modal) return; // Si no existe el modal en el HTML, no hacemos nada
 
+    // Intentamos mostrarlo (la lógica de sessionStorage decide si se abre o no)
+    // Usamos un pequeño timeout para que no sea tan agresivo al cargar la página
+    setTimeout(() => {
+        handleModal('show');
+    }, 2000); // Aparece 2 segundos después de entrar
+
+    // Configurar botón de cierre (la X de la esquina)
     const closeBtn = document.querySelector('.close-featured-btn');
-
-    handleModal('show');
-
-   
-    closeBtn.addEventListener('click', () => handleModal('hide'));
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => handleModal('hide'));
+    }
     
-   
+    // Cerrar al hacer clic fuera del contenido (en el fondo oscuro)
     window.addEventListener('click', (e) => {
         if (e.target === modal) {
             handleModal('hide');
