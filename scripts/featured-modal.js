@@ -1,7 +1,7 @@
 
 const featuredData = {
-    title: " 🔥Propiedad Destacada 🔥",
-    description: "📢!!Casa completamente equipada y lista para habitar. Justo lo que necesita tu familia, nietos hijos o amigos. Alberca propia y con un área para practicar yoga. Ubicada en una zona tranquila y segura!!!.",
+    title: " ¡¡Propiedad Destacada !!",
+    description: "!!Casa completamente equipada y lista para habitar. Justo lo que necesita tu familia, nietos hijos o amigos. Alberca propia y con un área para practicar yoga. Ubicada en una zona tranquila y segura!!!.",
     image: "images/puntarena/fachada-1.webp", // Cambiamos imagen
     link: "for-sale.html?id=11" // Cambiamos ID
 };
