@@ -10,7 +10,7 @@ import { initHeaderScroll } from './scroll.js';
 import { initScrollReveal } from './scroll-reveal-config.js';
 import { initRoiCalculator } from './roi-calculator.js'; // Contact Page ROI
 import { initPropertyFilters } from './property-filters.js';
-import { determineAndApplySeason } from './seasonal-theme.js';
+
 import { initFeaturedModal } from './featured-modal.js';
 import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; // Homepage ROI
 import { initLightbox } from './lightbox.js';
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCookieConsent(); 
     initHeaderScroll();
     initScrollReveal();
-    determineAndApplySeason();
+    
     initLightbox();
     
     // Si estamos en la Home Page (index.html)
