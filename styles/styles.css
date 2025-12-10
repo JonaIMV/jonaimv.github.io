@@ -76,49 +76,88 @@ header {
     transition: all 0.3s ease; /* Suaviza el cambio de color/tamaño */
     border-bottom: 1px solid transparent; /* Para evitar saltos visuales */
 }
-header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95); /* Un poco transparente */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);   /* Sombra elegante */
-    padding-top: 5px;   /* Reducimos un poco el padding vertical... */
-    padding-bottom: 5px; /* ...para que se vea más compacto al navegar */
+/* --- ESTADO BASE (Cuando estás arriba del todo) --- */
+.navbar {
+    /* Aseguramos que tenga transición para que el cambio no sea brusco */
+    transition: all 0.4s ease;
+    /* Tu padding original grande */
+    padding: 15px 30px; 
 }
 
-/* Opcional: Si quieres que el logo se haga pequeño también */
-header.scrolled .logo img {
-    transform: scale(0.9); /* Reduce el logo al 90% */
-    transition: transform 0.3s ease;
+.navbar .logo img {
+    transition: all 0.4s ease;
+    /* Altura original */
+    height: 45px; 
 }
+
+/* --- ESTADO SCROLLED (Cuando bajas) --- */
+
 
 .navbar {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    /* CAMBIO: Padding reducido a 20px para pegarlo a los bordes */
-
-    padding: 15px 30px;
-
-    /* CAMBIO: Quitamos el límite de ancho para que ocupe toda la pantalla */
-
-    max-width: 100%;
-
-    margin: 0;
-
+    /* POSICIONAMIENTO */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    z-index: 1000; /* Siempre encima */
 
-}.navbar {
+    /* LAYOUT (Alineación) */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    max-width: 100%;
-    margin: 0;
-    width: 100%;
+
+    /* ESTÉTICA INICIAL (Impacto de Marca) */
+    background-color: var(--white); /* Fondo blanco limpio */
+    padding: 25px 40px; /* Mucho espacio para que se vea elegante */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Sombra muy sutil */
+
+    /* TRANSICIÓN SUAVE (La magia) */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* CONTENEDOR DE MARCA (Para alinear logo + texto) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio entre imagen y texto */
+}
+
+/* LOGO GIGANTE (Inicial) */
+.navbar .logo img {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.4s ease;
+}
+
+/* NOMBRE DE MARCA (Inicial) */
+.brand-name {
+    font-size: 1.8rem; 
+    font-weight: 700;
+    color: var(--primary-color); 
+    margin: 0;
+    transition: all 0.4s ease;
+}
+
+
+/* --- 2. ESTADO SCROLLED (CUANDO BAJAS - COMPACTO) --- */
+.navbar.scrolled {
+    padding: 10px 30px;  
+    background-color: rgba(255, 255, 255, 0.98); 
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--accent-color); 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+}
+
+/* El logo se hace pequeño */
+.navbar.scrolled .logo img {
+    height: 45px; /* Reducción considerable */
+}
+
+/* El texto se ajusta */
+.navbar.scrolled .brand-name {
+    font-size: 1.4rem;
+}
 .brand {
     display: flex;
     align-items: center;
@@ -126,20 +165,6 @@ header.scrolled .logo img {
     text-decoration: none; 
 }
 
-.logo img {
-    height: 150px; 
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.brand-name {
-    font-size: 1.4rem; 
-    color: var(--primary-color); 
-    font-weight: 800; 
-    letter-spacing: -0.5px; 
-    margin: 0; 
-    font-family: var(--font-main);
-}
 .brand:hover .logo img {
     transform: rotate(-5deg) scale(1.05);
 }
@@ -150,19 +175,45 @@ header.scrolled .logo img {
 
 /* Menú Desktop */
 .nav-menu ul {
-    display: flex;
-    gap: 25px;
+    display: flex;       
+    gap: 25px;           
+    list-style: none;    
+    margin: 0;
+    padding: 0;
 }
-
 .nav-menu a {
     color: var(--text-dark);
     font-weight: 500;
     font-size: 1rem;
+    position: relative;  
+    text-decoration: none;
+    padding-bottom: 5px; 
+    transition: color 0.3s ease; 
+}
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;           
+    height: 2px;         
+    background-color: var(--accent-color); 
+    transition: width 0.3s ease; 
+}
+.nav-menu a:hover {
+    color: var(--primary-color); 
+}
+.nav-menu a:hover::after {
+    width: 100%; 
+}
+.nav-menu a.active {
+    color: var(--primary-color); 
+    font-weight: 600; 
+}
+.nav-menu a.active::after {
+    width: 100%; 
 }
 
-.nav-menu a:hover {
-    color: var(--primary-color);
-}
 
 .menu-toggle {
     display: none; /* Oculto en desktop */
@@ -1525,6 +1576,15 @@ aside .submit-btn {
     /* --- 1. NAVBAR & MENÚ --- */
     .navbar {
         padding: 15px 20px;
+    }
+    .navbar .logo img {
+        height: 50px; /* Tamaño sensato para celular */
+    }
+    .navbar.scrolled {
+        padding: 10px 20px;
+    }
+    .navbar.scrolled .logo img {
+        height: 40px;
     }
     
     .menu-toggle {
