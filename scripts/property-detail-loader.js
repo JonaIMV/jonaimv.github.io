@@ -208,13 +208,6 @@ async function loadPropertyDetails() {
     if (typeof ScrollReveal !== 'undefined') {
         ScrollReveal().sync(); 
     }
-
-    // 🚨 Forzar traducción de Weglot para contenido dinámico 🚨
-    if (typeof Weglot !== 'undefined') {
-        setTimeout(() => {
-            Weglot.translate(container);
-        }, 500);
-    }
 }
 
 // Ejecutar

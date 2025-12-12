@@ -227,9 +227,7 @@ export function renderProperties(propertiesArray, container) {
         container.appendChild(card);
     });
 
-    if (typeof Weglot !== 'undefined') {
-        setTimeout(() => { Weglot.translate(container); }, 1000);
-    }
+    
 }
 
 export function renderPropertyDetail(property, mainContainer) {
@@ -244,10 +242,6 @@ export function renderPropertyDetail(property, mainContainer) {
     
     if (typeof ScrollReveal !== 'undefined') {
         ScrollReveal().sync(); 
-    }
-
-    if (typeof Weglot !== 'undefined') {
-        setTimeout(() => { Weglot.translate(mainContainer); }, 500);
     }
 }
 
