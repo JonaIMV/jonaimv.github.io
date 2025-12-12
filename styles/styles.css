@@ -454,6 +454,94 @@ header {
     color: var(--text-dark);
 }
 
+/* Configuración del Contenedor Principal */
+.culture-hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Ocupa el 70% de la altura de la pantalla */
+    min-height: 500px;
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    overflow: hidden;
+    color: #ffffff; /* Texto blanco */
+    text-align: center;
+}
+
+/* Manejo de la Imagen de Fondo */
+.culture-bg-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Al fondo */
+}
+
+.culture-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el espacio */
+    /* AQUÍ PUEDES USAR EL TRUCO SI LA FOTO NO ENCAJA BIEN: */
+    /* object-position: center 20%; */
+}
+
+.culture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Capa negra al 40% para contraste */
+}
+
+/* Estilos del Texto */
+.culture-content-container {
+    position: relative;
+    z-index: 2; /* Sobre la imagen */
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.culture-content-container h2 {
+    font-family: 'Playfair Display', serif; /* Tu fuente de títulos */
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.culture-content-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Botón transparente elegante */
+.btn-outline-white {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-white:hover {
+    background: #ffffff;
+    color: #333; /* Color oscuro al pasar el mouse */
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+    .culture-hero-section {
+        height: 50vh; /* Un poco más bajo en celular */
+    }
+    .culture-content-container h2 {
+        font-size: 2rem;
+    }
+}
 /* =========================================
    6. CALCULADORA ROI
    ========================================= */
@@ -545,7 +633,18 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+.properties-section {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 10; 
+    background-color: var(--bg-body, #f9f9f9);
+    padding-top: 60px;
+    padding-bottom: 80px;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
 .properties-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -553,6 +652,13 @@ header {
     padding: 40px 5%;
     max-width: var(--container-width);
     margin: 0 auto;
+}
+.properties-section, 
+.properties-grid, 
+.property-card {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important; /* Quita desplazamientos raros */
 }
 
 /* =========================================
@@ -1560,7 +1666,195 @@ aside .submit-btn {
     display: block;
     width: 100%;
 }
-.popup-close-link:hover { color: var(--text-dark); }
+.popup-close-link:hover {
+     color: var(--text-dark);
+ }
+ /* =========================================
+   SECCIÓN: TIPS DE COMPRA (Diseño Editorial Limpio)
+   ========================================= */
+
+/* 1. Contenedor Principal (Sticky) */
+.buying-process-sticky {
+    /* 1. LIMPIEZA TOTAL: Quitamos los hacks de ancho */
+    width: 100%; 
+    margin: 0;
+    left: auto;
+    right: auto;
+    
+    /* 2. EFECTO Sticky (Para quedarse al fondo) */
+    position: sticky;
+    top: 80px;  /* Se pega debajo del Navbar */
+    z-index: 1; /* Se queda atrás */
+    
+    background-color: var(--white);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* 2. Layout Dividido (Mitad y Mitad) */
+.process-container-split {
+    display: flex;
+    width: 100%; /* Ocupa el 100% real de la pantalla */
+    margin: 0;   /* Cero márgenes */
+    padding: 0;  /* Cero relleno */
+    min-height: auto;
+}
+
+/* --- MITAD IZQUIERDA: IMAGEN --- */
+.process-image-side {
+    flex: 1; /* Ocupa el 50% exacto */
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block; /* Elimina huecos fantasma */
+}
+
+.process-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: -65px center;
+    display: block; 
+    
+}
+
+/* --- MITAD DERECHA: CONTENIDO --- */
+.process-content-side {
+    flex: 1; /* 50% ancho */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    padding: 60px 50px;
+    background-color: var(--white);
+}
+
+.process-content-inner {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Tipografía de Encabezados */
+.process-subtitle {
+    font-family: var(--font-heading);
+    color: var(--accent-color); /* Dorado */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.process-title {
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.process-intro {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* --- LISTA DE PASOS (Sin Iconos) --- */
+.process-steps-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Espacio entre cada paso */
+}
+
+.process-step-item {
+    display: block;
+    position: relative;
+    cursor: default; /* O pointer si quieres que parezca clicable */
+}
+
+/* Contenedor de Texto del Paso */
+.step-info {
+    /* La magia de la interacción: Borde invisible al inicio */
+    border-left: 3px solid transparent; 
+    padding-left: 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Movimiento suave */
+}
+
+/* Títulos (01., 02., 03.) */
+.step-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: var(--primary-color); /* Turquesa */
+    font-weight: 600;
+}
+
+/* Descripción */
+.step-info p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    margin: 0;
+    max-width: 95%;
+}
+
+/* --- INTERACCIÓN HOVER --- */
+/* Al pasar el mouse, aparece la línea dorada y el texto se mueve */
+.process-step-item:hover .step-info {
+    border-left: 3px solid var(--accent-color); /* Línea dorada */
+    padding-left: 20px; /* Desplazamiento a la derecha */
+}
+@keyframes fadeInUpSafe {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-card {
+    opacity: 0; 
+    animation: fadeInUpSafe 0.8s ease-out forwards; 
+}
+.process-steps-grid .animate-card:nth-child(1) {
+    animation-delay: 0.2s; 
+}
+.process-steps-grid .animate-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.process-steps-grid .animate-card:nth-child(3) {
+    animation-delay: 0.8s; 
+}
+
+/* --- RESPONSIVE (Móvil y Tablet) --- */
+@media (max-width: 992px) {
+    .process-container-split {
+        flex-direction: column; 
+    }
+    
+    .buying-process-sticky {
+        position: relative; 
+        top: 0;
+        height: auto;
+    }
+
+    .process-image-side {
+        height: 250px; 
+    }
+
+    .process-content-side {
+        padding: 40px 25px;
+    }
+
+    .process-title {
+        font-size: 1.8rem;
+    }
+}
+
 /* =========================================
    MEDIA QUERIES (MÓVIL - MAX 768PX)
    ========================================= */
