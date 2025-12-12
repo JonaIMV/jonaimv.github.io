@@ -315,13 +315,18 @@
     "id": 10,
     "title": "Casa en Venta Xcaret Playa del Carmen",
     "description": "Increible casa en venta en la exclusiva area de los parques de  Xcaret Playa del Carmen.",
+    "description_en": "Incredible house for sale in the exclusive area of the Xcaret parks in Playa del Carmen.",
     "extendedDescription": "Casa en VENTA en paseo de los sentidos en direccion a Xenses  y Xcaret. Encontraras seguridad las 24 horas, naturaleza al rededor , acceso directo a los parques, con la membresia anual de Xcaret podras acceder todos los dias al parque, te incluimos dos años de membresia. La casa es un increible lugar para vacacionar y una excelente opcion para negocio en renta vacacional.",
+    "extendedDescription_en": "House for SALE on Paseo de los Sentidos towards Xenses and Xcaret. You will find 24-hour security, nature all around, direct access to the parks, with the annual Xcaret membership you can access the park every day, we include two years of membership. The house is an incredible place to vacation and an excellent option for business in vacation rental.",
     "price": "$880,000. USD",
     "image": "images/piedra/fachada.webp",
     "alt": "Terreno en Aldea Umm Puerto Morelos",
     "location": "Playa del Carmen",
     "type": "house",
+    "youtubeUrl":"",
     "virtualTourUrl": "virtualtours/piedra/casa-piedra.html",
+
+  
     "galleryPhotos": [
       "images/piedra/fachada.webp",
       "images/piedra/sala.webp",
@@ -340,10 +345,21 @@
       "Alberca",
       "Jardin privado"
     ],
+    "features_en": [
+      "661 m² land plot",
+      "Residential land use",
+      "391 m² construction",
+      "Swimming pool",
+      "Private garden"
+    ],
     "amenities": [
       "Seguridad 24h",
       "Acceso directo a los parques Xcaret"
       
+    ],
+    "amenities_en": [
+      "24h Security",
+      "Direct access to Xcaret parks"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233.43572281161303!2d-87.12929633600481!3d20.589218800174407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1764105319623!5m2!1ses!2smx"
 },

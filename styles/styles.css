@@ -625,6 +625,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .properties-section {
     width: 100%;
     margin: 0;
@@ -1236,6 +1237,14 @@ aside .submit-btn {
 }
 
 /* Título y Precio */
+
+.property-detail-article {
+    /* ... lo que ya tengas ... */
+    
+    /* AGREGA ESTO: */
+    margin-top: 120px;  /* Ajusta este número según la altura de tu menú */
+    display: block;     /* Aseguramos que respete el margen */
+}
 .property-detail-article h1 {
     font-size: 2rem;
     color: var(--primary-color);
@@ -1820,6 +1829,69 @@ aside .submit-btn {
 }
 .process-steps-grid .animate-card:nth-child(3) {
     animation-delay: 0.8s; 
+}
+/* Contenedor principal de la zona bilingüe */
+.multilingual-content-wrapper {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+/* Header de las pestañas */
+.lang-tabs-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.lang-label {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.lang-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo de los Botones */
+.lang-btn {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Botón Activo */
+.lang-btn.active {
+    background-color: var(--primary-color); /* Tu color Teal */
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contenido Oculto/Visible */
+.lang-content {
+    display: none; /* Oculto por defecto */
+    transition: opacity 0.4s ease;
+}
+
+.lang-content.active-content {
+    display: block; /* Visible si tiene la clase active */
 }
 
 /* --- RESPONSIVE (Móvil y Tablet) --- */
