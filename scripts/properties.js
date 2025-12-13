@@ -132,23 +132,24 @@ export function generateDetailHtml(property) {
             </section>
             
             ${youtubeHtml} 
-            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude" translate="no">
+            <div class="multilingual-content-wrapper reveal-bottom" data-wg-notranslate="true">
+
         
-        <div class="lang-tabs-container weglot-exclude notranslate">
+        <div class="lang-tabs-container">
             <span class="lang-label" style="font-weight:bold; margin-right:10px; color: var(--text-dark);">Idioma:</span>
             <div class="lang-tabs">
                 
-                <button class="lang-btn active weglot-exclude notranslate" onclick="switchPropertyLanguage('es')">
+                <button class="lang-btn active" onclick="switchPropertyLanguage('es')">
                     <img src="https://flagcdn.com/w40/mx.png" alt="MX" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
                     Español
                 </button>
                 
-                <button class="lang-btn weglot-exclude notranslate" onclick="switchPropertyLanguage('en')">
+                <button class="lang-btn" onclick="switchPropertyLanguage('en')">
                     <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
                     English
                 </button>
                 
-                <button class="lang-btn weglot-exclude notranslate" onclick="switchPropertyLanguage('fr')">
+                <button class="lang-btn" onclick="switchPropertyLanguage('fr')">
                     <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
                     Français
                 </button>
@@ -156,10 +157,10 @@ export function generateDetailHtml(property) {
             </div>
         </div>
 
-        <div id="content-es" class="lang-content active-content weglot-exclude notranslate">
+        <div id="content-es" class="lang-content active-content">
             <section class="description-section">
                 <h2>Descripción Completa</h2>
-                <p>PRUEBA MANUAL: ESTO DEBE SER ESPAÑOL - ${descriptionES}</p>
+                <p>${descriptionES}</p>
             </section>
             
             <section class="features-section">
@@ -168,7 +169,7 @@ export function generateDetailHtml(property) {
             </section>
         </div>
 
-        <div id="content-en" class="lang-content weglot-exclude notranslate">
+        <div id="content-en" class="lang-content">
             <section class="description-section">
                 <h2>Full Description</h2>
                 <p>${descriptionEN}</p> 
@@ -180,7 +181,7 @@ export function generateDetailHtml(property) {
             </section>
         </div>
 
-        <div id="content-fr" class="lang-content weglot-exclude notranslate">
+        <div id="content-fr" class="lang-content">
             <section class="description-section">
                 <h2>Description Complète</h2>
                 <p>${descriptionFR || "Description à venir..."}</p> 
@@ -272,6 +273,7 @@ export function renderPropertyDetail(property, mainContainer) {
     if (!mainContainer) return;
     document.title = `${property.title} | Detalles`;
     mainContainer.innerHTML = generateDetailHtml(property);
+    
 
     const contactBtn = document.getElementById('detail-contact-btn');
     if (contactBtn) {
