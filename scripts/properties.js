@@ -132,7 +132,7 @@ export function generateDetailHtml(property) {
             </section>
             
             ${youtubeHtml} 
-            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude">
+            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude" translate="no" style="pointer-events: auto;">
                         
                 <div class="lang-tabs-container">
                     <span class="lang-label">Idioma / Language:</span>
