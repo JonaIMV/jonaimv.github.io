@@ -159,7 +159,7 @@ export function generateDetailHtml(property) {
         <div id="content-es" class="lang-content active-content weglot-exclude notranslate">
             <section class="description-section">
                 <h2>Descripción Completa</h2>
-                <p>PRUEBA MANUAL: ESTO DEBE SER ESPAÑOL - ${descriptionES}</p> 
+                <p>PRUEBA MANUAL: ESTO DEBE SER ESPAÑOL - ${descriptionES}</p>
             </section>
             
             <section class="features-section">
