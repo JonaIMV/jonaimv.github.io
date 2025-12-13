@@ -1855,20 +1855,23 @@ aside .submit-btn {
 
 .lang-tabs {
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    margin-bottom: 0; /* Pegado al contenido de abajo */
+    padding-left: 10px;
 }
 
 /* Estilo de los Botones */
 .lang-btn {
-    background: transparent;
+    background-color: var(--bg-light); /* Gris claro */
+    color: var(--text-dark);
     border: 1px solid #ddd;
-    padding: 8px 20px;
-    border-radius: 25px;
+    border-bottom: none; /* Sin borde abajo para que parezca pestaña */
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 8px 8px 0 0; /* Redondeado arriba */
     font-family: var(--font-body);
     font-weight: 600;
-    color: var(--text-light);
-    transition: all 0.3s ease;
+    transition: var(--transition);
 }
 
 .lang-btn:hover {
@@ -1879,20 +1882,51 @@ aside .submit-btn {
 /* Botón Activo */
 .lang-btn.active {
     background-color: var(--primary-color); /* Tu color Teal */
+    color: var(--white);
     border-color: var(--primary-color);
-    color: #fff;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 /* Contenido Oculto/Visible */
 .lang-content {
-    display: none; /* Oculto por defecto */
-    transition: opacity 0.4s ease;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .lang-content.active-content {
     display: block; /* Visible si tiene la clase active */
 }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.description-section, 
+.features-section {
+    margin-bottom: 30px;
+    padding: 0; /* Importante: quitamos padding para que el color toque los bordes */
+    background: transparent; /* Quitamos fondo si lo tenía */
+    box-shadow: none; /* Quitamos sombra al contenedor padre */
+}
+.description-section h2, 
+.features-section h2 {
+    background-color: var(--primary-color); /* El color Teal */
+    color: var(--white);
+    font-family: var(--font-heading);
+    padding: 15px 20px;
+    margin: 0; /* Sin margen para que pegue con el texto */
+    border-radius: 8px 8px 0 0; /* Redondeado arriba */
+    font-size: 1.4rem;
+}
+.description-section p, 
+.features-section .features-list {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-top: none; /* Unimos con el header */
+    padding: 25px;
+    margin-top: 0;
+    border-radius: 0 0 8px 8px; /* Redondeado abajo */
+    box-shadow: var(--shadow-card);
+}
+
 
 /* --- RESPONSIVE (Móvil y Tablet) --- */
 @media (max-width: 992px) {

@@ -69,25 +69,33 @@ function generateBentoGalleryHtml(photos, title) {
 export function generateDetailHtml(property) {
     
     // 1. Galería
-    // Asegúrate de que esta función exista en este archivo o esté importada
     const galleryHtml = generateBentoGalleryHtml(property.galleryPhotos, property.title);
 
-    // --- PREPARACIÓN DE DATOS BILINGÜES ---
+    // --- PREPARACIÓN DE DATOS TRILINGÜES (ES / EN / FR) ---
 
-    // A. Listas de Características (ES vs EN)
+    // A. Listas de Características (ES vs EN vs FR)
+    // Asumimos que en tu JSON usas "_fr" para las propiedades en francés
     const featuresListES = [...(property.features || []), ...(property.amenities || [])];
     const featuresListEN = [...(property.features_en || []), ...(property.amenities_en || [])];
+    const featuresListFR = [...(property.features_fr || []), ...(property.amenities_fr || [])]; 
     
-    // Fallback: si no hay inglés, usa español
+    // Fallbacks: 
+    // Si no hay inglés, usa español.
     const finalFeaturesEN = featuresListEN.length > 0 ? featuresListEN : featuresListES;
+    // Si no hay francés, dejamos la lista vacía (o podrías poner featuresListEN si prefieres)
+    const finalFeaturesFR = featuresListFR.length > 0 ? featuresListFR : [];
 
+    // Generación de HTML (Los <li>)
     const featuresHtmlES = featuresListES.map(item => `<li class="reveal-bottom">✅ ${item}</li>`).join('');
     const featuresHtmlEN = finalFeaturesEN.map(item => `<li class="reveal-bottom">✅ ${item}</li>`).join('');
+    const featuresHtmlFR = finalFeaturesFR.map(item => `<li class="reveal-bottom">✅ ${item}</li>`).join('');
 
-    // B. Descripciones (ES vs EN)
+    // B. Descripciones (ES vs EN vs FR)
     const descriptionES = property.extendedDescription || property.description;
     const descriptionEN = property.extendedDescription_en || property.description_en || "Description available soon.";
+    const descriptionFR = property.extendedDescription_fr || property.description_fr || "Description à venir bientôt...";
 
+    // ... AQUÍ SIGUE TU "return `...`" CON EL HTML QUE VIMOS ANTES ...
     // --- FIN PREPARACIÓN ---
 
     // 2. Video YouTube
@@ -124,14 +132,14 @@ export function generateDetailHtml(property) {
             </section>
             
             ${youtubeHtml} 
-
-            <div class="multilingual-content-wrapper reveal-bottom">
-                
+            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude">
+                        
                 <div class="lang-tabs-container">
                     <span class="lang-label">Idioma / Language:</span>
                     <div class="lang-tabs">
                         <button class="lang-btn active" onclick="switchPropertyLanguage('es')">Español 🇲🇽</button>
                         <button class="lang-btn" onclick="switchPropertyLanguage('en')">English 🇺🇸</button>
+                        <button class="lang-btn" onclick="switchPropertyLanguage('fr')">Français 🇫🇷</button>
                     </div>
                 </div>
 
@@ -159,42 +167,59 @@ export function generateDetailHtml(property) {
                     </section>
                 </div>
 
+                <div id="content-fr" class="lang-content">
+                    <section class="description-section">
+                        <h2>Description Complète</h2>
+                        <p>${descriptionFR || "Description à venir..."}</p> 
+                    </section>
+                    
+                    <section class="features-section">
+                        <h2>Caractéristiques et Équipements</h2>
+                        <ul class="features-list">${featuresHtmlFR || ""}</ul>
+                    </section>
+                </div>
+
             </div>
             ${mapHtml}
         </article>
-    `;
-}
+        `;
+        }
 
 // --- FUNCIÓN GLOBAL PARA EL CAMBIO DE IDIOMA ---
 // Al estar en un módulo, necesitamos asignarla a 'window' explícitamente
 window.switchPropertyLanguage = function(lang) {
-    // 1. Ocultar todos
+    // 1. Ocultar todos los contenidos
     document.querySelectorAll('.lang-content').forEach(el => {
         el.classList.remove('active-content');
-        el.style.display = 'none';
+        el.style.display = 'none'; // Mantenemos tu lógica de ocultar manual
+        el.style.opacity = 0;      // Reseteamos opacidad
     });
 
-    // 2. Desactivar botones
+    // 2. Desactivar todos los botones (quitar color)
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
 
-    // 3. Mostrar seleccionado
+    // 3. Mostrar el contenido seleccionado
     const selectedContent = document.getElementById(`content-${lang}`);
     if (selectedContent) {
-        selectedContent.classList.add('active-content');
         selectedContent.style.display = 'block';
         
-        // Animación simple
-        selectedContent.style.opacity = 0;
-        setTimeout(() => selectedContent.style.opacity = 1, 50);
+        // Pequeño retraso para permitir que el navegador procese el 'display: block' 
+        // antes de cambiar la opacidad (necesario para la transición visual)
+        setTimeout(() => {
+            selectedContent.classList.add('active-content'); // Si usas clases CSS
+            selectedContent.style.opacity = 1; // Tu animación manual
+        }, 10);
     }
 
-    // 4. Activar botón
-    const btnIndex = lang === 'es' ? 0 : 1;
-    const buttons = document.querySelectorAll('.lang-btn');
-    if (buttons[btnIndex]) {
-        buttons[btnIndex].classList.add('active');
+    // 4. Activar botón (CORREGIDO PARA 3 O MÁS IDIOMAS)
+    // En lugar de adivinar el índice (0, 1...), buscamos exactamente el botón 
+    // que tiene el onclick correspondiente a este idioma.
+    const activeBtn = document.querySelector(`button[onclick="switchPropertyLanguage('${lang}')"]`);
+    
+    if (activeBtn) {
+        activeBtn.classList.add('active');
     }
 };
 // --- 2. FUNCIONES EXPORTADAS ---

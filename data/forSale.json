@@ -3,8 +3,9 @@
     "id": 1,
     "title": "Puerto Morelos Apartment 26H Selva Escondida",
     "description": "Bonito departamento en residencial privado, 2 habitaciones 1 baño.",
-    "extendedDescription": "Acogedor apartamento ubicado en el tranquilo residencial Selva Escondida. Perfecto para rentas vacacionales o residencia permanente. Disfrute de seguridad 24/7 y acceso a una gran alberca común y palapa. Se vende semi-amueblado y listo para habitar. Visita el tour virtual para conocer mas de esta propiedad.",
-    "extendedDescription_en": "Cozy apartment located in the quiet residential area of Selva Escondida. Perfect for vacation rentals or permanent residence. Enjoy 24/7 security and access to a large common pool and palapa. It is sold semi-furnished and ready to inhabit. Visit the virtual tour to learn more about this property.",
+    "extendedDescription": "Descubre este acogedor apartamento situado en el exclusivo y tranquilo residencial Selva Escondida, un entorno diseñado para conectar con la naturaleza sin perder la comodidad. Esta propiedad es una oportunidad híbrida perfecta: ideal tanto para quienes buscan una residencia permanente relajada, como para inversores que desean generar ingresos inmediatos mediante rentas vacacionales.\n\nEl complejo garantiza tu tranquilidad con seguridad 24/7 y ofrece un estilo de vida resort gracias a sus amenidades, que incluyen una gran alberca común y una palapa ideal para disfrutar del clima caribeño. La unidad se vende semi-amueblada y en condiciones impecables, lista para habitar o rentar desde el primer día.\n\n¡No te quedes con la duda! Visita el tour virtual ahora mismo para recorrer cada rincón de esta magnífica propiedad.",
+    "extendedDescription_en": "Discover this cozy apartment located in the exclusive and quiet Selva Escondida residential area, an environment designed to connect you with nature without sacrificing comfort. This property is the perfect hybrid opportunity: ideal for those seeking a relaxed permanent residence, as well as for investors looking to generate immediate income through vacation rentals.\n\nThe complex ensures your peace of mind with 24/7 security and offers a resort-style experience thanks to its amenities, including a large common pool and a palapa area perfect for enjoying the Caribbean weather. The unit is sold semi-furnished and in impeccable condition, ready to move in or rent out from day one.\n\nDon't just take our word for it! Visit the virtual tour right now to explore every corner of this magnificent property.",
+    "extendedDescription_fr": "Découvrez cet appartement accueillant situé dans la résidence exclusive et paisible de Selva Escondida, un environnement conçu pour vous connecter à la nature sans sacrifier votre confort. Cette propriété est une opportunité hybride parfaite : idéale tant pour ceux qui recherchent une résidence permanente détendue que pour les investisseurs souhaitant générer des revenus immédiats grâce à la location saisonnière.\n\nLe complexe garantit votre tranquillité d'esprit avec une sécurité 24h/24 et 7j/7 et offre un style de vie 'resort' grâce à ses équipements, incluant une grande piscine commune et une palapa idéale pour profiter du climat caribéen. L'unité est vendue semi-meublée et dans un état impeccable, prête à être habitée ou louée dès le premier jour.\n\nNe manquez pas cette opportunité ! Visitez la visite virtuelle dès maintenant pour explorer chaque recoin de cette magnifique propriété.",
     "price": "$2,300,000 MXN",
     "image": "images/selva-26-h/selva26H.webp",
     "alt": "Apartment in gated community",
@@ -22,30 +23,43 @@
 
     ],
     "features": [
-      "2 Recámaras",
-      "1 Baño completo",
-      "65 m² de construcción",
-      "3 Aires Acondicionados"
+    "2 Recámaras",
+    "1 Baño completo",
+    "65 m² de construcción",
+    "3 Aires Acondicionados"
     ],
     "features_en": [
-      "2 Bedrooms",
-      "1 Full Bathroom",
-      "65 m² construction",
-      "3 Air Conditioners"
+        "2 Bedrooms",
+        "1 Full Bathroom",
+        "65 m² construction",
+        "3 Air Conditioners"
     ],
-    "amenities": [
-      "Alberca común",
-      "Palapa y área social",
-      "Seguridad 24h",
-      "Estacionamiento asignado",
-      "Asadores"
+    "features_fr": [
+        "2 Chambres",
+        "1 Salle de bain complète",
+        "65 m² de construction",
+        "3 Climatiseurs"
+    ],
+   "amenities": [
+    "Alberca común",
+    "Palapa y área social",
+    "Seguridad 24h",
+    "Estacionamiento asignado",
+    "Asadores"
     ],
     "amenities_en": [
-      "Common pool",
-      "Palapa and social area",
-      "24h Security",
-      "Assigned parking",
-      "Grills"
+        "Common pool",
+        "Palapa and social area",
+        "24/7 Security",
+        "Assigned parking",
+        "BBQ grills"
+    ],
+    "amenities_fr": [
+        "Piscine commune",
+        "Palapa et espace social",
+        "Sécurité 24h/24",
+        "Parking attribué",
+        "Espace barbecue"
     ],
 
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469"
@@ -54,7 +68,9 @@
     "id": 2,
     "title": "Casa Jabin Puerto Morelos",
     "description": "Hermosa casa nueva en residencial Puntavista Puerto Morelos.",
-    "extendedDescription": "Residencia de lujo en el exclusivo fraccionamiento Punta Vista. Diseño moderno, amplios jardines y acabados de alta calidad. Ideal para familias grandes que buscan privacidad y un entorno seguro. A 10 minutos de la playa, a 30 minutos de Cancun, a 20 minutos del aeropuerto internacional de Cancun, una increible sensasion de tranquilidad rodea esta propiedad. Visita el tour virtual para conocer mas de ella.",
+    "extendedDescription": "Experimenta la vida de alto nivel en esta majestuosa residencia de lujo situada en el exclusivo fraccionamiento Punta Vista. Esta propiedad es una obra maestra de diseño moderno que destaca por sus acabados de alta calidad y sus amplios jardines, creando un oasis privado perfecto para el disfrute al aire libre. Es el hogar ideal para familias grandes que valoran la privacidad, el espacio y la seguridad en un entorno privilegiado.\n\nLa ubicación es inmejorable, combinando la serenidad de una zona residencial con una conectividad estratégica: a solo 10 minutos de la playa, 20 minutos del Aeropuerto Internacional y 30 minutos del vibrante centro de Cancún. Una increíble sensación de tranquilidad envuelve cada rincón de esta casa.\n\nDescubre la magnitud de esta propiedad hoy mismo. Visita el tour virtual para enamorarte de tu próximo hogar.",
+    "extendedDescription_en": "Experience high-end living in this majestic luxury residence located in the exclusive Punta Vista gated community. This property is a masterpiece of modern design, distinguished by its high-quality finishes and expansive gardens, creating a perfect private oasis for outdoor enjoyment. It is the ideal home for large families who value privacy, space, and security in a privileged setting.\n\nThe location is unbeatable, combining the serenity of a residential area with strategic connectivity: just 10 minutes from the beach, 20 minutes from the International Airport, and 30 minutes from vibrant downtown Cancun. An incredible sense of tranquility surrounds every corner of this home.\n\nDiscover the magnitude of this property today. Visit the virtual tour to fall in love with your next home.",
+    "extendedDescription_fr": "Faites l'expérience d'une vie haut de gamme dans cette majestueuse résidence de luxe située dans le domaine exclusif de Punta Vista. Cette propriété est un chef-d'œuvre de design moderne qui se distingue par ses finitions de haute qualité et ses vastes jardins, créant une oasis privée parfaite pour profiter du plein air. C'est la maison idéale pour les grandes familles qui apprécient l'intimité, l'espace et la sécurité dans un cadre privilégié.\n\nL'emplacement est imbattable, alliant la sérénité d'un quartier résidentiel à une connectivité stratégique : à seulement 10 minutes de la plage, 20 minutes de l'aéroport international et 30 minutes du centre vibrant de Cancún. Une incroyable sensation de tranquillité enveloppe chaque recoin de cette maison.\n\nDécouvrez l'ampleur de cette propriété dès aujourd'hui. Visitez la visite virtuelle pour tomber amoureux de votre prochaine demeure.",
     "price": "$6,400,000 MXN",
     "image": "images/puntavista/puntavista.webp",
     "alt": "Gate community house puerto morelos Puntavista",
@@ -70,12 +86,28 @@
       "images/puntavista/alberca.webp"
     ],
     "features": [
-      "3 Recámaras (principal con vestidor)",
-      "3y medio Baños completos",
-      "210 m² de construcción",
-      "200 m² de terreno",
-      "4 Aires Acondicionados",
-      "Se entrega amueblada o sin amueblar"
+    "3 Recámaras (principal con vestidor)",
+    "3 y medio Baños",
+    "210 m² de construcción",
+    "170 m² de terreno",
+    "4 Aires Acondicionados",
+    "Se entrega amueblada y equipada"
+    ],
+    "features_en": [
+        "3 Bedrooms (master with walk-in closet)",
+        "3.5 Bathrooms",
+        "210 m² construction",
+        "170 m² lot",
+        "4 Air Conditioners",
+        "Furnished and equipped"
+    ],
+    "features_fr": [
+        "3 Chambres (principale avec dressing)",
+        "3,5 Salles de bain",
+        "210 m² de construction",
+        "Terrain de 170 m²",
+        "4 Climatiseurs",
+        "Meublée et équipée"
     ],
     "amenities": [
       "Seguridad 24h",
