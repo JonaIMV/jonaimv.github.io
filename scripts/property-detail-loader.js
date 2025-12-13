@@ -197,9 +197,7 @@ async function loadPropertyDetails() {
 
     // Inyectar HTML
     container.innerHTML = generateDetailHtml(property);
-    if (window.Weglot) {
-        Weglot.refresh();
-    }
+    
     
     // Actualizar Botón de Contacto
     const contactBtn = document.getElementById('detail-contact-btn');

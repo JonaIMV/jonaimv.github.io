@@ -271,17 +271,27 @@ export function renderProperties(propertiesArray, container) {
 
 export function renderPropertyDetail(property, mainContainer) {
     if (!mainContainer) return;
-    document.title = `${property.title} | Detalles`;
-    mainContainer.innerHTML = generateDetailHtml(property);
-    
 
+    // 1. Título del documento
+    document.title = `${property.title} | Detalles`;
+
+    // 2. Render del HTML dinámico
+    mainContainer.innerHTML = generateDetailHtml(property);
+
+    // 3. Forzar a Weglot a ignorar el contenido inyectado
+    if (window.Weglot) {
+        Weglot.refresh();
+    }
+
+    // 4. Botón de contacto
     const contactBtn = document.getElementById('detail-contact-btn');
     if (contactBtn) {
         contactBtn.href = `contact-us.html?title=${encodeURIComponent(property.title)}`;
     }
-    
+
+    // 5. ScrollReveal (re-sincronizar animaciones)
     if (typeof ScrollReveal !== 'undefined') {
-        ScrollReveal().sync(); 
+        ScrollReveal().sync();
     }
 }
 
