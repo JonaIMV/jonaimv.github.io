@@ -132,57 +132,70 @@ export function generateDetailHtml(property) {
             </section>
             
             ${youtubeHtml} 
-            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude" translate="no" style="pointer-events: auto;">
-                        
-                <div class="lang-tabs-container">
-                    <span class="lang-label">Idioma / Language:</span>
-                    <div class="lang-tabs">
-                        <button class="lang-btn active" onclick="switchPropertyLanguage('es')">Español 🇲🇽</button>
-                        <button class="lang-btn" onclick="switchPropertyLanguage('en')">English 🇺🇸</button>
-                        <button class="lang-btn" onclick="switchPropertyLanguage('fr')">Français 🇫🇷</button>
-                    </div>
-                </div>
-
-                <div id="content-es" class="lang-content active-content">
-                    <section class="description-section">
-                        <h2>Descripción Completa</h2>
-                        <p>${descriptionES}</p> 
-                    </section>
-                    
-                    <section class="features-section">
-                        <h2>Características y Amenidades</h2>
-                        <ul class="features-list">${featuresHtmlES}</ul>
-                    </section>
-                </div>
-
-                <div id="content-en" class="lang-content">
-                    <section class="description-section">
-                        <h2>Full Description</h2>
-                        <p>${descriptionEN}</p> 
-                    </section>
-                    
-                    <section class="features-section">
-                        <h2>Features & Amenities</h2>
-                        <ul class="features-list">${featuresHtmlEN}</ul>
-                    </section>
-                </div>
-
-                <div id="content-fr" class="lang-content">
-                    <section class="description-section">
-                        <h2>Description Complète</h2>
-                        <p>${descriptionFR || "Description à venir..."}</p> 
-                    </section>
-                    
-                    <section class="features-section">
-                        <h2>Caractéristiques et Équipements</h2>
-                        <ul class="features-list">${featuresHtmlFR || ""}</ul>
-                    </section>
-                </div>
+            <div class="multilingual-content-wrapper reveal-bottom weglot-exclude" translate="no">
+        
+        <div class="lang-tabs-container weglot-exclude notranslate">
+            <span class="lang-label" style="font-weight:bold; margin-right:10px; color: var(--text-dark);">Idioma:</span>
+            <div class="lang-tabs">
+                
+                <button class="lang-btn active weglot-exclude notranslate" onclick="switchPropertyLanguage('es')">
+                    <img src="https://flagcdn.com/w40/mx.png" alt="MX" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
+                    Español
+                </button>
+                
+                <button class="lang-btn weglot-exclude notranslate" onclick="switchPropertyLanguage('en')">
+                    <img src="https://flagcdn.com/w40/us.png" alt="US" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
+                    English
+                </button>
+                
+                <button class="lang-btn weglot-exclude notranslate" onclick="switchPropertyLanguage('fr')">
+                    <img src="https://flagcdn.com/w40/fr.png" alt="FR" class="flag-icon" style="width:20px; vertical-align:middle; margin-right:5px;">
+                    Français
+                </button>
 
             </div>
-            ${mapHtml}
-        </article>
-        `;
+        </div>
+
+        <div id="content-es" class="lang-content active-content weglot-exclude notranslate">
+            <section class="description-section">
+                <h2>Descripción Completa</h2>
+                <p>${descriptionES}</p> 
+            </section>
+            
+            <section class="features-section">
+                <h2>Características y Amenidades</h2>
+                <ul class="features-list">${featuresHtmlES}</ul>
+            </section>
+        </div>
+
+        <div id="content-en" class="lang-content weglot-exclude notranslate">
+            <section class="description-section">
+                <h2>Full Description</h2>
+                <p>${descriptionEN}</p> 
+            </section>
+            
+            <section class="features-section">
+                <h2>Features & Amenities</h2>
+                <ul class="features-list">${featuresHtmlEN}</ul>
+            </section>
+        </div>
+
+        <div id="content-fr" class="lang-content weglot-exclude notranslate">
+            <section class="description-section">
+                <h2>Description Complète</h2>
+                <p>${descriptionFR || "Description à venir..."}</p> 
+            </section>
+            
+            <section class="features-section">
+                <h2>Caractéristiques et Équipements</h2>
+                <ul class="features-list">${featuresHtmlFR || ""}</ul>
+            </section>
+        </div>
+
+    </div>
+    ${mapHtml}
+</article>
+`;
         }
 
 // --- FUNCIÓN GLOBAL PARA EL CAMBIO DE IDIOMA ---
