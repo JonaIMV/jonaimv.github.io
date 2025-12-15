@@ -2,7 +2,6 @@
 
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
-// 1. IMPORTAMOS initMap AQUÍ ABAJO:
 import { loadProperties, renderProperties, renderPropertyDetail, initMap } from './properties.js'; // <--- CAMBIO 1: Agregamos initMap
 import { loadExchangeRates } from './exchange-rates.js';
 import { displayReview, initReviews } from './reviews.js';
@@ -14,6 +13,7 @@ import { initPropertyFilters } from './property-filters.js';
 import { initFeaturedModal } from './featured-modal.js';
 import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; 
 import { initLightbox } from './lightbox.js';
+import { initWhatsApp } from './whatsapp.js';
 
 window.displayReview = displayReview;
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCookieConsent(); 
     initHeaderScroll();
     initScrollReveal();
-    
+    initWhatsApp();
     initLightbox();
     
     // Si estamos en la Home Page (index.html)
