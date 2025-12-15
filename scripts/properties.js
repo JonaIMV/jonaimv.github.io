@@ -62,10 +62,6 @@ function generateBentoGalleryHtml(photos, title) {
     return html;
 }
 
-/* --- properties.js --- */
-
-// (Asumo que tus funciones generateBentoGalleryHtml y getEmbedUrl están definidas arriba o importadas en este archivo)
-
 export function generateDetailHtml(property) {
     
     // 1. Galería
@@ -95,8 +91,6 @@ export function generateDetailHtml(property) {
     const descriptionEN = property.extendedDescription_en || property.description_en || "Description available soon.";
     const descriptionFR = property.extendedDescription_fr || property.description_fr || "Description à venir bientôt...";
 
-    // ... AQUÍ SIGUE TU "return `...`" CON EL HTML QUE VIMOS ANTES ...
-    // --- FIN PREPARACIÓN ---
 
     // 2. Video YouTube
     const embedUrl = getEmbedUrl(property.youtubeUrl);
@@ -200,36 +194,32 @@ export function generateDetailHtml(property) {
         }
 
 // --- FUNCIÓN GLOBAL PARA EL CAMBIO DE IDIOMA ---
-// Al estar en un módulo, necesitamos asignarla a 'window' explícitamente
+
 window.switchPropertyLanguage = function(lang) {
     // 1. Ocultar todos los contenidos
     document.querySelectorAll('.lang-content').forEach(el => {
         el.classList.remove('active-content');
-        el.style.display = 'none'; // Mantenemos tu lógica de ocultar manual
-        el.style.opacity = 0;      // Reseteamos opacidad
+        el.style.display = 'none'; 
+        el.style.opacity = 0;      
     });
 
-    // 2. Desactivar todos los botones (quitar color)
+    
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
 
-    // 3. Mostrar el contenido seleccionado
+    
     const selectedContent = document.getElementById(`content-${lang}`);
     if (selectedContent) {
         selectedContent.style.display = 'block';
         
-        // Pequeño retraso para permitir que el navegador procese el 'display: block' 
-        // antes de cambiar la opacidad (necesario para la transición visual)
+        
         setTimeout(() => {
-            selectedContent.classList.add('active-content'); // Si usas clases CSS
-            selectedContent.style.opacity = 1; // Tu animación manual
+            selectedContent.classList.add('active-content'); 
+            selectedContent.style.opacity = 1; // 
         }, 10);
     }
 
-    // 4. Activar botón (CORREGIDO PARA 3 O MÁS IDIOMAS)
-    // En lugar de adivinar el índice (0, 1...), buscamos exactamente el botón 
-    // que tiene el onclick correspondiente a este idioma.
     const activeBtn = document.querySelector(`button[onclick="switchPropertyLanguage('${lang}')"]`);
     
     if (activeBtn) {
@@ -243,15 +233,35 @@ export function renderProperties(propertiesArray, container) {
     container.innerHTML = ''; 
 
     propertiesArray.forEach(prop => {
+        // A. Lógica del Tour Virtual
         const tourButtonHtml = prop.virtualTourUrl 
             ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger">Tour Virtual 360°</a>`
             : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
 
+        // B. Lógica del Badge (Etiqueta)
+        let badgeHtml = '';
+        
+        // Si tiene status manual (Vendido, Oferta, etc.)
+        if (prop.status) {
+            // Crea clase CSS basada en texto: "Nuevo Ingreso" -> "badge-nuevo-ingreso"
+            const statusClass = 'badge-' + prop.status.toLowerCase().replace(/\s+/g, '-');
+            badgeHtml = `<span class="property-badge ${statusClass}">${prop.status}</span>`;
+        } 
+        // Si no tiene status pero tiene Tour, destacamos eso
+        else if (prop.virtualTourUrl) {
+            badgeHtml = `<span class="property-badge badge-tour"></span>`;
+        }
+
         const card = document.createElement('div');
         card.classList.add('property-card');
         
+        // C. HTML de la tarjeta (Nota el div 'image-container' nuevo para posicionar el badge)
         card.innerHTML = `
-            <img src="${prop.image}" alt="${prop.alt}" loading="lazy" />
+            <div class="image-container" style="position: relative; overflow: hidden;">
+                ${badgeHtml}
+                <img src="${prop.image}" alt="${prop.alt}" loading="lazy" style="width:100%; display:block;" />
+            </div>
+            
             <div class="property-card-content">
                 <h3>${prop.title}</h3> 
                 <p>${prop.description}</p>
@@ -265,8 +275,6 @@ export function renderProperties(propertiesArray, container) {
         `;
         container.appendChild(card);
     });
-
-    
 }
 
 export function renderPropertyDetail(property, mainContainer) {
@@ -308,4 +316,46 @@ export async function loadProperties(containerId, jsonUrl) {
         if (container) container.innerHTML = '<p>Error cargando propiedades.</p>';
         return [];
     }
+}
+export function initMap(properties) {
+    // Si no existe el div del mapa en el HTML, no hacemos nada
+    if (!document.getElementById('map')) return;
+
+    // Coordenadas iniciales (Centro de la Riviera Maya aprox.)
+    const map = L.map('map').setView([20.75, -87.00], 9);
+
+    // Capa del mapa (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const markers = [];
+
+    // Loop para crear pines
+    properties.forEach(prop => {
+        // Solo creamos pin si la propiedad tiene lat y lng en el JSON
+        if (prop.lat && prop.lng) {
+            const marker = L.marker([prop.lat, prop.lng]).addTo(map);
+            
+            // Popup al hacer click en el pin
+            marker.bindPopup(`
+                <div style="text-align:center; min-width: 160px;">
+                    <img src="${prop.image}" style="width:100%; height:80px; object-fit:cover; border-radius:4px; margin-bottom:5px;">
+                    <h4 style="margin: 5px 0; font-size:14px;">${prop.title}</h4>
+                    <span style="font-weight:bold; color:#2c3e50;">${prop.price}</span><br>
+                    <a href="?id=${prop.id}" style="color: #007bff; font-size:12px;">Ver Propiedad</a>
+                </div>
+            `);
+            markers.push(marker);
+        }
+    });
+
+    // Auto-ajustar el zoom para ver todos los pines
+    if (markers.length > 0) {
+        const group = new L.featureGroup(markers);
+        map.fitBounds(group.getBounds(), { padding: [50, 50] });
+    }
+    setTimeout(() => {
+        map.invalidateSize();
+    }, 500)
 }

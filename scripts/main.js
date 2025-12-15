@@ -2,19 +2,18 @@
 
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
-import { loadProperties, renderProperties, renderPropertyDetail } from './properties.js';
+// 1. IMPORTAMOS initMap AQUÍ ABAJO:
+import { loadProperties, renderProperties, renderPropertyDetail, initMap } from './properties.js'; // <--- CAMBIO 1: Agregamos initMap
 import { loadExchangeRates } from './exchange-rates.js';
 import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
 import { initScrollReveal } from './scroll-reveal-config.js';
-import { initRoiCalculator } from './roi-calculator.js'; // Contact Page ROI
+import { initRoiCalculator } from './roi-calculator.js'; 
 import { initPropertyFilters } from './property-filters.js';
 import { initFeaturedModal } from './featured-modal.js';
-import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; // Homepage ROI
+import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; 
 import { initLightbox } from './lightbox.js';
- 
-
 
 window.displayReview = displayReview;
 
@@ -42,19 +41,18 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         // INTEGRACIÓN SEGURA DE ROI HOME 
         if (document.getElementById('calculate-roi-home-btn')) {
-            initRoiCalculatorHome(); // Solo se inicializa si el botón existe
+            initRoiCalculatorHome(); 
         }
     }
 
-    // Si estamos en la Contact Page (Calculadora de Contacto y Exchange Rates)
-    if (document.getElementById('calculate-roi-btn')) { // Botón principal de ROI en Contacto
+    // Si estamos en la Contact Page
+    if (document.getElementById('calculate-roi-btn')) { 
         initRoiCalculator(); 
     }
     
-    if (document.getElementById('usd-rate')) { // Indicador de que estamos en una página con herramientas
+    if (document.getElementById('usd-rate')) { 
         loadExchangeRates();
     }
-    
     
     const propertiesContainer = document.getElementById('properties-container');
     const mainElement = document.querySelector('main');
@@ -63,7 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // 2. LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO
     if (window.location.pathname.includes('for-sale.html') || propertyId) { 
         
-        const allProperties = await loadProperties(null, 'data/forSale.json');
+        const allProperties = await loadProperties(null, 'data/forSale.json'); // Asegúrate que la ruta al JSON sea correcta
 
         if (allProperties.length > 0) {
             
@@ -77,14 +75,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                     mainElement.innerHTML = `<h1>Propiedad no encontrada. ID: ${propertyId}</h1>`;
                 }
             
-            } else if (propertiesContainer) { // PÁGINA DE LISTADO
+            } else if (propertiesContainer) { // PÁGINA DE LISTADO (AQUÍ VA EL MAPA)
                 renderProperties(allProperties, propertiesContainer); 
                 initPropertyFilters(allProperties);
+                
+                // 2. INICIALIZAMOS EL MAPA AQUÍ:
+                initMap(allProperties); // <--- CAMBIO 2: Inicializamos el mapa con las propiedades cargadas
             }
         }
     }
     if (typeof ScrollReveal !== 'undefined') {
-        // Inicializamos o sincronizamos para animar el contenido recién inyectado
         initScrollReveal(); 
         ScrollReveal().sync();
     }

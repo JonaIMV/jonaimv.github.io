@@ -34,7 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
 </head>
 <body>
@@ -123,8 +123,7 @@
             </div>
         </div>
     </section>
-
-        <section class="properties-section reveal">
+    <section class="properties-section reveal">
             <div id="properties-container" class="properties-grid" ></div>
         </section>
 
@@ -138,6 +137,18 @@
                 </div>
             </div>
         </div>
+   <section id="map-section" style="position: relative; z-index: 10; width: 100%; background-color: #fff; padding-top: 80px; padding-bottom: 60px;">
+    
+    <div class="map-container-styled" style="margin: 0 auto;"> <div class="section-header">
+            <span class="subtitle-decoration">Ubicación Estratégica</span>
+            <h2 class="section-title">Explora las Propiedades en el Mapa</h2>
+        </div>
+        
+        <div id="map"></div>
+
+    </div>
+
+</section> 
 
     </main>
     <footer>
@@ -161,6 +172,8 @@
             
         </div>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script type="module" src="scripts/main.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="scripts/main.js"></script>
   <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
