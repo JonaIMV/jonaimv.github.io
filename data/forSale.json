@@ -640,7 +640,7 @@
     "alt": "Casa en venta Puntarena Puerto Morelos",
     "location": "Puerto Morelos",
     "type": "house",
-    "virtualTourUrl": "",
+    "virtualTourUrl": "virtualtours/puntarena/puntarena.html",
     "galleryPhotos": [
       "images/puntarena/fachada-1.webp",
       "images/puntarena/recibidor.webp",
