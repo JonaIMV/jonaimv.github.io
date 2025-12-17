@@ -14,6 +14,7 @@ import { initFeaturedModal } from './featured-modal.js';
 import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; 
 import { initLightbox } from './lightbox.js';
 import { initWhatsApp } from './whatsapp.js';
+import { initFAQ } from './faq.js';
 
 window.displayReview = displayReview;
 
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initScrollReveal();
     initWhatsApp();
     initLightbox();
+    initFAQ();
     
     // Si estamos en la Home Page (index.html)
     if (document.getElementById('client-portraits')) {

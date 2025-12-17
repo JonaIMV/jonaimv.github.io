@@ -1043,24 +1043,25 @@ footer a:hover {
 
 /* Estructura Principal */
 .contact-page {
-    padding: 40px 20px;
-    max-width: 1400px; /* Un poco más ancho para acomodar el sidebar */
+    padding: 120px 20px 60px; /* Espacio para el navbar fijo arriba */
+    background-color: var(--white);
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
 .contact-page h1 {
+    font-family: var(--font-heading);
     text-align: center;
-    color: var(--primary-color);
-    margin-bottom: 40px;
-    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-size: 2.5rem;
 }
 
 .contact-container {
     display: grid;
-    /* Grid asimétrico: 2 partes contenido, 1 parte sidebar */
-    grid-template-columns: 2fr 1fr; 
-    gap: 50px;
-    align-items: start; /* Alinea al inicio verticalmente */
+    grid-template-columns: 1.5fr 1fr; /* Izquierda más ancha (60%), Derecha (40%) */
+    gap: 60px;
+    align-items: start; /* Alineación superior */
 }
 
 /* --- Columna Izquierda: Información Personal --- */
@@ -1072,21 +1073,31 @@ footer a:hover {
 }
 
 .personal-contact-info h2 {
-    color: var(--text-dark);
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.personal-contact-info p {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-light);
     margin-bottom: 20px;
 }
 
 /* Foto de Perfil con estilo */
 .profile-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    float: left; /* Texto envuelve la foto */
+    border-radius: 50%; /* Círculo perfecto */
+    border: 4px solid var(--white);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra suave */
+    float: left; /* Flotamos a la izquierda del texto */
     margin-right: 30px;
     margin-bottom: 20px;
-    border: 5px solid var(--bg-light);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    shape-outside: circle(50%); /* El texto fluye alrededor de la forma circular */
 }
 
 /* Limpiar el float después del texto */
@@ -1102,66 +1113,73 @@ footer a:hover {
 }
 
 .about-me-details h3 {
-    color: var(--primary-color);
+    font-family: var(--font-heading);
+    color: var(--text-dark);
     margin-top: 30px;
     margin-bottom: 15px;
-    font-size: 1.5rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color); /* Línea dorada debajo */
     display: inline-block;
     padding-bottom: 5px;
 }
 
 /* Lista de Actividades */
 .about-me-details ul {
+    list-style: none;
     margin-top: 15px;
+    padding-left: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr; /* Dos columnas de actividades */
     gap: 15px;
 }
 
 .about-me-details ul li {
+    font-family: var(--font-body);
+    color: var(--text-dark);
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 500;
 }
 
 .about-me-details ul li i {
-    color: var(--accent-color);
-    width: 25px; /* Ancho fijo para alinear texto */
-    text-align: center;
+    color: var(--primary-color); /* Iconos en color turquesa */
+    font-size: 1.2rem;
 }
 
 /* Galería de Imágenes (Grid 2x2) */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr); /* 4 fotos en fila */
+    gap: 10px;
     margin-top: 20px;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 120px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     transition: transform 0.3s ease;
     cursor: pointer;
 }
 
 .gallery-grid img:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Sección de Contacto Directo (Email/Whats) */
 .direct-contact {
     margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
+    background-color: var(--bg-light);
+    padding: 30px;
+    border-radius: var(--border-radius);
     text-align: center;
+    border-left: 5px solid var(--primary-color);
 }
-
+.direct-contact-links p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
 .direct-contact-links {
     display: flex;
     justify-content: center;
@@ -1174,7 +1192,7 @@ footer a:hover {
 .direct-contact-links a {
     color: var(--primary-color);
     text-decoration: none;
-    position: relative;
+    transition: color 0.2s;
 }
 
 .direct-contact-links a:hover {
@@ -1183,30 +1201,79 @@ footer a:hover {
 
 /* --- Columna Derecha: Sidebar (Tasas y ROI) --- */
 aside.exchange-rates {
-    background-color: var(--white);
+    background: var(--white);
     padding: 30px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-card);
-    position: sticky; /* Se queda fijo mientras haces scroll si hay espacio */
-    top: 100px; 
+    box-shadow: var(--shadow-card); /* Efecto tarjeta flotante */
+    border: 1px solid rgba(0,0,0,0.05);
+    
+    /* EFECTO STICKY: Se queda fijo al hacer scroll */
+    position: sticky;
+    top: 100px; /* Se detiene a 100px del tope de la pantalla */
 }
 
 aside h2, aside h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.3rem;
+    font-family: var(--font-heading);
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+#rates-list {
+    list-style: none;
+    margin-bottom: 30px;
+    background: var(--bg-light);
+    padding: 15px;
+    border-radius: 6px;
 }
 
 #rates-list li {
-    background: var(--bg-light);
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
     font-weight: 600;
+    color: var(--text-light);
+}
+#rates-list li:last-child {
+    border-bottom: none;
+}
+/* Inputs y Selects Generales */
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
+input[type="number"]:focus, select:focus {
+    border-color: var(--primary-color);
+}
+
+/* Botones Generales */
+button#convert-btn, button#calculate-roi-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: var(--primary-light);
+}
 /* Convertidor de Divisas */
 .converter {
     margin-top: 25px;
@@ -1237,13 +1304,47 @@ aside h2, aside h3 {
 }
 
 #conversion-result {
-    margin-top: 15px;
-    font-weight: bold;
     text-align: center;
-    color: var(--primary-color);
+    font-weight: bold;
+    color: var(--text-dark);
     font-size: 1.2rem;
+    margin-top: 10px;
+}
+.roi-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 20px;
+}
+#roi-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+#roi-results-table th {
+    background-color: var(--text-dark);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
 }
 
+#roi-results-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#roi-results-table td:last-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Resaltar números importantes */
+.result-highlight {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
 /* Ajustes para la Calculadora ROI dentro del Sidebar */
 aside .roi-calculator-wrapper {
     box-shadow: none; /* Quitamos sombra extra */
@@ -1295,6 +1396,101 @@ aside .submit-btn {
     aside.exchange-rates {
         position: static;
     }
+}
+/* =========================================
+   SECCIÓN FAQ
+   ========================================= */
+.faq-source {
+    margin-top: 15px;
+    font-size: 0.85rem;      /* Letra más pequeña */
+    color: #888;             /* Color gris suave */
+    font-style: italic;      /* Cursiva */
+    border-top: 1px dashed #eee; /* Línea punteada separadora */
+    padding-top: 10px;
+    display: block;
+}
+.faq-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 80px auto 40px auto; /* Centrado y separado de arriba */
+    padding: 0 20px;
+    clear: both;
+}
+
+.faq-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    background-color: var(--white);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 20px 25px;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-light);
+}
+
+/* Icono (Flecha) */
+.accordion-header .icon {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Estado Activo */
+.accordion-header.active {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+}
+
+.accordion-header.active .icon {
+    transform: rotate(180deg); /* Flecha gira hacia arriba */
+}
+
+/* Contenido Oculto */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: var(--white);
+}
+
+.accordion-body {
+    padding: 20px 25px;
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 1rem;
+    border-top: 1px solid #f0f0f0;
 }
 /* =========================================
    14. ESTILOS DETALLE DE PROPIEDAD (DINÁMICO)
