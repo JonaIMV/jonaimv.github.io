@@ -4,7 +4,6 @@ import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
 import { loadProperties, renderProperties, renderPropertyDetail, initMap } from './properties.js'; // <--- CAMBIO 1: Agregamos initMap
 import { loadExchangeRates } from './exchange-rates.js';
-import { displayReview, initReviews } from './reviews.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
 import { initScrollReveal } from './scroll-reveal-config.js';
@@ -15,8 +14,7 @@ import { initRoiCalculatorHome } from './initRoiCalculatorHome.js';
 import { initLightbox } from './lightbox.js';
 import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
-
-window.displayReview = displayReview;
+import { initTestimonialMarquee } from './marquee.js';
 
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
@@ -37,16 +35,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFAQ();
     
     // Si estamos en la Home Page (index.html)
-    if (document.getElementById('client-portraits')) {
-        initReviews();
+    if (document.getElementById('testimonial-track')) {
+        
+        // 3. CAMBIO: Llamar a la nueva función en lugar de initReviews()
+        initTestimonialMarquee(); 
+        
         initFeaturedModal();
         
-        // INTEGRACIÓN SEGURA DE ROI HOME 
         if (document.getElementById('calculate-roi-home-btn')) {
-            initRoiCalculatorHome(); 
+            initRoiCalculatorHome();
         }
     }
-
     // Si estamos en la Contact Page
     if (document.getElementById('calculate-roi-btn')) { 
         initRoiCalculator(); 

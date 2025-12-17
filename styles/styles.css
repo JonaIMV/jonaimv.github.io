@@ -338,75 +338,163 @@ header {
 /* =========================================
    4. SECCIÓN TESTIMONIALES (INDEX)
    ========================================= */
-.testimonial-properties {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: var(--white);
+
+.testimonial-marquee-section {
+    padding: 80px 0; 
+    background-color: var(--bg-light);
+    overflow: hidden; 
 }
 
-.testimonial-properties h3 {
+.header-center {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.testimonial-marquee-section h3 {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
 
-.subtitle {
-    color: var(--text-light);
-    margin-bottom: 40px;
+/* El Contenedor de la Pista */
+.marquee-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 20px 0; 
 }
 
-.testimonial blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    max-width: 800px;
-    margin: 0 auto 20px;
-    min-height: 80px; /* Evita saltos de altura al cambiar texto */
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
 }
 
-.portrait-container {
+.marquee-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-light), transparent);
+}
+
+.marquee-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-light), transparent);
+}
+
+/* La Pista que se Mueve */
+.marquee-track {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    gap: 15px; 
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
-.client-portrait {
-    width: 80px;
-    height: 80px;
+/* Pausar animación si pasas el mouse por encima */
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+/* Estilo de la Tarjeta */
+.review-card {
+    background: var(--white);
+    border-radius: 16px; 
+    padding: 25px;  
+    width: 260px;
+    min-height: 380px; 
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    white-space: normal; 
+}
+.review-card:nth-child(odd) {
+    transform: rotate(-2deg) translateY(5px); 
+    margin-top: 10px; 
+}
+
+.review-card:nth-child(even) {
+    transform: rotate(2deg) translateY(-5px); 
+    background-color: #fafafa; 
+}
+
+.review-card:hover {
+    transform: rotate(0deg) scale(1.05) !important; 
+    z-index: 10; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    background-color: var(--white);
+}
+
+.review-content p {
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-author img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    cursor: pointer;
-    border: 3px solid transparent;
-    transition: var(--transition);
-    opacity: 0.7;
+    border: 2px solid var(--primary-light);
 }
 
-.client-portrait:hover, 
-.client-portrait.active {
-    border-color: var(--primary-color);
-    transform: scale(1.1);
-    opacity: 1;
+.author-info h4 {
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin: 0;
 }
 
-.testimonial-cta-wrapper {
-    margin-top: 40px;
+.author-info span {
+    font-size: 0.85rem;
+    color: var(--text-light);
 }
-
-.final-cta {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+.avatar-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color); 
+    color: var(--white);                    
+    border-radius: 50%;                     
+    display: flex;
+    align-items: center;                   
+    justify-content: center;                
     font-weight: bold;
-    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    flex-shrink: 0;                         
+    border: 2px solid var(--primary-light); 
 }
 
-.final-cta:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
+/* DEFINICIÓN DE LA ANIMACIÓN */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        
+        transform: translateX(-50%);
+    }
 }
 
+/* Móvil: Tarjetas un poco más angostas */
+@media (max-width: 768px) {
+    .review-card {
+        width: 280px;
+    }
+}
 /* =========================================
    5. GUÍA DE INVERSIÓN (PASOS)
    ========================================= */
