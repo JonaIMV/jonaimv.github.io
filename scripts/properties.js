@@ -238,28 +238,33 @@ export function renderProperties(propertiesArray, container) {
             ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger">Tour Virtual 360°</a>`
             : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
 
-        // B. Lógica del Badge (Etiqueta)
+        // B. Lógica del Badge
         let badgeHtml = '';
-        
-        // Si tiene status manual (Vendido, Oferta, etc.)
         if (prop.status) {
-            // Crea clase CSS basada en texto: "Nuevo Ingreso" -> "badge-nuevo-ingreso"
             const statusClass = 'badge-' + prop.status.toLowerCase().replace(/\s+/g, '-');
             badgeHtml = `<span class="property-badge ${statusClass}">${prop.status}</span>`;
-        } 
-        // Si no tiene status pero tiene Tour, destacamos eso
-        else if (prop.virtualTourUrl) {
+        } else if (prop.virtualTourUrl) {
             badgeHtml = `<span class="property-badge badge-tour"></span>`;
         }
 
         const card = document.createElement('div');
         card.classList.add('property-card');
         
-        // C. HTML de la tarjeta (Nota el div 'image-container' nuevo para posicionar el badge)
+        // C. HTML de la tarjeta CORREGIDO
+        // 1. Agregamos la clase 'skeleton-loading' al div image-container
+        // 2. La imagen inicia con opacidad 0
+        // 3. El evento onload quita el skeleton y sube la opacidad a 1
         card.innerHTML = `
-            <div class="image-container" style="position: relative; overflow: hidden;">
+            <div class="image-container skeleton-loading" style="position: relative; overflow: hidden; min-height: 200px; background-color: #e0e0e0;">
                 ${badgeHtml}
-                <img src="${prop.image}" alt="${prop.alt}" loading="lazy" style="width:100%; display:block;" />
+                <img 
+                    src="${prop.image}" 
+                    alt="${prop.alt}" 
+                    loading="lazy" 
+                    style="width:100%; display:block; opacity: 0; transition: opacity 0.5s ease-in-out;"
+                    onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton-loading');"
+                    onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'padding:20px; text-align:center;\'>Imagen no disponible</div>';"
+                />
             </div>
             
             <div class="property-card-content">
