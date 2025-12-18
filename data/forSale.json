@@ -749,7 +749,7 @@
     "alt": "Casa en Venta Puerto Morelos Palma Real",
     "location": "Puerto Morelos",
     "type": "house",
-    "virtualTourUrl": "",
+    "virtualTourUrl": "virtualtours/palma-real/palma-real.html",
     "galleryPhotos": [
       "images/palma-real/fachada.webp",
         "images/palma-real/comedor.webp",
@@ -812,8 +812,8 @@
         "Emplacement central"
 ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d491.79620043995163!2d-86.8952694722922!3d20.86741499437957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1766026713705!5m2!1ses!2smx",
+    "status": "Nuevo ingreso",
     "lat": 20.867167, 
     "lng": -86.895678 
 }
-
 ]
