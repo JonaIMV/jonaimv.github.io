@@ -736,6 +736,84 @@
     "status": "Nuevo ingreso",
     "lat": 20.850316, 
     "lng": -86.897394
+},
+{
+    "id": 12,
+    "title": "Casa en Venta Palma Real Puerto Morelos",
+    "description": "4 habitaciones, 3 baños,totalmente equipada",
+    "extendedDescription": "Esta casa en Residencial Palma Real lo tiene todo para entrar a vivir mañana mismo. Ha sido mejorada y equipada pensando en el confort total: cuenta con una cocina integral de diseño exclusivo en madera de Tzalam (una joya tropical resistente y elegante) y viene totalmente equipada, incluyendo lavavajillas y centro de lavado. \n\nEl patio trasero es amplio y tiene el espacio perfecto para que construyas tu propia alberca privada y crees tu oasis personal. Ubicada en un entorno seguro y familiar, con parques y acceso controlado, es la opción ideal para quienes buscan calidad, acabados superiores y una ubicación estratégica en Puerto Morelos.",
+    "extendedDescription_en": "This home in Residencial Palma Real has everything you need to move in tomorrow. It has been upgraded and equipped with total comfort in mind: featuring an exclusive designer kitchen made of Tzalam wood (a durable and elegant tropical hardwood) and comes fully equipped, including a dishwasher and laundry center.\n\nThe backyard is spacious and offers the perfect space to build your own private pool and create your personal oasis. Located in a safe and family-friendly environment, with parks and controlled access, it is the ideal option for those seeking quality, superior finishes, and a strategic location in Puerto Morelos.",
+    "extendedDescription_fr": "Cette maison dans le Residencial Palma Real a tout pour vous accueillir dès demain. Elle a été améliorée et équipée pour un confort total : elle dispose d'une cuisine intégrale au design exclusif en bois de Tzalam (un bois tropical précieux, résistant et élégant) et est entièrement équipée, incluant lave-vaisselle et centre de lavage.\n\nL'arrière-cour est spacieuse et offre l'espace parfait pour construire votre propre piscine privée et créer votre oasis personnelle. Située dans un environnement sûr et familial, avec parcs et accès contrôlé, c'est l'option idéale pour ceux qui recherchent la qualité, des finitions supérieures et un emplacement stratégique à Puerto Morelos.",
+    "price": "$4,500,000 MXN",
+    "image": "images/palma-real/fachada.webp",
+    "alt": "Casa en Venta Puerto Morelos Palma Real",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/palma-real/fachada.webp",
+        "images/palma-real/comedor.webp",
+        "images/palma-real/cocina.webp",
+        "images/palma-real/master.webp",
+        "images/palma-real/baño-master.webp",
+        "images/palma-real/room-2.webp",
+        "images/palma-real/patio.webp",
+        "images/palma-real/room.webp",
+        "images/palma-real/escaleras.webp",
+        "images/palma-real/cocina-1.webp",
+        "images/palma-real/sala.webp",
+        "images/palma-real/baño-1.webp",
+        "images/palma-real/alberca.webp",
+        "images/palma-real/naturaleza.webp",
+        "images/palma-real/camastros.webp",
+        "images/palma-real/juegos.webp"
+      
+    ], 
+    "features": [
+    "Cocina de madera de Tzalam",
+    "Totalmente equipada",
+    "Incluye lavavajillas y centro de lavado",
+    "160 m² de terreno",
+    "140 m² de construcción",
+    "Patio con espacio para alberca"
+    ],
+    "features_en": [
+        "Tzalam wood kitchen",
+        "Fully equipped",
+        "Dishwasher & Laundry center included",
+        "160 m² lot",
+        "140 m² construction",
+        "Backyard with space for pool"
+    ],
+    "features_fr": [
+        "Cuisine en bois de Tzalam",
+        "Entièrement équipée",
+        "Lave-vaisselle et buanderie inclus",
+        "Terrain de 160 m²",
+        "140 m² de construction",
+        "Cour avec espace pour piscine"
+    ],
+    "amenities": [
+        "Seguridad 24/7",
+        "Parques y áreas verdes",
+        "Servicios subterráneos",
+        "Ubicación céntrica"
+    ],
+    "amenities_en": [
+        "24/7 Security",
+        "Parks and green areas",
+        "Underground utilities",
+        "Central location"
+    ],
+    "amenities_fr": [
+        "Sécurité 24/7",
+        "Parcs et espaces verts",
+        "Services souterrains",
+        "Emplacement central"
+],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d491.79620043995163!2d-86.8952694722922!3d20.86741499437957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1766026713705!5m2!1ses!2smx",
+    "lat": 20.867167, 
+    "lng": -86.895678 
 }
 
 ]
