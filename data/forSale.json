@@ -685,11 +685,15 @@
       "images/puntarena/balcon-cocina.webp",
       "images/puntarena/fachada-trasera.webp",
       "images/puntarena/bañera.webp",
-      "images/puntarena/master.webp",
-      "images/puntarena/baño-master.webp",
+      "images/puntarena/master-2.webp",
+      "images/puntarena/baño-master-2.webp",
       "images/puntarena/recamara.webp",
       "images/puntarena/habitacion.webp",
-      "images/puntarena/xala.webp"
+      "images/puntarena/xala.webp",
+      "images/puntarena/puerta-pasillo.webp",
+      "images/puntarena/room.webp",
+      "images/puntarena/room-2.webp",
+      "images/puntarena/room-1.webp"
     ],
     
     "features": [
