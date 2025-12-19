@@ -43,6 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <title>TuCasa Caribe Realty | Live Where Others Vacation</title>
@@ -80,61 +81,72 @@
         </div>
     </header>
    <main>
-    <div class="internal-page-container" style="min-height: auto; padding-bottom: 40px;">
-        <h1 class="page-title">Propiedades en Venta</h1>
-        <section class="filter-controls reveal">
-    <label for="sort-by">Ordenar por:</label>
-    <select id="sort-by"> <option value="price-desc">Precio (Mayor a Menor)</option>
-        <option value="price-asc">Precio (Menor a Mayor)</option>
-        <option value="name-asc">Nombre (A-Z)</option>
-    </select>
+        <div class="internal-page-container" style="min-height: auto; padding-bottom: 20px;">
+            <h1 class="page-title">Propiedades en Venta</h1>
+        </div>
 
-    <label for="filter-type">Tipo:</label>
-    <select id="filter-type"> <option value="all">Todos</option>
-        <option value="house">Casa</option>
-        <option value="condo">Condominio</option>
-        <option value="land">Terreno</option>
-    </select>
-    </section>
-    </div>
-    <section class="buying-process-sticky">
-        <div class="process-container-split">
-            <div class="process-image-side reveal-left">
-                <img src="images/mar-puerto.webp" alt="Asesoría inmobiliaria Puerto Morelos" decoding="sync">
-            </div>
-            <div class="process-content-side">
-                <div class="process-content-inner">
-                    <h4 class="process-subtitle reveal-right">Tu inversión segura</h4>
-                    <h2 class="process-title reveal-right">El Camino a Tu Propiedad</h2>
-                    <p class="process-intro reveal-right">Te guiamos en cada paso para garantizar una transacción transparente y sin estrés.</p>
-                    <div class="process-steps-grid">
-                        <div class="process-step-item animate-card">
-                            <div class="step-info">
-                                <h3>01. Análisis Legal</h3>
-                                <p>Revisión exhaustiva de documentos y situación legal del inmueble para tu total tranquilidad.</p>
+        <section class="buying-process-sticky">
+            <div class="process-container-split">
+                <div class="process-image-side reveal-left">
+                    <img src="images/mar-puerto.webp" alt="Asesoría inmobiliaria Puerto Morelos" decoding="sync">
+                </div>
+                <div class="process-content-side">
+                    <div class="process-content-inner">
+                        <h4 class="process-subtitle reveal-right">Tu inversión segura</h4>
+                        <h2 class="process-title reveal-right">El Camino a Tu Propiedad</h2>
+                        <p class="process-intro reveal-right">Te guiamos en cada paso para garantizar una transacción transparente y sin estrés.</p>
+                        
+                        <div class="process-steps-grid">
+                            <div class="process-step-item animate-card">
+                                <div class="step-info">
+                                    <h3>01. Análisis Legal</h3>
+                                    <p>Revisión exhaustiva de documentos y situación legal del inmueble.</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="process-step-item animate-card">
-                            <div class="step-info">
-                                <h3>02. Selección Ideal</h3>
-                                <p>Filtramos el mercado rigurosamente para presentarte solo las opciones que cumplen tus expectativas.</p>
+                            <div class="process-step-item animate-card">
+                                <div class="step-info">
+                                    <h3>02. Selección Ideal</h3>
+                                    <p>Filtramos el mercado rigurosamente para presentarte solo las mejores opciones.</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="process-step-item animate-card">
-                            <div class="step-info">
-                                <h3>03. Cierre Seguro</h3>
-                                <p>Acompañamiento profesional en notaría y gestión de fideicomisos hasta la entrega de llaves.</p>
+                            <div class="process-step-item animate-card">
+                                <div class="step-info">
+                                    <h3>03. Cierre Seguro</h3>
+                                    <p>Acompañamiento profesional en notaría hasta la entrega de llaves.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="properties-section reveal">
-            <div id="properties-container" class="properties-grid" ></div>
+        </section>
+
+        <section class="properties-section reveal">
+            
+            <div class="filter-container">
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="sort-by">Ordenar por:</label>
+                        <select id="sort-by">
+                            <option value="price-desc">Precio (Mayor a Menor)</option>
+                            <option value="price-asc">Precio (Menor a Mayor)</option>
+                            <option value="name-asc">Nombre (A-Z)</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="filter-type">Tipo de Propiedad:</label>
+                        <select id="filter-type">
+                            <option value="all">Todos</option>
+                            <option value="house">Casa</option>
+                            <option value="condo">Condominio</option>
+                            <option value="land">Terreno</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="properties-container" class="properties-grid"></div>
         </section>
 
         <div id="propertyModal" class="modal">
@@ -147,19 +159,16 @@
                 </div>
             </div>
         </div>
-   <section id="map-section" style="position: relative; z-index: 10; width: 100%; background-color: #fff; padding-top: 80px; padding-bottom: 60px;">
-    
-    <div class="map-container-styled" style="margin: 0 auto;"> <div class="section-header">
-            <span class="subtitle-decoration">Ubicación Estratégica</span>
-            <h2 class="section-title">Explora las Propiedades en el Mapa</h2>
-        </div>
-        
-        <div id="map"></div>
 
-    </div>
-
-</section> 
-
+        <section id="map-section" style="position: relative; z-index: 10; width: 100%; background-color: #fff; padding-top: 80px; padding-bottom: 60px;">
+            <div class="map-container-styled" style="margin: 0 auto;">
+                <div class="section-header">
+                    <span class="subtitle-decoration">Ubicación Estratégica</span>
+                    <h2 class="section-title">Explora las Propiedades en el Mapa</h2>
+                </div>
+                <div id="map"></div>
+            </div>
+        </section> 
     </main>
     <footer>
         <div class="footer-info">

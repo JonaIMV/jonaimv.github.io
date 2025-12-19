@@ -11,6 +11,9 @@
     "alt": "Apartment in gated community",
     "location": "Puerto Morelos",
     "type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 65,
     "virtualTourUrl": "virtualtours/selva26-H/selva_H.html",
     "galleryPhotos": [
       "images/selva-26-h/sala.webp",
@@ -81,6 +84,9 @@
     "alt": "Gate community house puerto morelos Puntavista",
     "location": "Puerto Morelos",
     "type": "house",
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "area": 210,
     "virtualTourUrl": "virtualtours/puntavista/puntavista.html",
     "galleryPhotos": [
       "images/puntavista/fachada.webp",
@@ -146,6 +152,9 @@
     "alt": "Charming house with patio puerto morelos El Faro",
     "location": "Puerto Morelos",
     "type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 65,
     "virtualTourUrl": "virtualtours/Maracaibo-7/maracaibo.html",
     "galleryPhotos": [
       "images/maracaibo-7/fachada.webp",
@@ -207,6 +216,9 @@
     "alt": "Eco lot at Regatta gate community mangrove view puerto morelos",
     "location": "Puerto Morelos",
     "type": "land",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "area": 320,
     "virtualTourUrl": "",
     "galleryPhotos": [
       "images/regatta/aerea.webp",
@@ -272,6 +284,9 @@
     "alt": "Eco lot in Puntavista gate community mangroove view",
     "location": "Puerto Morelos",
     "type": "land",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "area": 160,
     "virtualTourUrl": "",
     "galleryPhotos": [
       "images/lotes-puntavista/aerea-1.webp",
@@ -333,6 +348,9 @@
     "alt": "Naay Selva escondida",
     "location": "Puerto Morelos",
     "type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 70,
     "virtualTourUrl": "virtualtours/naay-34-B/naay.html",
     "galleryPhotos": [
       "images/naay/sala-naay.webp",
@@ -400,6 +418,9 @@
     "alt": "Departamento en Selva escondida",
     "location": "Puerto Morelos",
     "type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 65,
     "virtualTourUrl": "virtualtours/selva-16g/selva-16g.html",
     "galleryPhotos": [
       "images/selva-16-g/sala.webp",
@@ -463,6 +484,9 @@
     "alt": "Casa en Aldea Umm Puerto Morelos",
     "location": "Puerto Morelos",
     "type": "house",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area": 200,
     "virtualTourUrl": "virtualtours/aldea-umm/aldea-umm.html",
     "galleryPhotos": [
       "images/aldea-umm/sala.webp",
@@ -532,6 +556,9 @@
     "alt": "Departamento Akumal Yal-Ku caleta Yal-ku",
     "location": "Akumal",
     "type": "condo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 381,
     "virtualTourUrl": "virtualtours/yal-ku/yalku.html",
     "galleryPhotos": [
       "images/yal-ku/entrada.webp",
@@ -608,6 +635,9 @@
     "alt": "Terreno en Aldea Umm Puerto Morelos",
     "location": "Playa del Carmen",
     "type": "house",
+    "bedrooms":4,
+    "bathrooms":4,
+    "area":391,
     "youtubeUrl":"",
     "virtualTourUrl": "virtualtours/piedra/casa-piedra.html",
 
@@ -674,6 +704,9 @@
     "alt": "Casa en venta Puntarena Puerto Morelos",
     "location": "Puerto Morelos",
     "type": "house",
+    "bedrooms": 6,
+    "bathrooms": 4.5,
+    "area": 250,
     "virtualTourUrl": "virtualtours/puntarena/puntarena.html",
     "galleryPhotos": [
       "images/puntarena/fachada-1.webp",
@@ -700,19 +733,19 @@
     "160 m² de terreno",
     "7 Aires Acondicionados inverter",
     "6 Recámaras",
-    "5 Baños completos"
+    "4.5 Baños "
     ],
     "features_en": [
         "160 m² lot",
         "7 Inverter Air Conditioners",
         "6 Bedrooms",
-        "5 Full Bathrooms"
+        "4.5  Bathrooms"
     ],
     "features_fr": [
         "Terrain de 160 m²",
         "7 Climatiseurs Inverter",
         "6 Chambres",
-        "5 Salles de bain complètes"
+        "4.5 Salles de bain"
     ],
 
     "amenities": [
@@ -753,6 +786,9 @@
     "alt": "Casa en Venta Puerto Morelos Palma Real",
     "location": "Puerto Morelos",
     "type": "house",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 140,
     "virtualTourUrl": "virtualtours/palma-real/palma-real.html",
     "galleryPhotos": [
       "images/palma-real/fachada.webp",

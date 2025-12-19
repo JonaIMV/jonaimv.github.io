@@ -233,12 +233,12 @@ export function renderProperties(propertiesArray, container) {
     container.innerHTML = ''; 
 
     propertiesArray.forEach(prop => {
-        // A. Lógica del Tour Virtual
+        // A. Lógica del Tour Virtual (Sin cambios)
         const tourButtonHtml = prop.virtualTourUrl 
             ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger">Tour Virtual 360°</a>`
             : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
 
-        // B. Lógica del Badge
+        // B. Lógica del Badge (Sin cambios)
         let badgeHtml = '';
         if (prop.status) {
             const statusClass = 'badge-' + prop.status.toLowerCase().replace(/\s+/g, '-');
@@ -249,17 +249,15 @@ export function renderProperties(propertiesArray, container) {
 
         const card = document.createElement('div');
         card.classList.add('property-card');
+        card.setAttribute('data-id', prop.id); // Buena práctica para selectores futuros
         
-        // C. HTML de la tarjeta CORREGIDO
-        // 1. Agregamos la clase 'skeleton-loading' al div image-container
-        // 2. La imagen inicia con opacidad 0
-        // 3. El evento onload quita el skeleton y sube la opacidad a 1
+        // C. HTML de la tarjeta CON BARRA DE ICONOS
         card.innerHTML = `
             <div class="image-container skeleton-loading" style="position: relative; overflow: hidden; min-height: 200px; background-color: #e0e0e0;">
                 ${badgeHtml}
                 <img 
                     src="${prop.image}" 
-                    alt="${prop.alt}" 
+                    alt="${prop.alt || prop.title}" 
                     loading="lazy" 
                     style="width:100%; display:block; opacity: 0; transition: opacity 0.5s ease-in-out;"
                     onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton-loading');"
@@ -269,10 +267,30 @@ export function renderProperties(propertiesArray, container) {
             
             <div class="property-card-content">
                 <h3>${prop.title}</h3> 
-                <p>${prop.description}</p>
-                <p class="price">${prop.price}</p>
-                <p class="location">${prop.location}</p> 
+                
+                <div class="features-row">
+                    <div class="feature-item" title="Habitaciones">
+                        <i class="fas fa-bed"></i>
+                        <span>${prop.bedrooms || 0} Hab.</span>
+                    </div>
+                    <div class="feature-item" title="Baños">
+                        <i class="fas fa-bath"></i>
+                        <span>${prop.bathrooms || 0} Baños</span>
+                    </div>
+                    <div class="feature-item" title="Terreno/Construcción">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>${prop.area || 0} m²</span>
+                    </div>
+                </div>
+                <p class="price" style="font-weight: bold; font-size: 1.1rem; color: var(--text-dark); margin-bottom: 5px;">
+                    ${prop.price}
+                </p>
+                <p class="location" style="font-size: 0.9rem; color: #666;">
+                    <i class="fas fa-map-marker-alt" style="color:var(--primary-color); margin-right: 5px;"></i>
+                    ${prop.location}
+                </p> 
             </div>
+
             <div class="card-actions-group">
                 <a href="?id=${prop.id}" class="btn-detail-trigger">Más detalles</a>
                 ${tourButtonHtml}

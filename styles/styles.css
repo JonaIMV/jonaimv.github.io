@@ -699,19 +699,77 @@ header {
 /* =========================================
    7. SECCIÓN DE FILTROS Y GRID
    ========================================= */
-.filter-controls {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-    background-color: var(--bg-light);
-    flex-wrap: wrap;
+/* =========================================
+   ESTILO TÍTULO DE PÁGINA (Propiedades)
+   ========================================= */
+.page-title {
+    font-family: 'Playfair Display', serif; /* O var(--font-heading) si ya la definiste así */
+    font-size: 3rem;          /* Grande y legible */
+    font-weight: 700;         /* Negrita elegante */
+    text-align: center;       /* Centrado */
+    color: var(--primary-color); /* Tu color Turquesa */
+    margin: 0;                /* Quitamos márgenes por defecto */
+    padding-bottom: 10px;     /* Un poco de aire abajo */
+    letter-spacing: -1px;     /* Un toque moderno */
+    padding-top: 40px;      /* Espacio arriba */
+    /* Opcional: Una línea sutil debajo si te gusta */
+    /* border-bottom: 2px solid var(--accent-color); 
+       display: inline-block; */
 }
 
-.filter-controls select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem; /* Más pequeño en celular para que no rompa la pantalla */
+    }
+}
+
+   .filter-container {
+    max-width: var(--container-width);
+    margin: 0 auto 40px auto; 
+    padding: 0 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.filter-controls {
+    display: flex;
+    gap: 20px; 
+    background-color: var(--bg-light);
+    padding: 15px 25px;
+    border-radius: var(--border-radius);
+    flex-wrap: wrap; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.filter-group select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    background-color: var(--white);
+    color: var(--text-dark);
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+    min-width: 180px;
+}
+
+.filter-group select:focus {
+    border-color: var(--primary-color);
 }
 
 .properties-section {
@@ -739,7 +797,7 @@ header {
 .property-card {
     opacity: 1 !important;
     visibility: visible !important;
-    transform: none !important; /* Quita desplazamientos raros */
+    transform: none !important; 
 }
 
 /* =========================================
@@ -822,6 +880,48 @@ header {
     z-index: 10;
     pointer-events: none;
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+/* =========================================
+   BARRA DE CARACTERÍSTICAS (TARJETAS)
+   ========================================= */
+
+/* Contenedor de la fila */
+.features-row {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio uniformemente */
+    align-items: center;
+    margin: 15px 0; 
+    padding: 10px 5px; /* Un poco de padding lateral */
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Cada ítem (Icono + Texto) */
+.feature-item {
+    display: flex;
+    flex-direction: row;  /* <--- CAMBIO CLAVE: Fila en lugar de columna */
+    align-items: center;  /* Centrado verticalmente */
+    gap: 8px;             /* Espacio entre el icono y el texto */
+    color: var(--text-dark); /* Color de texto más oscuro para legibilidad */
+    font-size: 0.95rem;   /* Tamaño cómodo */
+    font-weight: 500;
+}
+
+/* Estilo de los Iconos */
+.feature-item i {
+    color: var(--primary-color);
+    font-size: 1rem;      /* Ajustamos tamaño para que combine con el texto */
+    margin-bottom: 0;     /* Quitamos márgenes viejos si tenían */
+}
+
+/* Ajuste para que no se rompa en celulares muy pequeños */
+@media (max-width: 400px) {
+    .features-row {
+        gap: 10px; /* En pantallas muy chicas, reducimos o controlamos el espacio */
+    }
+    .feature-item {
+        font-size: 0.85rem;
+    }
 }
 /* Map y Badge: Vendido */
 .badge-vendida, 
@@ -1130,29 +1230,35 @@ footer a:hover {
    ========================================= */
 
 /* Estructura Principal */
+/* =========================================
+   ESTILOS PÁGINA DE CONTACTO (OPTIMIZADO)
+   ========================================= */
+
 .contact-page {
-    padding: 120px 20px 60px; /* Espacio para el navbar fijo arriba */
+    
+    padding: 150px 20px 60px;
     background-color: var(--white);
     max-width: var(--container-width);
     margin: 0 auto;
 }
 
 .contact-page h1 {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading, sans-serif); /* Fallback a sans-serif si la variable falla */
     text-align: center;
     color: var(--text-dark);
-    margin-bottom: 60px;
-    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
 }
 
+/* Contenedor Principal (Grid) */
 .contact-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; /* Izquierda más ancha (60%), Derecha (40%) */
-    gap: 60px;
-    align-items: start; /* Alineación superior */
+    grid-template-columns: 1.5fr 1fr; /* Izquierda 60%, Derecha 40% */
+    gap: 50px;
+    align-items: start; /* CRUCIAL: Necesario para que position: sticky funcione */
 }
 
-/* --- Columna Izquierda: Información Personal --- */
+/* --- COLUMNA IZQUIERDA: BIO Y FORMULARIO --- */
 .personal-contact-info {
     background-color: var(--white);
     padding: 40px;
@@ -1161,91 +1267,86 @@ footer a:hover {
 }
 
 .personal-contact-info h2 {
-    font-family: var(--font-heading);
+    font-family: var(--font-heading, sans-serif);
     color: var(--primary-color);
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
+
 .personal-contact-info p {
-    font-family: var(--font-body);
     font-size: 1.05rem;
-    line-height: 1.8;
+    line-height: 1.7;
     color: var(--text-light);
     margin-bottom: 20px;
 }
 
-/* Foto de Perfil con estilo */
+/* Foto de Perfil */
 .profile-photo {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 50%; /* Círculo perfecto */
-    border: 4px solid var(--white);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra suave */
-    float: left; /* Flotamos a la izquierda del texto */
+    border-radius: 50%;
+    border: 4px solid var(--bg-light);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    float: left; 
     margin-right: 30px;
-    margin-bottom: 20px;
-    shape-outside: circle(50%); /* El texto fluye alrededor de la forma circular */
+    margin-bottom: 15px;
+    shape-outside: circle(50%);
 }
 
-/* Limpiar el float después del texto */
+/* Limpiar floats */
 .personal-contact-info::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Detalles "Sobre Mí" */
 .about-me-details {
     margin-top: 30px;
     clear: both;
 }
 
 .about-me-details h3 {
-    font-family: var(--font-heading);
     color: var(--text-dark);
-    margin-top: 30px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--accent-color); /* Línea dorada debajo */
+    margin: 25px 0 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--accent-color);
     display: inline-block;
-    padding-bottom: 5px;
 }
 
-/* Lista de Actividades */
 .about-me-details ul {
     list-style: none;
-    margin-top: 15px;
-    padding-left: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de actividades */
-    gap: 15px;
-}
-
-.about-me-details ul li {
-    font-family: var(--font-body);
-    color: var(--text-dark);
-    display: flex;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-.about-me-details ul li i {
-    color: var(--primary-color); /* Iconos en color turquesa */
-    font-size: 1.2rem;
+.about-me-details ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
 }
 
-/* Galería de Imágenes (Grid 2x2) */
+.about-me-details ul li i {
+    color: var(--primary-color);
+}
+
+/* Galería Pequeña */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 fotos en fila */
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-top: 20px;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 100px;
+    height: 90px;
     object-fit: cover;
-    border-radius: var(--border-radius);
+    border-radius: 6px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -1254,65 +1355,123 @@ footer a:hover {
     transform: scale(1.05);
 }
 
-/* Sección de Contacto Directo (Email/Whats) */
-.direct-contact {
+/* --- ESTILOS DEL FORMULARIO (NUEVO) --- */
+.form-wrapper {
     margin-top: 40px;
-    background-color: var(--bg-light);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    text-align: center;
-    border-left: 5px solid var(--primary-color);
+    padding-top: 30px;
+    border-top: 1px solid #eee;
 }
-.direct-contact-links p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+
+.form-wrapper h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
     font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    display: block;
+    margin-bottom: 5px;
 }
+
+/* Estilos Generales para Inputs (Formulario y Sidebar) */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(0, 139, 139, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-light);
+}
+
+/* Contacto Directo (Links abajo) */
+.direct-contact {
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
 .direct-contact-links {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    font-size: 1.1rem;
+    gap: 20px;
     font-weight: bold;
 }
 
 .direct-contact-links a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.2s;
 }
 
-.direct-contact-links a:hover {
-    color: var(--accent-color);
-}
-
-/* --- Columna Derecha: Sidebar (Tasas y ROI) --- */
+/* --- COLUMNA DERECHA: SIDEBAR (STICKY) --- */
 aside.exchange-rates {
     background: var(--white);
     padding: 30px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-card); /* Efecto tarjeta flotante */
+    box-shadow: var(--shadow-card);
     border: 1px solid rgba(0,0,0,0.05);
     
-    /* EFECTO STICKY: Se queda fijo al hacer scroll */
+    /* STICKY: Se queda fijo al hacer scroll */
     position: sticky;
-    top: 100px; /* Se detiene a 100px del tope de la pantalla */
+    top: 100px; /* Margen superior cuando se fija */
+    z-index: 10;
 }
 
 aside h2, aside h3 {
-    font-family: var(--font-heading);
+    text-align: center;
     color: var(--text-dark);
     margin-bottom: 20px;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.4rem;
 }
+
+/* Lista de Tasas */
 #rates-list {
     list-style: none;
-    margin-bottom: 30px;
+    padding: 0;
+    margin-bottom: 25px;
     background: var(--bg-light);
-    padding: 15px;
     border-radius: 6px;
+    padding: 15px;
 }
 
 #rates-list li {
@@ -1321,166 +1480,92 @@ aside h2, aside h3 {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
     font-weight: 600;
-    color: var(--text-light);
+    color: #555;
 }
+
 #rates-list li:last-child {
     border-bottom: none;
 }
-/* Inputs y Selects Generales */
-input[type="number"], select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
-}
 
-input[type="number"]:focus, select:focus {
-    border-color: var(--primary-color);
-}
-
-/* Botones Generales */
-button#convert-btn, button#calculate-roi-btn {
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-button:hover {
-    background-color: var(--primary-light);
-}
-/* Convertidor de Divisas */
-.converter {
-    margin-top: 25px;
-}
-
-.converter input, 
-.converter select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
+/* Botón específico del Convertidor (Oscuro) */
 #convert-btn {
     width: 100%;
-    background-color: var(--text-dark); /* Botón oscuro para diferenciar */
+    background-color: var(--text-dark);
     color: var(--white);
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: var(--transition);
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 #convert-btn:hover {
-    background-color: var(--black);
+    background-color: #000;
 }
 
 #conversion-result {
     text-align: center;
     font-weight: bold;
-    color: var(--text-dark);
+    margin-top: 15px;
+    color: var(--primary-color);
     font-size: 1.2rem;
-    margin-top: 10px;
 }
-.roi-description {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    text-align: center;
-    margin-bottom: 20px;
-}
+
+/* Ajustes tabla ROI */
 #roi-results-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
+
 #roi-results-table th {
     background-color: var(--text-dark);
     color: var(--white);
-    padding: 10px;
-    text-align: center;
+    padding: 8px;
     border-radius: 4px 4px 0 0;
 }
 
 #roi-results-table td {
-    padding: 12px 10px;
+    padding: 10px;
     border-bottom: 1px solid #eee;
 }
 
-#roi-results-table td:last-child {
-    text-align: right;
+.result-highlight {
+    color: var(--primary-color);
     font-weight: bold;
 }
 
-/* Resaltar números importantes */
-.result-highlight {
-    color: var(--primary-color);
-    font-size: 1.1rem;
-}
-/* Ajustes para la Calculadora ROI dentro del Sidebar */
-aside .roi-calculator-wrapper {
-    box-shadow: none; /* Quitamos sombra extra */
-    padding: 0;
-    background: transparent;
-    margin-top: 10px;
+.roi-description {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-aside .roi-input-group label {
-    font-size: 0.9rem;
-}
-
-aside .submit-btn {
-    font-size: 1rem;
-    padding: 10px;
-}
-
-/* =========================================
-   13. MEDIA QUERIES CONTACTO (MÓVIL)
-   ========================================= */
+/* --- MEDIA QUERIES (MÓVIL) --- */
 @media (max-width: 900px) {
     .contact-container {
-        grid-template-columns: 1fr; /* Una sola columna en tablet/móvil */
-        gap: 30px;
+        grid-template-columns: 1fr; /* Columna única */
+        gap: 40px;
     }
 
     .profile-photo {
         float: none;
         display: block;
-        margin: 0 auto 20px auto; /* Centrado en móvil */
-        width: 150px;
-        height: 150px;
+        margin: 0 auto 20px;
     }
 
     .personal-contact-info {
-        text-align: center; /* Texto centrado en móvil */
-    }
-    
-    .personal-contact-info h2 {
         text-align: center;
     }
-    
+
     .about-me-details ul {
-        text-align: left; /* Regresar lista a la izquierda */
-        justify-content: center;
+        text-align: left;
     }
-    
-    /* Desactivar sticky en móvil para que no estorbe */
+
+    /* En móvil quitamos el sticky porque no cabe */
     aside.exchange-rates {
         position: static;
     }
