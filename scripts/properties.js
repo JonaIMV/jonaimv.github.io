@@ -291,8 +291,13 @@ export function renderProperties(propertiesArray, container) {
                 </p> 
             </div>
 
-            <div class="card-actions-group">
-                <a href="?id=${prop.id}" class="btn-detail-trigger">Más detalles</a>
+           <div class="card-actions-group">
+                <a href="?id=${prop.id}" 
+                class="btn-detail-trigger"
+                onclick="fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']});">
+                Más detalles
+                </a>
+                
                 ${tourButtonHtml}
             </div>
         `;
