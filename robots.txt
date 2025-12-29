@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+
+Disallow: /private/
+Disallow: /tmp/
+
+
+Sitemap: https://www.tucasacariberealty.com/sitemap.xml
