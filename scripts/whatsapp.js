@@ -14,6 +14,7 @@ export function initWhatsApp() {
     waButton.onclick = function() {
         if (typeof fbq !== 'undefined') {
             fbq('track', 'Contact'); 
+        
         }
     };
    
