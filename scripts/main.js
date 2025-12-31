@@ -10,11 +10,11 @@ import { initScrollReveal } from './scroll-reveal-config.js';
 import { initRoiCalculator } from './roi-calculator.js'; 
 import { initPropertyFilters } from './property-filters.js';
 import { initFeaturedModal } from './featured-modal.js';
-import { initRoiCalculatorHome } from './initRoiCalculatorHome.js'; 
 import { initLightbox } from './lightbox.js';
 import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
+
 
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
