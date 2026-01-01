@@ -108,13 +108,16 @@
             <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
             &#9776;
             </button>   
-            <nav id="nav-menu" class="nav-menu " aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="for-sale.html">En Venta</a></li>
-                <li><a href="contact-us.html">Contactanos</a></li>
-                <li><a href="privacy.html">Aviso de Privacidad</a></li>
-            </ul>
+            <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="for-sale.html">En Venta</a></li>
+                    <li><a href="contact-us.html">Contactanos</a></li>
+                    <li><a href="privacy.html">Aviso de Privacidad</a></li>
+                    <li class="language-item">
+                        <div id="weglot-nav-container"></div>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -267,38 +270,59 @@
         </section>
         </div>
     </main>
-   <footer>
-        <div class="footer-info">
-            <p>
-                &copy; <span id="year"></span> TuCasa Caribe Realty
-                <br>Puerto Morelos, Quintana Roo, México
-            </p>
-
-            <p style="margin-top: 10px; font-size: 0.8rem;">
-                <a href="privacy.html" class="privacy-link">Aviso de Privacidad</a>
-            </p> 
-        </div>
-         <div class="footer-info">
-        </div>
-
-    <div class="footer-contact">
-        <h4>Contáctanos</h4>
-        <p>Email: <a href="mailto:jonaimv@gmail.com">jonaimv@gmail.com</a></p>
-        <p>Tel: <a href="https://wa.me/message/JBXWUNDKU54XP1">+52 998 190 03 60</a></p>
-    </div>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/channel/UCaIF9fYTkm2rl7SLu1g0PJQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                <img src="images/youtube.svg" alt="YouTube icon">
-            </a>
+    <footer class="site-footer">
+        <div class="footer-container">
             
+            <div class="footer-col brand-col">
+                <h3 class="footer-logo">TuCasa Caribe Realty</h3>
+                <p class="footer-desc">
+                    Conectando sueños con el paraíso.<br>
+                    Puerto Morelos, Quintana Roo, México.
+                </p>
+                <p class="copyright">
+                    &copy; <span id="year"></span> Todos los derechos reservados.
+                </p>
+            </div>
+
+            <div class="footer-col links-col">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="for-sale.html">Propiedades en Venta</a></li>
+                    <li><a href="contact-us.html">Contacto</a></li>
+                    <li><a href="privacy.html">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Hablemos</h4>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:jonaimv@gmail.com">jonaimv@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/message/JBXWUNDKU54XP1" target="_blank">+52 998 190 03 60</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.youtube.com/channel/UCaIF9fYTkm2rl7SLu1g0PJQ" target="_blank" class="social-btn youtube" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    </div>
+            </div>
+
         </div>
+        
+        <div class="footer-bottom-bar"></div>
     </footer>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="scripts/main.js"></script>
     <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
 <script>
     Weglot.initialize({
-        api_key: 'wg_a2cb1c59b2e716631c099a2f42f138a12'
+        api_key: 'wg_a2cb1c59b2e716631c099a2f42f138a12',
+        appendTo: '#weglot-nav-container'
     });
 </script>
     <div id="featuredModal" class="modal-featured">

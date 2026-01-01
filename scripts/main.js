@@ -1,8 +1,15 @@
 
 
+// main.js - VERSIÓN LIMPIA Y MODULAR
+
+// 1. Nuevos Módulos de Propiedades
+import { loadProperties } from './api.js';
+import { renderProperties, renderPropertyDetail } from './render.js';
+import { initMap } from './map.js';
+
+// 2. Módulos Generales (Sin cambios)
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
-import { loadProperties, renderProperties, renderPropertyDetail, initMap } from './properties.js'; // <--- CAMBIO 1: Agregamos initMap
 import { loadExchangeRates } from './exchange-rates.js';
 import { initCookieConsent } from './cookie-consent.js';
 import { initHeaderScroll } from './scroll.js';
@@ -16,6 +23,7 @@ import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
 import { initFooter } from './footer.js';   
 
+// Helper para obtener ID de la URL
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -24,7 +32,7 @@ function getPropertyIdFromUrl() {
 
 document.addEventListener("DOMContentLoaded", async () => {
     
-    // 1. Inicializaciones Globales y Estacionales
+    // --- 1. Inicializaciones Globales ---
     initMenuToggle();
     highlightCurrentPage();
     initCookieConsent(); 
@@ -34,57 +42,66 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
     initFAQ();
     initFooter();
-    // Si estamos en la Home Page (index.html)
+
+    // --- 2. Lógica Específica por Página ---
+    
+    // HOME PAGE
     if (document.getElementById('testimonial-track')) {
-        
-        // 3. CAMBIO: Llamar a la nueva función en lugar de initReviews()
         initTestimonialMarquee(); 
-        
         initFeaturedModal();
-        
         if (document.getElementById('calculate-roi-home-btn')) {
-            initRoiCalculatorHome();
+            // Nota: Asegúrate de tener esta función o usar initRoiCalculator si es la misma
+            if (typeof initRoiCalculatorHome !== 'undefined') initRoiCalculatorHome();
         }
     }
-    // Si estamos en la Contact Page
+
+    // CONTACT PAGE
     if (document.getElementById('calculate-roi-btn')) { 
         initRoiCalculator(); 
     }
     
+    // WIDGET TIPO DE CAMBIO
     if (document.getElementById('usd-rate')) { 
         loadExchangeRates();
     }
+    
+    // --- 3. Lógica Principal de Propiedades (Carga, Mapa, Detalle) ---
     
     const propertiesContainer = document.getElementById('properties-container');
     const mainElement = document.querySelector('main');
     const propertyId = getPropertyIdFromUrl();
     
-    // 2. LÓGICA DE PROPIEDADES, FILTROS Y RUTEO DINÁMICO
+    // Detectamos si estamos en la sección de "Venta" o viendo un detalle
     if (window.location.pathname.includes('for-sale.html') || propertyId) { 
         
-        const allProperties = await loadProperties(null, 'data/forSale.json'); // Asegúrate que la ruta al JSON sea correcta
+        // Carga de datos (desde api.js)
+        const allProperties = await loadProperties(null, 'data/forSale.json');
 
         if (allProperties.length > 0) {
             
-            if (propertyId && mainElement) { // PÁGINA DE DETALLE
+            if (propertyId && mainElement) { 
+                // A. MODO DETALLE
                 const property = allProperties.find(p => p.id === propertyId);
                 
                 if (property) {
                     mainElement.innerHTML = ''; 
-                    renderPropertyDetail(property, mainElement);
+                    renderPropertyDetail(property, mainElement); // (desde render.js)
                 } else {
                     mainElement.innerHTML = `<h1>Propiedad no encontrada. ID: ${propertyId}</h1>`;
                 }
             
-            } else if (propertiesContainer) { // PÁGINA DE LISTADO (AQUÍ VA EL MAPA)
-                renderProperties(allProperties, propertiesContainer); 
+            } else if (propertiesContainer) { 
+                // B. MODO LISTADO
+                renderProperties(allProperties, propertiesContainer); // (desde render.js)
                 initPropertyFilters(allProperties);
                 
-                // 2. INICIALIZAMOS EL MAPA AQUÍ:
-                initMap(allProperties); // <--- CAMBIO 2: Inicializamos el mapa con las propiedades cargadas
+                // Inicializar Mapa (desde map.js)
+                initMap(allProperties); 
             }
         }
     }
+
+    // Sincronizar animaciones al final
     if (typeof ScrollReveal !== 'undefined') {
         initScrollReveal(); 
         ScrollReveal().sync();

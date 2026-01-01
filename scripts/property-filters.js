@@ -1,4 +1,4 @@
-import { renderProperties } from './properties.js'; 
+import { renderProperties } from './render.js'; 
 
 let allProperties = [];
 const containerId = 'properties-container';

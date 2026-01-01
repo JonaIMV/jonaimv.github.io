@@ -2,7 +2,7 @@
    1. VARIABLES Y RESET (CONFIGURACIÓN BASE)
    ========================================= */
 :root {
-    --primary-color: #008B8B;     
+    --primary-color: lab(52.21% -30.62 -9);     
     --primary-light: #20B2AA;      
     --accent-color: #DAA520;       
     --text-dark: #333333;          
@@ -1143,79 +1143,190 @@ header {
 /* =========================================
    10. FOOTER (CORREGIDO Y DELGADO)
    ========================================= */
-footer {
-    background-color: #1a1a1a;  
-    color: #b0b0b0;             
-    width: 100%;                
-    padding: 25px 5%;           
-    margin-top: auto;           
-    border-top: 1px solid #333; 
-    font-size: 0.85rem;         
+/* =========================================
+   1. ESTILOS PARA WEGLOT (EN NAVBAR)
+   ========================================= */
+
+/* El contenedor 'li' dentro del menú */
+.language-item {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;            
-    flex-wrap: wrap;                
-    gap: 20px;
+    align-items: center;
+    margin-left: 20px; /* Separación del enlace anterior */
+    padding-left: 20px;
+    border-left: 1px solid rgba(0,0,0,0.1); /* Separador sutil opcional */
 }
 
-/* Enlaces del Footer */
-footer a {
+/* Forzamos a Weglot a dejar de flotar */
+.wg-default {
+    position: static !important;
+    bottom: auto !important;
+    right: auto !important;
+}
+
+/* Estilo del botón de idioma (para que combine con tu menú) */
+.wg-default .wgcurrent {
+    border: 1px solid #e0e0e0 !important; 
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    background-color: transparent !important;
+    color: var(--text-dark) !important; /* Hereda color del menú */
+    font-weight: 500 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover en el botón de idioma */
+.wg-default .wgcurrent:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    background-color: rgba(0, 139, 139, 0.05) !important;
+}
+
+/* =========================================
+   2. NUEVO FOOTER PREMIUM (PC / ESCRITORIO)
+   ========================================= */
+
+.site-footer {
+    background-color: #1a1a1a;  /* Gris muy oscuro */
+    color: #b0b0b0;             /* Texto gris suave */
+    padding: 60px 0 0 0;        /* Espacio arriba */
+    font-family: var(--font-body);
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    border-top: 1px solid #333;
+}
+
+/* Contenedor GRID de 3 columnas */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    display: grid;
+    /* Columna 1 más ancha (1.5 partes), Columna 2 y 3 iguales (1 parte) */
+    grid-template-columns: 1.5fr 1fr 1fr; 
+    gap: 40px;
+}
+
+/* --- COLUMNA 1: MARCA --- */
+.footer-logo {
+    font-family: var(--font-heading);
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-desc {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    max-width: 350px; /* Para que el texto no se estire demasiado */
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* --- COLUMNAS 2 y 3: TÍTULOS --- */
+.footer-col h4 {
+    color: var(--accent-color); /* Dorado */
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* --- LISTAS DE ENLACES --- */
+.links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-col ul li {
+    margin-bottom: 12px;
+}
+
+.links-col ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    display: inline-block; /* Necesario para la animación */
+}
+
+.links-col ul li a:hover {
+    color: var(--primary-color); /* Turquesa */
+    padding-left: 5px; /* Pequeño desplazamiento a la derecha */
+}
+
+/* --- CONTACTO --- */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    width: 20px; /* Ancho fijo para alinear textos */
+    text-align: center;
+}
+
+.contact-item a {
     color: #b0b0b0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: var(--primary-color); /* Turquesa al pasar el mouse */
-}
-
-/* Bloques de Información */
-.footer-info, .footer-contact {
-    /* Aseguramos que no crezcan demasiado */
-    max-width: 400px;
-}
-
-/* Ajustes de tipografía para títulos en el footer */
-.footer-contact h4 {
+.contact-item a:hover {
     color: var(--white);
-    font-size: 0.95rem;
-    margin-bottom: 5px; /* Menos espacio abajo del título */
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.footer-contact p {
-    margin-bottom: 2px; /* Texto compacto */
-}
-
-/* Ocultar la columna vacía que tenías en el HTML */
-.footer-info:empty {
-    display: none;
-}
-
-/* Iconos Sociales */
-.social-icons {
+/* --- REDES SOCIALES (Botones Circulares) --- */
+.social-links {
+    margin-top: 25px;
     display: flex;
     gap: 15px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
     align-items: center;
-}
-
-.social-icons img {
-    width: 24px;   /* Iconos más discretos */
-    height: 24px;
-    opacity: 0.7;  /* Un poco transparentes para elegancia */
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
     transition: all 0.3s ease;
-    filter: invert(1); /* Asegura que sean blancos si son SVG negros */
 }
 
-.social-icons a:hover img {
-    opacity: 1;
-    transform: scale(1.1);
+.social-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px); /* Flota un poco al hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Copyright y Año */
-#year {
-    font-weight: bold;
+/* Estilo específico para YouTube si quieres el color rojo al hover */
+.social-btn.youtube:hover {
+    background: #FF0000;
+}
+
+/* --- BARRA DECORATIVA INFERIOR --- */
+.footer-bottom-bar {
+    height: 6px;
+    /* Degradado Turquesa a Dorado */
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    width: 100%;
 }
 /* =========================================
    12. PÁGINA DE CONTACTO
@@ -2524,6 +2635,60 @@ aside h2, aside h3 {
     }
     .hero-video {
         object-position: center center; 
+    }
+
+    .site-footer {
+        padding-top: 40px; /* Reducimos un poco el padding superior */
+    }
+
+    .footer-container {
+        /* ROMPEMOS EL GRID: De 3 columnas pasamos a 1 sola pila */
+        grid-template-columns: 1fr; 
+        gap: 50px; /* Buen espacio entre cada bloque (Marca, Links, Contacto) */
+        text-align: center; /* Centramos todo para que se vea ordenado */
+    }
+
+    /* Ajustes Columna Marca */
+    .footer-desc {
+        margin: 0 auto 20px; /* Centramos el párrafo descriptivo */
+    }
+
+    /* Ajustes Columna Enlaces */
+    .links-col {
+        border-top: 1px solid rgba(255,255,255,0.05); /* Separador sutil arriba */
+        padding-top: 30px;
+    }
+
+    .links-col ul li a {
+        display: block; /* Aumenta el área de toque para el dedo */
+        padding: 5px 0;
+    }
+    
+    .links-col ul li a:hover {
+        padding-left: 0; /* Desactivamos el movimiento lateral en táctil */
+        color: var(--white);
+    }
+
+    /* Ajustes Columna Contacto */
+    .contact-col {
+        border-top: 1px solid rgba(255,255,255,0.05);
+        padding-top: 30px;
+    }
+
+    .contact-item {
+        justify-content: center; /* Centramos el icono y el texto */
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center; /* Centramos los botones sociales */
+        margin-top: 30px;
+    }
+    
+    /* Ajuste final copyright */
+    .copyright {
+        margin-top: 40px;
+        font-size: 0.75rem;
     }
     /* --- 3. CONTENIDO DESLIZANTE --- */
     .scrolling-content {
