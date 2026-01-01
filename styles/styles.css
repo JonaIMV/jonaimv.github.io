@@ -922,10 +922,10 @@ header {
 }
 
 /* Usamos tu --accent-color (Dorado) para BAJO CONTRATO */
-.badge-bajo-contrato { 
-    background-color: var(--accent-color); /* Tu color dorado/naranja */
-    color: var(--text-dark); /* Texto oscuro para que se lea bien */
-} 
+.badge-reservada {
+    background-color: #f39c12; /* Naranja elegante (Flat UI) */
+    color: #ffffff;
+}
 
 /* Usamos tu --primary-color (Teal) para NUEVO INGRESO */
 .badge-nuevo-ingreso { 
