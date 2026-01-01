@@ -14,7 +14,7 @@ import { initLightbox } from './lightbox.js';
 import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
-
+import { initFooter } from './footer.js';   
 
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initWhatsApp();
     initLightbox();
     initFAQ();
-    
+    initFooter();
     // Si estamos en la Home Page (index.html)
     if (document.getElementById('testimonial-track')) {
         
