@@ -855,5 +855,87 @@
     "status": "Nuevo ingreso",
     "lat": 20.867167, 
     "lng": -86.895678 
+},
+{
+    "id": 13,
+    "title": "Casa en Venta Aldea kiin Puerto Morelos",
+    "description": "Casa en venta en residencial privado Aldea Kiin Puerto Morelos.",
+    "extendedDescription": "Invertir en el Caribe Mexicano es un sueño, pero construir desde cero puede convertirse rápidamente en un desafío abrumador. La gestión de permisos municipales, la supervisión de contratistas a distancia, los costos ocultos y los tiempos de entrega que se extienden indefinidamente son riesgos reales que agotan tu presupuesto y tu paciencia. ¿Por qué lidiar con la incertidumbre de una obra negra cuando puedes asegurar tu patrimonio hoy mismo?\n\nEsta residencia en Aldea Kiin es la respuesta tangible a tu búsqueda. Es una propiedad lista para disfrutarse que combina un diseño moderno con la privacidad de la selva. A diferencia de otras opciones, aquí cuentas con tu propia alberca privada para relajarte en intimidad, además de 3 amplias habitaciones y un área de TV (convertible a 4ta recámara). El residencial enriquece tu vida con amenidades estilo resort: casa club con gimnasio, alberca con tobogán para los niños, palapa de eventos y un tranquilo espacio para yoga. Todo esto, ubicado estratégicamente a solo 20 minutos del Aeropuerto de Cancún y a 10 minutos de las playas turquesa de Puerto Morelos.\n\nPor un precio de oportunidad de $5,500,000 MXN, adquieres una casa completa en una zona de alta plusvalía. La propiedad incluye cocina integral equipada, sala y comedor de concepto abierto que conectan con el exterior, 3.5 baños con acabados modernos y cochera. Es una inversión inteligente que elimina los riesgos de construcción y te entrega las llaves de un estilo de vida rodeado de naturaleza y seguridad las 24 horas.",
+  "extendedDescription_en": "Investing in the Mexican Caribbean is a dream, but building from scratch can quickly become an overwhelming challenge. Managing municipal permits, supervising contractors remotely, hidden costs, and delivery times that extend indefinitely are real risks that drain your budget and patience. Why deal with the uncertainty of construction when you can secure your asset today?\n\nThis residence in Aldea Kiin is the tangible answer to your search. It is a ready-to-enjoy property that combines modern design with the privacy of the jungle. Unlike other options, here you have your own private pool for intimate relaxation, plus 3 spacious bedrooms and a TV area (convertible to a 4th bedroom). The gated community enriches your life with resort-style amenities: a clubhouse with a gym, a pool with a slide for kids, an events palapa, and a peaceful yoga space. All this is strategically located just 20 minutes from Cancun Airport and 10 minutes from the turquoise beaches of Puerto Morelos.\n\nFor an opportunity price of $5,500,000 MXN, you acquire a complete home in a high-appreciation area. The property includes a fully equipped integral kitchen, open-concept living and dining areas connecting to the outdoors, 3.5 bathrooms with modern finishes, and a parking space. It is a smart investment that eliminates construction risks and hands you the keys to a lifestyle surrounded by nature and 24-hour security.",
+  "extendedDescription_fr": "Investir dans les Caraïbes mexicaines est un rêve, mais construire à partir de zéro peut rapidement devenir un défi accablant. La gestion des permis municipaux, la supervision des entrepreneurs à distance, les coûts cachés et les délais de livraison qui s'étendent indéfiniment sont des risques réels qui épuisent votre budget et votre patience. Pourquoi faire face à l'incertitude de la construction quand vous pouvez sécuriser votre patrimoine dès aujourd'hui ?\n\nCette résidence à Aldea Kiin est la réponse tangible à votre recherche. C'est une propriété prête à vivre qui allie un design moderne à l'intimité de la jungle. Contrairement à d'autres options, vous disposez ici de votre propre piscine privée pour vous détendre en toute intimité, ainsi que de 3 chambres spacieuses et d'un coin TV (convertible en 4ème chambre). La résidence enrichit votre vie avec des équipements de style complexe hôtelier : un club-house avec salle de sport, une piscine avec toboggan pour les enfants, une palapa pour les événements et un espace yoga paisible. Tout cela est stratégiquement situé à seulement 20 minutes de l'aéroport de Cancún et à 10 minutes des plages turquoise de Puerto Morelos.\n\nPour un prix d'opportunité de 5 500 000 MXN, vous acquérez une maison complète dans une zone à forte plus-value. La propriété comprend une cuisine intégrale équipée, un salon et une salle à manger à aire ouverte donnant sur l'extérieur, 3,5 salles de bains aux finitions modernes et un parking. C'est un investissement intelligent qui élimine les risques de construction et vous remet les clés d'un style de vie entouré de nature et d'une sécurité 24h/24.",
+    "price": "$5,500,000 MXN",
+    "image": "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada.webp",
+    "alt": "Casa en Venta Aldea Kiin Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "bedrooms": 3,
+    "bathrooms": 3.5,
+    "area": 180,
+    "virtualTourUrl": "virtualtours/aldea-kiin/aldea-kiin.html",
+    "galleryPhotos": [
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada-1.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-cocina-2.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-cocina.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-sala-comedor.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-escaleras.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-master.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-baño-principal.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-pasillo-3.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-pasillo-2.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-habitacion-2.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-terraza.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-area-de-lavado .webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-habitacion-1.webp",
+      "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-habitacion-4.webp"
+    ],
+    
+    "features": [
+    "4 Recámaras",
+    "3.5 Baños completos",
+    "210 m² de construcción",
+    "160 m² de terreno",
+    "Aires Acondicionados"
+    ],
+    "features_en": [
+        "4 Bedrooms",
+        "3.5 Full Bathrooms",
+        "210 m² construction",
+        "160 m² lot",
+        "Air Conditioners"
+    ],
+    "features_fr": [
+        "4 Chambres",
+        "3.5 Salles de bain complètes",
+        "210 m² de construction",
+        "Terrain de 160 m²",
+        "Climatiseurs"
+    ],
+    "amenities": [
+        "Casa club con gimnasio",
+        "Alberca con tobogán para niños",
+        "Palapa de eventos",
+        "Área de yoga",
+        "Seguridad 24h"
+    ],
+    "amenities_en": [
+        "Clubhouse with gym",
+        "Pool with slide for kids",
+        "Events palapa",
+        "Yoga area",
+        "24/7 Security"
+    ],
+    "amenities_fr": [
+        "Club-house avec salle de sport",
+        "Piscine avec toboggan pour enfants",
+        "Palapa pour événements",
+        "Espace yoga",
+        "Sécurité 24h/24"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1573.046142819366!2d-86.87737978763244!3d20.906834348904912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767393699017!5m2!1ses!2smx",
+    "status": "Nuevo ingreso",
+    "lat":20.906678, 
+    "lng": -86.877241
+
 }
 ]
