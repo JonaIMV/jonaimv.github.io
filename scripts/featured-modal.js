@@ -2,11 +2,11 @@
 
 // Datos de la Propiedad Destacada
 const featuredData = {
-    title: "VIVE EN PUNTARENA", 
+    title: "VIVE EN Aldea Kiin", 
     subtitle: "Puerto Morelos",
-    description: "Casa completamente equipada con alberca propia y área de yoga. Ubicada en una zona tranquila y segura, ideal para disfrutar con tu familia.",
-    image: "images/puntarena/fachada-1.webp",
-    link: "for-sale.html?id=11"
+    description: "Esta residencia en Aldea Kiin es la respuesta tangible a tu búsqueda. Es una propiedad lista para disfrutarse que combina un diseño moderno con la privacidad de la selva.",
+    image: "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada.webp",
+    link: "for-sale.html?id=13"
 };
 
 function getFeaturedContent() {
