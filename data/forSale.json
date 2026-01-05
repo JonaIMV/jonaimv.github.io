@@ -937,5 +937,63 @@
     "lat":20.906678, 
     "lng": -86.877241
 
+},
+{
+    "id": 14,
+    "title": "Terreno en Venta Puntarena Puerto Morelos",
+    "description": "Terreno en venta en residencial privado Puntarena Puerto Morelos.",
+    "extendedDescription": "Adquirir un terreno en el Caribe Mexicano es una oportunidad única para asegurar tu patrimonio en una de las zonas con mayor crecimiento y plusvalía del país. Sin embargo, construir desde cero puede ser un proceso lleno de incertidumbres: desde la gestión de permisos municipales hasta la supervisión de contratistas a distancia, los costos ocultos y los tiempos de entrega que se extienden indefinidamente son riesgos reales que pueden agotar tu presupuesto y paciencia. ¿Por qué lidiar con estas complicaciones cuando puedes asegurar tu inversión hoy mismo?\n\nEste terreno en Puntarena ofrece la solución perfecta para quienes buscan tranquilidad y seguridad en su inversión. Ubicado en un residencial privado con acceso controlado y seguridad 24 horas, este lote de 160 m² te brinda la oportunidad de diseñar y construir la casa de tus sueños en un entorno rodeado de naturaleza y cerca de la playa. Además, el desarrollo cuenta con amenidades exclusivas como áreas verdes y una cancha de pickleball, enriqueciendo tu estilo de vida.\n\nPor un precio accesible de $1,350,000 MXN, este terreno representa una inversión inteligente en una zona de alta demanda. No pierdas la oportunidad de asegurar tu futuro en el Caribe Mexicano sin los riesgos asociados a la construcción desde cero. Contáctanos ahora para más información y da el primer paso hacia la realización de tu sueño.",
+    "extendedDescription_en": "Acquiring land in the Mexican Caribbean is a unique opportunity to secure your asset in one of the country's fastest-growing and most valuable areas. However, building from scratch can be a process filled with uncertainties: from managing municipal permits to supervising contractors remotely, hidden costs, and delivery times that extend indefinitely are real risks that can drain your budget and patience. Why deal with these complications when you can secure your investment today?\n\nThis land in Puntarena offers the perfect solution for those seeking peace of mind and security in their investment. Located in a private gated community with controlled access and 24-hour security, this 160 m² lot gives you the opportunity to design and build the home of your dreams in a nature-surrounded environment close to the beach. Additionally, the development features exclusive amenities such as green areas and a pickleball court, enhancing your lifestyle.\n\nFor an affordable price of $1,350,000 MXN, this land represents a smart investment in a high-demand area. Don't miss the opportunity to secure your future in the Mexican Caribbean without the risks associated with building from scratch. Contact us now for more information and take the first step toward realizing your dream.",
+    "extendedDescription_fr": "Acquérir un terrain dans les Caraïbes mexicaines est une opportunité unique de sécuriser votre patrimoine dans l'une des zones à la croissance la plus rapide et à la plus forte valeur du pays. Cependant, construire à partir de zéro peut être un processus rempli d'incertitudes : de la gestion des permis municipaux à la supervision des entrepreneurs à distance, les coûts cachés et les délais de livraison qui s'étendent indéfiniment sont des risques réels qui peuvent épuiser votre budget et votre patience. Pourquoi faire face à ces complications alors que vous pouvez sécuriser votre investissement dès aujourd'hui ?\n\nCe terrain à Puntarena offre la solution parfaite pour ceux qui recherchent la tranquillité d'esprit et la sécurité dans leur investissement. Situé dans une communauté privée avec accès contrôlé et sécurité 24h/24, ce lot de 160 m² vous offre l'opportunité de concevoir et de construire la maison de vos rêves dans un environnement entouré de nature et proche de la plage. De plus, le développement dispose d'équipements exclusifs tels que des espaces verts et un terrain de pickleball, améliorant ainsi votre style de vie.\n\nPour un prix abordable de 1 350 000 MXN, ce terrain représente un investissement intelligent dans une zone très demandée. Ne manquez pas l'occasion de sécuriser votre avenir dans les Caraïbes mexicaines sans les risques associés à la construction à partir de zéro. Contactez-nous dès maintenant pour plus d'informations et faites le premier pas vers la réalisation de votre rêve.",
+    "price": "$1,350,000 MXN",
+    "image": "images/puntarena-land/terreno-en-venta-puerto-morelos-1.webp",
+    "alt": "Terreno en venta Puntarena Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "land",
+    "area": 160,
+    "virtualTourUrl": "virtualtours/puntarena-land/puntarena-land.html",
+    "galleryPhotos": [
+      "images/puntarena-land/terreno-en-venta-puerto-morelos-1.webp",
+      "images/puntarena-land/cancha-pickleball-terrenos-en-venta-puerto-morelos.webp",
+      "images/puntarena-land/terreno-en-venta-puntarena-puerto-morelos.webp"
+    ],
+    
+    "features": [
+    "160 m² de terreno",
+    "Uso de suelo residencial",
+    "Servicios subterráneos"
+    ],
+    "features_en": [
+        "160 m² lot",
+        "Residential land use",
+        "Underground utilities"
+    ],
+    "features_fr": [
+        "Terrain de 160 m²",
+        "Usage résidentiel",
+        "Services souterrains"
+    ],
+    "amenities": [
+        "Seguridad 24h",
+        "Áreas verdes",
+        "Cercano a la playa",
+        "Cancha de pickleball"
+    ],
+    "amenities_en": [
+        "24/7 Security",
+        "Green areas",
+        "Close to the beach",
+        "Pickleball court"
+    ],
+    "amenities_fr": [
+        "Sécurité 24h/24",
+        "Espaces verts",
+        "Proche de la plage",
+        "Terrain de Pickleball"
+    ],
+    "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d783.8288491779618!2d-86.89853672473669!3d20.850298990443246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767645547429!5m2!1ses!2smx",
+    "status": "Nuevo ingreso",
+    "lat":20.850655,
+    "lng":  -86.898245
 }
 ]
