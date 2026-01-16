@@ -89,7 +89,7 @@
             <a href="index.html" class="logo" aria-label="Go to homepage">
                 <img src="images/casacaribe.png" alt="TuCasa Caribe Realty Logo" loading="lazy">
             </a>
-            <h2>TuCasa Caribe Realty   </h2>
+            <h2 class="brand-name">TuCasa Caribe Realty   </h2>
             </div>
             <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
             &#9776;
@@ -105,207 +105,247 @@
         </div>
     </header>
     <main class="contact-page">
-    <h1>Contáctanos y Hablemos de Inversiones</h1>
-    
-    <div class="contact-container">
+        <h1>Contáctanos y Hablemos de Inversiones</h1>
         
-        <div class="personal-contact-info reveal">
-            <h2>Hola, soy Jonathan M. Valencia</h2>
+        <div class="contact-container">
             
-            <img src="images/perfil.webp" alt="Foto de perfil de Jonathan" class="profile-photo" loading="lazy">
-            
-            <p>Mi objetivo no es solo encontrar una propiedad, sino asegurar tu tranquilidad al invertir en el Caribe. Cuento con una década de experiencia enfocada en Puerto Morelos para guiarte, resolver tus dudas y hacer que cada paso del camino sea transparente y seguro.</p>
-            
-            <div class="about-me-details">
-                <h3>Mi Conexión con Puerto Morelos</h3>
-                <p>Hace ya <strong>10 años</strong>, Puerto Morelos me cautivó con su encanto de pueblo pesquero y su vibrante comunidad. Elegí este lugar no solo por su belleza natural, sino por la calidad de vida que ofrece y el increíble potencial de crecimiento.</p>
-                <p>Fuera del trabajo, disfruto explorando los cenotes ocultos, haciendo paddle board, y descubriendo la gastronomía local. Estas experiencias me permiten conocer cada rincón de esta maravillosa región.</p>
+            <div class="contact-top-row">
                 
-                <h4>Mis Actividades Favoritas:</h4>
-                <ul>
-                    <li><i class="fas fa-water"></i> Paddle Board y Snorkel</li>
-                    <li><i class="fas fa-tree"></i> Exploración de Cenotes</li>
-                    <li><i class="fas fa-utensils"></i> Gastronomía Local</li>
-                    <li><i class="fas fa-camera"></i> Fotografía Aérea</li>
-                </ul>
-
-                <h3>Mis Lugares Favoritos</h3>
-                <div class="gallery-grid">
-                    <img src="images/playa-puerto.webp" alt="Playa" loading="lazy">
-                    <img src="images/atardecer-puerto.webp" alt="Atardecer" loading="lazy">
-                    <img src="images/faro.webp" alt="Faro" loading="lazy">
-                    <img src="images/paddle.webp" alt="Actividades" loading="lazy">
+                <div class="form-wrapper standalone">
+                    <h3>Escríbenos, estamos para ayudarte</h3>
+                    <form action="https://formspree.io/f/xkgkzrzd" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono (Opcional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
                 </div>
-            </div>
 
-            <div class="form-wrapper">
-                <h3>Escríbenos, estamos para ayudarte</h3>
-                <form action="https://formspree.io/f/xkgkzrzd" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" id="name" name="name" required>
+                <section class="faq-section reveal">
+                    <h2 class="faq-title">Preguntas Frecuentes sobre Inversión</h2>
+                    
+                    <div class="accordion">
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Un extranjero puede comprar propiedad en México?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p><strong>Sí, es 100% legal y seguro.</strong> La Constitución Mexicana permite a los extranjeros adquirir propiedades en la costa (Zona Restringida) mediante un <em>Fideicomiso Bancario</em>. Este instrumento te otorga todos los derechos de propiedad: puedes usar, rentar, modificar, vender o heredar el inmueble a quien tú decidas, con el banco actuando únicamente como administrador del título.</p>
+                                    <p class="faq-source">Fuentes: Art. 27 Constitucional & Ley de Inversión Extranjera (Art. 10-14).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Aceptan créditos bancarios extranjeros?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Los bancos extranjeros no suelen hipotecar propiedades en México directamente. Sin embargo, existen excelentes alternativas: muchos desarrolladores ofrecen <strong>financiamiento directo</strong> (sin revisión de buró) durante la fase de construcción (12 a 36 meses). Además, trabajamos con financieras especializadas (SOFOMES) que otorgan créditos hipotecarios en pesos o dólares específicamente a extranjeros.</p>
+                                    <p class="faq-source">Fuentes: Asociación de Bancos de México (ABM) & Prácticas de Mercado Inmobiliario.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Puedo rentar mi propiedad en Airbnb cuando no la uso?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p><strong>Sí, y es una de las estrategias más rentables.</strong> Puerto Morelos y la Riviera Maya mantienen tasas de ocupación promedio superiores al 75% anual. Puedes gestionarlo tú mismo o contratar una empresa de "Property Management" que se encarga de todo (check-in, limpieza, mantenimiento) por una comisión del <strong>20% al 25%</strong>, permitiéndote generar ingresos pasivos sin preocupaciones.</p>
+                                    <p class="faq-source">Fuentes: Reportes de Sectur (Secretaría de Turismo) & Datos de mercado AirDNA.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Qué impuestos pago si decido vender en el futuro?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Se paga el <strong>ISR (Impuesto Sobre la Renta)</strong> únicamente sobre la <em>ganancia</em> obtenida (plusvalía). Si eres residente fiscal en México, puedes exentar este impuesto si es tu casa habitación. Como extranjero o inversionista, puedes deducir gastos como comisiones inmobiliarias, mejoras a la propiedad y gastos de cierre para reducir legalmente la base gravable.</p>
+                                    <p class="faq-source">Fuentes: Ley del Impuesto Sobre la Renta (LISR - Art. 93) & SAT.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Cuáles son los gastos de cierre?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Debes presupuestar entre el <strong>5% y 8%</strong> del valor de la propiedad. Este monto cubre: Honorarios del Notario Público, Impuesto de Adquisición de Inmuebles (ISAI/ISABI), Derechos de Registro Público de la Propiedad y la cuota de apertura del Fideicomiso. Es un pago único al momento de escriturar.</p>
+                                    <p class="faq-source">Fuentes: Colegio de Notarios de Quintana Roo & Ley de Hacienda Municipal.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Cuánto cuesta construir una casa en Puerto Morelos?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>El costo depende de los acabados de lujo y el tipo de terreno, pero el promedio actual oscila entre <strong>$1,000 y $1,600 USD por m²</strong>. Este precio suele incluir materiales, mano de obra y acabados. Podemos conectarte con arquitectos y constructoras certificadas que conocen el reglamento de construcción local y uso de suelo.</p>
+                                    <p class="faq-source">Fuentes: Cámara Mexicana de la Industria de la Construcción (CMIC) & Colegio de Arquitectos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Es seguro enviar mi dinero? ¿Usan cuentas Escrow?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p><strong>Absolutamente.</strong> Para proteger tu inversión, especialmente en reventas, recomendamos usar una cuenta <em>Escrow</em> (Depósito en Garantía). Una tercera parte neutral retiene los fondos y solo los libera al vendedor una vez que el título de propiedad ha sido transferido legalmente a tu nombre, eliminando el riesgo de fraude.</p>
+                                    <p class="faq-source">Fuentes: Prácticas Estándar AMPI & Ley Federal para la Prevención del Lavado de Dinero.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Cuál es la función del Notario Público en México?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>A diferencia de EE.UU. o Canadá, el Notario en México es un abogado experimentado designado por el gobierno con <strong>fe pública</strong>. Su rol es neutral y esencial: es responsable legal de verificar la cadena de títulos, asegurar que no haya gravámenes, calcular y retener impuestos, e inscribir la escritura en el Registro Público.</p>
+                                    <p class="faq-source">Fuentes: Colegio Nacional del Notariado Mexicano & Secretaría de Gobernación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>¿Conviene más comprar en Preventa o Entrega Inmediata?</span>
+                                <i class="fas fa-chevron-down icon"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-body">
+                                    <p>Depende de tu meta financiera. La <strong>Preventa</strong> te permite ganar plusvalía inmediata (compras a precio bajo y la propiedad sube de valor un 15-30% al terminarse). La <strong>Entrega Inmediata</strong> es ideal si buscas generar flujo de efectivo por rentas vacacionales desde el primer día o disfrutar tu casa ya.</p>
+                                    <p class="faq-source">Fuentes: Índice de Precios de la Vivienda (SHF) & Análisis de Mercado Riviera Maya.</p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Teléfono (Opcional)</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                </form>
-            </div> 
-        </div> 
-        <aside class="exchange-rates">
-            <h2>Exchange Rates</h2>
-            <ul id="rates-list">
-                <li>USD → MXN: <span id="usd-rate">Loading...</span></li>
-                <li>EUR → MXN: <span id="eur-rate">Loading...</span></li>
-                <li>CAD → MXN: <span id="cad-rate">Loading...</span></li>
-            </ul>
-
-            <div class="converter">
-                <h3>Currency Converter</h3>
-                <input type="number" id="amount" placeholder="Amount" min="0" step="0.01">
-                <select id="from-currency"></select>
-                <select id="to-currency"></select>
-                <button id="convert-btn">Convert</button>
-                <p id="conversion-result">Result: --</p>
+                </section>
             </div>
-            
-            <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
 
-            <div class="roi-calculator-wrapper">
-                <h3>Calculadora de ROI (Estimado)</h3>
-                <p class="roi-description">Calcule el potencial de ingresos por renta vacacional.</p>
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0;">
+
+            <div class="contact-bottom-row">
                 
-                <div class="roi-input-group">
-                    <label for="property-price">Precio Propiedad (USD)</label>
-                    <input type="number" id="property-price" placeholder="Ej: 250000">
-                </div>
-                
-                <div class="roi-input-group">
-                    <label for="monthly-rent">Renta Mensual Est. (USD)</label>
-                    <input type="number" id="monthly-rent" placeholder="Ej: 1800">
-                </div>
+                <div class="personal-contact-info reveal">
+                    <h2>Hola, soy Jonathan M. Valencia</h2>
+                    <img src="images/perfil.webp" alt="Foto de perfil de Jonathan" class="profile-photo" loading="lazy">
+                    
+                    <p>Mi objetivo no es solo encontrar una propiedad, sino asegurar tu tranquilidad al invertir en el Caribe. Cuento con una década de experiencia enfocada en Puerto Morelos.</p>
+                    
+                    <div class="about-me-details">
+                        <h3>Mi Conexión con Puerto Morelos</h3>
+                       <p>
+    Hace ya <strong>10 años</strong>, Puerto Morelos me cautivó irremediablemente. Lo que comenzó como una atracción por su encanto de pueblo pesquero, se transformó en una decisión de vida al descubrir el equilibrio único que ofrece: la paz de una comunidad auténtica con una ubicación estratégica en el corazón de la Riviera Maya.
+</p>
+<p>
+    Elegí echar raíces aquí no solo por la inigualable calidad de vida que disfruto cada día frente al mar, sino porque identifiqué desde temprano el <strong>potencial de crecimiento</strong> sólido y sostenible de la zona. Hoy, mi mayor satisfacción es compartir esa visión privilegiada y ayudar a otros a descubrir que invertir aquí es, literalmente, invertir en felicidad y patrimonio.
+</p> 
+                        <h4>Mis Actividades Favoritas:</h4>
+                        <ul>
+                            <li><i class="fas fa-water"></i> Paddle Board y Snorkel</li>
+                            <li><i class="fas fa-tree"></i> Exploración de Cenotes</li>
+                            <li><i class="fas fa-utensils"></i> Gastronomía Local</li>
+                            <li><i class="fas fa-camera"></i> Fotografía Aérea</li>
+                        </ul>
 
-                <div class="roi-input-group">
-                    <label for="occupancy-rate">Ocupación (%)</label>
-                    <input type="number" id="occupancy-rate" min="0" max="100" placeholder="Ej: 70">
-                </div>
-                
-                <button id="calculate-roi-btn" class="submit-btn">Calcular ROI</button>
-                
-                <table id="roi-results-table">
-                    <thead>
-                        <tr><th colspan="2">Proyección Anual</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Ingreso Bruto:</td>
-                            <td id="annual-gross">--</td>
-                        </tr>
-                        <tr>
-                            <td>Retorno (ROI):</td>
-                            <td id="annual-roi" class="result-highlight">--</td>
-                        </tr>
-                        <tr>
-                            <td>Recuperación:</td>
-                            <td id="payback-period" class="result-highlight">--</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </aside>
-        </div>
-     <section class="faq-section reveal">
-    <h2 class="faq-title">Preguntas Frecuentes sobre Inversión</h2>
-    
-    <div class="accordion">
-        <div class="accordion-item">
-            <button class="accordion-header">
-                <span>¿Un extranjero puede comprar propiedad en México?</span>
-                <i class="fas fa-chevron-down icon"></i>
-            </button>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p><strong>Sí, totalmente legal y seguro.</strong> En la zona costera (Zona Restringida) se utiliza un <em>Fideicomiso Bancario</em>. Tú eres el dueño absoluto con derechos para vender, rentar o heredar, mientras el banco administra el título.</p>
-                    <p class="faq-source">Fuente: Art. 27 de la Constitución Política de los Estados Unidos Mexicanos & Secretaría de Relaciones Exteriores (SRE).</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">
-                <span>¿Aceptan créditos bancarios extranjeros?</span>
-                <i class="fas fa-chevron-down icon"></i>
-            </button>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p>Generalmente no directo de bancos extranjeros. Sin embargo, muchos desarrollos ofrecen <strong>financiamiento directo</strong> (sin buró) durante la construcción. También trabajamos con financieras en México especializadas en préstamos a extranjeros.</p>
-                    <p class="faq-source">Fuente: Regulaciones de Instituciones Financieras (SOFOMES) & Prácticas de Mercado Inmobiliario.</p>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-    <button class="accordion-header">
-        <span>¿Puedo rentar mi propiedad en Airbnb cuando no la uso?</span>
-        <i class="fas fa-chevron-down icon"></i>
-    </button>
-    <div class="accordion-content">
-        <div class="accordion-body">
-            <p><strong>Sí, es una excelente estrategia de inversión.</strong> La Riviera Maya tiene una ocupación promedio muy alta. Puedes administrarlo tú mismo o contratar una empresa de "Property Management" que se encarga de todo (limpieza, check-in, mantenimiento) por una comisión usualmente del <strong>20% al 25%</strong> de los ingresos generados.</p>
-            <p class="faq-source">Fuente: Prácticas de Mercado Inmobiliario & Datos de AirDNA/Airbnb.</p>
-        </div>
-    </div>
-</div>
-
-<div class="accordion-item">
-    <button class="accordion-header">
-        <span>¿Qué impuestos pago si decido vender mi propiedad en el futuro?</span>
-        <i class="fas fa-chevron-down icon"></i>
-    </button>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p>Se paga el <strong>ISR (Impuesto Sobre la Renta)</strong> sobre la <em>ganancia</em> (la diferencia entre precio de compra y venta). Sin embargo, si eres residente fiscal en México, puedes exentar este impuesto bajo ciertas condiciones (si es tu casa habitación y no has vendido otra en 3 años). Como extranjero, hay deducciones aplicables por mejoras y comisiones.</p>
-                    <p class="faq-source">Fuente: Ley del Impuesto Sobre la Renta (LISR) - SAT.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="accordion-item">
-            <button class="accordion-header">
-                <span>¿Necesito una visa especial o residencia para comprar?</span>
-                <i class="fas fa-chevron-down icon"></i>
-            </button>
-            <div class="accordion-content">
-                <div class="accordion-body">
-                    <p><strong>No es necesario para comprar.</strong> Puedes adquirir propiedad con tu estatus de turista. Sin embargo, si planeas vivir en México más de 180 días al año o retirar ingresos de rentas en una cuenta bancaria mexicana, se recomienda tramitar la <strong>Residencia Temporal o Permanente</strong>.</p>
-                    <p class="faq-source">Fuente: Ley de Migración & Instituto Nacional de Migración (INM).</p>
-                </div>
-            </div>
-        </div>
-
-                <div class="accordion-item">
-                    <button class="accordion-header">
-                        <span>¿Cuáles son los gastos de cierre?</span>
-                        <i class="fas fa-chevron-down icon"></i>
-                    </button>
-                    <div class="accordion-content">
-                        <div class="accordion-body">
-                            <p>En la Riviera Maya, calcula entre el <strong>5% y 8%</strong> del valor de la propiedad. Esto cubre notario, impuestos de adquisición (ISAI), registro público y la constitución del fideicomiso.</p>
-                            <p class="faq-source">Fuente: Colegio Nacional del Notariado Mexicano & Ley de Hacienda Municipal.</p>
+                        <h3>Mis Lugares Favoritos</h3>
+                        <div class="gallery-grid">
+                            <img src="images/playa-puerto.webp" alt="Playa" loading="lazy">
+                            <img src="images/atardecer-puerto.webp" alt="Atardecer" loading="lazy">
+                            <img src="images/faro.webp" alt="Faro" loading="lazy">
+                            <img src="images/paddle.webp" alt="Actividades" loading="lazy">
                         </div>
                     </div>
                 </div>
+
+                <aside class="exchange-rates">
+                    <h2>Herramientas de Inversión</h2>
+                    
+                    <div class="converter">
+                        <h3>Conversor de Divisas</h3>
+                        <ul id="rates-list" style="margin-bottom:15px; list-style:none; padding:0; font-size:0.9rem;">
+                            <li>USD → MXN: <span id="usd-rate">...</span></li>
+                            <li>EUR → MXN: <span id="eur-rate">...</span></li>
+                            <li>CAD → MXN: <span id="cad-rate">...</span></li>
+                        </ul>
+                        <input type="number" id="amount" placeholder="Monto" min="0" step="0.01">
+                        <div style="display:flex; gap:10px; margin:10px 0;">
+                            <select id="from-currency" style="flex:1;"></select>
+                            <select id="to-currency" style="flex:1;"></select>
+                        </div>
+                        <button id="convert-btn" class="submit-btn" style="width:100%;">Convertir</button>
+                        <p id="conversion-result" style="margin-top:10px; font-weight:bold;">Resultado: --</p>
+                    </div>
+                    
+                    <hr style="margin: 30px 0; border: 0; border-top: 1px solid #eee;">
+
+                    <div class="roi-calculator-wrapper">
+                        <h3>Calculadora de ROI (Estimado)</h3>
+                        <p class="roi-description">Proyección de renta vacacional.</p>
+                        
+                        <div class="roi-input-group">
+                            <label>Precio Propiedad (USD)</label>
+                            <input type="number" id="property-price" placeholder="Ej: 250000">
+                        </div>
+                        <div class="roi-input-group">
+                            <label>Renta Mensual Est. (USD)</label>
+                            <input type="number" id="monthly-rent" placeholder="Ej: 1800">
+                        </div>
+                        <div class="roi-input-group">
+                            <label>Ocupación (%)</label>
+                            <input type="number" id="occupancy-rate" placeholder="Ej: 70">
+                        </div>
+                        
+                        <button id="calculate-roi-btn" class="submit-btn">Calcular ROI</button>
+                        
+                        <table id="roi-results-table">
+                            <tr><td>Ingreso Bruto:</td><td id="annual-gross">--</td></tr>
+                            <tr><td>Retorno (ROI):</td><td id="annual-roi" class="result-highlight">--</td></tr>
+                            <tr><td>Recuperación:</td><td id="payback-period" class="result-highlight">--</td></tr>
+                        </table>
+                    </div>
+                </aside>
             </div>
-</section>
-</main>
+        </div>
+    </main>
     <footer class="site-footer">
         <div class="footer-container">
             
