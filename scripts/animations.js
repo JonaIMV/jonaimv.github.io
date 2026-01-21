@@ -65,7 +65,7 @@ export function initRoadAnimation() {
         vanAnim.seek(vanAnim.duration * percent);
         sunAnim.seek(sunAnim.duration * percent);
         cloudsAnim.seek(cloudsAnim.duration * percent);
-        palapaAnim.seek(palapaAnim.duration * percent);
+
     }
 
     window.addEventListener('scroll', onScroll);
