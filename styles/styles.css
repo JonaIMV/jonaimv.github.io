@@ -440,29 +440,12 @@ header {
 .road-element {
     width: 100%;
     height: 60px;
-    
-    /* Color base Arena */
-    background-color: #EADDCA; 
-    
-    /* TRUCO: Creamos unas líneas muy sutiles (casi invisibles) para dar textura */
-    background-image: repeating-linear-gradient(
-        to right, 
-        transparent, 
-        transparent 20px, 
-        rgba(0,0,0,0.03) 20px, /* Sombra muy suave al 3% */
-        rgba(0,0,0,0.03) 24px
-    );
-    
-    /* Borde superior */
-    border-top: 3px solid #D4B996;
-    
+    background: #EADDCA; /* Color Arena/Beige */
+    border-top: 3px solid #D4B996; /* Borde sutil de arena más oscura */
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 4;
-    
-    /* La animación de velocidad */
-    animation: moveSand 1s linear infinite;
 }
 
 /* 5. La Combi (Line Art) */

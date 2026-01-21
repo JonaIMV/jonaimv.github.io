@@ -49,18 +49,7 @@ export function initRoadAnimation() {
         easing: 'linear'
     });
 
-    // 4. La Palapa (Entra al final desde la derecha)
-    let palapaAnim = anime({
-        targets: '.palapa-element',
-        left: ['110%', '75%'], // Entra hasta el 75% de la pantalla
-        autoplay: false,
-        duration: 10000,
-        // easeInCirc hace que la animación empiece lenta y acelere al final,
-        // perfecto para que aparezca "de sorpresa" en la última parte del scroll.
-        easing: 'easeInCirc' 
-    });
-
-
+   
     // --- LÓGICA DEL SCROLL ---
     function onScroll() {
         const windowHeight = window.innerHeight;
