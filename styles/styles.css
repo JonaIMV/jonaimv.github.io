@@ -361,31 +361,28 @@ header {
 
 .road-scene-container {
     width: 100%;
-    height: 280px; /* Un poco más alto para el sol */
+    height: 280px;
     position: relative;
     margin-top: 40px;
     z-index: 5;
     overflow: hidden;
-    /* Degradado de cielo amanecer muy suave y elegante */
     background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
     pointer-events: none;
 }
 
-/* 1. El Sol (Color Crema) */
+
 .sun-element {
     width: 90px;
     height: 90px;
-    background: #FFFDD0; /* Color Crema */
+    background: #FFFDD0; 
     border-radius: 50%;
     position: absolute;
-    bottom: -50px; /* Empieza más abajo */
+    bottom: -50px; 
     left: 15%;
-    /* Brillo crema suave */
     box-shadow: 0 0 50px 20px rgba(255, 253, 208, 0.6);
     z-index: 1;
 }
 
-/* 2. Nubes (Sutiles en el cielo) */
 .clouds-container {
     position: absolute;
     top: 0;
@@ -397,20 +394,17 @@ header {
 
 .cloud-element {
     position: absolute;
-    opacity: 0.4; /* Muy sutiles */
+    opacity: 0.3; 
     filter: invert(80%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(90%) contrast(90%); /* Tono grisáceo */
 }
 
-.cloud-1 { top: 30px; left: 10%; width: 60px; }
-.cloud-2 { top: 60px; left: 60%; width: 80px; }
+.cloud-1 { top: 30px; left: 10%; width: 150px; }
+.cloud-2 { top: 5px; left: 60%; width: 200px; }
 
-
-/* 3. Elementos Fijos (Estilo Line Art Elegante) */
 .palm-tree, .palapa-element {
     position: absolute;
-    bottom: 60px; /* Sobre el camino de arena */
+    bottom: 60px;
     z-index: 3;
-    /* Filtro para cambiar el color del line art a un gris elegante */
     filter: invert(30%) sepia(15%) saturate(200%) hue-rotate(180deg) brightness(95%) contrast(90%) drop-shadow(0 2px 2px rgba(0,0,0,0.05));
 }
 
@@ -429,40 +423,23 @@ header {
      transform: scale(1.1);
      bottom: 50px;
 }
-
-/* La Palapa empieza escondida a la derecha */
-.palapa-element {
-    width: 100px;
-    left: 110%; /* Fuera de la pantalla */
-}
-
-/* 4. La Carretera de Arena (Limpia) */
 .road-element {
     width: 100%;
     height: 60px;
-    
-    /* Color base Arena */
     background-color: #EADDCA; 
-    
-    /* TRUCO: Creamos unas líneas muy sutiles (casi invisibles) para dar textura */
     background-image: repeating-linear-gradient(
         to right, 
         transparent, 
         transparent 20px, 
-        rgba(0,0,0,0.03) 20px, /* Sombra muy suave al 3% */
+        rgba(0,0,0,0.03) 20px,
         rgba(0,0,0,0.03) 24px
     );
-    
-    /* Borde superior */
     border-top: 3px solid #D4B996;
-    
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 4;
-    
-    /* La animación de velocidad */
-    animation: moveSand 1s linear infinite;
+    animation: moveSand 1.5s linear infinite;
 }
 
 /* 5. La Combi (Line Art) */
@@ -642,43 +619,136 @@ header {
 /* =========================================
    5. GUÍA DE INVERSIÓN (PASOS)
    ========================================= */
+/* --- SECCIÓN GUÍA DE INVERSIÓN (3 PASOS) --- */
+
 .investment-guide-section {
     padding: 80px 20px;
-    background-color: var(--bg-light);
+    background-color: #fcfcfc; /* Fondo casi blanco para limpieza */
     text-align: center;
 }
 
+.investment-guide-section h2 {
+    font-family: var(--font-heading, serif); /* Usa tu tipografía de títulos */
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.guide-subtitle {
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Contenedor de las 3 Tarjetas (Grid) */
 .guide-container {
     display: grid;
+    /* Esto crea columnas automáticas: 3 en escritorio, 1 en móvil */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    max-width: var(--container-width);
-    margin: 50px auto 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* --- TARJETA INDIVIDUAL (.guide-step) --- */
 .guide-step {
-    background: var(--white);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-card);
-    transition: var(--transition);
+    background: #ffffff;
+    padding: 40px 30px; /* Buen espacio interno */
+    border-radius: 12px;
+    
+    /* Sombra inicial suave y lujosa */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04); 
+    border: 1px solid rgba(0,0,0,0.02); /* Borde sutil */
+    
+    text-align: left; /* Alineado a la izquierda se ve más profesional con texto largo */
+    position: relative;
+    overflow: hidden; /* Para el efecto de la línea inferior */
+    
+    /* Transición suave para el hover */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: default;
 }
 
+/* Efecto al pasar el mouse (La tarjeta flota) */
 .guide-step:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* La sombra crece */
 }
 
+/* --- ICONOS (FontAwesome <i>) --- */
 .guide-step i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    font-size: 3rem;
+    color: var(--primary-color, #009688); /* Tu color Teal */
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+    
+    /* Animación del icono */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.guide-step:hover i {
+    transform: scale(1.1) rotate(-5deg); /* Pequeño "pop" e inclinación */
+}
+
+/* --- TÍTULOS (H3) --- */
 .guide-step h3 {
+    font-family: var(--font-heading, serif);
+    font-size: 1.4rem;
     margin-bottom: 15px;
-    color: var(--text-dark);
+    color: #333;
+    font-weight: 600;
 }
 
+/* --- PÁRRAFOS (El texto ampliado) --- */
+.guide-step p {
+    font-family: var(--font-body, sans-serif);
+    font-size: 0.95rem; /* Tamaño legible */
+    line-height: 1.7;   /* CLAVE: Altura de línea para que no se vea amontonado */
+    color: #555;        /* Gris oscuro para descansar la vista */
+    margin-bottom: 0;
+}
+
+/* Negritas dentro del párrafo */
+.guide-step p strong {
+    color: var(--primary-color, #009688);
+    font-weight: 600;
+}
+
+/* --- DETALLE DE LUJO: Línea de color inferior al hacer hover --- */
+.guide-step::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 4px; /* Grosor de la línea */
+    background-color: var(--primary-color, #009688);
+    transition: width 0.5s ease;
+}
+
+.guide-step:hover::after {
+    width: 100%; /* La línea se dibuja de izquierda a derecha */
+}
+
+/* --- RESPONSIVE (Móvil) --- */
+@media (max-width: 768px) {
+    .guide-container {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 40px;
+    }
+    
+    .guide-step {
+        text-align: center; /* En móvil centrado se ve mejor */
+        padding: 30px 20px;
+    }
+    
+    .guide-step i {
+        margin-bottom: 15px;
+    }
+}
 
 .culture-hero-section {
     position: relative;
