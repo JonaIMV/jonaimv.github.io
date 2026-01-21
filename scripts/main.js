@@ -1,13 +1,6 @@
-
-
-// main.js - VERSIÓN LIMPIA Y MODULAR
-
-// 1. Nuevos Módulos de Propiedades
 import { loadProperties } from './api.js';
 import { renderProperties, renderPropertyDetail } from './render.js';
 import { initMap } from './map.js';
-
-// 2. Módulos Generales (Sin cambios)
 import { initMenuToggle } from './menuToggle.js';
 import { highlightCurrentPage } from './wayFinding.js';
 import { loadExchangeRates } from './exchange-rates.js';
@@ -21,7 +14,8 @@ import { initLightbox } from './lightbox.js';
 import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
-import { initFooter } from './footer.js';   
+import { initFooter } from './footer.js';
+import { initRoadAnimation } from './animations.js'; // <--- ¡Perfecto!
 
 // Helper para obtener ID de la URL
 function getPropertyIdFromUrl() {
@@ -42,16 +36,37 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
     initFAQ();
     initFooter();
+    initRoadAnimation(); // <--- Aquí se ejecuta la animación (seguro porque tiene check interno)
 
     // --- 2. Lógica Específica por Página ---
     
     // HOME PAGE
-    if (document.getElementById('testimonial-track')) {
-        initTestimonialMarquee(); 
+    // Verificamos si existe algún elemento único del home para no ejecutar errores
+    if (document.querySelector('.buying-process-sticky') || document.getElementById('testimonial-track')) {
+        
+        // A. Carrusel de Testimonios
+        if (document.getElementById('testimonial-track')) {
+            initTestimonialMarquee(); 
+        }
+
+        // B. Modal de Propiedad Destacada
         initFeaturedModal();
+
+        // C. Calculadora ROI del Home (si existe)
         if (document.getElementById('calculate-roi-home-btn')) {
-            // Nota: Asegúrate de tener esta función o usar initRoiCalculator si es la misma
             if (typeof initRoiCalculatorHome !== 'undefined') initRoiCalculatorHome();
+        }
+
+        // D. Lógica Visual del Proceso de Compra (Highlight al hacer click)
+        const processSteps = document.querySelectorAll('.process-step-item');
+        if (processSteps.length > 0) {
+            processSteps.forEach((step) => {
+                step.addEventListener('click', () => {
+                    // Quita la clase activa de todos y se la pone al que hiciste click
+                    processSteps.forEach(s => s.classList.remove('active-step'));
+                    step.classList.add('active-step');
+                });
+            });
         }
     }
 
