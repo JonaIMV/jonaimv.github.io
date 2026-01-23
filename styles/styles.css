@@ -1037,15 +1037,15 @@ header {
 
 .property-card img {
     width: 100%;
-    height: 220px;        /* Altura fija unificada */
+    height: 220px;        
     object-fit: cover;
     border-bottom: 1px solid #eee;
 }
 
-/* Contenedor del Texto (Coincide con tu JS) */
+/* Contenedor del Texto */
 .property-card-content {
     padding: 20px;        
-    flex-grow: 1;         /* Esto empuja los botones hacia el final */
+    flex-grow: 1;         /
 }
 
 .property-card h3 {
@@ -1053,7 +1053,7 @@ header {
     margin-bottom: 10px;
     color: var(--text-dark);
     line-height: 1.4;
-    min-height: 3em;      /* Alineación de títulos */
+    min-height: 3em;      
 }
 
 .property-card p {
@@ -1102,10 +1102,10 @@ header {
 /* Contenedor de la fila */
 .features-row {
     display: flex;
-    justify-content: space-between; /* Distribuye el espacio uniformemente */
+    justify-content: space-between; 
     align-items: center;
     margin: 15px 0; 
-    padding: 10px 5px; /* Un poco de padding lateral */
+    padding: 10px 5px; 
     border-top: 1px solid #f0f0f0;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -1113,25 +1113,25 @@ header {
 /* Cada ítem (Icono + Texto) */
 .feature-item {
     display: flex;
-    flex-direction: row;  /* <--- CAMBIO CLAVE: Fila en lugar de columna */
-    align-items: center;  /* Centrado verticalmente */
-    gap: 8px;             /* Espacio entre el icono y el texto */
-    color: var(--text-dark); /* Color de texto más oscuro para legibilidad */
-    font-size: 0.95rem;   /* Tamaño cómodo */
+    flex-direction: row;  
+    align-items: center;  
+    gap: 8px;             
+    color: var(--text-dark); 
+    font-size: 0.95rem;  
     font-weight: 500;
 }
 
 /* Estilo de los Iconos */
 .feature-item i {
     color: var(--primary-color);
-    font-size: 1rem;      /* Ajustamos tamaño para que combine con el texto */
-    margin-bottom: 0;     /* Quitamos márgenes viejos si tenían */
+    font-size: 1rem;     
+    margin-bottom: 0;     
 }
 
 /* Ajuste para que no se rompa en celulares muy pequeños */
 @media (max-width: 400px) {
     .features-row {
-        gap: 10px; /* En pantallas muy chicas, reducimos o controlamos el espacio */
+        gap: 10px; 
     }
     .feature-item {
         font-size: 0.85rem;
@@ -1140,21 +1140,21 @@ header {
 /* Map y Badge: Vendido */
 .badge-vendida, 
 .badge-vendido { 
-    background-color: #dc3545; /* Rojo intenso */
+    background-color: #dc3545; 
 }
 
-/* Usamos tu --accent-color (Dorado) para BAJO CONTRATO */
+
 .badge-reservada {
-    background-color: #f39c12; /* Naranja elegante (Flat UI) */
+    background-color: #f39c12; 
     color: #ffffff;
 }
 
-/* Usamos tu --primary-color (Teal) para NUEVO INGRESO */
+
 .badge-nuevo-ingreso { 
-    background-color: #2ecc71; /* Un verde más brillante que el teal */
+    background-color: #2ecc71; 
 }
 
-/* Azul estándar para TOUR VIRTUAL */
+
 
 
 /* =========================================
@@ -1363,55 +1363,13 @@ header {
 }
 
 /* =========================================
-   10. FOOTER (CORREGIDO Y DELGADO)
-   ========================================= */
-/* =========================================
-   1. ESTILOS PARA WEGLOT (EN NAVBAR)
-   ========================================= */
-
-/* El contenedor 'li' dentro del menú */
-.language-item {
-    display: flex;
-    align-items: center;
-    margin-left: 20px; /* Separación del enlace anterior */
-    padding-left: 20px;
-    border-left: 1px solid rgba(0,0,0,0.1); /* Separador sutil opcional */
-}
-
-/* Forzamos a Weglot a dejar de flotar */
-.wg-default {
-    position: static !important;
-    bottom: auto !important;
-    right: auto !important;
-}
-
-/* Estilo del botón de idioma (para que combine con tu menú) */
-.wg-default .wgcurrent {
-    border: 1px solid #e0e0e0 !important; 
-    border-radius: 4px !important;
-    padding: 6px 12px !important;
-    background-color: transparent !important;
-    color: var(--text-dark) !important; /* Hereda color del menú */
-    font-weight: 500 !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-/* Hover en el botón de idioma */
-.wg-default .wgcurrent:hover {
-    border-color: var(--primary-color) !important;
-    color: var(--primary-color) !important;
-    background-color: rgba(0, 139, 139, 0.05) !important;
-}
-
-/* =========================================
-   2. NUEVO FOOTER PREMIUM (PC / ESCRITORIO)
+   10. FOOTER (CORREGIDO )
    ========================================= */
 
 .site-footer {
-    background-color: #1a1a1a;  /* Gris muy oscuro */
-    color: #b0b0b0;             /* Texto gris suave */
-    padding: 60px 0 0 0;        /* Espacio arriba */
+    background-color: #1a1a1a;  
+    color: #b0b0b0;             
+    padding: 60px 0 0 0;        
     font-family: var(--font-body);
     position: relative;
     z-index: 10;
@@ -2415,37 +2373,51 @@ aside h2, aside h3 {
 }
 
 /* 2. Layout Dividido (Mitad y Mitad) */
+/* --- CONTENEDOR PRINCIPAL (DIVIDIDO) --- */
 .process-container-split {
     display: flex;
-    width: 100%; /* Ocupa el 100% real de la pantalla */
-    margin: 0;   /* Cero márgenes */
-    padding: 0;  /* Cero relleno */
-    min-height: auto;
-}
-
-/* --- MITAD IZQUIERDA: IMAGEN --- */
-.process-image-side {
-    flex: 1; /* Ocupa el 50% exacto */
-    position: relative;
+    width: 100%;
     margin: 0;
     padding: 0;
-    display: block; /* Elimina huecos fantasma */
+    background-color: var(--white);
 }
-
-.process-image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    object-position: -65px center;
-    display: block; 
-    
-}
-
-/* --- MITAD DERECHA: CONTENIDO --- */
-.process-content-side {
-    flex: 1; /* 50% ancho */
+/* --- MITAD IZQUIERDA: ANIMACIÓN LOTTIE CON FONDO --- */
+.process-image-side {
+    flex: 1;
+    position: relative; 
     display: flex;
-    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    min-height: 450px; 
+    z-index: 1;
+}
+.process-image-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%; 
+    background-color: #F5E6C4; 
+    opacity: 0.8;
+    border-radius: 0 0 50% 50% / 0 0 25% 25%; 
+    z-index: -1; 
+}
+
+/* Regla para controlar el tamaño del Lottie */
+.process-image-side lottie-player {
+    width: 85%; 
+    height: 85%;
+    max-width: 550px;
+    position: relative; 
+    z-index: 2;
+}
+/* --- MITAD DERECHA: CONTENIDO (SE MANTIENE IGUAL) --- */
+.process-content-side {
+    flex: 1; 
+    display: flex;
+    align-items: center; 
     padding: 60px 50px;
     background-color: var(--white);
 }
@@ -2455,10 +2427,9 @@ aside h2, aside h3 {
     width: 100%;
 }
 
-/* Tipografía de Encabezados */
 .process-subtitle {
     font-family: var(--font-heading);
-    color: var(--accent-color); /* Dorado */
+    color: var(--accent-color);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.85rem;
@@ -2484,7 +2455,6 @@ aside h2, aside h3 {
     line-height: 1.5;
 }
 
-/* --- LISTA DE PASOS  --- */
 .process-steps-grid {
     display: flex;
     flex-direction: column;
@@ -2497,7 +2467,20 @@ aside h2, aside h3 {
     cursor: default; 
 }
 
-/* Contenedor de Texto del Paso */
+/* --- RESPONSIVE (IMPORTANTE AGREGAR ESTO) --- */
+@media (max-width: 900px) {
+    .process-container-split {
+        flex-direction: column; 
+    }
+    .process-image-side {
+        min-height: 300px; 
+        order: -1;
+    }
+    
+    .process-content-side {
+        padding: 40px 20px;
+    }
+}
 .step-info {
     
     border-left: 3px solid transparent; 
@@ -2505,7 +2488,6 @@ aside h2, aside h3 {
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Títulos (01., 02., 03.) */
 .step-info h3 {
     font-family: var(--font-heading);
     font-size: 1.3rem;
@@ -2514,7 +2496,6 @@ aside h2, aside h3 {
     font-weight: 600;
 }
 
-/* Descripción */
 .step-info p {
     font-size: 0.95rem;
     color: var(--text-light);

@@ -2,11 +2,11 @@
 
 // Datos de la Propiedad Destacada
 const featuredData = {
-    title: "VIVE EN Aldea Kiin", 
+    title: "VIVE EN Puntarena", 
     subtitle: "Puerto Morelos",
-    description: "Esta residencia en Aldea Kiin es la respuesta tangible a tu búsqueda. Es una propiedad lista para disfrutarse que combina un diseño moderno con la privacidad de la selva.",
-    image: "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada.webp",
-    link: "for-sale.html?id=13"
+    description: "Terreno en venta en Puntarena Puerto Morelos, en el corazon de este hermoso lugar, rodeado de naturaleza y tranquilidad. Disfruta de un estilo de vida unico con acceso a playas de arena blanca, cenotes y una comunidad vibrante. Ideal para construir la casa de tus sueños o como inversion.",
+    image: "images/puntarena-land/terreno-en-venta-puerto-morelos-1.webp",
+    link: "for-sale.html?id=14"
 };
 
 function getFeaturedContent() {
