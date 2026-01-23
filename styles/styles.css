@@ -2418,7 +2418,7 @@ aside h2, aside h3 {
     flex: 1; 
     display: flex;
     align-items: center; 
-    padding: 60px 50px;
+    padding:15px 50px 150px 50px;     
     background-color: var(--white);
 }
 
