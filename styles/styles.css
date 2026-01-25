@@ -917,24 +917,22 @@ header {
    ESTILO TÍTULO DE PÁGINA (Propiedades)
    ========================================= */
 .page-title {
-    font-family: 'Playfair Display', serif; /* O var(--font-heading) si ya la definiste así */
-    font-size: 3rem;          /* Grande y legible */
-    font-weight: 700;         /* Negrita elegante */
-    text-align: center;       /* Centrado */
-    color: var(--primary-color); /* Tu color Turquesa */
-    margin: 0;                /* Quitamos márgenes por defecto */
-    padding-bottom: 10px;     /* Un poco de aire abajo */
-    letter-spacing: -1px;     /* Un toque moderno */
-    padding-top: 40px;      /* Espacio arriba */
-    /* Opcional: Una línea sutil debajo si te gusta */
-    /* border-bottom: 2px solid var(--accent-color); 
-       display: inline-block; */
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem;         
+    font-weight: 700;         
+    text-align: center;       
+    color: var(--primary-color); 
+    margin: 0;                
+    padding-bottom: 10px;     
+    letter-spacing: -1px;     
+    padding-top:10px;     
+  
 }
 
 /* Ajuste para móviles */
 @media (max-width: 768px) {
     .page-title {
-        font-size: 2rem; /* Más pequeño en celular para que no rompa la pantalla */
+        font-size: 2rem; 
     }
 }
 

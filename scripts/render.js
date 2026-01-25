@@ -1,6 +1,26 @@
 // js/render.js
 
 // --- FUNCIONES INTERNAS (Helpers) ---
+// --- CONFIGURACIÓN CLOUDFLARE ---
+const CDN_URL = "https://cdn.tucasacariberealty.com/";
+
+// Función mágica para convertir rutas locales a Nube + WebP
+function toCloudflare(path, isImage = true) {
+    if (!path) return "";
+    if (path.includes("http") || path.includes("https")) return path; // Si ya es un link web, no tocar
+
+    // Si la ruta empieza con virtualtours, la mandamos a la nube
+    if (path.includes("virtualtours/")) {
+        let newPath = CDN_URL + path; // Agrega https://cdn.tucasacariberealty.com/
+        
+        // Solo si es imagen, cambiamos .jpg por .webp
+        if (isImage && newPath.includes(".jpg")) {
+            newPath = newPath.replace(".jpg", ".webp");
+        }
+        return newPath;
+    }
+    return path;
+}
 
 function getEmbedUrl(url) {
     if (!url || url.includes('/embed/')) return url;

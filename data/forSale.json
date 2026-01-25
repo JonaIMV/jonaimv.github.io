@@ -14,7 +14,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "area": 65,
-    "virtualTourUrl": "virtualtours/selva26-H/selva_H.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/selva26-H/selva_H.html",
     "galleryPhotos": [
       "images/selva-26-h/sala.webp",
       "images/selva-26-h/cocina.webp",
@@ -87,7 +87,7 @@
     "bedrooms": 3,
     "bathrooms": 3.5,
     "area": 210,
-    "virtualTourUrl": "virtualtours/puntavista/puntavista.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/puntavista/puntavista.html",
     "galleryPhotos": [
       "images/puntavista/fachada.webp",
       "images/puntavista/sala.webp",
@@ -155,7 +155,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "area": 65,
-    "virtualTourUrl": "virtualtours/Maracaibo-7/maracaibo.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/Maracaibo-7/maracaibo.html",
     "galleryPhotos": [
       "images/maracaibo-7/fachada.webp",
       "images/maracaibo-7/sala.webp",
@@ -351,7 +351,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "area": 70,
-    "virtualTourUrl": "virtualtours/naay-34-B/naay.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/naay-34-B/naay.html",
     "galleryPhotos": [
       "images/naay/sala-naay.webp",
       "images/naay/cocina-naay.webp",
@@ -421,7 +421,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "area": 65,
-    "virtualTourUrl": "virtualtours/selva-16g/selva-16g.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/selva-16g/selva-16g.html",
     "galleryPhotos": [
       "images/selva-16-g/sala.webp",
       "images/selva-16-g/cocina.webp",
@@ -487,7 +487,7 @@
     "bedrooms": 4,
     "bathrooms": 4,
     "area": 200,
-    "virtualTourUrl": "virtualtours/aldea-umm/aldea-umm.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/aldea-umm/aldea-umm.html",
     "galleryPhotos": [
       "images/aldea-umm/sala.webp",
       "images/aldea-umm/cocina.webp",
@@ -559,7 +559,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "area": 381,
-    "virtualTourUrl": "virtualtours/yal-ku/yalku.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/yal-ku/yalku.html",
     "galleryPhotos": [
       "images/yal-ku/entrada.webp",
       "images/yal-ku/sala.webp",
@@ -639,7 +639,7 @@
     "bathrooms":4,
     "area":391,
     "youtubeUrl":"",
-    "virtualTourUrl": "virtualtours/piedra/casa-piedra.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/piedra/casa-piedra.html",
 
   
     "galleryPhotos": [
@@ -707,7 +707,7 @@
     "bedrooms": 6,
     "bathrooms": 5.5,
     "area": 350,
-    "virtualTourUrl": "virtualtours/puntarena/puntarena.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/puntarena/puntarena.html",
     "galleryPhotos": [
       "images/puntarena/fachada-1.webp",
       "images/puntarena/recibidor.webp",
@@ -789,7 +789,7 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "area": 140,
-    "virtualTourUrl": "virtualtours/palma-real/palma-real.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/palma-real/palma-real.html",
     "galleryPhotos": [
       "images/palma-real/fachada.webp",
         "images/palma-real/comedor.webp",
@@ -871,7 +871,7 @@
     "bedrooms": 3,
     "bathrooms": 3.5,
     "area": 210,
-    "virtualTourUrl": "virtualtours/aldea-kiin/aldea-kiin.html",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/aldea-kiin/aldea-kiin.html",
     "galleryPhotos": [
       "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada.webp",
       "images/aldea-kiin/casa-en-venta-aldea-kiin-puerto-morelos-fachada-1.webp",
@@ -951,7 +951,7 @@
     "location": "Puerto Morelos",
     "type": "land",
     "area": 160,
-    "virtualTourUrl": "virtualtours/puntarena-land/puntarena-land.html",
+    "virtualTourUrl":"https://cdn.tucasacariberealty.com/virtualtours/puntarena-land/puntarena-land.html",
     "galleryPhotos": [
       "images/puntarena-land/terreno-en-venta-puerto-morelos-1.webp",
       "images/puntarena-land/cancha-pickleball-terrenos-en-venta-puerto-morelos.webp",
