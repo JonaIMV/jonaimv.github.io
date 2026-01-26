@@ -91,11 +91,27 @@ function generateDetailHtml(property) {
     const youtubeHtml = embedUrl ? `<section class="video-section reveal-bottom"><h2>Video Promocional</h2><div class="youtube-iframe-wrapper"><iframe src="${embedUrl}" frameborder="0" allowfullscreen></iframe></div></section>` : '';
     const mapHtml = property.googleMapsEmbedUrl ? `<section class="location-section reveal-bottom"><h2>Ubicación</h2><div class="map-container"><iframe src="${property.googleMapsEmbedUrl}" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></section>` : '';
 
+    let detailPriceHtml = property.price; // Por defecto usa el precio normal
+
+    if (property.originalPrice) {
+        // Si existe precio original, armamos el HTML con el tachado
+        detailPriceHtml = `
+            <span style="text-decoration: line-through; color: #888; font-size: 0.8em; margin-right: 10px;">
+                ${property.originalPrice}
+            </span>
+            <span style="color: #d32f2f; font-weight: bold;">
+                ${property.price}
+            </span>
+        `;
+    }
+    // ----------------------------------------------
+
     return `
         <article class="property-detail-article">
             <button class="back-button" onclick="window.location.href='for-sale.html'">← Volver al Listado</button>
             <h1 class="reveal-bottom">${property.title}</h1>
-            <p class="property-price-tag reveal-bottom">${property.price}</p>
+            
+            <p class="property-price-tag reveal-bottom">${detailPriceHtml}</p>
             
             <section class="gallery-section reveal-bottom"><h2>Galería de Fotos</h2>${galleryHtml}</section>
             
@@ -151,6 +167,20 @@ export function renderProperties(propertiesArray, container) {
         const card = document.createElement('div');
         card.className = 'property-card';
         card.setAttribute('data-id', prop.id);
+        // --- Lógica de Precio Oferta para la Tarjeta ---
+      // --- Lógica de Precio para la Tarjeta (Sin la palabra OFERTA) ---
+        let priceHtml = `<span style="font-weight: bold;">${prop.price}</span>`;
+
+        if (prop.originalPrice) {
+            priceHtml = `
+                <span style="text-decoration: line-through; color: #888; font-size: 0.9em; margin-right: 5px;">
+                    ${prop.originalPrice}
+                </span>
+                <span style="font-weight: bold; color: #d32f2f;">
+                    ${prop.price}
+                </span>
+            `;
+        }
         
         card.innerHTML = `
             <div class="image-container skeleton-loading" style="position: relative; overflow: hidden; min-height: 200px; background-color: #e0e0e0;">
@@ -164,7 +194,7 @@ export function renderProperties(propertiesArray, container) {
                     <div class="feature-item"><i class="fas fa-bath"></i> <span>${prop.bathrooms || 0} Baños</span></div>
                     <div class="feature-item"><i class="fas fa-ruler-combined"></i> <span>${prop.area || 0} m²</span></div>
                 </div>
-                <p class="price" style="font-weight: bold;">${prop.price}</p>
+                <p class="price">${priceHtml}</p>
                 <p class="location" style="font-size: 0.9rem; color: #666;"><i class="fas fa-map-marker-alt"></i> ${prop.location}</p> 
             </div>
             <div class="card-actions-group">
