@@ -997,5 +997,82 @@
     "status": "Nuevo ingreso",
     "lat":20.850655,
     "lng":  -86.898245
-}
+},
+{
+    "id": 15,
+    "title": "Departamento en VENTA Selva Escondida Puerto Morelos",
+    "description": "Departamento en Venta Selva Escondida 1 Puerto Morelos.",
+    "extendedDescription": "Este departamento en Selva Escondida es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicado en un residencial privado con seguridad 24 horas, este departamento de 2 recámaras y 1 baño ofrece un diseño moderno y funcional, ideal para parejas, familias pequeñas o como inversión para renta vacacional. La cocina integral equipada, la sala-comedor de concepto abierto y con un ambiente acogedor y relajante. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. No pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
+    "extendedDescription_en": "This apartment in Selva Escondida is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 2-bedroom, 1-bathroom apartment offers a modern and functional design, ideal for couples, small families, or as an investment for vacation rentals. The fully equipped integral kitchen, open-concept living and dining area creates a cozy and relaxing atmosphere. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. Don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
+    "extendedDescription_fr": "Cet appartement à Selva Escondida est l'opportunité parfaite pour ceux qui recherchent un style de vie tranquille entouré de nature à Puerto Morelos. Situé dans une communauté privée avec sécurité 24h/24, cet appartement de 2 chambres et 1 salle de bain offre un design moderne et fonctionnel, idéal pour les couples, les petites familles ou comme investissement pour les locations de vacances. La cuisine intégrale équipée, le salon-salle à manger à aire ouverte crée une atmosphère chaleureuse et relaxante. De plus, le développement dispose d'équipements exclusifs tels qu'une piscine, des espaces verts et un accès direct aux sentiers naturels, vous donnant la possibilité de profiter de l'environnement naturel sans quitter la maison. Ne manquez pas la chance de vivre dans l'une des destinations les plus belles du Mexique à un prix abordable.",
+    "price": "$2,200,000 MXN",
+    "image": "images/selva-5-e/departamento-en-venta-puerto-morelos-fachada.webp",
+    "alt": "Departamento en Venta Selva Escondida Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 64,
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/selva-5-e/selva-5-e.html",
+    "galleryPhotos": [
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-fachada.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-sala.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-cocina.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-recamara.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-baño.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-recamara-2.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-alberca.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-cancha.webp",
+      "images/selva-5-e/departamento-en-venta-puerto-morelos-juegos.webp"
+    ],
+    "features": [
+      "Cocina integral",
+      "Sala-comedor abierta",
+      "Recámara con vista al jardín",
+      "Baño completo",
+      "Alberca privada",
+      "Áreas verdes",
+      "Acceso a senderos naturales"
+    ],
+    "features_en": [
+      "Integral kitchen",
+      "Open living-dining room",
+      "Bedroom with garden view",
+      "Full bathroom",
+      "Private pool",
+      "Green areas",
+      "Access to natural trails"
+    ],
+    "features_fr": [
+      "Cuisine intégrale",
+      "Salon-salle à manger ouvert",
+      "Chambre avec vue sur le jardin",
+      "Salle de bain complète",
+      "Piscine privée",
+      "Espaces verts",
+      "Accès aux sentiers naturels"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Alberca",
+      "Áreas verdes",
+      "Acceso a senderos naturales"
+    ],
+    "amenities_en": [
+      "24/7 Security",
+      "Pool",
+      "Green areas",
+      "Access to natural trails"
+    ],
+    "amenities_fr": [
+      "Sécurité 24h/24",
+      "Piscine",
+      "Espaces verts",
+      "Accès aux sentiers naturels"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d563.7913915305047!2d-86.90538003555484!3d20.869469573859977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1771102273601!5m2!1ses!2smx",
+    "status": "Nuevo ingreso",
+    "lat": 20.869466,
+    "lng":  -86.905419
+  }
 ]
