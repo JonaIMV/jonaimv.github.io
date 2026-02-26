@@ -1151,8 +1151,8 @@ header {
 .badge-nuevo-ingreso { 
     background-color: #2ecc71; 
 }
-.badge-oferta { 
-    background-color: #d37b2f; /* O puedes usar #ff0000 para rojo puro */
+.badge-oferta-especial { 
+    background-color: #37b1e1b8; /* O puedes usar #ff0000 para rojo puro */
     color: #ffffff;
 }
 
