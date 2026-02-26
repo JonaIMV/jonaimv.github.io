@@ -854,7 +854,7 @@
         "Emplacement central"
 ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d491.79620043995163!2d-86.8952694722922!3d20.86741499437957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1766026713705!5m2!1ses!2smx",
-    "status": "Nuevo ingreso",
+    "status": "Disponible",
     "lat": 20.867167, 
     "lng": -86.895678 
 },
@@ -935,7 +935,7 @@
         "Sécurité 24h/24"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1573.046142819366!2d-86.87737978763244!3d20.906834348904912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767393699017!5m2!1ses!2smx",
-    "status": "Nuevo ingreso",
+    "status": "Disponible",
     "lat":20.906678, 
     "lng": -86.877241
 
@@ -994,7 +994,7 @@
         "Terrain de Pickleball"
     ],
     "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d783.8288491779618!2d-86.89853672473669!3d20.850298990443246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767645547429!5m2!1ses!2smx",
-    "status": "Nuevo ingreso",
+    "status": "Disponible",
     "lat":20.850655,
     "lng":  -86.898245
 },
@@ -1071,7 +1071,7 @@
       "Accès aux sentiers naturels"
     ],
     "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d563.7913915305047!2d-86.90538003555484!3d20.869469573859977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1771102273601!5m2!1ses!2smx",
-    "status": "Nuevo ingreso",
+    "status": "Disponible",
     "lat": 20.869466,
     "lng":  -86.905419
   }
