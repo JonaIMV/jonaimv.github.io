@@ -32,45 +32,106 @@ function getEmbedUrl(url) {
     return url;
 }
 
-function generateBentoGalleryHtml(photos, title) {
-    if (!photos || photos.length === 0) return '';
-    let html = '<div class="bento-grid-container">';
-    
-    // 1. Principal
-    html += `<div class="bento-main"><img src="${photos[0]}" alt="Vista principal"></div>`;
-
-    // 2. Secundarias
-    if (photos.length > 1) {
-        html += '<div class="bento-sub">';
-        const limit = Math.min(photos.length, 5); 
-        for (let i = 1; i < limit; i++) {
-            if (i === 4 && photos.length > 5) {
-                const remaining = photos.length - 5;
-                html += `
-                    <div class="view-all-wrapper">
-                        <img src="${photos[i]}" alt="Foto extra">
-                        <div class="view-all-overlay"><span>+${remaining} fotos</span></div>
-                    </div>`;
-            } else {
-                html += `<img src="${photos[i]}" alt="Foto ${i+1}">`;
-            }
+    function generateBentoGalleryHtml(property) {
+        const photos = property.galleryPhotos;
+        if (!photos || photos.length === 0) return '';
+        
+        // 1. Datos base
+        const titleES = property.title ? property.title.replace(/"/g, '&quot;') : 'Propiedad';
+        const loc = property.location || 'Riviera Maya';
+        const beds = property.bedrooms || '';
+        
+        let typeEN = 'Property';
+        let typeFR = 'Propriété';
+        
+        if (property.type === 'apartment') {
+            typeEN = 'Apartment'; typeFR = 'Appartement';
+        } else if (property.type === 'house') {
+            typeEN = 'House'; typeFR = 'Maison';
+        } else if (property.type === 'land') {
+            typeEN = 'Land'; typeFR = 'Terrain';
         }
+
+        // 2. Frases clave para Google
+        const seoEN = `${beds} Bedroom ${typeEN} for sale in ${loc}`;
+        const seoFR = `${typeFR} ${beds} chambres à vendre à ${loc}`;
+
+        // 3. EL NUEVO ORDEN: Inglés primero, luego Francés, luego Español al final
+        const getAltText = (index) => `${seoEN} | ${seoFR} | ${titleES} - Image ${index}`;
+        
+        let html = '<div class="bento-grid-container">';
+        
+        // 1. Principal
+        html += `<div class="bento-main"><img src="${photos[0]}" alt="${getAltText(1)}"></div>`;
+
+        // 2. Secundarias
+        if (photos.length > 1) {
+            html += '<div class="bento-sub">';
+            const limit = Math.min(photos.length, 5); 
+            for (let i = 1; i < limit; i++) {
+                if (i === 4 && photos.length > 5) {
+                    const remaining = photos.length - 5;
+                    html += `
+                        <div class="view-all-wrapper">
+                            <img src="${photos[i]}" alt="${getAltText(i+1)}">
+                            <div class="view-all-overlay"><span>+${remaining} fotos</span></div>
+                        </div>`;
+                } else {
+                    html += `<img src="${photos[i]}" alt="${getAltText(i+1)}">`;
+                }
+            }
+            html += '</div>';
+        }
+        
+        // 3. Ocultas
+        if (photos.length > 5) {
+            html += '<div class="hidden-gallery-photos" style="display: none;">';
+            for (let i = 5; i < photos.length; i++) {
+                html += `<img src="${photos[i]}" alt="${getAltText(i+1)}">`;
+            }
+            html += '</div>';
+        }
+
         html += '</div>';
+        return html;
     }
+    function generateDetailHtml(property) {
+    const galleryHtml = generateBentoGalleryHtml(property); 
     
-    // 3. Ocultas
-    if (photos.length > 5) {
-        html += '<div class="hidden-gallery-photos" style="display: none;">';
-        for (let i = 5; i < photos.length; i++) html += `<img src="${photos[i]}" alt="Foto oculta">`;
-        html += '</div>';
+    // --- LÓGICA DE SCHEMA MARKUP PARA GOOGLE ---
+    const cleanPrice = property.price ? property.price.replace(/[^0-9.-]+/g, "") : "0";
+    
+    // Identificamos los 3 tipos de propiedad
+    let schemaType = "RealEstateListing"; // Por defecto (ideal para terrenos)
+    const pType = (property.type || "").toLowerCase();
+    
+    if (pType === 'apartment' || pType === 'departamento') {
+        schemaType = "Apartment";
+    } else if (pType === 'house' || pType === 'casa') {
+        schemaType = "SingleFamilyResidence";
     }
+    // Si es terreno/land, se queda como "RealEstateListing" que es el estándar de Google
 
-    html += '</div>';
-    return html;
-}
-
-function generateDetailHtml(property) {
-    const galleryHtml = generateBentoGalleryHtml(property.galleryPhotos, property.title);
+    const schemaMarkupHtml = `
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "${schemaType}",
+          "name": "${property.title}",
+          "description": "${property.description}",
+          "url": "https://tucasacariberealty.com/?id=${property.id}",
+          "image": "https://tucasacariberealty.com/${property.image}",
+          "numberOfRooms": "${property.bedrooms || 0}",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "MXN",
+            "price": "${cleanPrice}",
+            "availability": "https://schema.org/InStock",
+            "url": "https://tucasacariberealty.com/?id=${property.id}"
+          }
+        }
+        </script>
+    `;
     
     // Listas trilingües
     const featuresES = [...(property.features || []), ...(property.amenities || [])];
@@ -141,6 +202,7 @@ function generateDetailHtml(property) {
                 </div>
             </div>
             ${mapHtml}
+            ${schemaMarkupHtml}
         </article>
     `;
 }
@@ -153,7 +215,7 @@ export function renderProperties(propertiesArray, container) {
 
     propertiesArray.forEach(prop => {
         const tourButtonHtml = prop.virtualTourUrl 
-            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger">Tour Virtual 360°</a>`
+            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" title="Recorrido Virtual 360 - ${prop.title} en ${prop.location}" aria-label="Abrir recorrido virtual 360 de ${prop.title}">Tour Virtual 360°</a>`
             : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
 
         let badgeHtml = '';
