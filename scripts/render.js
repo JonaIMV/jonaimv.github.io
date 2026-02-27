@@ -182,9 +182,11 @@ function getEmbedUrl(url) {
                 <div class="lang-tabs-container">
                     <span class="lang-label" style="font-weight:bold; margin-right:10px;">Idioma:</span>
                     <div class="lang-tabs">
-                        <button class="lang-btn active" onclick="switchPropertyLanguage('es')"><img src="https://flagcdn.com/w40/mx.png" style="width:20px;"> Español</button>
-                        <button class="lang-btn" onclick="switchPropertyLanguage('en')"><img src="https://flagcdn.com/w40/us.png" style="width:20px;"> English</button>
-                        <button class="lang-btn" onclick="switchPropertyLanguage('fr')"><img src="https://flagcdn.com/w40/fr.png" style="width:20px;"> Français</button>
+                        <button class="lang-btn active" onclick="switchPropertyLanguage('es'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'espanol'});"><img src="https://flagcdn.com/w40/mx.png" style="width:20px;"> Español</button>
+                        
+                        <button class="lang-btn" onclick="switchPropertyLanguage('en'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'ingles'});"><img src="https://flagcdn.com/w40/us.png" style="width:20px;"> English</button>
+                        
+                        <button class="lang-btn" onclick="switchPropertyLanguage('fr'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'frances'});"><img src="https://flagcdn.com/w40/fr.png" style="width:20px;"> Français</button>
                     </div>
                 </div>
 
@@ -214,10 +216,10 @@ export function renderProperties(propertiesArray, container) {
     container.innerHTML = ''; 
 
     propertiesArray.forEach(prop => {
-        const tourButtonHtml = prop.virtualTourUrl 
-            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" title="Recorrido Virtual 360 - ${prop.title} en ${prop.location}" aria-label="Abrir recorrido virtual 360 de ${prop.title}">Tour Virtual 360°</a>`
-            : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
-
+        
+            const tourButtonHtml = prop.virtualTourUrl 
+                ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" onclick="gtag('event', 'clic_tour_virtual', { 'nombre_propiedad': '${prop.title}' });">Tour Virtual 360°</a>`
+                : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
         let badgeHtml = '';
         if (prop.status) {
             const statusClass = 'badge-' + prop.status.toLowerCase().replace(/\s+/g, '-');
@@ -260,7 +262,7 @@ export function renderProperties(propertiesArray, container) {
                 <p class="location" style="font-size: 0.9rem; color: #666;"><i class="fas fa-map-marker-alt"></i> ${prop.location}</p> 
             </div>
             <div class="card-actions-group">
-                <a href="?id=${prop.id}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']});">Más detalles</a>
+                <a href="?id=${prop.id}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']}); gtag('event', 'clic_mas_detalles', { 'nombre_propiedad': '${prop.title}' });">Más detalles</a>
                 ${tourButtonHtml}
             </div>
         `;

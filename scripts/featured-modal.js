@@ -20,7 +20,7 @@ function getFeaturedContent() {
             <img src="${featuredData.image}" alt="Propiedad Destacada" decoding="sync">
         </div>
         
-        <a href="${featuredData.link}" class="popup-cta-btn">Ver Detalles</a>
+        <a href="${featuredData.link}" class="popup-cta-btn" onclick="gtag('event', 'clic_popup_destacado', { 'propiedad_destacada': '${featuredData.title}' });">Ver Detalles</a>
         
         <button class="popup-close-link" id="btn-close-text">No gracias, solo quiero ver</button>
     </div>
