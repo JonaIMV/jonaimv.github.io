@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 
-const carpetaPropiedad = 'selva-5-e'; 
-const nombreSEO = 'Casa en Venta Selva 5E Puerto Morelos'; 
+const carpetaPropiedad = 'naay'; 
+const nombreSEO = '2 Bedroom Condo for Sale in Puerto Morelos'; 
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
@@ -14,7 +14,8 @@ function generarSlug(texto) {
         .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
         .replace(/\s+/g, '-')
         .replace(/[^\w\-]+/g, '')
-        .replace(/\-\-+/g, '-');
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+|-+$/g, '');
 }
 
 const slugBase = generarSlug(nombreSEO);
@@ -23,10 +24,12 @@ let contenidoCSV = "Archivo,Alt_Text\n";
 
 // 1. Leer imágenes en la subcarpeta
 const archivos = fs.readdirSync(rutaImagenes);
-const imagenes = archivos.filter(archivo => {
-    const ext = path.extname(archivo).toLowerCase();
-    return ext === '.webp' || ext === '.jpg' || ext === '.png';
-});
+const imagenes = archivos
+    .filter(archivo => {
+        const ext = path.extname(archivo).toLowerCase();
+        return ext === '.webp' || ext === '.jpg' || ext === '.png';
+    })
+    .sort();
 
 // 2. Renombrar imágenes
 console.log(`\n🔄 Renombrando imágenes en /images/${carpetaPropiedad}...`);
