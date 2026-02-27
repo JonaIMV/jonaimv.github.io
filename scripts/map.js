@@ -25,7 +25,8 @@ export function initMap(properties) {
                     <img src="${prop.image}" style="width:100%; height:80px; object-fit:cover; border-radius:4px; margin-bottom:5px;">
                     <h4 style="margin: 5px 0; font-size:14px;">${prop.title}</h4>
                     <span style="font-weight:bold; color:#2c3e50;">${prop.price}</span><br>
-                    <a href="?id=${prop.id}" style="color: #007bff; font-size:12px;">Ver Propiedad</a>
+                    
+                    <a href="?id=${prop.id}" style="color: #007bff; font-size:12px;" onclick="gtag('event', 'clic_mapa_propiedad', { 'nombre_propiedad': '${prop.title}' }); if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']});">Ver Propiedad</a>
                 </div>
             `);
             markers.push(marker);

@@ -2,13 +2,23 @@
 <html lang="es">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS53TR51FS"></script>
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS53TR51FS"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
+
         gtag('config', 'G-TS53TR51FS');
         gtag('config', 'AW-17663526084');
+        setInterval(function () {
+            if (document.visibilityState === 'visible') {
+                gtag('event', 'virtual_tour_active', {
+                    'event_category': 'Engagement',
+                    'event_label': 'User is viewing tour',
+                    'non_interaction': true
+                });
+            }
+        }, 10000); 
     </script>
     <script>
         !function (f, b, e, v, n, t, s) {
