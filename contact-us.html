@@ -487,6 +487,13 @@
             api_key: 'wg_a2cb1c59b2e716631c099a2f42f138a12',
             appendTo: '#weglot-nav-container'
         });
+
+        // Nuevo: Le avisamos a Google Analytics cada vez que Weglot cambia el idioma
+        Weglot.on("languageChanged", function(newLang) {
+            gtag('event', 'cambio_idioma_weglot', {
+                'idioma_seleccionado': newLang
+            });
+        });
     </script>
 </body>
 

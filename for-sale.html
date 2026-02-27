@@ -162,28 +162,28 @@
 
         <section class="properties-section reveal">
 
-            <div class="filter-container">
-                <div class="filter-controls">
-                    <div class="filter-group">
-                        <label for="sort-by">Ordenar por:</label>
-                        <select id="sort-by">
-                            <option value="price-desc">Precio (Mayor a Menor)</option>
-                            <option value="price-asc">Precio (Menor a Mayor)</option>
-                            <option value="name-asc">Nombre (A-Z)</option>
-                        </select>
-                    </div>
+                <div class="filter-container">
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="sort-by">Ordenar por:</label>
+                            <select id="sort-by" onchange="gtag('event', 'ordenar_propiedades', {'tipo_orden': this.value});">
+                                <option value="price-desc">Precio (Mayor a Menor)</option>
+                                <option value="price-asc">Precio (Menor a Mayor)</option>
+                                <option value="name-asc">Nombre (A-Z)</option>
+                            </select>
+                        </div>
 
-                    <div class="filter-group">
-                        <label for="filter-type">Tipo de Propiedad:</label>
-                        <select id="filter-type">
-                            <option value="all">Todos</option>
-                            <option value="house">Casa</option>
-                            <option value="condo">Condominio</option>
-                            <option value="land">Terreno</option>
-                        </select>
+                        <div class="filter-group">
+                            <label for="filter-type">Tipo de Propiedad:</label>
+                            <select id="filter-type" onchange="gtag('event', 'filtrar_propiedades', {'tipo_propiedad': this.value});">
+                                <option value="all">Todos</option>
+                                <option value="house">Casa</option>
+                                <option value="condo">Condominio</option>
+                                <option value="land">Terreno</option>
+                                <option value="pre-venta">Pre-Venta</option> </select>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div id="properties-container" class="properties-grid"></div>
         </section>
@@ -267,6 +267,13 @@
         Weglot.initialize({
             api_key: 'wg_a2cb1c59b2e716631c099a2f42f138a12',
             appendTo: '#weglot-nav-container'
+        });
+
+        // Nuevo: Le avisamos a Google Analytics cada vez que Weglot cambia el idioma
+        Weglot.on("languageChanged", function(newLang) {
+            gtag('event', 'cambio_idioma_weglot', {
+                'idioma_seleccionado': newLang
+            });
         });
     </script>
 </body>
