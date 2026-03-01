@@ -410,11 +410,11 @@
   {
     "id": 7,
     "title": "Departamento en Venta en Puerto Morelos Ideal para Inversión o Renta Vacacional",
-    "description": "Bonito departamento en residencial privado, 2 habitaciones 1 baño.",
-    "extendedDescription": "Oportunidad excepcional con doble potencial: Disponible tanto para RENTA como para VENTA. Este hermoso departamento se ubica en el exclusivo entorno de Selva Escondida, Puerto Morelos. Diseñado para el confort, cuenta con 2 habitaciones, 1 baño completo, una cocina integral totalmente equipada y una sala acogedora ideal para la convivencia.\n\nVivir aquí es disfrutar de tranquilidad total gracias a la seguridad 24 horas, rodeado de exuberantes áreas verdes y amenidades pensadas para el disfrute de toda la familia. Una opción perfecta ya sea para establecer tu hogar o como inversión inmediata.",
-    "extendedDescription_en": "Exceptional opportunity with dual potential: Available for both RENT and SALE. This beautiful apartment is located in the exclusive setting of Selva Escondida, Puerto Morelos. Designed for comfort, it features 2 bedrooms, 1 full bathroom, a fully equipped kitchen, and a cozy living room perfect for gathering.\n\nLiving here means enjoying total peace of mind with 24/7 security, surrounded by lush green areas and amenities designed for the whole family to enjoy. A perfect option whether establishing your home or seeking an immediate investment.",
-    "extendedDescription_fr": "Opportunité exceptionnelle à double potentiel : Disponible à la fois à la LOCATION et à la VENTE. Ce bel appartement est situé dans le cadre exclusif de Selva Escondida, à Puerto Morelos. Conçu pour le confort, il dispose de 2 chambres, 1 salle de bain complète, une cuisine entièrement équipée et un salon accueillant idéal pour la convivialité.\n\nVivre ici, c'est profiter d'une tranquillité totale grâce à une sécurité 24h/24, entouré d'espaces verts luxuriants et d'équipements conçus pour toute la famille. Une option parfaite, que ce soit pour y établir votre foyer ou comme investissement immédiat.",
-    "price": "$2,400,000 MXN/15,900 MXN mes",
+    "description": "Bonito departamento de 2 habitaciones en residencial privado.",
+    "extendedDescription": "Oportunidad excepcional con doble potencial: disponible tanto para venta como para renta. Este atractivo departamento se encuentra dentro de un residencial privado en Puerto Morelos, ofreciendo un entorno seguro, tranquilo y rodeado de naturaleza. La propiedad dispone de dos cómodas habitaciones, un baño completo, cocina equipada y una acogedora área social pensada para el descanso y la convivencia. Su distribución funcional lo convierte en una excelente opción tanto para vivir de manera permanente como para disfrutarlo como segunda residencia. El residencial cuenta con seguridad 24 horas, amplias áreas verdes y amenidades diseñadas para el bienestar de sus residentes. Una inversión inteligente en una de las zonas con mayor crecimiento y calidad de vida en la Riviera Maya.",
+    "extendedDescription_en": "An exceptional opportunity with dual potential: available for both sale and rent. This attractive apartment is located within a private residential community in Puerto Morelos, offering a peaceful, secure setting surrounded by nature. The property features two comfortable bedrooms, a full bathroom, a fully equipped kitchen, and a welcoming living area designed for relaxed everyday living. Its practical layout makes it ideal as a permanent residence, holiday home, or rental investment.Residents benefit from 24-hour security, landscaped green areas, and lifestyle-oriented amenities that enhance overall quality of life. A solid opportunity in one of the Riviera Maya’s steadily growing residential areas.",   
+    "extendedDescription_fr":  "Disponible à la vente ou à la location, cet appartement est situé au sein d’une résidence privée à Puerto Morelos, offrant un environnement sécurisé, soigné et entouré de nature. Le bien dispose de deux chambres, d’une salle de bain complète, d’une cuisine équipée et d’un espace de vie confortable. Sa distribution fonctionnelle et son atmosphère paisible en font une option idéale comme résidence principale, résidence secondaire ou investissement locatif. La résidence bénéficie d’une sécurité 24h/24 ainsi que de vastes espaces verts, favorisant un style de vie détendu au cœur de la Riviera Maya. Une opportunité intéressante pour les acquéreurs recherchant stabilité, cadre naturel et valorisation à long terme.",
+    "price": "$2,400,000 MXN/14,900 MXN mes",
     "image": "images/selva-16-g/condo-for-sale-in-selva-escondida-puerto-morelos-mexico-01.webp",
     "alt": "Departamento en Selva escondida",
     "location": "Puerto Morelos",
@@ -1003,5 +1003,86 @@
     "status": "Disponible",
     "lat": 20.869466,
     "lng":  -86.905419
-  }
+  },
+  {
+    "id": 16,
+    "title": "Casa Amueblada en Venta Puerto Morelos | Residencial El Faro",
+    "description": "Casa de 2 hab en Residencial El Faro, Puerto Morelos. Totalmente amueblada, patio bardeado y seguridad 24/7. ¡Tu inversión ideal en el Caribe Mexicano!",
+    "extendedDescription": "¡Tu Refugio en el Caribe Mexicano Te Espera! Ubicada en el corazón de Residencial El Faro, esta propiedad de 2 habitaciones y 1 baño es la oportunidad perfecta para quienes buscan seguridad y ubicación estratégica en la Riviera Maya. Se entrega totalmente amueblada, lista para habitarse o rentar. Cuenta con un patio privado y bardeado, ideal para mascotas o reuniones al aire libre. Disfruta de la tranquilidad de vivir en un residencial con vigilancia 24/7, a minutos de la playa y la Ruta de los Cenotes.",
+    "extendedDescription_en": "Live the Caribbean Dream in Puerto Morelos! This turnkey 2-bedroom residence in Residencial El Faro is the perfect entry point into the Riviera Maya market. Fully furnished and ready for immediate ROI through vacation rentals, the home features a private fenced backyard for outdoor living. Located in a secure gated community with 24/7 security, you are just minutes away from the National Reef Park and vibrant local culture. A smart investment in Mexico’s fastest-growing corridor.",
+    "extendedDescription_fr": "Opportunité Immobilière de Qualité à Puerto Morelos. Située au sein du quartier sécurisé El Faro, cette charmante maison représente un placement patrimonial sûr dans l’un des villages les plus authentiques de la Riviera Maya. Vendue entièrement meublée, elle dispose de 2 chambres et d'un jardin clos privé garantissant intimité et sérénité. À mi-chemin entre Cancún et Playa del Carmen, cette propriété offre la stabilité d'un investissement de qualité alliée à la douceur de vivre caribéenne.",
+  "price": "$2,400,000 MXN",
+    "image": "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
+    "alt": "Casa en Venta Residencial El Faro Puerto Morelos",
+    "location": "Puerto Morelos",
+    "type": "house",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 64,
+    "virtualTourUrl": "",
+    "galleryPhotos": [
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-07.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-08.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-09.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-10.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-11.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-12.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-13.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-14.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-02.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-03.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-04.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-05.webp",
+      "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-06.webp"    
+     ],
+        "features": [
+        "Totalmente amueblada",
+        "Patio privado y bardeado",
+        "Seguridad 24/7",
+        "Ubicación estratégica",
+        "A minutos de la playa y la Ruta de los Cenotes"
+  ]   ,
+    "features_en": [
+        "Fully furnished",
+        "Private fenced backyard",
+        "24/7 security",
+        "Strategic location",
+        "Minutes from the beach and Cenote Route"
+    ],
+    "features_fr": [
+        "Entièrement meublée",
+        "Jardin privé clôturé",
+        "Sécurité 24h/24",
+        "Emplacement stratégique",
+        "À quelques minutes de la plage et de la Route des Cenotes"
+],
+    "amenities": [
+        "Seguridad 24/7",
+        "Áreas verdes",
+        "Cercano a la playa"
+        
+    ],
+    "amenities_en": [
+        "24/7 Security",
+        "Green areas",
+        "Close to the beach"
+        
+    ],
+    "amenities_fr": [
+        "Sécurité 24h/24",
+        "Espaces verts",
+        "Proche de la plage"
+        
+],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d498.75879355090484!2d-86.89974304153267!3d20.873769328532205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1772339569718!5m2!1ses!2smx",
+    "status": "NUevo Ingreso",
+    "lat": 20.873602, 
+    "lng": -86.899731
+
+
+
+
+
+}
 ]

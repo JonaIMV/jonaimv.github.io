@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp'); // <- Agregamos el compresor
 
-
-const carpetaPropiedad = 'naay'; 
-const nombreSEO = '2 Bedroom Condo for Sale in Puerto Morelos'; 
+const carpetaPropiedad = 'maracaibo-34'; 
+const nombreSEO = 'Casa en Venta Puerto Morelos Residencial El Faro, México'; 
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
@@ -19,70 +19,92 @@ function generarSlug(texto) {
 }
 
 const slugBase = generarSlug(nombreSEO);
-let mapaReemplazos = {};
-let contenidoCSV = "Archivo,Alt_Text\n";
 
-// 1. Leer imágenes en la subcarpeta
-const archivos = fs.readdirSync(rutaImagenes);
-const imagenes = archivos
-    .filter(archivo => {
-        const ext = path.extname(archivo).toLowerCase();
-        return ext === '.webp' || ext === '.jpg' || ext === '.png';
-    })
-    .sort();
+// Envolvemos todo en una función asíncrona porque la compresión toma tiempo
+async function optimizarPropiedad() {
+    let mapaReemplazos = {};
+    let contenidoCSV = "Archivo,Alt_Text\n";
 
-// 2. Renombrar imágenes
-console.log(`\n🔄 Renombrando imágenes en /images/${carpetaPropiedad}...`);
-imagenes.forEach((archivoViejo, index) => {
-    const numero = (index + 1).toString().padStart(2, '0');
-    const extension = path.extname(archivoViejo).toLowerCase();
-    const archivoNuevo = `${slugBase}-${numero}${extension}`;
+    // 1. Leer imágenes en la subcarpeta
+    const archivos = fs.readdirSync(rutaImagenes);
+    const imagenes = archivos
+        .filter(archivo => {
+            const ext = path.extname(archivo).toLowerCase();
+            return ext === '.webp' || ext === '.jpg' || ext === '.jpeg' || ext === '.png';
+        })
+        .sort();
+
+    console.log(`\n🔄 Comprimiendo y renombrando imágenes en /images/${carpetaPropiedad}...`);
     
-    // Guardar para el reemplazo en HTML (incluyendo la ruta de la carpeta para ser exactos)
-    const rutaViejaHTML = `images/${carpetaPropiedad}/${archivoViejo}`;
-    const rutaNuevaHTML = `images/${carpetaPropiedad}/${archivoNuevo}`;
-    mapaReemplazos[rutaViejaHTML] = rutaNuevaHTML;
+    // 2. Procesar imágenes una por una
+    for (let index = 0; index < imagenes.length; index++) {
+        const archivoViejo = imagenes[index];
+        const numero = (index + 1).toString().padStart(2, '0');
+        
+        // Forzamos la extensión a .webp para el archivo final
+        const archivoNuevo = `${slugBase}-${numero}.webp`; 
+        
+        const rutaViejaFisica = path.join(rutaImagenes, archivoViejo);
+        const rutaNuevaFisica = path.join(rutaImagenes, archivoNuevo);
 
-    // Renombrar archivo físico
-    fs.renameSync(path.join(rutaImagenes, archivoViejo), path.join(rutaImagenes, archivoNuevo));
-    
-    // Agregar al CSV
-    contenidoCSV += `${archivoNuevo},"${nombreSEO} - Imagen ${numero}"\n`;
-    console.log(`✅ ${archivoViejo} -> ${archivoNuevo}`);
-});
+        // Guardar para el reemplazo en HTML/JSON
+        const rutaViejaHTML = `images/${carpetaPropiedad}/${archivoViejo}`;
+        const rutaNuevaHTML = `images/${carpetaPropiedad}/${archivoNuevo}`;
+        mapaReemplazos[rutaViejaHTML] = rutaNuevaHTML;
 
-// Guardar CSV en la carpeta de la propiedad
-fs.writeFileSync(path.join(rutaImagenes, 'seo-alt-texts.csv'), contenidoCSV);
-console.log(`📄 CSV de Textos ALT generado en la carpeta de la propiedad.`);
+        try {
+            // MAGIA DE COMPRESIÓN CON SHARP
+            await sharp(rutaViejaFisica)
+                .resize({ width: 1600, withoutEnlargement: true }) // Máximo 1600px de ancho
+                .webp({ quality: 80 }) // Calidad al 80% (excelente para web)
+                .toFile(rutaNuevaFisica);
 
+            // Si el nombre o extensión cambió, borramos el original pesado para ahorrar espacio
+            if (rutaViejaFisica !== rutaNuevaFisica) {
+                fs.unlinkSync(rutaViejaFisica);
+            }
 
-/* ==============================
-   ACTUALIZAR JSON
-============================== */
-console.log('\n📝 Actualizando forSale.json...');
-
-const rutaJson = path.join(rutaRaiz, 'data/forSale.json');
-
-if (fs.existsSync(rutaJson)) {
-    let contenidoJson = fs.readFileSync(rutaJson, 'utf8');
-    let jsonModificado = false;
-
-    Object.entries(mapaReemplazos).forEach(([viejo, nuevo]) => {
-        // Usamos split y join, es 100% seguro contra puntos y barras diagonales
-        if (contenidoJson.includes(viejo)) {
-            contenidoJson = contenidoJson.split(viejo).join(nuevo);
-            jsonModificado = true;
+            // Agregar al CSV
+            contenidoCSV += `${archivoNuevo},"${nombreSEO} - Imagen ${numero}"\n`;
+            console.log(`✅ ${archivoViejo} -> comprimido a -> ${archivoNuevo}`);
+        } catch (error) {
+            console.error(`❌ Error al comprimir ${archivoViejo}:`, error);
         }
-    });
-
-    if (jsonModificado) {
-        fs.writeFileSync(rutaJson, contenidoJson, 'utf8');
-        console.log(`✅ Nombres de imágenes actualizados exitosamente en: forSale.json`);
-    } else {
-        console.log(`ℹ️ No se encontraron coincidencias. Revisa que las rutas en el JSON y la carpeta coincidan.`);
     }
-} else {
-    console.log(`❌ Error: No se encontró el archivo forSale.json en la ruta: ${rutaJson}`);
+
+    // Guardar CSV
+    fs.writeFileSync(path.join(rutaImagenes, 'seo-alt-texts.csv'), contenidoCSV);
+    console.log(`📄 CSV de Textos ALT generado exitosamente.`);
+
+    /* ==============================
+       ACTUALIZAR JSON
+    ============================== */
+    console.log('\n📝 Actualizando forSale.json...');
+    const rutaJson = path.join(rutaRaiz, 'data/forSale.json');
+
+    if (fs.existsSync(rutaJson)) {
+        let contenidoJson = fs.readFileSync(rutaJson, 'utf8');
+        let jsonModificado = false;
+
+        Object.entries(mapaReemplazos).forEach(([viejo, nuevo]) => {
+            if (contenidoJson.includes(viejo)) {
+                contenidoJson = contenidoJson.split(viejo).join(nuevo);
+                jsonModificado = true;
+            }
+        });
+
+        if (jsonModificado) {
+            fs.writeFileSync(rutaJson, contenidoJson, 'utf8');
+            console.log(`✅ Nombres y extensiones actualizados exitosamente en: forSale.json`);
+        } else {
+            console.log(`ℹ️ No se encontraron coincidencias en el JSON.`);
+        }
+    } else {
+        console.log(`❌ Error: No se encontró el archivo forSale.json`);
+    }
+
+    console.log('\n🚀 PROCESO COMPLETADO AL 100%');
 }
 
-console.log('\n🚀 PROCESO COMPLETADO');
+// Ejecutar la función principal
+optimizarPropiedad();
