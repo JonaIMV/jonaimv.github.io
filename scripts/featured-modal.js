@@ -2,11 +2,11 @@
 
 // Datos de la Propiedad Destacada
 const featuredData = {
-    title: "VIVE EN Puntarena", 
+    title: "Retiro, rentabilidad y estilo de vida en un solo lugar.", 
     subtitle: "Puerto Morelos",
-    description: "Terreno en venta en Puntarena Puerto Morelos, en el corazon de este hermoso lugar, rodeado de naturaleza y tranquilidad. Disfruta de un estilo de vida unico con acceso a playas de arena blanca, cenotes y una comunidad vibrante. Ideal para construir la casa de tus sueños o como inversion.",
-    image: "images/puntarena-land/terreno-en-venta-puerto-morelos-1.webp",
-    link: "for-sale.html?id=14"
+    description: "Casa amueblada en Puerto Morelos, dentro de residencial exclusivo. Vive con seguridad, disfruta bajo costo de vida y genera ingresos en uno de los destinos con mayor proyección del Caribe.",
+    image: "images/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
+    link: "for-sale.html?id=16"
 };
 
 function getFeaturedContent() {
