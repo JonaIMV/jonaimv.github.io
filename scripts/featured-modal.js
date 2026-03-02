@@ -5,7 +5,7 @@ const featuredData = {
     title: "Retiro, rentabilidad y estilo de vida en un solo lugar.", 
     subtitle: "Puerto Morelos",
     description: "Casa amueblada en Puerto Morelos, dentro de residencial exclusivo. Vive con seguridad, disfruta bajo costo de vida y genera ingresos en uno de los destinos con mayor proyección del Caribe.",
-    image: "images/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
+    image: "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
     link: "for-sale.html?id=16"
 };
 
