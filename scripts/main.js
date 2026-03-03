@@ -15,7 +15,7 @@ import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
 import { initFooter } from './footer.js';
-import { initRoadAnimation } from './animations.js'; // <--- ¡Perfecto!
+
 
 // Helper para obtener ID de la URL
 function getPropertyIdFromUrl() {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
     initFAQ();
     initFooter();
-    initRoadAnimation(); // <--- Aquí se ejecuta la animación (seguro porque tiene check interno)
+    
 
     // --- 2. Lógica Específica por Página ---
     

@@ -357,105 +357,119 @@ header {
         padding: 15px 20px;
     }
 }
-/* --- ESCENA BOUTIQUE DE CARRETERA --- */
-
-.road-scene-container {
-    width: 100%;
-    height: 280px;
-    position: relative;
-    margin-top: 40px;
-    z-index: 5;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
-    pointer-events: none;
+/* =========================================
+   SECCIÓN DE DATOS CLAVE (INVESTMENT HIGHLIGHTS)
+   ========================================= */
+/* =========================================
+   ENCABEZADO CENTRADO (Para Datos Clave y otras secciones)
+   ========================================= */
+.header-center {
+    text-align: center;
+    max-width: 800px; /* Evita que el texto sea demasiado ancho en pantallas grandes */
+    margin: 0 auto 50px auto; /* Lo centra y le da espacio hacia abajo */
+    padding: 0 20px;
 }
 
-
-.sun-element {
-    width: 90px;
-    height: 90px;
-    background: #FFFDD0; 
-    border-radius: 50%;
-    position: absolute;
-    bottom: -50px; 
-    left: 15%;
-    box-shadow: 0 0 50px 20px rgba(255, 253, 208, 0.6);
-    z-index: 1;
+.header-center h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--primary-color); /* Usa tu azul/verde principal */
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
-.clouds-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
+.header-center .subtitle {
+    font-family: var(--font-body);
+    font-size: 1.15rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
 }
 
-.cloud-element {
-    position: absolute;
-    opacity: 0.3; 
-    filter: invert(80%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(90%) contrast(90%); /* Tono grisáceo */
+/* --- Ajuste para pantallas de celular --- */
+@media (max-width: 768px) {
+    .header-center h3 {
+        font-size: 2rem; /* Un poco más pequeño en móviles para que no ocupe toda la pantalla */
+    }
+    .header-center .subtitle {
+        font-size: 1rem;
+    }
+}
+.investment-highlights-section {
+    padding: 80px 20px;
+    background-color: var(--bg-light);
 }
 
-.cloud-1 { top: 30px; left: 10%; width: 150px; }
-.cloud-2 { top: 5px; left: 60%; width: 200px; }
-
-.palm-tree, .palapa-element {
-    position: absolute;
-    bottom: 60px;
-    z-index: 3;
-    filter: invert(30%) sepia(15%) saturate(200%) hue-rotate(180deg) brightness(95%) contrast(90%) drop-shadow(0 2px 2px rgba(0,0,0,0.05));
+/* Contenedor principal de la cuadrícula */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 50px;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.palm-tree { width:100px; }
-.palm-1 {
-     left: 10%;
-     transform: scale(0.9);
-     bottom: 45px;
-}
-.palm-2 {
-     left: 45%;
-     transform: scale(1.5);
-}
-.palm-3 {
-     left: 75%;
-     transform: scale(1.1);
-     bottom: 50px;
-}
-.road-element {
-    width: 100%;
-    height: 60px;
-    background-color: #EADDCA; 
-    background-image: repeating-linear-gradient(
-        to right, 
-        transparent, 
-        transparent 20px, 
-        rgba(0,0,0,0.03) 20px,
-        rgba(0,0,0,0.03) 24px
-    );
-    border-top: 3px solid #D4B996;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 4;
-    animation: moveSand 1.5s linear infinite;
+/* Diseño de cada tarjeta de dato usando tus variables */
+.highlight-item {
+    background: var(--white);
+    padding: 40px 25px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    /* Usamos tu color dorado para un detalle elegante en la base */
+    border-bottom: 4px solid var(--accent-color); 
+    transition: var(--transition);
 }
 
-/* 5. La Combi (Line Art) */
-.van-element {
-    width: 130px;
-    position: absolute;
-    bottom: 30px;
-    left: -150px;
-    z-index: 10;
-    filter: invert(30%) sepia(15%) saturate(200%) hue-rotate(180deg) brightness(95%) contrast(90%) drop-shadow(0 5px 5px rgba(0,0,0,0.1));
-}
-@keyframes moveSand {
-    from { background-position-x: 0; }
-    to { background-position-x: -40px; } /* Se mueve el tamaño del patrón */
+/* Efecto al pasar el mouse (Hover) */
+.highlight-item:hover {
+    /* translateY lo sube, scale(1.05) lo hace un 5% más grande */
+    transform: translateY(-8px) scale(1.05);
+    
+    /* Hacemos la sombra más grande y oscura para que parezca que flota más alto */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+    
+    /* Aseguramos que la transición sea suave usando tu variable */
+    transition: var(--transition);
 }
 
+/* Estilo de los números grandes con tu tipografía Playfair */
+.highlight-item h2 {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    /* Creamos un degradado usando tus colores corporativos (del teal oscuro al claro) */
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilo del texto descriptivo con tu tipografía Source Sans */
+.highlight-item p {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (min-width: 768px) {
+    .highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .highlights-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /* =========================================
    4. SECCIÓN TESTIMONIALES (INDEX)
    ========================================= */
@@ -2389,10 +2403,11 @@ aside h2, aside h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    /* Quitamos el overflow: hidden de aquí porque corta la animación de ScrollReveal */
     min-height: 450px; 
     z-index: 1;
 }
+
 .process-image-side::before {
     content: '';
     position: absolute;
@@ -2406,20 +2421,22 @@ aside h2, aside h3 {
     z-index: -1; 
 }
 
-/* Regla para controlar el tamaño del Lottie */
+/* Regla controlada y limpia para el Lottie */
 .process-image-side lottie-player {
-    width: 85%; 
-    height: 85%;
-    max-width: 550px;
+    width: 100%; 
+    max-width: 450px; /* Limitamos el ancho máximo para que no se vea gigante */
+    height: auto; /* Mantiene la proporción perfecta del vector */
     position: relative; 
     z-index: 2;
 }
-/* --- MITAD DERECHA: CONTENIDO (SE MANTIENE IGUAL) --- */
+
+/* --- MITAD DERECHA: CONTENIDO --- */
 .process-content-side {
     flex: 1; 
     display: flex;
     align-items: center; 
-    padding:15px 50px 150px 50px;     
+    /* Reduje un poco el padding inferior (de 150px a 50px) para que no quede un hueco blanco gigante abajo */
+    padding: 15px 50px 50px 50px;     
     background-color: var(--white);
 }
 
@@ -2427,7 +2444,6 @@ aside h2, aside h3 {
     max-width: 600px;
     width: 100%;
 }
-
 .process-subtitle {
     font-family: var(--font-heading);
     color: var(--accent-color);
