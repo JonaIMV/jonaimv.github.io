@@ -25,14 +25,13 @@
     box-sizing: border-box;
 }
 
+/* Agrega esta regla nueva justo arriba de tu body */
 body {
     font-family: var(--font-main);
     color: var(--text-dark);
     background-color: var(--bg-light);
     line-height: 1.6;
-    overflow-x: hidden; 
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -2371,19 +2370,17 @@ aside h2, aside h3 {
 
 /* 1. Contenedor Principal (Sticky) */
 .buying-process-sticky {
-    /* 1. LIMPIEZA TOTAL: Quitamos los hacks de ancho */
     width: 100%; 
     margin: 0;
-    left: auto;
-    right: auto;
     
-    /* 2. EFECTO Sticky (Para quedarse al fondo) */
+    /* Efecto Telón */
     position: sticky;
-    top: 80px;  /* Se pega debajo del Navbar */
-    z-index: 1; /* Se queda atrás */
+    top: 80px;  
+    z-index: 1; 
+    
+    /* ¡ELIMINAMOS el overflow-x: hidden y el overflow: hidden de aquí! */
     
     background-color: var(--white);
-    overflow: hidden;
     min-height: 600px;
 }
 
@@ -2396,14 +2393,14 @@ aside h2, aside h3 {
     padding: 0;
     background-color: var(--white);
 }
-/* --- MITAD IZQUIERDA: ANIMACIÓN LOTTIE CON FONDO --- */
+
+/* --- MITAD IZQUIERDA: SLIDESHOW DE IMÁGENES CON FONDO --- */
 .process-image-side {
     flex: 1;
     position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Quitamos el overflow: hidden de aquí porque corta la animación de ScrollReveal */
     min-height: 450px; 
     z-index: 1;
 }
@@ -2421,13 +2418,33 @@ aside h2, aside h3 {
     z-index: -1; 
 }
 
-/* Regla controlada y limpia para el Lottie */
-.process-image-side lottie-player {
-    width: 100%; 
-    max-width: 450px; /* Limitamos el ancho máximo para que no se vea gigante */
-    height: auto; /* Mantiene la proporción perfecta del vector */
-    position: relative; 
+/* --- REGLAS NUEVAS PARA EL SLIDESHOW (Reemplaza al Lottie) --- */
+.image-slideshow {
+    width: 100%;
+    max-width: 480px; /* Un poco más grande que el Lottie para que luzca */
+    aspect-ratio: 1 / 1; /* Mantiene las fotos cuadradas perfectas */
+    position: relative; /* Clave para el posicionamiento absoluto de las fotos */
     z-index: 2;
+    overflow: hidden; /* Encierra las fotos dentro de los bordes redondeados */
+    border-radius: var(--border-radius); /* Usa tus variables de marca */
+    box-shadow: var(--shadow-card); /* Sombra elegante */
+}
+
+.image-slideshow .slide {
+    position: absolute; /* Pone una foto encima de la otra */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la foto para llenar el cuadrado sin deformarse */
+    
+    /* Efecto de desvanecimiento */
+    opacity: 0; /* Todas ocultas por defecto */
+    transition: opacity 1.5s ease-in-out; /* El difuminado suave de 1.5 segundos */
+}
+
+.image-slideshow .slide.active {
+    opacity: 1; 
 }
 
 /* --- MITAD DERECHA: CONTENIDO --- */
@@ -2435,8 +2452,7 @@ aside h2, aside h3 {
     flex: 1; 
     display: flex;
     align-items: center; 
-    /* Reduje un poco el padding inferior (de 150px a 50px) para que no quede un hueco blanco gigante abajo */
-    padding: 15px 50px 50px 50px;     
+    padding: 15px 50px 150px 50px;     
     background-color: var(--white);
 }
 
@@ -2444,6 +2460,7 @@ aside h2, aside h3 {
     max-width: 600px;
     width: 100%;
 }
+
 .process-subtitle {
     font-family: var(--font-heading);
     color: var(--accent-color);
@@ -2484,7 +2501,7 @@ aside h2, aside h3 {
     cursor: default; 
 }
 
-/* --- RESPONSIVE (IMPORTANTE AGREGAR ESTO) --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     .process-container-split {
         flex-direction: column; 
@@ -2497,9 +2514,13 @@ aside h2, aside h3 {
     .process-content-side {
         padding: 40px 20px;
     }
+    .image-slideshow {
+        max-width: 320px; /* Más pequeño en celular */
+        margin-top: 30px;
+    }
 }
+
 .step-info {
-    
     border-left: 3px solid transparent; 
     padding-left: 0;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -2526,6 +2547,8 @@ aside h2, aside h3 {
     border-left: 3px solid var(--accent-color); 
     padding-left: 20px; 
 }
+
+/* --- ANIMACIONES EN CASCADA --- */
 @keyframes fadeInUpSafe {
     from {
         opacity: 0;
@@ -2554,6 +2577,11 @@ aside h2, aside h3 {
 .multilingual-content-wrapper {
     background-color: #fff;
     padding: 20px 0;
+}
+.properties-section{
+    position: relative;
+    z-index: 5;
+    background-color: var(--bg-light);
 }
 
 /* Header de las pestañas */

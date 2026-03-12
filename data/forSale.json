@@ -14,7 +14,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "area": 65,
-    "youtubeUrl": "https://www.youtube.com/embed/9n1sXo2l8j0",
+    "youtubeUrl": "",
     "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/selva26-H/selva_H.html",
     "galleryPhotos": [
       "images/selva-26-h/2-bedroom-condo-for-sale-in-puerto-morelos-selva-escondida-26h-08.webp",
@@ -1082,10 +1082,81 @@
     "status": "NUevo Ingreso",
     "lat": 20.873602, 
     "lng": -86.899731
-
-
-
-
+},
+{
+    "id": 17,
+    "title": "Departamento en VENTA Puerto Morelos Loom by Selva Escondida, México",
+    "description": "Departamento en venta en Loom by Selva Escondida, Puerto Morelos.",
+    "extendedDescription": "Este departamento en Loom by Selva Escondida es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicado en un residencial privado con seguridad 24 horas, este departamento de 2 recámaras y 2 baños ofrece un diseño moderno y funcional, ideal para parejas, familias pequeñas o como inversión para renta vacacional. La cocina integral equipada, la sala-comedor de concepto abierto y con un ambiente acogedor y relajante. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. No pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
+    "extendedDescription_en": "This apartment in Loom by Selva Escondida is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 2-bedroom, 2-bathroom apartment offers a modern and functional design, ideal for couples, small families, or as an investment for vacation rentals. The fully equipped integral kitchen, open-concept living and dining area creates a cozy and relaxing atmosphere. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. Don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
+    "extendedDescription_fr": "Cet appartement à Loom by Selva Escondida est l'opportunité parfaite pour ceux qui recherchent un style de vie tranquille entouré de nature à Puerto Morelos. Situé dans une communauté privée avec sécurité 24h/24, cet appartement de 2 chambres et 2 salles de bain offre un design moderne et fonctionnel, idéal pour les couples, les petites familles ou comme investissement pour les locations de vacances. La cuisine intégrale équipée, le salon-salle à manger à aire ouverte crée une atmosphère chaleureuse et relaxante. De plus, le développement dispose d'équipements exclusifs tels qu'une piscine, des espaces verts et un accès direct aux sentiers naturels, vous donnant la possibilité de profiter de l'environnement naturel sans quitter la maison. Ne manquez pas la chance de vivre dans l'une des destinations les plus belles du Mexique à un prix abordable.",
+    "price": "$139,000 USD",
+    "image": "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-01.webp",
+    "alt": "Departamento en Venta Puerto Morelos Loom by Selva Escondida ",
+    "location": "Puerto Morelos",
+    "type": "apartment",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "youtubeUrl":"https://www.youtube.com/embed/DxilxYYrcgo",
+    "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/loom-33-f/loom-33-f.html",
+    "galleryPhotos": [
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-01.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-02.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-06.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-07.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-08.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-09.webp",
+       "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-03.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-04.webp",
+      "images/loom-33-f/departamento-en-venta-puerto-morelos-loom-by-selva-escondida-mexico-05.webp"
+    ],
+    "features": [
+      "Cocina integral",
+      "Sala-comedor abierta",
+      "Recámara principal con baño privado",
+      "Baño completo adicional",
+      "Áreas verdes",
+      "Acceso a senderos naturales"
+    ],
+    "features_en": [
+      "Integral kitchen",
+      "Open living-dining room",
+      "Master bedroom with private bathroom",
+      "Additional full bathroom",
+      "Green areas",
+      "Access to natural trails"
+    ],
+    "features_fr": [
+      "Cuisine intégrale",
+      "Salon-salle à manger ouvert",
+      "Chambre principale avec salle de bain privée",
+      "Salle de bain complète supplémentaire",
+      "Espaces verts",
+      "Accès aux sentiers naturels"
+    ],
+    "amenities": [
+      "Seguridad 24h",
+      "Alberca",
+     
+      "Asadores"
+    ],
+    "amenities_en": [
+      "24/7 Security",
+      "Pool",
+      
+      "BBQ grills"
+      
+    ],
+    "amenities_fr": [
+      "Sécurité 24h/24",
+      "Piscine",
+      
+      "Barbecues"
+    ],
+    "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d67.15305803294439!2d-86.90465096440047!3d20.871556297952665!2m2!1f0!2f8.488230545136476!3m2!1i1024!2i768!4f56.3112519682644!5e1!3m2!1ses!2smx!4v1773340784571!5m2!1ses!2smx",
+    "status": "NUevo Ingreso",
+    "lat": 20.871532,
+    "lng": -86.904666
 
 }
 ]

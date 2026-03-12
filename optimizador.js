@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp'); // <- Agregamos el compresor
 
-const carpetaPropiedad = 'maracaibo-34'; 
-const nombreSEO = 'Casa en Venta Puerto Morelos Residencial El Faro, México'; 
+const carpetaPropiedad = 'loom-33-f'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
+const nombreSEO = 'Departamento en Venta Puerto Morelos Loom by Selva Escondida, México'; 
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);

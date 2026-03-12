@@ -15,6 +15,7 @@ import { initWhatsApp } from './whatsapp.js';
 import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
 import { initFooter } from './footer.js';
+import { initSlideshow } from './slideshow.js';
 
 
 // Helper para obtener ID de la URL
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
     initFAQ();
     initFooter();
+    initSlideshow();
     
 
     // --- 2. Lógica Específica por Página ---
