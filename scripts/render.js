@@ -148,8 +148,26 @@ function getEmbedUrl(url) {
     const descriptionEN = property.extendedDescription_en || property.description_en || "Description available soon.";
     const descriptionFR = property.extendedDescription_fr || property.description_fr || "Description à venir bientôt...";
 
-    const embedUrl = getEmbedUrl(property.youtubeUrl);
-    const youtubeHtml = embedUrl ? `<section class="video-section reveal-bottom"><h2>Video Promocional</h2><div class="youtube-iframe-wrapper"><iframe src="${embedUrl}" frameborder="0" allowfullscreen></iframe></div></section>` : '';
+   const embedUrl = getEmbedUrl(property.youtubeUrl);
+    
+    // Nuevo diseño vertical para YouTube Shorts
+    const youtubeHtml = embedUrl ? `
+        <section class="youtube-video-section reveal-bottom" style="margin-top: 40px; text-align: center;">
+            <h2 style="margin-bottom: 20px;">Recorrido Rápido</h2>
+            <div class="youtube-short-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
+                <iframe 
+                    width="315" 
+                    height="560" 
+                    src="${embedUrl}?rel=0" 
+                    title="TuCasa Caribe Realty - Recorrido" 
+                    frameborder="0" 
+                    style="border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 100%;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    ` : '';
     const mapHtml = property.googleMapsEmbedUrl ? `<section class="location-section reveal-bottom"><h2>Ubicación</h2><div class="map-container"><iframe src="${property.googleMapsEmbedUrl}" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></section>` : '';
 
     let detailPriceHtml = property.price; // Por defecto usa el precio normal

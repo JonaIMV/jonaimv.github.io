@@ -2713,6 +2713,22 @@ aside h2, aside h3 {
 .whatsapp-float {
     animation: pulse-green 2s infinite;
 }
+.youtube-video-section h2 {
+    margin-bottom: 20px;
+    /* Ajusta el color a tu tema si es necesario */
+}
+
+.youtube-short-container {
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto 30px auto;
+}
+
+.youtube-short-container iframe {
+    border-radius: 12px; /* Bordes suaves */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra elegante */
+    max-width: 100%; /* Para celulares */
+}
 
 
 /* --- RESPONSIVE (Móvil y Tablet) --- */

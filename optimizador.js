@@ -2,12 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp'); // <- Agregamos el compresor
 
-const carpetaPropiedad = 'loom-33-f'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
-const nombreSEO = 'Departamento en Venta Puerto Morelos Loom by Selva Escondida, México'; 
+const carpetaPropiedad = 'luum-33-f'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
+const nombreSEO = 'Departamento en Venta Puerto Morelos Luum by Selva Escondida, México';
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
-const rutaRaiz = './'; 
+const rutaRaiz = './';
 
 function generarSlug(texto) {
     return texto.toString().toLowerCase()
@@ -35,15 +35,15 @@ async function optimizarPropiedad() {
         .sort();
 
     console.log(`\n🔄 Comprimiendo y renombrando imágenes en /images/${carpetaPropiedad}...`);
-    
+
     // 2. Procesar imágenes una por una
     for (let index = 0; index < imagenes.length; index++) {
         const archivoViejo = imagenes[index];
         const numero = (index + 1).toString().padStart(2, '0');
-        
+
         // Forzamos la extensión a .webp para el archivo final
-        const archivoNuevo = `${slugBase}-${numero}.webp`; 
-        
+        const archivoNuevo = `${slugBase}-${numero}.webp`;
+
         const rutaViejaFisica = path.join(rutaImagenes, archivoViejo);
         const rutaNuevaFisica = path.join(rutaImagenes, archivoNuevo);
 
