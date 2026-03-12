@@ -2729,7 +2729,89 @@ aside h2, aside h3 {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra elegante */
     max-width: 100%; /* Para celulares */
 }
+/* =========================================
+   ESTILOS PARA IMPRESIÓN Y PDF (@media print)
+   ========================================= */
+@media print {
+    /* 1. Ocultar la basura visual (Menús, footer, botón de WhatsApp, botones de idioma) */
+    header, 
+    footer, 
+    .whatsapp-float, 
+    .back-button, 
+    .action-buttons, 
+    .lang-tabs-container,
+    .youtube-video-section /* El video no se puede imprimir, lo ocultamos */ {
+        display: none !important;
+    }
 
+    /* 2. Forzar a que ScrollReveal muestre TODO (si no, el PDF saldrá en blanco) */
+    .reveal, .reveal-bottom, .reveal-left, .reveal-right, .animate-card {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
+
+    /* 3. Limpiar colores de fondo para ahorrar tinta y que se vea como documento */
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    /* 4. Evitar que las fotos o las listas de características se corten a la mitad de la hoja */
+    .property-detail-article, 
+    .gallery-section, 
+    .features-list {
+        page-break-inside: avoid;
+    }
+
+    /* 5. Ocultar los iframes de los mapas (a veces dan problemas al imprimir) 
+          y dejar solo un texto bonito o el enlace */
+    .map-container iframe {
+        display: none !important;
+    }
+}
+/* =========================================
+   EFECTOS PREMIUM PARA BOTONES DE ACCIÓN
+   ========================================= */
+
+/* Estilos base para asegurar que la transición funcione 
+   (Por si acaso no tomaste el estilo en línea del paso anterior) */
+.action-buttons .share-btn,
+.action-buttons .print-btn {
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow; /* Optimización para animaciones suaves */
+}
+
+/* --- EFECTO HOVER (Al pasar el mouse) --- */
+.action-buttons .share-btn:hover,
+.action-buttons .print-btn:hover {
+    /* 1. Lo elevamos sutilmente (3%) */
+    transform: translateY(-2px) scale(1.03);
+    
+    /* 2. Profundizamos la sombra para dar sensación de altura */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* --- AJUSTES ESPECÍFICOS DE COLOR EN HOVER --- */
+
+/* Botón Compartir (var(--primary-color)) - Lo oscurecemos un 10% */
+.action-buttons .share-btn:hover {
+    background-color: color-mix(in srgb, var(--primary-color), black 10%) !important;
+}
+
+/* Botón Imprimir (var(--text-dark)) - Lo aclaramos un 15% para que reaccione */
+.action-buttons .print-btn:hover {
+    background-color: color-mix(in srgb, var(--text-dark), white 15%) !important;
+}
+
+/* --- EFECTO ACTIVE (Al hacer click) --- */
+.action-buttons .share-btn:active,
+.action-buttons .print-btn:active {
+    /* Efecto "pulsado": vuelve a su posición original y se encoge un poco */
+    transform: translateY(0px) scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease; /* Transición más rápida para el click */
+}
 
 /* --- RESPONSIVE (Móvil y Tablet) --- */
 @media (max-width: 992px) {

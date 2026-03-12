@@ -16,8 +16,11 @@ import { initFAQ } from './faq.js';
 import { initTestimonialMarquee } from './marquee.js';
 import { initFooter } from './footer.js';
 import { initSlideshow } from './slideshow.js';
+import { compartirPropiedad } from './share.js';
+import {imprimirFichaPropiedad} from './share.js';
 
-
+window.compartirPropiedad = compartirPropiedad;
+window.imprimirFichaPropiedad = imprimirFichaPropiedad;
 // Helper para obtener ID de la URL
 function getPropertyIdFromUrl() {
     const params = new URLSearchParams(window.location.search);

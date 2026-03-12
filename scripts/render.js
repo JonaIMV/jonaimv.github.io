@@ -154,6 +154,7 @@ function getEmbedUrl(url) {
     const youtubeHtml = embedUrl ? `
         <section class="youtube-video-section reveal-bottom" style="margin-top: 40px; text-align: center;">
             <h2 style="margin-bottom: 20px;">Recorrido Rápido</h2>
+           
             <div class="youtube-short-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
                 <iframe 
                     width="315" 
@@ -189,6 +190,17 @@ function getEmbedUrl(url) {
         <article class="property-detail-article">
             <button class="back-button" onclick="window.location.href='for-sale.html'">← Volver al Listado</button>
             <h1 class="reveal-bottom">${property.title}</h1>
+            <div class="action-buttons reveal-bottom" style="display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap;">
+    
+                <button class="share-btn" onclick="compartirPropiedad('${property.title}')" style="background-color: var(--primary-color); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
+                    <i class="fas fa-share-alt"></i> Compartir
+                </button>
+                
+                <button class="print-btn" onclick="imprimirFichaPropiedad()" style="background-color: var(--text-dark); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
+                    <i class="fas fa-print"></i> Guardar PDF / Imprimir
+                </button>
+
+            </div>
             
             <p class="property-price-tag reveal-bottom">${detailPriceHtml}</p>
             
