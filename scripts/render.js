@@ -61,8 +61,8 @@ function getEmbedUrl(url) {
         
         let html = '<div class="bento-grid-container">';
         
-        // 1. Principal
-        html += `<div class="bento-main"><img src="${photos[0]}" alt="${getAltText(1)}"></div>`;
+        // 1. Principal (🛡️ Escudo Weglot añadido)
+        html += `<div class="bento-main"><img src="${photos[0]}" alt="${getAltText(1)}" data-wg-notranslate></div>`;
 
         // 2. Secundarias
         if (photos.length > 1) {
@@ -73,11 +73,12 @@ function getEmbedUrl(url) {
                     const remaining = photos.length - 5;
                     html += `
                         <div class="view-all-wrapper">
-                            <img src="${photos[i]}" alt="${getAltText(i+1)}">
+                            <img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>
                             <div class="view-all-overlay"><span>+${remaining} fotos</span></div>
                         </div>`;
                 } else {
-                    html += `<img src="${photos[i]}" alt="${getAltText(i+1)}">`;
+                    // 🛡️ Escudo Weglot añadido
+                    html += `<img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>`;
                 }
             }
             html += '</div>';
@@ -87,7 +88,8 @@ function getEmbedUrl(url) {
         if (photos.length > 5) {
             html += '<div class="hidden-gallery-photos" style="display: none;">';
             for (let i = 5; i < photos.length; i++) {
-                html += `<img src="${photos[i]}" alt="${getAltText(i+1)}">`;
+                // 🛡️ Escudo Weglot añadido
+                html += `<img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>`;
             }
             html += '</div>';
         }
@@ -95,10 +97,14 @@ function getEmbedUrl(url) {
         html += '</div>';
         return html;
     }
+
     function generateDetailHtml(property) {
         const galleryHtml = generateBentoGalleryHtml(property); 
+        
+        // 🛡️ Escudo Weglot añadido también en la galería del PDF
+        // Aunque el alt sea corto ("Foto de la propiedad"), si tienes 30 fotos x 3 idiomas = 360 palabras ahorradas por propiedad.
         const galleryHtmlPrint = property.galleryPhotos ? property.galleryPhotos.map(foto => `
-        <img src="${foto}" class="print-only-photo" alt="Foto de la propiedad">
+        <img src="${foto}" class="print-only-photo" alt="Foto de la propiedad" data-wg-notranslate>
     `).join('') : '';
     
     // --- LÓGICA DE SCHEMA MARKUP PARA GOOGLE ---
