@@ -1,4 +1,19 @@
 /* =========================================
+   CLASES UTILITARIAS
+   ========================================= */
+/* Oculta visualmente, pero obliga al navegador a cargar el contenido (Ideal para imprimir) */
+.screen-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* =========================================
    1. VARIABLES Y RESET (CONFIGURACIÓN BASE)
    ========================================= */
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
@@ -2730,44 +2745,124 @@ aside h2, aside h3 {
     max-width: 100%; /* Para celulares */
 }
 /* =========================================
+   ESTILOS DE PANTALLA (NORMALES)
+   ========================================= */
+
+/* 1. Oculta visualmente, pero obliga al navegador a cargar el contenido */
+.screen-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+} 
+
+/* 2. Nos aseguramos de que la sección de impresión no se vea en pantalla */
+.print-gallery-section {
+    display: none !important;
+}
+
+
+/* =========================================
    ESTILOS PARA IMPRESIÓN Y PDF (@media print)
    ========================================= */
 @media print {
-    /* 1. Ocultar la basura visual (Menús, footer, botón de WhatsApp, botones de idioma) */
+    
+    /* --- ¡AQUÍ ESTABA EL ERROR! AHORA SÍ ESTÁ DENTRO DEL MEDIA PRINT --- */
+    /* Deshacer el pixel invisible al imprimir */
+    .print-gallery-section.screen-hidden {
+        position: static !important;    /* Lo saca del modo absoluto */
+        width: auto !important;         /* Le devuelve su ancho normal */
+        height: auto !important;        /* Le devuelve su alto normal */
+        overflow: visible !important;   /* Deja que las fotos se salgan del pixel */
+        clip: auto !important;          /* Quita el recorte */
+        margin: 0 !important;           /* Limpia el margen negativo */
+        display: block !important;      /* Se asegura de que sea un bloque visible */
+    }
+
+    /* 1. RESETEO DE PÁGINA (Sin márgenes de navegador) */
+    @page {
+        margin: 0 !important;
+        size: auto;
+    }
+
+    /* 2. AJUSTE DE CUERPO (Márgenes controlados de 1cm) */
+    body {
+        margin: 1cm !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* 3. OCULTAR ELEMENTOS NO DESEADOS DE INTERFAZ Y UBICACIÓN */
     header, 
     footer, 
     .whatsapp-float, 
     .back-button, 
     .action-buttons, 
     .lang-tabs-container,
-    .youtube-video-section /* El video no se puede imprimir, lo ocultamos */ {
+    .youtube-video-section,
+    .location-section,
+    .more-photos-overlay, /* <-- Nos aseguramos de ocultar el +1 por si acaso */
+    /* OCULTAMOS LA GALERÍA ORIGINAL DE PANTALLA EN EL PDF */
+    .gallery-section {
         display: none !important;
     }
 
-    /* 2. Forzar a que ScrollReveal muestre TODO (si no, el PDF saldrá en blanco) */
-    .reveal, .reveal-bottom, .reveal-left, .reveal-right, .animate-card {
-        opacity: 1 !important;
-        visibility: visible !important;
-        transform: none !important;
+    /* 4. MOSTRAR LA GALERÍA DE IMPRESIÓN */
+    .print-gallery-section {
+        display: block !important; 
+        margin-bottom: 25px !important;
+        page-break-inside: avoid !important; /* Evita que la sección se corte a la mitad de la hoja */
+    }
+    .print-gallery-section h2 {
+        display: none !important; /* Ocultamos título opcional */
     }
 
-    /* 3. Limpiar colores de fondo para ahorrar tinta y que se vea como documento */
-    body {
-        background-color: #ffffff !important;
-        color: #000000 !important;
+    /* 5. DISEÑO DE CUADRÍCULA DE FOTOS PARA PDF */
+    .print-photos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; /* Cuadrícula de 3 columnas para que quepan muchas */
+        gap: 8px !important;
+    }
+    .print-photos-grid img {
+        width: 100% !important;
+        height: 120px !important; /* Fotos pequeñas para optimizar espacio */
+        object-fit: cover !important;
+        border-radius: 4px !important;
+        page-break-inside: avoid !important; /* Evita que una foto individual se corte */
     }
 
-    /* 4. Evitar que las fotos o las listas de características se corten a la mitad de la hoja */
-    .property-detail-article, 
-    .gallery-section, 
+    /* 6. SUBIR EL TÍTULO (Quitar paddings superiores) */
+    .property-detail-article {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .property-detail-article h1 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        font-size: 24pt !important;
+        color: var(--primary-color) !important;
+    }
+
+    /* 7. DESCRIPCIÓN EN DOS COLUMNAS */
+    .lang-content.active-content section:first-of-type p {
+        column-count: 2 !important;
+        column-gap: 20px !important;
+        text-align: justify !important;
+    }
+
+    /* 8. CARACTERÍSTICAS EN DOS COLUMNAS */
     .features-list {
-        page-break-inside: avoid;
-    }
-
-    /* 5. Ocultar los iframes de los mapas (a veces dan problemas al imprimir) 
-          y dejar solo un texto bonito o el enlace */
-    .map-container iframe {
-        display: none !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 6px !important;
+        page-break-inside: avoid !important;
     }
 }
 /* =========================================

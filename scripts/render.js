@@ -96,7 +96,10 @@ function getEmbedUrl(url) {
         return html;
     }
     function generateDetailHtml(property) {
-    const galleryHtml = generateBentoGalleryHtml(property); 
+        const galleryHtml = generateBentoGalleryHtml(property); 
+        const galleryHtmlPrint = property.galleryPhotos ? property.galleryPhotos.map(foto => `
+        <img src="${foto}" class="print-only-photo" alt="Foto de la propiedad">
+    `).join('') : '';
     
     // --- LÓGICA DE SCHEMA MARKUP PARA GOOGLE ---
     const cleanPrice = property.price ? property.price.replace(/[^0-9.-]+/g, "") : "0";
@@ -204,7 +207,13 @@ function getEmbedUrl(url) {
             
             <p class="property-price-tag reveal-bottom">${detailPriceHtml}</p>
             
-            <section class="gallery-section reveal-bottom"><h2>Galería de Fotos</h2>${galleryHtml}</section>
+            <section class="gallery-section reveal-bottom no-print"><h2>Galería de Fotos</h2>${galleryHtml}</section>
+            
+            <section class="print-gallery-section screen-hidden">
+                <div class="print-photos-grid">
+                    ${galleryHtmlPrint}
+                </div>
+            </section>
             
             ${youtubeHtml}
             
