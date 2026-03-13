@@ -17,7 +17,8 @@ import { initTestimonialMarquee } from './marquee.js';
 import { initFooter } from './footer.js';
 import { initSlideshow } from './slideshow.js';
 import { compartirPropiedad } from './share.js';
-import {imprimirFichaPropiedad} from './share.js';
+import { imprimirFichaPropiedad } from './share.js';
+import { initAccordionScroll } from './accordion.js';
 
 window.compartirPropiedad = compartirPropiedad;
 window.imprimirFichaPropiedad = imprimirFichaPropiedad;
@@ -41,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFAQ();
     initFooter();
     initSlideshow();
+    initAccordionScroll();
     
 
     // --- 2. Lógica Específica por Página ---
