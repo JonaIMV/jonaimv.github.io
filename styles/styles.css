@@ -2384,39 +2384,40 @@ aside h2, aside h3 {
    ========================================= */
 
 /* 1. Contenedor Principal (Sticky) */
+/* =========================================
+   SECCIÓN: PROCESO DE COMPRA (TARJETAS APILABLES)
+   ========================================= */
+
 .buying-process-sticky {
     width: 100%; 
     margin: 0;
-    
-    /* Efecto Telón */
-    position: sticky;
-    top: 80px;  
-    z-index: 1; 
-    
-    /* ¡ELIMINAMOS el overflow-x: hidden y el overflow: hidden de aquí! */
-    
+    /* 1. QUITAMOS el position: sticky de aquí para permitir el scroll de las tarjetas */
     background-color: var(--white);
-    min-height: 600px;
+    padding-bottom: 150px; /* Espacio extra al final para que termine de apilarse */
 }
 
 /* 2. Layout Dividido (Mitad y Mitad) */
-/* --- CONTENEDOR PRINCIPAL (DIVIDIDO) --- */
 .process-container-split {
     display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: var(--white);
+    /* 2. CLAVE: Permitimos que las columnas tengan alturas diferentes */
+    align-items: flex-start; 
 }
 
-/* --- MITAD IZQUIERDA: SLIDESHOW DE IMÁGENES CON FONDO --- */
+/* --- MITAD IZQUIERDA: SLIDESHOW FIJO --- */
 .process-image-side {
     flex: 1;
-    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 450px; 
+    
+    /* 3. CLAVE: Hacemos que la foto se quede pegada mientras lees los pasos */
+    position: sticky;
+    top: 100px; /* Se queda fija debajo de tu header */
+    height: calc(100vh - 100px); /* Ocupa el alto de la pantalla */
     z-index: 1;
 }
 
@@ -2426,48 +2427,44 @@ aside h2, aside h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 65%; 
+    height: 100%; 
     background-color: #F5E6C4; 
     opacity: 0.8;
     border-radius: 0 0 50% 50% / 0 0 25% 25%; 
     z-index: -1; 
 }
 
-/* --- REGLAS NUEVAS PARA EL SLIDESHOW (Reemplaza al Lottie) --- */
+/* El Slideshow se mantiene intacto */
 .image-slideshow {
     width: 100%;
-    max-width: 480px; /* Un poco más grande que el Lottie para que luzca */
-    aspect-ratio: 1 / 1; /* Mantiene las fotos cuadradas perfectas */
-    position: relative; /* Clave para el posicionamiento absoluto de las fotos */
+    max-width: 480px; 
+    aspect-ratio: 1 / 1; 
+    position: relative; 
     z-index: 2;
-    overflow: hidden; /* Encierra las fotos dentro de los bordes redondeados */
-    border-radius: var(--border-radius); /* Usa tus variables de marca */
-    box-shadow: var(--shadow-card); /* Sombra elegante */
+    overflow: hidden; 
+    border-radius: var(--border-radius); 
+    box-shadow: var(--shadow-card); 
 }
 
 .image-slideshow .slide {
-    position: absolute; /* Pone una foto encima de la otra */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Recorta la foto para llenar el cuadrado sin deformarse */
-    
-    /* Efecto de desvanecimiento */
-    opacity: 0; /* Todas ocultas por defecto */
-    transition: opacity 1.5s ease-in-out; /* El difuminado suave de 1.5 segundos */
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1.5s ease-in-out; 
 }
 
 .image-slideshow .slide.active {
     opacity: 1; 
 }
 
-/* --- MITAD DERECHA: CONTENIDO --- */
+/* --- MITAD DERECHA: TARJETAS APILABLES --- */
 .process-content-side {
     flex: 1; 
-    display: flex;
-    align-items: center; 
-    padding: 15px 50px 150px 50px;     
+    padding: 50px 50px 100px 50px;    
     background-color: var(--white);
 }
 
@@ -2500,38 +2497,66 @@ aside h2, aside h3 {
     font-size: 1.25rem;               
     font-style: italic;              
     color: var(--text-light);         
-    margin-bottom: 20px;
+    margin-bottom: 50px; /* Más espacio antes de que empiecen las tarjetas */
     line-height: 1.5;
 }
 
+/* 4. EL CONTENEDOR DE LA MAGIA */
 .process-steps-grid {
     display: flex;
     flex-direction: column;
-    gap: 35px; 
+    gap: 30px; /* Separación inicial entre tarjetas */
 }
 
+/* 5. DISEÑO DE LA TARJETA QUE SE PEGA */
 .process-step-item {
-    display: block;
-    position: relative;
-    cursor: default; 
+    position: sticky; /* La propiedad que hace la magia */
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.04), 0 10px 30px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--primary-color); /* Toque de color corporativo */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
 }
+
+/* 6. EFECTO CASCADA (Como en el video) */
+/* Cada tarjeta se pega un poquito más abajo que la anterior */
+.process-step-item:nth-child(1) { top: 120px; z-index: 10; background-color: #ffffff; }
+.process-step-item:nth-child(2) { top: 140px; z-index: 11; background-color: #fcfdfd; }
+.process-step-item:nth-child(3) { top: 160px; z-index: 12; background-color: #f8fbfb; }
+.process-step-item:nth-child(4) { top: 180px; z-index: 13; background-color: #f4f9f9; }
+.process-step-item:nth-child(5) { top: 200px; z-index: 14; background-color: #f0f8f7; }
+
 
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     .process-container-split {
         flex-direction: column; 
     }
+    
     .process-image-side {
-        min-height: 300px; 
+        position: relative; /* En celular ya no se queda pegado */
+        height: auto;
+        min-height: 350px; 
+        top: 0;
         order: -1;
     }
     
     .process-content-side {
         padding: 40px 20px;
     }
+    
     .image-slideshow {
-        max-width: 320px; /* Más pequeño en celular */
+        max-width: 320px;
         margin-top: 30px;
+    }
+    
+    /* En celular hacemos que se apilen todas juntas en el mismo punto */
+    .process-step-item:nth-child(n) {
+        top: 90px;
     }
 }
 
