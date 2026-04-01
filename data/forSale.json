@@ -1120,5 +1120,90 @@
         "lat": 20.864057, 
         "lng": -86.904318
 
+    },
+    {
+        "id": 19,
+        "title": "Casa en Venta en Puerto Marino Puerto Morelos, México",
+        "description": "Casa en venta en Puerto Marino, Puerto Morelos.",
+        "extendedDescription": "Esta casa en Puerto Marino es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicada en un residencial privado con seguridad 24 horas, esta casa de 4 recámaras y 3 baños ofrece un diseño moderno y funcional, ideal para familias o como inversión para renta vacacional. Con un ambiente acogedor y relajante, esta casa sin muebles esta lista para que agregues tu escencia y estilo. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. La alberca esta en tu patio trasero, no pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
+        "extendedDescription_en": "This house in Puerto Marino is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 4-bedroom, 3-bathroom house offers a modern and functional design, ideal for families or as an investment for vacation rentals. With a cozy and relaxing atmosphere, this unfurnished house is ready for you to add your essence and style. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. The pool is in your backyard, don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
+        "extendedDescription_fr": "Cette maison à Puerto Marino est l'opportunité parfaite pour ceux qui recherchent un style de vie tranquille entouré de nature à Puerto Morelos. Située dans une communauté privée avec sécurité 24h/24, cette maison de 4 chambres et 3 salles de bain offre un design moderne et fonctionnel, idéal pour les familles ou comme investissement pour les locations de vacances. Avec une atmosphère chaleureuse et relaxante, cette maison non meublée est prête pour que vous y ajoutiez votre essence et votre style. De plus, le développement dispose d'équipements exclusifs tels qu'une piscine, des espaces verts et un accès direct aux sentiers naturels, vous donnant la possibilité de profiter de l'environnement naturel sans quitter la maison. La piscine est dans votre jardin, ne manquez pas la chance de vivre dans l'une des destinations les plus belles du Mexique à un prix abordable.",
+        "price": "$2,800,000 MXN",
+        "image": "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-20.webp",
+        "alt": "Casa en Venta Puerto Marino Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "house",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "area": 120,
+        "youtubeUrl": "",
+        "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/mantarraya-35/mantarraya-35.html",
+        "galleryPhotos": [
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-20.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-18.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-19.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-15.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-16.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-13.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-14.webp",
+            
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-01.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-02.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-03.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-04.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-05.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-07.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-08.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-09.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-11.webp",
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-12.webp",
+            
+            "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-17.webp"
+            
+        ],
+        "features": [
+            "Casa sin muebles",
+            "Patio trasero",
+            "Seguridad 24/7",
+            "Ubicación estratégica",
+            "A minutos de la playa y la Ruta de los Cenotes"
+        ],
+        "features_en": [
+            "Unfurnished house",
+            "Backyard",
+            "24/7 security",
+            "Strategic location",
+            "Minutes from the beach and Cenote Route"
+        ],
+        "features_fr": [
+            "Maison non meublée",
+            "Jardin arrière",
+            "Sécurité 24h/24",
+            "Emplacement stratégique",
+            "À quelques minutes de la plage et de la Route des Cenotes"
+        ],
+        "amenities": [
+            "Seguridad 24/7",
+            "Alberca",
+            "Áreas verdes",
+            "Acceso a senderos naturales"
+        ],
+        "amenities_en": [
+            "24/7 Security",
+            "Pool",
+            "Green areas",
+            "Access to natural trails"
+        ],
+        "amenities_fr": [
+            "Sécurité 24h/24",
+            "Piscine",
+            "Espaces verts",
+            "Accès aux sentiers naturels"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.54480548159484!2d-86.8971089031409!3d20.87228292190456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1775013008511!5m2!1ses!2smx",
+        "status": "NUevo Ingreso",
+        "lat": 20.872454,
+        "lng":  -86.897252
+
     }
 ]
