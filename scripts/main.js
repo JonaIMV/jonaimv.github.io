@@ -19,6 +19,7 @@ import { initSlideshow } from './slideshow.js';
 import { compartirPropiedad } from './share.js';
 import { imprimirFichaPropiedad } from './share.js';
 import { initAccordionScroll } from './accordion.js';
+import { initPuertoMorelos360 } from './puerto-morelos-360.js'; // Nueva función para esa página
 
 window.compartirPropiedad = compartirPropiedad;
 window.imprimirFichaPropiedad = imprimirFichaPropiedad;
@@ -44,6 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     initSlideshow();
     initAccordionScroll();
     
+
+    if (document.querySelector('.pm-360-container')) {
+        initPuertoMorelos360();
+    }
 
     // --- 2. Lógica Específica por Página ---
     

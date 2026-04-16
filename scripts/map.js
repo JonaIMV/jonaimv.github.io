@@ -41,3 +41,42 @@ export function initMap(properties) {
     // Fix para que el mapa cargue bien si estaba oculto
     setTimeout(() => { map.invalidateSize(); }, 500);
 }
+export function initToursMap(tours) {
+    if (!document.getElementById('map')) return;
+
+    if (typeof L === 'undefined') {
+        console.error("Leaflet (L) no está definido.");
+        return;
+    }
+
+    const map = L.map('map').setView([20.85, -86.90], 13); // Zoom un poco más cercano
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const markers = [];
+
+    tours.forEach(tour => {
+        if (tour.lat && tour.lng) {
+            const marker = L.marker([tour.lat, tour.lng]).addTo(map);
+            
+            // Popup adaptado para Tours (sin precio, con categoría)
+            marker.bindPopup(`
+                <div style="text-align:center; min-width: 160px;">
+                    <img src="${tour.image}" style="width:100%; height:80px; object-fit:cover; border-radius:4px; margin-bottom:5px;">
+                    <h4 style="margin: 5px 0; font-size:14px; font-family: var(--font-heading);">${tour.title}</h4>
+                    <span style="font-size:12px; color: var(--accent-color); text-transform: uppercase;">${tour.category}</span>
+                </div>
+            `);
+            markers.push(marker);
+        }
+    });
+
+    if (markers.length > 0) {
+        const group = new L.featureGroup(markers);
+        map.fitBounds(group.getBounds(), { padding: [50, 50] });
+    }
+    
+    setTimeout(() => { map.invalidateSize(); }, 500);
+}
