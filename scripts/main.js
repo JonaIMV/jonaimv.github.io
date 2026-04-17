@@ -20,6 +20,7 @@ import { compartirPropiedad } from './share.js';
 import { imprimirFichaPropiedad } from './share.js';
 import { initAccordionScroll } from './accordion.js';
 import { initPuertoMorelos360 } from './puerto-morelos-360.js'; // Nueva función para esa página
+import { initCuratedPage } from './curated-logic.js';
 
 window.compartirPropiedad = compartirPropiedad;
 window.imprimirFichaPropiedad = imprimirFichaPropiedad;
@@ -44,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initFooter();
     initSlideshow();
     initAccordionScroll();
+    initCuratedPage();
     
 
     if (document.querySelector('.pm-360-container')) {

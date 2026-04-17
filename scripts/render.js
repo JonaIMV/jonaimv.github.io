@@ -260,11 +260,17 @@ export function renderProperties(propertiesArray, container) {
     if (!container) return;
     container.innerHTML = ''; 
 
+    // 1. Detectar si estamos en la página de opciones y guardar los IDs originales
+    const currentUrlParams = new URLSearchParams(window.location.search);
+    const originalIds = currentUrlParams.get('ids');
+    const isMisOpciones = window.location.pathname.includes('mis-opciones.html');
+
     propertiesArray.forEach(prop => {
         
-            const tourButtonHtml = prop.virtualTourUrl 
-                ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" onclick="gtag('event', 'clic_tour_virtual', { 'nombre_propiedad': '${prop.title}' });">Tour Virtual 360°</a>`
-                : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
+        const tourButtonHtml = prop.virtualTourUrl 
+            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" onclick="gtag('event', 'clic_tour_virtual', { 'nombre_propiedad': '${prop.title}' });">Tour Virtual 360°</a>`
+            : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
+            
         let badgeHtml = '';
         if (prop.status) {
             const statusClass = 'badge-' + prop.status.toLowerCase().replace(/\s+/g, '-');
@@ -273,11 +279,18 @@ export function renderProperties(propertiesArray, container) {
             badgeHtml = `<span class="property-badge badge-tour"></span>`;
         }
 
+        // --- Lógica del Enlace de Detalles (El boleto de regreso) ---
+        let detailLink = `?id=${prop.id}`; // Comportamiento normal por defecto
+        if (isMisOpciones && originalIds) {
+            // Si estamos en la propuesta, lo enviamos a la página real con el "boleto de regreso"
+            detailLink = `for-sale.html?id=${prop.id}&return_ids=${originalIds}`;
+        }
+
         const card = document.createElement('div');
         card.className = 'property-card';
         card.setAttribute('data-id', prop.id);
-        // --- Lógica de Precio Oferta para la Tarjeta ---
-      // --- Lógica de Precio para la Tarjeta (Sin la palabra OFERTA) ---
+        
+        // --- Lógica de Precio para la Tarjeta ---
         let priceHtml = `<span style="font-weight: bold;">${prop.price}</span>`;
 
         if (prop.originalPrice) {
@@ -307,7 +320,7 @@ export function renderProperties(propertiesArray, container) {
                 <p class="location" style="font-size: 0.9rem; color: #666;"><i class="fas fa-map-marker-alt"></i> ${prop.location}</p> 
             </div>
             <div class="card-actions-group">
-                <a href="?id=${prop.id}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']}); gtag('event', 'clic_mas_detalles', { 'nombre_propiedad': '${prop.title}' });">Más detalles</a>
+                <a href="${detailLink}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']}); gtag('event', 'clic_mas_detalles', { 'nombre_propiedad': '${prop.title}' });">Más detalles</a>
                 ${tourButtonHtml}
             </div>
         `;
@@ -320,12 +333,35 @@ export function renderPropertyDetail(property, mainContainer) {
     document.title = `${property.title} | Detalles`;
     mainContainer.innerHTML = generateDetailHtml(property);
 
+    // --- NUEVA LÓGICA PARA EL BOTÓN DE VOLVER ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const returnIds = urlParams.get('return_ids');
+    
+    if (returnIds) {
+        // 1. Buscamos y modificamos cualquier enlace <a> (por si acaso tienes alguno en el menú)
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(link => {
+            const linkText = link.textContent ? link.textContent.toLowerCase() : '';
+            if (linkText.includes('volver') || linkText.includes('regresar')) {
+                link.href = `mis-opciones.html?ids=${returnIds}`;
+            }
+        });
+
+        // 2. ¡EL ARREGLO!: Buscamos específicamente tu <button class="back-button">
+        const backButtons = document.querySelectorAll('.back-button');
+        backButtons.forEach(btn => {
+            // Sobreescribimos el onclick que viene en el HTML original
+            btn.onclick = function() {
+                window.location.href = `mis-opciones.html?ids=${returnIds}`;
+            };
+        });
+    }
+
     if (window.Weglot) Weglot.refresh();
     const contactBtn = document.getElementById('detail-contact-btn');
     if (contactBtn) contactBtn.href = `contact-us.html?title=${encodeURIComponent(property.title)}`;
     if (typeof ScrollReveal !== 'undefined') ScrollReveal().sync();
 }
-
 // Función global window (necesaria para el onclick del HTML generado)
 window.switchPropertyLanguage = function(lang) {
     document.querySelectorAll('.lang-content').forEach(el => {
