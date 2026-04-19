@@ -1164,8 +1164,8 @@ header {
     }
 }
 /* Map y Badge: Vendido */
-.badge-vendida, 
-.badge-vendido { 
+.badge-vendida
+ { 
     background-color: #dc3545; 
 }
 
@@ -1174,13 +1174,15 @@ header {
     background-color: #f39c12; 
     color: #ffffff;
 }
-
+.badge-pre-venta { 
+    background-color: #a78408fc; 
+}
 
 .badge-nuevo-ingreso { 
-    background-color: #2ecc71; 
+    background-color: #f6835c; 
 }
 .badge-oferta-especial { 
-    background-color: #37b1e1b8; /* O puedes usar #ff0000 para rojo puro */
+    background-color: #F59E0B; /* O puedes usar #ff0000 para rojo puro */
     color: #ffffff;
 }
 

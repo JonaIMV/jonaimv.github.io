@@ -770,63 +770,7 @@
         "lat": 20.906678,
         "lng": -86.877241
     },
-    {
-        "id": 14,
-        "title": "Terreno Residencial en Venta en Puntarena Puerto Morelos, México",
-        "description": "Terreno en venta en residencial privado Puntarena Puerto Morelos.",
-        "extendedDescription": "Adquirir un terreno en el Caribe Mexicano es una oportunidad única para asegurar tu patrimonio en una de las zonas con mayor crecimiento y plusvalía del país. Sin embargo, construir desde cero puede ser un proceso lleno de incertidumbres: desde la gestión de permisos municipales hasta la supervisión de contratistas a distancia, los costos ocultos y los tiempos de entrega que se extienden indefinidamente son riesgos reales que pueden agotar tu presupuesto y paciencia. ¿Por qué lidiar con estas complicaciones cuando puedes asegurar tu inversión hoy mismo?\n\nEste terreno en Puntarena ofrece la solución perfecta para quienes buscan tranquilidad y seguridad en su inversión. Ubicado en un residencial privado con acceso controlado y seguridad 24 horas, este lote de 160 m² te brinda la oportunidad de diseñar y construir la casa de tus sueños en un entorno rodeado de naturaleza y cerca de la playa. Además, el desarrollo cuenta con amenidades exclusivas como áreas verdes y una cancha de pickleball, enriqueciendo tu estilo de vida.\n\nPor un precio accesible de $1,350,000 MXN, este terreno representa una inversión inteligente en una zona de alta demanda. No pierdas la oportunidad de asegurar tu futuro en el Caribe Mexicano sin los riesgos asociados a la construcción desde cero. Contáctanos ahora para más información y da el primer paso hacia la realización de tu sueño.",
-        "extendedDescription_en": "Acquiring land in the Mexican Caribbean is a unique opportunity to secure your asset in one of the country's fastest-growing and most valuable areas. However, building from scratch can be a process filled with uncertainties: from managing municipal permits to supervising contractors remotely, hidden costs, and delivery times that extend indefinitely are real risks that can drain your budget and patience. Why deal with these complications when you can secure your investment today?\n\nThis land in Puntarena offers the perfect solution for those seeking peace of mind and security in their investment. Located in a private gated community with controlled access and 24-hour security, this 160 m² lot gives you the opportunity to design and build the home of your dreams in a nature-surrounded environment close to the beach. Additionally, the development features exclusive amenities such as green areas and a pickleball court, enhancing your lifestyle.\n\nFor an affordable price of $1,350,000 MXN, this land represents a smart investment in a high-demand area. Don't miss the opportunity to secure your future in the Mexican Caribbean without the risks associated with building from scratch. Contact us now for more information and take the first step toward realizing your dream.",
-        "extendedDescription_fr": "Acquérir un terrain dans les Caraïbes mexicaines est une opportunité unique de sécuriser votre patrimoine dans l'une des zones à la croissance la plus rapide et à la plus forte valeur du pays. Cependant, construire à partir de zéro peut être un processus rempli d'incertitudes : de la gestion des permis municipaux à la supervision des entrepreneurs à distance, les coûts cachés et les délais de livraison qui s'étendent indéfiniment sont des risques réels qui peuvent épuiser votre budget et votre patience. Pourquoi faire face à ces complications alors que vous pouvez sécuriser votre investissement dès aujourd'hui ?\n\nCe terrain à Puntarena offre la solution parfaite pour ceux qui recherchent la tranquillité d'esprit et la sécurité dans leur investissement. Situé dans une communauté privée avec accès contrôlé et sécurité 24h/24, ce lot de 160 m² vous offre l'opportunité de concevoir et de construire la maison de vos rêves dans un environnement entouré de nature et proche de la plage. De plus, le développement dispose d'équipements exclusifs tels que des espaces verts et un terrain de pickleball, améliorant ainsi votre style de vie.\n\nPour un prix abordable de 1 350 000 MXN, ce terrain représente un investissement intelligent dans une zone très demandée. Ne manquez pas l'occasion de sécuriser votre avenir dans les Caraïbes mexicaines sans les risques associés à la construction à partir de zéro. Contactez-nous dès maintenant pour plus d'informations et faites le premier pas vers la réalisation de votre rêve.",
-        "price": "$1,350,000 MXN",
-        "image": "images/puntarena-land/residential-lot-for-sale-in-puntarena-puerto-morelos-mexico-02.webp",
-        "alt": "Terreno en venta Puntarena Puerto Morelos",
-        "location": "Puerto Morelos",
-        "type": "land",
-        "area": 160,
-        "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/puntarena-land/puntarena-land.html",
-        "galleryPhotos": [
-            "images/puntarena-land/residential-lot-for-sale-in-puntarena-puerto-morelos-mexico-02.webp",
-            "images/puntarena-land/residential-lot-for-sale-in-puntarena-puerto-morelos-mexico-01.webp",
-            "images/puntarena-land/residential-lot-for-sale-in-puntarena-puerto-morelos-mexico-03.webp"
-        ],
-        "features": [
-            "160 m² de terreno",
-            "Uso de suelo residencial",
-            "Servicios subterráneos"
-        ],
-        "features_en": [
-            "160 m² lot",
-            "Residential land use",
-            "Underground utilities"
-        ],
-        "features_fr": [
-            "Terrain de 160 m²",
-            "Usage résidentiel",
-            "Services souterrains"
-        ],
-        "amenities": [
-            "Seguridad 24h",
-            "Áreas verdes",
-            "Cercano a la playa",
-            "Cancha de pickleball"
-        ],
-        "amenities_en": [
-            "24/7 Security",
-            "Green areas",
-            "Close to the beach",
-            "Pickleball court"
-        ],
-        "amenities_fr": [
-            "Sécurité 24h/24",
-            "Espaces verts",
-            "Proche de la plage",
-            "Terrain de Pickleball"
-        ],
-        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d783.8288491779618!2d-86.89853672473669!3d20.850298990443246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767645547429!5m2!1ses!2smx",
-        "status": "Disponible",
-        "lat": 20.850655,
-        "lng": -86.898245
-    },
+   
     {
         "id": 15,
         "title": "Departamento en Venta en Selva Escondida Puerto Morelos, México",
@@ -1076,7 +1020,6 @@
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-16.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-13.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-14.webp",
-            
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-01.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-02.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-03.webp",
@@ -1134,6 +1077,288 @@
         "status": "NUevo Ingreso",
         "lat": 20.872454,
         "lng":  -86.897252
+
+    },
+    {
+        "id": 20,
+        "title": "Central Condo Living Pre-venta",
+        "description": "En Central, tu hogar no solo es un lugar; es tu santuario.Sumérgete en un entorno que despierta alegría, fomenta la tranquilidad y crea un lienzo para los momentos extraordinarios de tu vida.",
+        "extendedDescription": "Central es un desarrollo residencial que redefine el concepto de hogar en el corazón de Puerto Morelos. Con una arquitectura moderna y un diseño pensado para maximizar la luz natural y las vistas, Central ofrece departamentos de 1 y 2  recámaras, cada uno con acabados de lujo y espacios inteligentes que se adaptan a tu estilo de vida. Disfruta de amenidades exclusivas como alberca, gimnasio, áreas verdes y un rooftop con vista panorámica al mar, creando un oasis urbano donde cada día se siente como unas vacaciones. Ubicado a pocos minutos de la playa, restaurantes y tiendas, Central es el lugar donde la comodidad se encuentra con la elegancia en el Caribe Mexicano. 43 departamentos que fusionan a la perfección la arquitectura contemporánea con la belleza natural del entorno. Nuestros departamentos, cuidadodasemente diseñados, ofrecen espacios amplios, vistas panorámicas y luz natural, creando un balance entre el interior y exterior.",
+        "extendedDescription_en": "Central is a residential development that redefines the concept of home in the heart of Puerto Morelos. With modern architecture and a design that maximizes natural light and views, Central offers 1 and 2-bedroom apartments, each with luxury finishes and smart spaces that adapt to your lifestyle. Enjoy exclusive amenities such as a pool, gym, green areas, and a rooftop with panoramic sea views, creating an urban oasis where every day feels like a vacation. Located just minutes from the beach, restaurants, and shops, Central is where comfort meets elegance in the Mexican Caribbean. 43 apartments that perfectly blend contemporary architecture with the natural beauty of the surroundings. Our carefully designed apartments offer spacious areas, panoramic views, and natural light, creating a balance between indoor and outdoor living.",
+        "extendedDescription_fr": "Central est un développement résidentiel qui redéfinit le concept de maison au cœur de Puerto Morelos. Avec une architecture moderne et un design qui maximise la lumière naturelle et les vues, Central propose des appartements de 1 et 2 chambres, chacun avec des finitions de luxe et des espaces intelligents qui s'adaptent à votre style de vie. Profitez d'aménagements exclusifs tels qu'une piscine, une salle de sport, des espaces verts et un rooftop avec vue panoramique sur la mer, créant une oasis urbaine où chaque jour se sent comme des vacances. Situé à quelques minutes de la plage, des restaurants et des boutiques, Central est l'endroit où le confort rencontre l'élégance dans les Caraïbes mexicaines. 43 appartements qui allient parfaitement l'architecture contemporaine à la beauté naturelle des environs. Nos appartements soigneusement conçus offrent des espaces spacieux, des vues panoramiques et une lumière naturelle, créant un équilibre entre la vie intérieure et extérieure.",
+        "price": "Desde $2,725,000 MXN",
+        "image": "images/central/pre-venta-central-condo-living-puerto-morelos-01.webp",
+        "alt": "Pre-venta Central Condo Living Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "condo",
+        "bedrooms": "1 y 2, ",
+        "bathrooms": "2 y 3 ",
+        "area": "55m², 87m² y 95",
+        "youtubeUrl": "",
+        "virtualTourUrl": "",
+        "galleryPhotos": [
+            "images/central/pre-venta-central-condo-living-puerto-morelos-01.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-02.webp",
+            "images/central/pre-venta-central-condo-living-puerto-01.webp",
+            "images/central/pre-venta-central-condo-living-puerto-02.webp",
+            "images/central/pre-venta-central-condo-living-puerto-03.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-03.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-04.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-05.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-06.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-07.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-08.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-09.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-10.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-11.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-12.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-13.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-14.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-15.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-16.webp",
+            "images/central/pre-venta-central-condo-living-puerto-morelos-17.webp"
+        ],
+        "features": [
+            "Entrega Diciembre 2026",
+            "Departamentos de 1 y 2 recámaras",
+            "Acabados de lujo",
+            "Diseño moderno",
+            "Maximiza la luz natural y las vistas"
+        ],
+        "features_en": [
+            "Delivery December 2026",
+            "1 and 2-bedroom apartments",
+            "Luxury finishes",
+            "Modern design",
+            "Maximizes natural light and views"
+        ],
+        "features_fr": [
+            "Livraison Décembre 2026",
+            "Appartements de 1 et 2 chambres",
+            "Finitions de luxe",
+            "Design moderne",
+            "Maximise la lumière naturelle et les vues"
+        ],
+        "amenities": [
+            "Alberca",
+            "Gimnasio",
+            "Lobby",
+            "Seguridad 24/7",
+            "Rooftop con vista panorámica al mar"
+        ],
+        "amenities_en": [
+            "Pool",
+            "Gym",
+            "Lobby",
+            "24/7 Security",
+            "Rooftop with panoramic sea views"
+        ],
+        "amenities_fr": [
+            "Piscine",
+            "Salle de sport",
+            "Lobby",
+            "Sécurité 24/7",
+            "Terrasse avec vues panoramiques sur la mer"
+        ],
+        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.8187543809787!2d-86.8960204777888!3d20.855318742310608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89ec1644f513%3A0x88261a7d63604078!2sCentral%20Condo%20Living!5e1!3m2!1ses!2smx!4v1776469320315!5m2!1ses!2smx",
+        "status": "Pre-venta",
+        "lat": 20.855275, 
+        "lng": -86.895678
+
+
+
+    },
+    {
+        "id": 21,
+        "title": "Pre-venta Soulam Puerto Morelos",
+        "description": "Un exclusivo proyecto boutique ubicado en el corazón de Puerto Morelos, donde puedes llegar caminando al relajante azul del mar Caribe.",
+        "extendedDescription":"Con solo 20 unidades disponibles, Soulam ofrece una vida moderna y sofisticada, rodeada de la vibrante cultura local, exquisita gastronomía y el encanto de un pueblo pesquero que promete ser tu refugio ideal. Puerto Morelos, un destino cada vez más codiciado por su tranquilidad y belleza natural, se sitúa perfectamente entre la vida urbana y la serenidad de la Riviera Maya. Soulam es más que un lugar para vivir; es una experiencia que combina el lujo contemporáneo con la autenticidad del Caribe Mexicano, creando un espacio donde cada día se siente como unas vacaciones.",
+        "extendedDescription_en":"With only 20 units available, Soulam offers a modern and sophisticated lifestyle, surrounded by vibrant local culture, exquisite gastronomy, and the charm of a fishing village that promises to be your ideal refuge. Puerto Morelos, an increasingly coveted destination for its tranquility and natural beauty, is perfectly situated between urban life and the serenity of the Riviera Maya. Soulam is more than a place to live; it's an experience that combines contemporary luxury with the authenticity of the Mexican Caribbean, creating a space where every day feels like a vacation.",
+        "extendedDescription_fr":"Avec seulement 20 unités disponibles, Soulam offre un style devie moderne et sophistiqué, entouré de la vibrante culture locale, de la gastronomie exquise et du charme d'un village de pêcheurs qui promet d'être votre refuge idéal. Puerto Morelos, une destination de plus en plus convoitée pour sa tranquillité et sa beauté naturelle, est parfaitement située entre la vie urbaine et la sérénité de la Riviera Maya. Soulam est plus qu'un lieu de vie; c'est une expérience qui combine le luxe contemporain avec l'authenticité des Caraïbes mexicaines, créant un espace où chaque jour se sent comme des vacances.",
+        "price": "Desde $3,508,099 MXN",
+        "image":  "images/soulam/pre-venta-soulam-puerto-morelos-mexico-10.webp",
+        "alt": "Preventa Soulam Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "condo",
+        "bedrooms": "1, 2 y 3",
+        "bathrooms": "1, 2 y 3",
+        "area": "33m², 73m² y 110",
+        "youtubeUrl": "",
+        "virtualTourUrl": "",
+        "galleryPhotos": [
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-06.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-01.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-10.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-02.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-03.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-04.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-05.webp",            
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-07.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-08.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-09.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-11.webp",
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-12.webp"
+            
+        ],
+        "features": [
+            "Entrega Diciembre 2026",
+            "Unidades de 1, 2 y 3 recámaras",
+            "Diseño moderno y sofisticado",
+            "Ubicación privilegiada a pocos pasos del mar"
+        ],
+        "features_en": [
+            "Delivery December 2026",
+            "1, 2, and 3-bedroom units",
+            "Modern and sophisticated design",
+            "Privileged location just steps from the sea"
+        ],
+        "features_fr": [
+            "Livraison Décembre 2026",
+            "Unités de 1, 2 et 3 chambres",
+            "Design moderne et sophistiqué",
+            "Emplacement privilégié à quelques pas de la mer"
+        ],
+        "amenities": [
+            "Alberca",
+            "Gimnasio",
+            "Seguridad 24/7",
+            "Rooftop con vista panorámica al mar",
+            "Lobby",
+            "Elevador",
+            "Lavanderia",
+            "Valet parking",
+            "Conexion electrica para autos electricos"
+
+        ],
+
+        "amenities_en": [
+            "Pool",
+            "Gym",
+            "24/7 Security",
+            "Rooftop with panoramic sea views",
+            "Lobby",
+            "Elevator",
+            "Laundry",
+            "Valet parking",
+            "Electric car charging station"
+        ],
+        "amenities_fr": [
+            "Piscine",
+            "Salle de sport",
+            "Sécurité 24/7",
+            "Terrasse avec vues panoramiques sur la mer",
+            "Lobby",
+            "Ascenseur",
+            "Buanderie",
+            "Service de voiturier",
+            "Station de recharge pour voitures électriques"
+        ],
+        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.0096179861063!2d-86.87440447480051!3d20.851374402896578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89750470fdff%3A0x1a41f52fc42265b3!2sSOULAM!5e1!3m2!1ses!2smx!4v1776473232305!5m2!1ses!2smx",
+        "status": "pre-venta",
+        "lat": 20.851494, 
+        "lng": -86.874498
+    },
+    {
+        "id": 22,
+        "title": "Village Blu Pre-venta Puerto Morelos",
+        "descripton":"Village Blu es un desarrollo Premium ubicado en el corazon de Puerto Morelos.",
+        "extendedDescription": "Los beach aparments de Village Blu en Puerto Morelos sorprenden por su arquitectura de autor y sus amplios espacios, perfectamente distribuidos para brindar comodidad y estilo. Cada unidad de una racámara y desde 64m2, está diseñada para ofrecer una experiencia acogedora y funcional, ideal tanto para quienes buscan relajarse junto al mar como para quienes desean invertir en una propiedad totalmente rentable con alto potencial de renta vacacional, en Puerto Morelos la joya de la Riviera Maya, departamentos listos para vivir la experiencia de tener un segundo hogar a unos pasos de la playa. Village Blu forma parte de Blu Residences Collection, y junto a Porto Blu y Sole Blu, comparten una misma esencia: estilo de vida frente al mar, diseño de autor con la mas alta calidad y ubicación privilegiada, en el centro en donde todo sucede. Todos son proyectos de Eleva Capital Group, desarrolladora premium con visión y experiencia en crear espacios único en las mejores zonas de Cancún y la Riviera Maya.",
+        "extendedDescription_en": "The beach apartments of Village Blu in Puerto Morelos stand out for their signature architecture and spacious layouts, perfectly designed to provide comfort and style. Each one-bedroom unit, starting from 64m2, is designed to offer a cozy and functional experience, ideal for those looking to relax by the sea or for those seeking to invest in a property with high rental potential in Puerto Morelos, the jewel of the Riviera Maya. Ready-to-live apartments that allow you to experience having a second home just steps from the beach. Village Blu is part of the Blu Residences Collection, and along with Porto Blu and Sole Blu, they share the same essence: beachfront lifestyle, signature design with the highest quality, and privileged location in the heart of where everything happens. All are projects by Eleva Capital Group, a premium developer with vision and experience in creating unique spaces in the best areas of Cancún and the Riviera Maya.",
+        "extendedDescription_fr": "Les appartements de plage de Village Blu à Puerto Morelos se distinguent par leur architecture de signature et leurs aménagements spacieux, parfaitement conçus pour offrir confort et style. Chaque unité d'une chambre, à partir de 64m2, est conçue pour offrir une expérience chaleureuse et fonctionnelle, idéale pour ceux qui cherchent à se détendre au bord de la mer ou pour ceux qui souhaitent investir dans une propriété avec un fort potentiel de location à Puerto Morelos, le joyau de la Riviera Maya. Des appartements prêts à vivre qui vous permettent de vivre l'expérience d'avoir une seconde maison à quelques pas de la plage. Village Blu fait partie de la collection Blu Residences, et avec Porto Blu et Sole Blu, ils partagent la même essence : un style de vie en bord de mer, un design de signature avec la plus haute qualité, et un emplacement privilégié au cœur de là où tout se passe. Tous sont des projets d'Eleva Capital Group, un développeur premium avec vision et expérience dans la création d'espaces uniques dans les meilleures zones de Cancún et de la Riviera Maya.",
+        "price": "Desde $300,000| USD",
+        "image": "images/village/pre-venta-village-blue-puerto-morelos-mexico-17.webp",
+        "alt": "Pre-venta Village Blu Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "condo",
+        "bedrooms": "1",
+        "bathrooms": "1",
+        "area": "63m²",
+        "youtubeUrl": "",
+        "virtualTourUrl": "",
+        "galleryPhotos": [
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-17.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-08.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-18.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-02.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-01.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-16.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-15.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-14.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-13.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-12.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-11.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-10.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-09.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-07.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-06.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-05.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-04.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-03.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-22.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-21.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-19.webp",
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-20.webp"   
+        ],
+        "features": [
+            "Entrega Verano 2027",
+            "Unidades de 1 recámara",
+            "Diseño de autor",
+            "Ubicación privilegiada a pocos pasos del mar"
+        ],
+        "features_en": [
+            "Delivery Summer 2027",
+            "1-bedroom units",
+            "Signature design",
+            "Privileged location just steps from the sea"
+        ],
+        "features_fr": [
+            "Livraison Été 2027",
+            "Unités de 1 chambre",
+            "Design de signature",
+            "Emplacement privilégié à quelques pas de la mer"
+        ],
+        "amenities": [
+            "Alberca",
+            "Gimnasio",
+            "Seguridad 24/7",
+            "Rooftop con vista panorámica al mar",
+            "Lobby",
+            "Elevador",
+            "Lavanderia",
+            "Valet parking",
+            "Acceso inteligente",
+            "Terraza lounge"
+
+        ],
+        "amenities_en": [
+            "Pool",
+            "Gym",
+            "24/7 Security",
+            "Rooftop with panoramic sea views",
+            "Lobby",
+            "Elevator",
+            "Laundry",
+            "Valet parking",
+            "Smart access",
+            "Terrace lounge"
+
+        ],
+        "amenities_fr": [
+            "Piscine",
+            "Salle de sport",
+            "Sécurité 24/7",
+            "Terrasse avec vues panoramiques sur la mer",
+            "Lobby",
+            "Ascenseur",
+            "Buanderie",
+            "Service de voiturier",
+            "Accès intelligent",
+            "Terrasse lounge"
+        ],
+        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d76.97698361564817!2d-86.87549408086032!3d20.849384002292123!2m2!1f65.53934118611187!2f4.283366372314002!3m2!1i1024!2i768!4f56.2253759436026!5e1!3m2!1ses!2smx!4v1776556479343!5m2!1ses!2smx",
+        "status": "pre-venta",
+        "lat": 20.849413, 
+        "lng": -86.875354
 
     }
 ]

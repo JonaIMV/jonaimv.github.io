@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp'); // <- Agregamos el compresor
 
-const carpetaPropiedad = 'mantarraya-35'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
-const nombreSEO = 'Casa en Venta Puerto Marino Puerto Morelos';
+const carpetaPropiedad = 'soulam'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
+const nombreSEO = 'Pre-venta Soulam Puerto Morelos Mexico '; // Cambia esto por el nombre SEO que quieres usar en los ALT y nombres de archivo
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
