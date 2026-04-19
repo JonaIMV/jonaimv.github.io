@@ -16,9 +16,21 @@ export function initMap(properties) {
 
     const markers = [];
 
+    // --- NUEVO: Detectar si estamos en la propuesta personalizada ---
+    const currentUrlParams = new URLSearchParams(window.location.search);
+    const originalIds = currentUrlParams.get('ids');
+    const isMisOpciones = window.location.pathname.includes('mis-opciones.html');
+
     properties.forEach(prop => {
         if (prop.lat && prop.lng) {
             const marker = L.marker([prop.lat, prop.lng]).addTo(map);
+            
+            // --- Lógica del Enlace del Popup ---
+            let detailLink = `?id=${prop.id}`; // Normal
+            if (isMisOpciones && originalIds) {
+                // Con boleto de regreso
+                detailLink = `for-sale.html?id=${prop.id}&return_ids=${originalIds}`;
+            }
             
             marker.bindPopup(`
                 <div style="text-align:center; min-width: 160px;">
@@ -26,7 +38,7 @@ export function initMap(properties) {
                     <h4 style="margin: 5px 0; font-size:14px;">${prop.title}</h4>
                     <span style="font-weight:bold; color:#2c3e50;">${prop.price}</span><br>
                     
-                    <a href="?id=${prop.id}" style="color: #007bff; font-size:12px;" onclick="gtag('event', 'clic_mapa_propiedad', { 'nombre_propiedad': '${prop.title}' }); if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']});">Ver Propiedad</a>
+                    <a href="${detailLink}" style="color: #1a6b72; font-weight: bold; font-size:14px; text-decoration: none; display: inline-block; margin-top: 5px;" onclick="gtag('event', 'clic_mapa_propiedad', { 'nombre_propiedad': '${prop.title}' }); if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']});">Ver Propiedad</a>
                 </div>
             `);
             markers.push(marker);

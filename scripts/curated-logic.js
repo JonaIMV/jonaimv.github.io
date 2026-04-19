@@ -1,5 +1,6 @@
 // 1. IMPORTAMOS tu función real
 import { renderProperties } from './render.js';
+import { initMap } from './map.js';
 
 export async function initCuratedPage() {
     const container = document.getElementById('options-container');
@@ -63,6 +64,7 @@ export async function initCuratedPage() {
         }
 
         renderProperties(filteredProperties, container);
+        initMap(filteredProperties);
 
     } catch (error) {
         console.error("Error cargando la propuesta personalizada:", error);
