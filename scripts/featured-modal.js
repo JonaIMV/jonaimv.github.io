@@ -6,7 +6,7 @@ const featuredData = {
     subtitle: "Puerto Morelos",
     description: "Departamento en VENTA Selva Escndida II, exclusiva ubicacion junto a la alberca.",
     image: "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
-    link: "for-sale.html?id=16"
+    link: "for-sale.html?id=24"
 };
 
 function getFeaturedContent() {
