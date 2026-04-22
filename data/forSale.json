@@ -1448,5 +1448,105 @@
         "status": "pre-venta",
         "lat": 20.852848, 
         "lng": -86.873501
+    },
+    {
+        "id": 24,
+        "title": "Departamento en Venta en Selva Escondida II Puerto Morelos",
+        "description":"Departamento en venta en Selva Escondida II, Puerto Morelos, Quintana Roo",
+        "extendedDescription":"Descubre tu oasis privado en el corazón de la selva de Puerto Morelos. Este departamento en venta en Selva Escondida II te ofrece la oportunidad de vivir rodeado de naturaleza, con la comodidad de estar a solo minutos de las playas más hermosas del Caribe Mexicano. Con un diseño moderno y espacios abiertos, este hogar es perfecto para quienes buscan una vida tranquila sin renunciar a las comodidades urbanas. Disfruta de amaneceres impresionantes desde tu terraza privada, sumérgete en la piscina rodeada de vegetación exuberante y explora los senderos naturales que te conectan con la belleza única de la selva. Selva Escondida II es más que un lugar para vivir; es una experiencia que combina el lujo con la naturaleza, creando un refugio perfecto para aquellos que buscan un estilo de vida auténtico en Puerto Morelos.",
+        "extendedDescription_en":"Discover your private oasis in the heart of the Puerto Morelos jungle. This apartment for sale in Selva Escondida II offers you the opportunity to live surrounded by nature, with the convenience of being just minutes from the most beautiful beaches of the Mexican Caribbean. With a modern design and open spaces, this home is perfect for those seeking a peaceful life without sacrificing urban comforts. Enjoy stunning sunrises from your private terrace, immerse yourself in the pool surrounded by lush vegetation, and explore the natural trails that connect you with the unique beauty of the jungle. Selva Escondida II is more than a place to live; it's an experience that combines luxury with nature, creating a perfect refuge for those seeking an authentic lifestyle in Puerto Morelos.",
+        "extendedDescription_fr":"Découvrez votre oasis privée au cœur de la jungle de Puerto Morelos. Cet appartement à vendre à Selva Escondida II vous offre l'opportunité de vivre entouré par la nature, avec la commodité d'être à seulement quelques minutes des plus belles plages du Mexique. Avec un design moderne et des espaces ouverts, cette maison est parfaite pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains. Profitez de magnifiques levers de soleil depuis votre terrasse privée, plongez dans la piscine entourée d'une végétation luxuriante et explorez les sentiers naturels qui vous connectent à la beauté unique de la jungle. Selva Escondida II est plus qu'un lieu de vie; c'est une expérience qui combine luxe et nature, créant un refuge parfait pour ceux qui recherchent un style de vie authentique à Puerto Morelos.",
+        "price": "$2,750,000 MXN",
+        "image": "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
+        "alt": "Departamento en venta en Selva Escondida II Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "condo",
+        "bedrooms": "2",
+        "bathrooms": "2",
+        "area": "80m²",
+        "youtubeUrl": "",
+        "virtualTourUrl": "",
+        "galleryPhotos": [
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-07.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-09.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-17.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-06.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-16.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-15.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-12.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-13.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-04.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-11.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-14.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-05.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-18.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-01.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-02.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-19.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-10.webp",
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-03.webp"            
+        ],
+        "features": [
+            "Departamento de 2 recámaras y 2 baños",
+            "Diseño moderno con espacios abiertos",
+            "Balcones",
+            "Piscina rodeada de vegetación exuberante",
+            "Acceso a senderos naturales"
+        ],
+        "features_en": [
+            "2-bedroom, 2-bathroom apartment",
+            "Modern design with open spaces",
+            "Balconies",
+            "Pool surrounded by lush vegetation",
+            "Access to natural trails"
+        ],
+        "features_fr": [
+            "Appartement de 2 chambres et 2 salles de bain",
+            "Design moderne avec espaces ouverts",
+            "Balcons",
+            "Piscine entourée de végétation luxuriante",
+            "Accès aux sentiers naturels"
+        ],
+        "amenities": [
+            "Alberca",
+            "Gimnasio",
+            "Seguridad 24/7",
+            "Lavanderia",
+            "Cancha de tennis",
+            "Cancha de pickleball",
+            "Cancha de usos múltiples",
+            "Área de juegos infantiles",
+            "Alberca solo para mayores de edad"
+
+        ],
+        "amenities_en": [
+            "Pool",
+            "Gym",
+            "24/7 Security",
+            "Laundry",
+            "Tennis court",
+            "Pickleball court",
+            "Multipurpose court",
+            "Children's play area",
+            "Adults-only pool"
+
+        ],
+        "amenities_fr": [
+            "Piscine",
+            "Salle de sport",
+            "Sécurité 24/7",
+            "Buanderie",
+            "Court de tennis",
+            "Court de pickleball",
+            "Court polyvalent",
+            "Aire de jeux pour enfants",
+            "Piscine réservée aux adultes"
+        ],
+        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.7942443352533!2d-86.9028136073444!3d20.87402708940307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1776823948584!5m2!1ses!2smx",
+        "status": "NUevo Ingreso",
+        "lat": 20.873924,
+        "lng":  -86.902192
+
     }
 ]
