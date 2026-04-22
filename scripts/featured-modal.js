@@ -4,8 +4,8 @@
 const featuredData = {
     title: "Retiro, rentabilidad y estilo de vida en un solo lugar.", 
     subtitle: "Puerto Morelos",
-    description: "Casa amueblada en Puerto Morelos, dentro de residencial exclusivo. Vive con seguridad, disfruta bajo costo de vida y genera ingresos en uno de los destinos con mayor proyección del Caribe.",
-    image: "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
+    description: "Departamento en VENTA Selva Escndida II, exclusiva ubicacion junto a la alberca.",
+    image: "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
     link: "for-sale.html?id=16"
 };
 
