@@ -1548,5 +1548,76 @@
         "lat": 20.873924,
         "lng":  -86.902192
 
-    }
+    },
+        {
+            "id": 25,
+            "title": "Departamento en Venta Strella Puerto Morelos",
+            "description":"Departamento en venta en Strella, Puerto Morelos, Quintana Roo",
+            "extendedDescription":" Strella Puerto Morelos es un desarrollo residencial de lujo ubicado en el corazón de Puerto Morelos, Quintana Roo. Este exclusivo proyecto ofrece departamentos de alta gama diseñados para brindar comodidad y estilo en un entorno paradisíaco. Con una arquitectura moderna y acabados de primera calidad, Strella se destaca por su diseño innovador y su enfoque en la sostenibilidad. Los residentes pueden disfrutar de una amplia gama de amenidades, incluyendo una piscina infinita con vista al mar, gimnasio completamente equipado, áreas verdes, y acceso directo a la playa. Además, Strella Puerto Morelos se encuentra cerca de restaurantes, tiendas y atracciones turísticas, lo que lo convierte en el lugar ideal para aquellos que buscan una vida tranquila sin renunciar a las comodidades urbanas.",
+            "extendedDescription_en":"Strella Puerto Morelos is a luxury residential development located in the heart of Puerto Morelos, Quintana Roo. This exclusive project offers high-end apartments designed to provide comfort and style in a paradisiacal setting. With modern architecture and top-quality finishes, Strella stands out for its innovative design and focus on sustainability. Residents can enjoy a wide range of amenities, including an infinity pool with ocean views, a fully equipped gym, green areas, and direct beach access. Additionally, Strella Puerto Morelos is close to restaurants, shops, and tourist attractions, making it the ideal place for those seeking a peaceful life without sacrificing urban comforts.",
+            "extendedDescription_fr":"Strella Puerto Morelos est un développement résidentiel de luxe situé au cœur de Puerto Morelos, Quintana Roo. Ce projet exclusif propose des appartements haut de gamme conçus pour offrir confort et style dans un cadre paradisiaque. Avec une architecture moderne et des finitions de première qualité, Strella se distingue par son design innovant et son accent sur la durabilité. Les résidents peuvent profiter d'une large gamme d'aménagements, y compris une piscine à débordement avec vue sur l'océan, une salle de sport entièrement équipée, des espaces verts et un accès direct à la plage. De plus, Strella Puerto Morelos est proche des restaurants, des magasins et des attractions touristiques, ce qui en fait l'endroit idéal pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains.",
+            "price": "$430,000 USD",
+            "image": "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
+            "alt": "Departamento en venta en Strella Puerto Morelos",
+            "location": "Puerto Morelos",
+            "type": "condo",
+            "bedrooms": "3",
+            "bathrooms": "2",
+            "squareFeet": "",
+            "area": "120m²",
+            "youtubeUrl": "",
+            "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/strella/strella.html",
+            "galleryPhotos": [
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-02.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-03.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-04.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-05.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-06.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-07.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-08.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-09.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-10.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-11.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-12.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-13.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-14.webp",
+                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-15.webp"
+
+            ],
+            "features": [
+                "Departamento de 3 recámaras y 2 baños",
+                "Diseño moderno con acabados de lujo",
+                "Piscina infinita con vista al mar"
+            ],
+            "features_en": [
+                "3-bedroom, 2-bathroom apartment",
+                "Modern design with luxury finishes",
+                "Infinity pool with ocean view"
+            ],
+            "features_fr": [
+                "Appartement de 3 chambres et 2 salles de bain",
+                "Design moderne avec finitions de luxe",
+                "Piscine à débordement avec vue sur l'océan"
+            ],
+            "amenities": [
+                "Piscina infinita con vista al mar",
+                "Áreas verdes",
+                "Acceso directo a la playa"
+            ],
+            "amenities_en": [
+                "Infinity pool with ocean view",
+                "Green areas",
+                "Direct beach access"
+            ],
+            "amenities_fr": [
+                "Piscine à débordement avec vue sur l'océan",
+                "Espaces verts",
+                "Accès direct à la plage"
+            ],
+            "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205.32952450448644!2d-86.87746723267034!3d20.84778055133789!2m3!1f182.88961388403752!2f0!3f0!3m2!1i1024!2i768!4f35!5e1!3m2!1ses!2smx!4v1779146091247!5m2!1ses!2smx",
+            "status": "Nuevo Ingreso",
+            "lat": 20.847586, 
+            "lng": -86.877433
+        }
 ]
