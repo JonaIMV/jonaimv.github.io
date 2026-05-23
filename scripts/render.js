@@ -162,7 +162,7 @@ function getEmbedUrl(url) {
     // Nuevo diseño vertical para YouTube Shorts
     const youtubeHtml = embedUrl ? `
         <section class="youtube-video-section reveal-bottom" style="margin-top: 40px; text-align: center;">
-            <h2 style="margin-bottom: 20px;">Recorrido Rápido</h2>
+            <h2 style="margin-bottom: 20px;">Quick Tour</h2>
            
             <div class="youtube-short-container" style="display: flex; justify-content: center; margin-bottom: 30px;">
                 <iframe 
@@ -178,7 +178,7 @@ function getEmbedUrl(url) {
             </div>
         </section>
     ` : '';
-    const mapHtml = property.googleMapsEmbedUrl ? `<section class="location-section reveal-bottom"><h2>Ubicación</h2><div class="map-container"><iframe src="${property.googleMapsEmbedUrl}" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></section>` : '';
+    const mapHtml = property.googleMapsEmbedUrl ? `<section class="location-section reveal-bottom"><h2>Location</h2><div class="map-container"><iframe src="${property.googleMapsEmbedUrl}" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></section>` : '';
 
     let detailPriceHtml = property.price; // Por defecto usa el precio normal
 
@@ -197,23 +197,23 @@ function getEmbedUrl(url) {
 
     return `
         <article class="property-detail-article">
-            <button class="back-button" onclick="window.location.href='for-sale.html'">← Volver al Listado</button>
+            <button class="back-button" onclick="window.location.href='for-sale.html'">← Back to List</button>
             <h1 class="reveal-bottom">${property.title}</h1>
             <div class="action-buttons reveal-bottom" style="display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap;">
     
                 <button class="share-btn" onclick="compartirPropiedad('${property.title}')" style="background-color: var(--primary-color); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
-                    <i class="fas fa-share-alt"></i> Compartir
+                    <i class="fas fa-share-alt"></i> Share
                 </button>
                 
                 <button class="print-btn" onclick="imprimirFichaPropiedad()" style="background-color: var(--text-dark); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
-                    <i class="fas fa-print"></i> Guardar PDF / Imprimir
+                    <i class="fas fa-print"></i> Save PDF / Print
                 </button>
 
             </div>
             
             <p class="property-price-tag reveal-bottom">${detailPriceHtml}</p>
             
-            <section class="gallery-section reveal-bottom no-print"><h2>Galería de Fotos</h2>${galleryHtml}</section>
+            <section class="gallery-section reveal-bottom no-print"><h2>Photo Gallery</h2>${galleryHtml}</section>
             
             <section class="print-gallery-section screen-hidden">
                 <div class="print-photos-grid">
@@ -225,7 +225,7 @@ function getEmbedUrl(url) {
             
             <div class="multilingual-content-wrapper reveal-bottom" data-wg-notranslate="true">
                 <div class="lang-tabs-container">
-                    <span class="lang-label" style="font-weight:bold; margin-right:10px;">Idioma:</span>
+                    <span class="lang-label" style="font-weight:bold; margin-right:10px;">Language:</span>
                     <div class="lang-tabs">
                         <button class="lang-btn active" onclick="switchPropertyLanguage('es'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'espanol'});"><img src="https://flagcdn.com/w40/mx.png" style="width:20px;"> Español</button>
                         
@@ -268,8 +268,8 @@ export function renderProperties(propertiesArray, container) {
     propertiesArray.forEach(prop => {
         
         const tourButtonHtml = prop.virtualTourUrl 
-            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" onclick="gtag('event', 'clic_tour_virtual', { 'nombre_propiedad': '${prop.title}' });">Tour Virtual 360°</a>`
-            : `<button class="btn-tour-trigger disabled" disabled>Tour No Disponible</button>`;
+            ? `<a href="${prop.virtualTourUrl}" target="_blank" class="btn-tour-trigger" onclick="gtag('event', 'clic_tour_virtual', { 'nombre_propiedad': '${prop.title}' });">Virtual Tour 360°</a>`
+            : `<button class="btn-tour-trigger disabled" disabled>Virtual Tour Not Available</button>`;
             
         let badgeHtml = '';
         if (prop.status) {
@@ -303,6 +303,10 @@ export function renderProperties(propertiesArray, container) {
                 </span>
             `;
         }
+
+        // --- NUEVO: Lógica del SKU ---
+        // Si la propiedad tiene sku en el JSON, lo mostramos. Si no, se queda en blanco.
+        const skuHtml = prop.sku ? `<span style="display: block; font-size: 0.75rem; color: var(--primary-color, #1a6b72); font-weight: 600; margin-bottom: 5px; letter-spacing: 1px;">REF: ${prop.sku}</span>` : '';
         
         card.innerHTML = `
             <div class="image-container skeleton-loading" style="position: relative; overflow: hidden; min-height: 200px; background-color: #e0e0e0;">
@@ -310,17 +314,20 @@ export function renderProperties(propertiesArray, container) {
                 <img src="${prop.image}" alt="${prop.alt || prop.title}" loading="lazy" style="width:100%; display:block; opacity: 0; transition: opacity 0.5s;" onload="this.style.opacity='1'; this.parentElement.classList.remove('skeleton-loading');" onerror="this.style.display='none';">
             </div>
             <div class="property-card-content">
-                <h3>${prop.title}</h3> 
+                
+                ${skuHtml}
+                
+                <h3 style="margin-top: 0;">${prop.title}</h3> 
                 <div class="features-row">
-                    <div class="feature-item"><i class="fas fa-bed"></i> <span>${prop.bedrooms || 0} Hab.</span></div>
-                    <div class="feature-item"><i class="fas fa-bath"></i> <span>${prop.bathrooms || 0} Baños</span></div>
+                    <div class="feature-item"><i class="fas fa-bed"></i> <span>${prop.bedrooms || 0} Beds</span></div>
+                    <div class="feature-item"><i class="fas fa-bath"></i> <span>${prop.bathrooms || 0} Baths</span></div>
                     <div class="feature-item"><i class="fas fa-ruler-combined"></i> <span>${prop.area || 0} m²</span></div>
                 </div>
                 <p class="price">${priceHtml}</p>
                 <p class="location" style="font-size: 0.9rem; color: #666;"><i class="fas fa-map-marker-alt"></i> ${prop.location}</p> 
             </div>
             <div class="card-actions-group">
-                <a href="${detailLink}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']}); gtag('event', 'clic_mas_detalles', { 'nombre_propiedad': '${prop.title}' });">Más detalles</a>
+                <a href="${detailLink}" class="btn-detail-trigger" onclick="if(typeof fbq !== 'undefined') fbq('track', 'ViewContent', {content_name: '${prop.title}', content_ids: ['${prop.id}']}); gtag('event', 'clic_mas_detalles', { 'nombre_propiedad': '${prop.title}' });">More details</a>
                 ${tourButtonHtml}
             </div>
         `;

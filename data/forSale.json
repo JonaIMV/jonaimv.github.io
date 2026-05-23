@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "title": "Departamento en Venta en Selva Escondida Puerto Morelos, México",
+        "sku": "TCR-V001",
+        "title": "Apartment for Sale in Selva Escondida Puerto Morelos, Mexico",
         "description": "Descubre este departamento en venta en Selva Escondida Puerto Morelos, ubicado dentro de un residencial privado con seguridad 24/7 que ofrece tranquilidad, privacidad y un entorno natural único en la Riviera Maya. Esta propiedad de 2 habitaciones representa una excelente oportunidad tanto para quienes buscan mudarse a una zona segura cerca del mar, como para inversionistas interesados en generar ingresos mediante renta vacacional en uno de los destinos con mayor crecimiento del Caribe Mexicano.\n\nSelva Escondida es una comunidad cerrada con amenidades estilo resort que incluyen amplia alberca común, palapa social y áreas verdes diseñadas para disfrutar el clima tropical durante todo el año. Su ubicación estratégica permite fácil acceso a la playa de Puerto Morelos, al aeropuerto internacional de Cancún y a los principales atractivos de la Riviera Maya.\n\nEl departamento se vende completamente amueblado y equipado, listo para habitar o comenzar a rentarse de inmediato, lo que lo convierte en una opción ideal como propiedad de inversión, segunda residencia o retiro en México.\n\nExplora el tour virtual y conoce cada espacio de esta oportunidad inmobiliaria en Puerto Morelos.",
         "extendedDescription_en": "Discover this 2 bedroom condo for sale in Selva Escondida, Puerto Morelos, located within a secure gated community with 24/7 security in the heart of the Riviera Maya. This move-in ready property offers the perfect balance between tropical lifestyle and smart investment opportunity.\n\nSelva Escondida is a peaceful residential community surrounded by nature, offering resort-style amenities including a large swimming pool, palapa lounge area, and beautifully maintained green spaces. Its strategic location provides quick access to the beaches of Puerto Morelos, Cancun International Airport, and the main attractions of the Riviera Maya.\n\nWhether you are looking for a second home in Mexico, a retirement property in a safe neighborhood, or an income-generating vacation rental, this condo offers excellent potential. Puerto Morelos continues to grow as one of the most desirable destinations for international buyers seeking value, security, and long-term appreciation.\n\nThe unit is sold fully furnished and equipped, making it ready for immediate occupancy or rental income from day one.\n\nSchedule a viewing or explore the virtual tour to experience this investment opportunity in Puerto Morelos.",
         "extendedDescription_fr": "Découvrez cet appartement de 2 chambres à vendre à Selva Escondida, Puerto Morelos, situé dans une résidence privée et sécurisée avec surveillance 24h/24 au cœur de la Riviera Maya. Cette propriété prête à emménager représente une excellente opportunité pour une résidence secondaire au Mexique ou un investissement locatif rentable.\n\nSelva Escondida est une communauté résidentielle paisible entourée de nature, offrant des prestations de type resort telles qu’une grande piscine commune, une palapa conviviale et des espaces verts soigneusement entretenus. Son emplacement stratégique permet un accès rapide aux plages de Puerto Morelos, à l’aéroport international de Cancún ainsi qu’aux principales attractions de la Riviera Maya.\n\nQue vous recherchiez un lieu de vie sous le soleil toute l’année, un pied-à-terre dans les Caraïbes ou un bien générant des revenus locatifs grâce à la location saisonnière, cet appartement offre un fort potentiel de valorisation dans une zone en constante croissance.\n\nVendu entièrement meublé et équipé, il est prêt à être habité ou loué immédiatement.\n\nContactez-nous pour organiser une visite ou découvrez le tour virtuel afin d’explorer cette opportunité immobilière à Puerto Morelos.",
@@ -64,13 +65,14 @@
             "Espace barbecue"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469",
-        "status": "Oferta-especial",
+        "status": "Special Offer",
         "lat": 20.870525,
         "lng": -86.904297
     },
     {
         "id": 2,
-        "title": "Casa en Venta en Puntavista Puerto Morelos, México | Casa Jabin",
+        "sku": "TCR-V002",
+        "title": "House for Sale in Puntavista Puerto Morelos, Mexico | Casa Jabin",
         "description": "Casa de lujo en venta en Puntavista Puerto Morelos, residencial privado con seguridad 24/7 cerca de la playa.",
         "extendedDescription": "Descubre esta casa de lujo en venta en Puntavista Puerto Morelos, ubicada dentro de uno de los residenciales más exclusivos y seguros de la zona. Esta propiedad combina diseño contemporáneo, privacidad y amplios espacios exteriores que permiten disfrutar al máximo el estilo de vida del Caribe Mexicano.\n\nPuntavista es una comunidad cerrada con acceso controlado y seguridad 24/7, reconocida por su tranquilidad, infraestructura moderna y cercanía a la playa. Su ubicación estratégica ofrece fácil conexión con el Aeropuerto Internacional de Cancún y los principales destinos de la Riviera Maya, convirtiéndola en una excelente opción tanto para residencia permanente como para segunda vivienda en México.\n\nLa propiedad destaca por sus acabados de alta calidad y su diseño pensado para quienes valoran comodidad, seguridad y calidad de vida en un entorno residencial de alto nivel.\n\nExplora el tour virtual y conoce por qué Puntavista es una de las zonas con mayor crecimiento y plusvalía en Puerto Morelos.",
         "extendedDescription_en": "Discover this luxury home for sale in Puntavista, Puerto Morelos, located within one of the most exclusive gated communities in the Riviera Maya. This property offers the perfect blend of modern design, privacy, and outdoor living, ideal for those seeking a refined Caribbean lifestyle.\n\nPuntavista is a secure residential community with 24/7 controlled access, known for its peaceful atmosphere, modern infrastructure, and proximity to the beach. Its prime location provides convenient access to Cancun International Airport and the main destinations of the Riviera Maya, making it an excellent option as a primary residence, second home in Mexico, or long-term investment.\n\nDesigned with high-quality finishes and spacious outdoor areas, this home offers comfort, security, and strong appreciation potential in one of Puerto Morelos' fastest-growing neighborhoods.\n\nSchedule a private showing or explore the virtual tour to experience this exceptional investment opportunity.",
@@ -132,18 +134,19 @@
             "Piscine"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760750648307!6m8!1m7!1sl1wkU47Q_4zgd8FN7QjADQ!2m2!1d20.87425405153533!2d-86.89008811513162!3f70.47935738288757!4f-12.262008620005489!5f0.7820865974627469",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.874705,
         "lng": -86.888049
     },
     {
         "id": 3,
-        "title": "VENDIDA Casa Residencial El Faro Puerto Morelos",
+        "sku": "TCR-V003",
+        "title": "Sold Furnished House for Sale in Puerto Morelos | El Faro Residential",
         "description": "Bonita casa 2 habitaciones 1 baño.",
         "extendedDescription": "Descubre esta casa en venta en el codiciado Residencial El Faro, en el corazón de Puerto Morelos. Esta propiedad representa un lienzo en blanco: es la oportunidad perfecta para remodelar, personalizar y plasmar tu propio estilo en cada rincón. Su ubicación dentro del residencial es estratégica e inmejorable, situada a pocos pasos de la alberca común y con acceso rápido a la salida principal. Ya sea que busques crear tu hogar soñado o generar ingresos a través de rentas en un destino de alta demanda, esta es una inversión inteligente con gran potencial de plusvalía.\n\n¡Visualiza las posibilidades! Visita el tour virtual para conocer más de ella.",
         "extendedDescription_en": "Discover this house for sale in the sought-after El Faro Residential area in Puerto Morelos. This unit is a hidden gem waiting for your touch: perfect for remodeling, customizing, and infusing with your unique style. Its location within the complex is unbeatable, conveniently positioned near the pool and the main exit. Whether you plan to live here or rent it out, this is an excellent investment opportunity with high appreciation potential in a growing market.\n\nVisualize the possibilities! Visit the virtual tour to learn more about this property.",
         "extendedDescription_fr": "Découvrez cette maison à vendre dans le quartier prisé de Residencial El Faro à Puerto Morelos. Cette unité est une toile vierge idéale pour rénover, personnaliser et lui donner votre propre style. Son emplacement au sein de la résidence est imbattable, stratégiquement situé près de la piscine et de la sortie principale. Que vous souhaitiez y habiter ou la louer, c'est une excellente opportunité d'investissement avec un fort potentiel de plus-value.\n\nVisualisez les possibilités ! Visitez la visite virtuelle pour en savoir plus sur cette propriété.",
-        "price": "$2,050,000 MXN",
+        "price": "",
         "originalPrice": "$2,150,000 MXN",
         "image": "images/maracaibo-7/fachada.webp",
         "alt": "Charming house with patio puerto morelos El Faro",
@@ -197,80 +200,14 @@
             "Proche de l'entrée"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760752238359!6m8!1m7!1scgtdBYeYDm4ejxgrbJ5tTA!2m2!1d20.87198891776686!2d-86.90112488175393!3f3.074719195244711!4f2.8572826360244363!5f0.7820865974627469",
-        "status": "Vendida",
+        "status": "sold",
         "lat": 20.873389,
         "lng": -86.900048
     },
     {
-        "id": 4,
-        "title": "Terrenos Residenciales en Venta en Regatta Puerto Morelos, México",
-        "description": "2 terrenos residenciales en venta en Regatta Puerto Morelos, comunidad privada con enfoque ecológico y alta plusvalía.",
-        "extendedDescription": "Descubre una excelente oportunidad de inversión en Puerto Morelos con estos 2 terrenos residenciales en venta dentro de Regatta, una comunidad privada reconocida por su diseño sustentable y su entorno natural cuidadosamente preservado.\n\nRegatta Puerto Morelos es un desarrollo con enfoque ecológico que combina infraestructura moderna, amplias áreas verdes y un ambiente tranquilo ideal para quienes buscan construir su casa en el Caribe Mexicano. La comunidad ofrece seguridad, planificación urbana inteligente y una ubicación estratégica con fácil acceso a la playa, al Aeropuerto Internacional de Cancún y a los principales destinos de la Riviera Maya.\n\nAmbos terrenos cuentan con uso de suelo unifamiliar y están listos para escriturar y comenzar a construir. Representan una oportunidad ideal para inversionistas que buscan plusvalía a largo plazo o para quienes desean diseñar una residencia personalizada en una de las zonas con mayor crecimiento de Puerto Morelos.\n\nInvierte en un entorno natural, seguro y con alto potencial de valorización en la Riviera Maya.",
-        "extendedDescription_en": "Explore this unique opportunity to own two residential lots for sale in Regatta Puerto Morelos, one of the most sustainable and thoughtfully planned communities in the Riviera Maya.\n\nRegatta is a private residential development known for its eco-friendly design, preserved green areas, and peaceful environment. It offers modern infrastructure and a strategic location with convenient access to the beach, Cancun International Airport, and the main attractions of the Riviera Maya.\n\nBoth lots are zoned for single-family construction and are ready to build, making them ideal for buyers looking to design a custom home in Mexico or investors seeking long-term appreciation in a high-growth area.\n\nWhether you plan to build your dream home in the Caribbean or secure land in an emerging market, these properties represent a smart real estate investment opportunity in Puerto Morelos.",
-        "extendedDescription_fr": "Découvrez cette opportunité rare d’acquérir deux terrains résidentiels à vendre à Regatta Puerto Morelos, l’une des communautés les plus durables et harmonieuses de la Riviera Maya.\n\nRegatta est un développement privé reconnu pour son approche écologique, ses espaces verts préservés et son environnement paisible. La résidence bénéficie d’infrastructures modernes et d’un emplacement stratégique permettant un accès rapide à la plage, à l’aéroport international de Cancún et aux principaux sites de la Riviera Maya.\n\nCes terrains, destinés à la construction unifamiliale, sont prêts à bâtir et constituent une excellente option pour concevoir une résidence personnalisée au Mexique ou réaliser un investissement à fort potentiel de valorisation.\n\nInvestir dans un terrain à Puerto Morelos, c’est choisir la sécurité, la nature et une croissance immobilière durable.",
-        "price": "$1,800,000 MXN",
-        "image": "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-06.webp",
-        "alt": "Eco lot at Regatta gate community mangrove view puerto morelos",
-        "location": "Puerto Morelos",
-        "type": "land",
-        "bedrooms": 0,
-        "bathrooms": 0,
-        "area": 320,
-        "virtualTourUrl": "",
-        "galleryPhotos": [
-            "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-03.webp",
-            "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-02.webp",
-            "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-01.webp",
-            "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-05.webp",
-            "images/regatta/residential-lots-for-sale-in-regatta-puerto-morelos-mexico-07.webp"
-        ],
-        "features": [
-            "Terreno unifamiliar",
-            "160 m² cada uno",
-            "Libre de gravamen"
-        ],
-        "features_en": [
-            "Single-family lot",
-            "160 m² each",
-            "Clean title / Debt-free"
-        ],
-        "features_fr": [
-            "Terrain unifamilial",
-            "160 m² chacun",
-            "Titre clair / Libre de privilège"
-        ],
-        "amenities": [
-            "Alberca familiar",
-            "Áreas verdes protegidas",
-            "Seguridad y acceso controlado",
-            "Parque de Yoga",
-            "Área de Picnic",
-            "Instalaciones subterráneas"
-        ],
-        "amenities_en": [
-            "Family pool",
-            "Protected green areas",
-            "Security & Controlled access",
-            "Yoga Park",
-            "Picnic area",
-            "Underground utilities"
-        ],
-        "amenities_fr": [
-            "Piscine familiale",
-            "Espaces verts protégés",
-            "Sécurité et accès contrôlé",
-            "Parc de Yoga",
-            "Espace pique-nique",
-            "Installations souterraines"
-        ],
-        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3134.7249163431684!2d-86.88802479761543!3d20.878612213486928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1760809591391!5m2!1ses-419!2smx",
-        "status": "Disponible",
-        "lat": 20.876619,
-        "lng": -86.887600
-    },
-    {
         "id": 5,
-        "title": "Lote Ecológico en Venta en Puntavista Puerto Morelos Cerca de la Playa",
+        "sku": "TCR-V005",
+        "title": "Eco-Friendly Lot for Sale in Puntavista Puerto Morelos Near the Beach",
         "description": "Eco lote en venta en Puntavista Puerto Morelos con vista al manglar en residencial privado de alta plusvalía.",
         "extendedDescription": "Invierte en un eco lote en venta en Puntavista Puerto Morelos, ubicado dentro de un exclusivo residencial privado con seguridad y entorno natural protegido. Esta propiedad ofrece una privilegiada vista al manglar, creando el escenario ideal para construir una residencia personalizada en armonía con la naturaleza del Caribe Mexicano.\n\nPuntavista es una comunidad reconocida por su infraestructura moderna, ambiente seguro y ubicación estratégica cerca de la playa, el Aeropuerto Internacional de Cancún y los principales destinos de la Riviera Maya. Su planeación urbana y entorno tranquilo la convierten en una de las zonas con mayor crecimiento y plusvalía en Puerto Morelos.\n\nEste lote es perfecto para quienes desean diseñar una casa de dos niveles a su medida o para inversionistas que buscan asegurar terreno en una comunidad de alto nivel con potencial de apreciación a largo plazo.\n\nConstruye tu patrimonio en un entorno natural privilegiado y disfruta del equilibrio entre lujo, privacidad y sustentabilidad.",
         "extendedDescription_en": "Secure this eco lot for sale in Puntavista Puerto Morelos, located within an exclusive gated community offering privacy, modern infrastructure, and a natural mangrove backdrop. This property provides a rare opportunity to build a custom two-story home in one of the Riviera Maya’s most desirable residential areas.\n\nPuntavista is known for its secure environment, thoughtful urban planning, and proximity to the beach, Cancun International Airport, and the main attractions of the Riviera Maya. The community continues to show strong growth and long-term appreciation, making it attractive for both homeowners and investors.\n\nWhether you envision a sustainable Caribbean retreat or a strategic land investment in Mexico, this lot offers the perfect balance between luxury living and natural surroundings.\n\nTake advantage of this opportunity to build your dream home in Puerto Morelos.",
@@ -327,13 +264,14 @@
             "Rues pavées"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.820253575808!2d-86.88905414385414!3d20.874043327098708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2be0fd97f931%3A0x63caff9188902318!2sResidencial%20Puntavista!5e0!3m2!1ses-419!2smx!4v1760809705620!5m2!1ses-419!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.873692,
         "lng": -86.887743
     },
     {
         "id": 6,
-        "title": "Departamento Naay Selva Escondida 34B Puerto Morelos",
+        "sku": "TCR-V006",
+        "title": "Naay Selva Escondida Apartment 34B Puerto Morelos, Mexico | 2 Bedrooms Condo for Sale",
         "description": "Departamento en venta en Naay Selva Escondida Puerto Morelos, planta baja, totalmente amueblado y listo para inversión o residencia.",
         "extendedDescription": "Invierte en un departamento en venta en Naay, dentro del residencial Selva Escondida en Puerto Morelos, una comunidad privada con seguridad y entorno natural privilegiado en la Riviera Maya. Ubicado en planta baja, ofrece comodidad y fácil acceso, ideal para quienes buscan una propiedad lista para habitar o generar ingresos mediante renta vacacional.\n\nSe entrega completamente amueblado y equipado, tipo llave en mano, lo que permite comenzar a disfrutarlo o rentarlo de inmediato. Su ubicación estratégica combina tranquilidad y conectividad: a pocos minutos de las playas de Puerto Morelos y con acceso rápido al Aeropuerto Internacional de Cancún y a los principales atractivos del Caribe Mexicano.\n\nSelva Escondida es una comunidad cerrada reconocida por su ambiente seguro, áreas comunes estilo resort y creciente plusvalía. Esta propiedad representa una excelente oportunidad como segunda residencia en México, retiro en el Caribe o inversión inmobiliaria con alto potencial de apreciación.\n\nDescubre el tour virtual y asegura tu espacio en uno de los destinos con mayor demanda internacional en la Riviera Maya.",
         "extendedDescription_en": "Turnkey ground floor condo for sale in Naay, located within the gated community of Selva Escondida in Puerto Morelos, Riviera Maya. This fully furnished unit offers immediate rental potential and is ideal as a second home in Mexico or income-generating vacation property.\n\nThe condo is move-in ready and perfectly positioned just minutes from the beaches of Puerto Morelos, with convenient access to Cancun International Airport and the region’s top attractions. Its ground floor location provides easy access and added convenience for long-term living or short-term guests.\n\nSelva Escondida is a secure residential community known for its peaceful atmosphere, resort-style amenities, and growing appreciation value. Puerto Morelos continues to attract international buyers seeking safety, lifestyle, and strong real estate investment opportunities in the Caribbean.\n\nContact us to schedule a private showing or explore the virtual tour to secure this investment opportunity in the Riviera Maya.",
@@ -395,13 +333,14 @@
             "Espace barbecue"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760742673574!6m8!1m7!1szicz57swGACyTP-3XLE5aw!2m2!1d20.87040780617195!2d-86.9059090304031!3f178.07151176737258!4f-15.077935848906023!5f0.7820865974627469",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.870447,
         "lng": -86.905818
     },
     {
         "id": 7,
-        "title": "Departamento en Venta en Puerto Morelos Ideal para Inversión o Renta Vacacional",
+        "sku": "TCR-V007",
+        "title": "Apartment for Sale in Puerto Morelos Ideal for Investment or Vacation Rentals",
         "description": "Bonito departamento de 2 habitaciones en residencial privado.",
         "extendedDescription": "Oportunidad excepcional con doble potencial: disponible tanto para venta como para renta. Este atractivo departamento se encuentra dentro de un residencial privado en Puerto Morelos, ofreciendo un entorno seguro, tranquilo y rodeado de naturaleza. La propiedad dispone de dos cómodas habitaciones, un baño completo, cocina equipada y una acogedora área social pensada para el descanso y la convivencia. Su distribución funcional lo convierte en una excelente opción tanto para vivir de manera permanente como para disfrutarlo como segunda residencia. El residencial cuenta con seguridad 24 horas, amplias áreas verdes y amenidades diseñadas para el bienestar de sus residentes. Una inversión inteligente en una de las zonas con mayor crecimiento y calidad de vida en la Riviera Maya.",
         "extendedDescription_en": "An exceptional opportunity with dual potential: available for both sale and rent. This attractive apartment is located within a private residential community in Puerto Morelos, offering a peaceful, secure setting surrounded by nature. The property features two comfortable bedrooms, a full bathroom, a fully equipped kitchen, and a welcoming living area designed for relaxed everyday living. Its practical layout makes it ideal as a permanent residence, holiday home, or rental investment.Residents benefit from 24-hour security, landscaped green areas, and lifestyle-oriented amenities that enhance overall quality of life. A solid opportunity in one of the Riviera Maya’s steadily growing residential areas.",
@@ -460,13 +399,14 @@
             "Proche de la plage"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!4v1760749987641!6m8!1m7!1sBb708nUAta66jPoO4q0ZAg!2m2!1d20.87063318223515!2d-86.90575064728718!3f118.2958493157058!4f8.689329569482084!5f0.7820865974627469",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.869727,
         "lng": -86.904093
     },
     {
         "id": 9,
-        "title": "Departamento en Venta en Caleta Yal-Kú Akumal Cerca del Mar",
+        "sku": "TCR-V009",
+        "title": "Apartment for Sale in Caleta Yal-Kú Akumal Near the Sea",
         "description": "Departamento en venta en pivada exclusiva en caleta Yal-Kú en Akumal Quintana Roo.",
         "extendedDescription": "Sumérgete en la magia de Akumal con este increíble departamento situado en la privilegiada zona de Yal-Ku. Esta unidad de 2 habitaciones y 2 baños completos se entrega totalmente amueblada y equipada, lista para habitar o para comenzar a generar ingresos inmediatos en plataformas como Airbnb. Su ubicación es estratégica: a solo 5 minutos de la playa y de la famosa caleta, pero con la privacidad suficiente para garantizar silencio total.\n\nLa propiedad colinda con la zona de selva, ofreciendo un contacto directo con la naturaleza y vistas relajantes. Es un espacio seguro y sereno, diseñado para ser tu santuario de descanso después de explorar las maravillas del Caribe Mexicano.",
         "extendedDescription_en": "Immerse yourself in the magic of Akumal with this incredible apartment located in the privileged Yal-Ku area. This 2-bedroom, 2-full bathroom unit comes fully furnished and equipped, ready to move in or to start generating immediate income on platforms like Airbnb. Its location is strategic: just 5 minutes from the beach and the famous lagoon, yet private enough to guarantee total silence.\n\nThe property borders the jungle zone, offering direct contact with nature and relaxing views. It is a safe and serene space, designed to be your sanctuary of rest after exploring the wonders of the Mexican Caribbean.",
@@ -538,14 +478,15 @@
             "Espace barbecue"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5288.141387410195!2d-87.30780572066075!3d20.411635795928458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1763830371016!5m2!1ses!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.411941,
         "lng": -87.309404
     },
     {
         "id": 10,
-        "title": "Casa en Venta Cerca de Xcaret Playa del Carmen, Riviera Maya",
-        "description": "Increible casa en venta en la exclusiva area de los parques de  Xcaret Playa del Carmen.",
+        "sku": "TCR-V010",
+        "title": "House for Sale Near Xcaret Playa del Carmen, Riviera Maya",
+        "description": "Incredible house for sale in the exclusive area of the Xcaret parks in Playa del Carmen.",
         "description_en": "Incredible house for sale in the exclusive area of the Xcaret parks in Playa del Carmen.",
         "extendedDescription": "Imagina vivir o vacacionar inmerso en la magia de la Riviera Maya. Esta casa en venta cuenta con una ubicación estratégica en Paseo de los Sentidos, la ruta directa hacia los parques Xenses y Xcaret. Disfruta de un entorno rodeado de selva y seguridad 24 horas, pero con un beneficio exclusivo que hace esta oferta irresistible: **Te incluimos 2 años de Membresía Xcaret**, garantizándote acceso diario e ilimitado al parque.\n\nEs una propiedad con doble propósito: un santuario vacacional de ensueño para tu familia y una máquina de generar ingresos como renta vacacional, aprovechando el flujo constante de turistas que visitan los parques más famosos de México.",
         "extendedDescription_en": "Imagine living or vacationing immersed in the magic of the Riviera Maya. This house for sale boasts a strategic location on Paseo de los Sentidos, the direct route to the Xenses and Xcaret parks. Enjoy an environment surrounded by jungle and 24-hour security, but with an exclusive benefit that makes this offer irresistible: **We include a 2-year Xcaret Membership**, guaranteeing you unlimited daily access to the park.\n\nThis is a dual-purpose property: a dream vacation sanctuary for your family and an income-generating machine for vacation rentals, capitalizing on the constant flow of tourists visiting Mexico's most famous parks.",
@@ -604,14 +545,14 @@
             "Accès direct aux parcs Xcaret"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d233.43572281161303!2d-87.12929633600481!3d20.589218800174407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1764105319623!5m2!1ses!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.589165,
         "lng": -87.129241
     },
-    
     {
         "id": 12,
-        "title": "Casa Familiar en Venta en Palma Real Puerto Morelos, México",
+        "sku": "TCR-V012",
+        "title": "Family Home for Sale in Palma Real Puerto Morelos, Mexico",
         "description": "4 habitaciones, 3 baños,totalmente equipada",
         "extendedDescription": "Esta casa en Residencial Palma Real lo tiene todo para entrar a vivir mañana mismo. Ha sido mejorada y equipada pensando en el confort total: cuenta con una cocina integral de diseño exclusivo en madera de Tzalam (una joya tropical resistente y elegante) y viene totalmente equipada, incluyendo lavavajillas y centro de lavado. \n\nEl patio trasero es amplio y tiene el espacio perfecto para que construyas tu propia alberca privada y crees tu oasis personal. Ubicada en un entorno seguro y familiar, con parques y acceso controlado, es la opción ideal para quienes buscan calidad, acabados superiores y una ubicación estratégica en Puerto Morelos.",
         "extendedDescription_en": "This home in Residencial Palma Real has everything you need to move in tomorrow. It has been upgraded and equipped with total comfort in mind: featuring an exclusive designer kitchen made of Tzalam wood (a durable and elegant tropical hardwood) and comes fully equipped, including a dishwasher and laundry center.\n\nThe backyard is spacious and offers the perfect space to build your own private pool and create your personal oasis. Located in a safe and family-friendly environment, with parks and controlled access, it is the ideal option for those seeking quality, superior finishes, and a strategic location in Puerto Morelos.",
@@ -686,13 +627,14 @@
             "Emplacement central"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d491.79620043995163!2d-86.8952694722922!3d20.86741499437957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1766026713705!5m2!1ses!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.867167,
         "lng": -86.895678
     },
     {
         "id": 13,
-        "title": "Casa Contemporánea en Venta en Aldea Kiin Puerto Morelos, México",
+        "sku": "TCR-V013",
+        "title": "Modern House for Sale in Aldea Kiin Puerto Morelos, Mexico",
         "description": "Casa en venta en residencial privado Aldea Kiin Puerto Morelos.",
         "extendedDescription": "Invertir en el Caribe Mexicano es un sueño, pero construir desde cero puede convertirse rápidamente en un desafío abrumador. La gestión de permisos municipales, la supervisión de contratistas a distancia, los costos ocultos y los tiempos de entrega que se extienden indefinidamente son riesgos reales que agotan tu presupuesto y tu paciencia. ¿Por qué lidiar con la incertidumbre de una obra negra cuando puedes asegurar tu patrimonio hoy mismo?\n\nEsta residencia en Aldea Kiin es la respuesta tangible a tu búsqueda. Es una propiedad lista para disfrutarse que combina un diseño moderno con la privacidad de la selva. A diferencia de otras opciones, aquí cuentas con tu propia alberca privada para relajarte en intimidad, además de 3 amplias habitaciones y un área de TV (convertible a 4ta recámara). El residencial enriquece tu vida con amenidades estilo resort: casa club con gimnasio, alberca con tobogán para los niños, palapa de eventos y un tranquilo espacio para yoga. Todo esto, ubicado estratégicamente a solo 20 minutos del Aeropuerto de Cancún y a 10 minutos de las playas turquesa de Puerto Morelos.\n\nPor un precio de oportunidad de $5,500,000 MXN, adquieres una casa completa en una zona de alta plusvalía. La propiedad incluye cocina integral equipada, sala y comedor de concepto abierto que conectan con el exterior, 3.5 baños con acabados modernos y cochera. Es una inversión inteligente que elimina los riesgos de construcción y te entrega las llaves de un estilo de vida rodeado de naturaleza y seguridad las 24 horas.",
         "extendedDescription_en": "Investing in the Mexican Caribbean is a dream, but building from scratch can quickly become an overwhelming challenge. Managing municipal permits, supervising contractors remotely, hidden costs, and delivery times that extend indefinitely are real risks that drain your budget and patience. Why deal with the uncertainty of construction when you can secure your asset today?\n\nThis residence in Aldea Kiin is the tangible answer to your search. It is a ready-to-enjoy property that combines modern design with the privacy of the jungle. Unlike other options, here you have your own private pool for intimate relaxation, plus 3 spacious bedrooms and a TV area (convertible to a 4th bedroom). The gated community enriches your life with resort-style amenities: a clubhouse with a gym, a pool with a slide for kids, an events palapa, and a peaceful yoga space. All this is strategically located just 20 minutes from Cancun Airport and 10 minutes from the turquoise beaches of Puerto Morelos.\n\nFor an opportunity price of $5,500,000 MXN, you acquire a complete home in a high-appreciation area. The property includes a fully equipped integral kitchen, open-concept living and dining areas connecting to the outdoors, 3.5 bathrooms with modern finishes, and a parking space. It is a smart investment that eliminates construction risks and hands you the keys to a lifestyle surrounded by nature and 24-hour security.",
@@ -766,14 +708,14 @@
             "Sécurité 24h/24"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1573.046142819366!2d-86.87737978763244!3d20.906834348904912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1767393699017!5m2!1ses!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.906678,
         "lng": -86.877241
     },
-   
     {
         "id": 15,
-        "title": "Departamento en Venta en Selva Escondida Puerto Morelos, México",
+        "sku": "TCR-V015",
+        "title": "Apartment for Sale in Selva Escondida Puerto Morelos, Mexico",
         "description": "Departamento en Venta Selva Escondida 1 Puerto Morelos.",
         "extendedDescription": "Este departamento en Selva Escondida es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicado en un residencial privado con seguridad 24 horas, este departamento de 2 recámaras y 1 baño ofrece un diseño moderno y funcional, ideal para parejas, familias pequeñas o como inversión para renta vacacional. La cocina integral equipada, la sala-comedor de concepto abierto y con un ambiente acogedor y relajante. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. No pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
         "extendedDescription_en": "This apartment in Selva Escondida is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 2-bedroom, 1-bathroom apartment offers a modern and functional design, ideal for couples, small families, or as an investment for vacation rentals. The fully equipped integral kitchen, open-concept living and dining area creates a cozy and relaxing atmosphere. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. Don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
@@ -844,17 +786,18 @@
             "Accès aux sentiers naturels"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d563.7913915305047!2d-86.90538003555484!3d20.869469573859977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1771102273601!5m2!1ses!2smx",
-        "status": "Disponible",
+        "status": "Available",
         "lat": 20.869466,
         "lng": -86.905419
     },
     {
         "id": 16,
-        "title": " VENDIDA  Casa Amueblada en Venta Puerto Morelos | Residencial El Faro",
+        "sku": "TCR-V016",
+        "title": " SOLD Furnished House for Sale in Puerto Morelos | El Faro Residential",
         "description": "Casa de 2 hab en Residencial El Faro, Puerto Morelos. Totalmente amueblada, patio bardeado y seguridad 24/7. ¡Tu inversión ideal en el Caribe Mexicano!",
         "extendedDescription": "¡Tu Refugio en el Caribe Mexicano Te Espera! Ubicada en el corazón de Residencial El Faro, esta propiedad de 2 habitaciones y 1 baño es la oportunidad perfecta para quienes buscan seguridad y ubicación estratégica en la Riviera Maya. Se entrega totalmente amueblada, lista para habitarse o rentar. Cuenta con un patio privado y bardeado, ideal para mascotas o reuniones al aire libre. Disfruta de la tranquilidad de vivir en un residencial con vigilancia 24/7, a minutos de la playa y la Ruta de los Cenotes.",
         "extendedDescription_en": "Live the Caribbean Dream in Puerto Morelos! This turnkey 2-bedroom residence in Residencial El Faro is the perfect entry point into the Riviera Maya market. Fully furnished and ready for immediate ROI through vacation rentals, the home features a private fenced backyard for outdoor living. Located in a secure gated community with 24/7 security, you are just minutes away from the National Reef Park and vibrant local culture. A smart investment in Mexico’s fastest-growing corridor.",
-        "extendedDescription_fr": "Opportunité Immobilière de Qualité à Puerto Morelos. Située au sein du quartier sécurisé El Faro, cette charmante maison représente un placement patrimonial sûr dans l’un des villages les plus authentiques de la Riviera Maya. Vendue entièrement meublée, elle dispose de 2 chambres et d'un jardin clos privé garantissant intimité et sérénité. À mi-chemin entre Cancún et Playa del Carmen, cette propriété offre la stabilité d'un investissement de qualité alliée à la douceur de vivre caribéenne.",
+        "extendedDescription_fr": "Opportunité Immobilière de Qualité à Puerto Morelos. Située au sein du quartier sécurisé El Faro, cette charmante maison représente un placement patrimonial sûr dans l’un des villages les más authentiques de la Riviera Maya. Vendue entièrement meublée, elle dispose de 2 chambres et d'un jardin clos privé garantissant intimité et sérénité. À mi-chemin entre Cancún et Playa del Carmen, cette propriété offre la stabilité d'un investissement de qualité alliée à la douceur de vivre caribéenne.",
         "price": "$2,400,000 MXN",
         "image": "images/maracaibo-34/casa-en-venta-puerto-morelos-residencial-el-faro-mexico-01.webp",
         "alt": "Casa en Venta Residencial El Faro Puerto Morelos",
@@ -918,14 +861,14 @@
             "Proche de la plage"
         ],
         "googleMapsEmbedUrl": "",
-        "status": "Vendida",
+        "status": "Sold",
         "lat": 20.873602,
         "lng": -86.899731
     },
-
     {
         "id": 18,
-        "title": "Departamento en VENTA Puerto Morelos Residencial Alborada, México",
+        "sku": "TCR-V018",
+        "title": "Apartment for Sale in Alborada Puerto Morelos, Mexico",
         "description": "Departamento en venta en Residencial Alborada, Puerto Morelos.",
         "extendedDescription": "Este departamento en Residencial Alborada es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicado en un residencial privado con seguridad 24 horas, este departamento de 2 recámaras y 1 baño ofrece un diseño moderno y funcional, ideal para parejas, familias pequeñas o como inversión para renta vacacional. La cocina integral equipada, la sala-comedor de concepto abierto y con un ambiente acogedor y relajante. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. No pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
         "extendedDescription_en": "This apartment in Residencial Alborada is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 2-bedroom, 1-bathroom apartment offers a modern and functional design, ideal for couples, small families, or as an investment for vacation rentals. The fully equipped integral kitchen, open-concept living and dining area creates a cozy and relaxing atmosphere. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. Don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
@@ -938,7 +881,7 @@
         "bedrooms": 2,
         "bathrooms": 1,
         "area": 64,
-        "youtubeUrl":"",
+        "youtubeUrl": "",
         "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/alborada/alborada.html",
         "galleryPhotos": [
             "images/alborada/departamento-en-venta-puerto-morelos-alborada-mexico-09.webp",
@@ -950,14 +893,12 @@
             "images/alborada/departamento-en-venta-puerto-morelos-alborada-mexico-06.webp",
             "images/alborada/departamento-en-venta-puerto-morelos-alborada-mexico-07.webp",
             "images/alborada/departamento-en-venta-puerto-morelos-alborada-mexico-08.webp"
-            
         ],
         "features": [
             "Cocina integral",
             "Sala-comedor abierta",
             "Recámara con vista al jardín",
             "Baño completo"
-        
         ],
         "features_en": [
             "Integral kitchen",
@@ -990,14 +931,14 @@
             "Accès aux sentiers naturels"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d745.9384110164036!2d-86.90401046085695!3d20.86371681843654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1774416096292!5m2!1ses!2smx",
-        "status": "NUevo Ingreso",
-        "lat": 20.864057, 
+        "status": "New listing",
+        "lat": 20.864057,
         "lng": -86.904318
-
     },
     {
         "id": 19,
-        "title": "Casa en Venta en Puerto Marino Puerto Morelos, México",
+        "sku": "TCR-V019",
+        "title": "Furnished House for Sale in Puerto Marino Puerto Morelos, Mexico",
         "description": "Casa en venta en Puerto Marino, Puerto Morelos.",
         "extendedDescription": "Esta casa en Puerto Marino es la oportunidad perfecta para quienes buscan un estilo de vida tranquilo y rodeado de naturaleza en Puerto Morelos. Ubicada en un residencial privado con seguridad 24 horas, esta casa de 4 recámaras y 3 baños ofrece un diseño moderno y funcional, ideal para familias o como inversión para renta vacacional. Con un ambiente acogedor y relajante, esta casa sin muebles esta lista para que agregues tu escencia y estilo. Además, el desarrollo cuenta con amenidades exclusivas como alberca, áreas verdes y acceso directo a senderos naturales, brindándote la oportunidad de disfrutar del entorno natural sin salir de casa. La alberca esta en tu patio trasero, no pierdas la oportunidad de vivir en uno de los destinos más hermosos del Caribe Mexicano por un precio accesible.",
         "extendedDescription_en": "This house in Puerto Marino is the perfect opportunity for those seeking a tranquil lifestyle surrounded by nature in Puerto Morelos. Located in a private gated community with 24-hour security, this 4-bedroom, 3-bathroom house offers a modern and functional design, ideal for families or as an investment for vacation rentals. With a cozy and relaxing atmosphere, this unfurnished house is ready for you to add your essence and style. Additionally, the development features exclusive amenities such as a pool, green areas, and direct access to natural trails, giving you the opportunity to enjoy the natural surroundings without leaving home. The pool is in your backyard, don't miss the chance to live in one of the most beautiful destinations in the Mexican Caribbean at an affordable price.",
@@ -1030,9 +971,7 @@
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-09.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-11.webp",
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-12.webp",
-            
             "images/mantarraya-35/casa-en-venta-puerto-marino-puerto-morelos-17.webp"
-            
         ],
         "features": [
             "Casa sin muebles",
@@ -1074,14 +1013,14 @@
             "Accès aux sentiers naturels"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.54480548159484!2d-86.8971089031409!3d20.87228292190456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1775013008511!5m2!1ses!2smx",
-        "status": "NUevo Ingreso",
+        "status": "New listing",
         "lat": 20.872454,
-        "lng":  -86.897252
-
+        "lng": -86.897252
     },
     {
         "id": 20,
-        "title": "Central Condo Living Pre-venta",
+        "sku": "TCR-V020",
+        "title": "Central Condo Living Pre-Sale in Puerto Morelos, Mexico",
         "description": "En Central, tu hogar no solo es un lugar; es tu santuario.Sumérgete en un entorno que despierta alegría, fomenta la tranquilidad y crea un lienzo para los momentos extraordinarios de tu vida.",
         "extendedDescription": "Central es un desarrollo residencial que redefine el concepto de hogar en el corazón de Puerto Morelos. Con una arquitectura moderna y un diseño pensado para maximizar la luz natural y las vistas, Central ofrece departamentos de 1 y 2  recámaras, cada uno con acabados de lujo y espacios inteligentes que se adaptan a tu estilo de vida. Disfruta de amenidades exclusivas como alberca, gimnasio, áreas verdes y un rooftop con vista panorámica al mar, creando un oasis urbano donde cada día se siente como unas vacaciones. Ubicado a pocos minutos de la playa, restaurantes y tiendas, Central es el lugar donde la comodidad se encuentra con la elegancia en el Caribe Mexicano. 43 departamentos que fusionan a la perfección la arquitectura contemporánea con la belleza natural del entorno. Nuestros departamentos, cuidadodasemente diseñados, ofrecen espacios amplios, vistas panorámicas y luz natural, creando un balance entre el interior y exterior.",
         "extendedDescription_en": "Central is a residential development that redefines the concept of home in the heart of Puerto Morelos. With modern architecture and a design that maximizes natural light and views, Central offers 1 and 2-bedroom apartments, each with luxury finishes and smart spaces that adapt to your lifestyle. Enjoy exclusive amenities such as a pool, gym, green areas, and a rooftop with panoramic sea views, creating an urban oasis where every day feels like a vacation. Located just minutes from the beach, restaurants, and shops, Central is where comfort meets elegance in the Mexican Caribbean. 43 apartments that perfectly blend contemporary architecture with the natural beauty of the surroundings. Our carefully designed apartments offer spacious areas, panoramic views, and natural light, creating a balance between indoor and outdoor living.",
@@ -1160,23 +1099,21 @@
             "Sécurité 24/7",
             "Terrasse avec vues panoramiques sur la mer"
         ],
-        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.8187543809787!2d-86.8960204777888!3d20.855318742310608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89ec1644f513%3A0x88261a7d63604078!2sCentral%20Condo%20Living!5e1!3m2!1ses!2smx!4v1776469320315!5m2!1ses!2smx",
-        "status": "Pre-venta",
-        "lat": 20.855275, 
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510.8187543809787!2d-86.8960204777888!3d20.855318742310608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89ec1644f513%3A0x88261a7d63604078!2sCentral%20Condo%20Living!5e1!3m2!1ses!2smx!4v1776469320315!5m2!1ses!2smx",
+        "status": "Pre-Sale",
+        "lat": 20.855275,
         "lng": -86.895678
-
-
-
     },
     {
         "id": 21,
-        "title": "Pre-venta Soulam Puerto Morelos",
+        "sku": "TCR-V021",
+        "title": "Pre-Sale Soulam Puerto Morelos",
         "description": "Un exclusivo proyecto boutique ubicado en el corazón de Puerto Morelos, donde puedes llegar caminando al relajante azul del mar Caribe.",
-        "extendedDescription":"Con solo 20 unidades disponibles, Soulam ofrece una vida moderna y sofisticada, rodeada de la vibrante cultura local, exquisita gastronomía y el encanto de un pueblo pesquero que promete ser tu refugio ideal. Puerto Morelos, un destino cada vez más codiciado por su tranquilidad y belleza natural, se sitúa perfectamente entre la vida urbana y la serenidad de la Riviera Maya. Soulam es más que un lugar para vivir; es una experiencia que combina el lujo contemporáneo con la autenticidad del Caribe Mexicano, creando un espacio donde cada día se siente como unas vacaciones.",
-        "extendedDescription_en":"With only 20 units available, Soulam offers a modern and sophisticated lifestyle, surrounded by vibrant local culture, exquisite gastronomy, and the charm of a fishing village that promises to be your ideal refuge. Puerto Morelos, an increasingly coveted destination for its tranquility and natural beauty, is perfectly situated between urban life and the serenity of the Riviera Maya. Soulam is more than a place to live; it's an experience that combines contemporary luxury with the authenticity of the Mexican Caribbean, creating a space where every day feels like a vacation.",
-        "extendedDescription_fr":"Avec seulement 20 unités disponibles, Soulam offre un style devie moderne et sophistiqué, entouré de la vibrante culture locale, de la gastronomie exquise et du charme d'un village de pêcheurs qui promet d'être votre refuge idéal. Puerto Morelos, une destination de plus en plus convoitée pour sa tranquillité et sa beauté naturelle, est parfaitement située entre la vie urbaine et la sérénité de la Riviera Maya. Soulam est plus qu'un lieu de vie; c'est une expérience qui combine le luxe contemporain avec l'authenticité des Caraïbes mexicaines, créant un espace où chaque jour se sent comme des vacances.",
+        "extendedDescription": "Con solo 20 unidades disponibles, Soulam ofrece una vida moderna y sofisticada, rodeada de la vibrante cultura local, exquisita gastronomía y el encanto de un pueblo pesquero que promete ser tu refugio ideal. Puerto Morelos, un destino cada vez más codiciado por su tranquilidad y belleza natural, se sitúa perfectamente entre la vida urbana y la serenidad de la Riviera Maya. Soulam es más que un lugar para vivir; es una experiencia que combina el lujo contemporáneo con la autenticidad del Caribe Mexicano, creando un espacio donde cada día se siente como unas vacaciones.",
+        "extendedDescription_en": "With only 20 units available, Soulam offers a modern and sophisticated lifestyle, surrounded by vibrant local culture, exquisite gastronomy, and the charm of a fishing village that promises to be your ideal refuge. Puerto Morelos, an increasingly coveted destination for its tranquility and natural beauty, is perfectly situated between urban life and the serenity of the Riviera Maya. Soulam is more than a place to live; it's an experience that combines contemporary luxury with the authenticity of the Mexican Caribbean, creating a space where every day feels like a vacation.",
+        "extendedDescription_fr": "Avec seulement 20 unités disponibles, Soulam offre un style devie moderne et sophistiqué, entouré de la vibrante culture locale, de la gastronomie exquise et du charme d'un village de pêcheurs qui promet d'être votre refuge idéal. Puerto Morelos, une destination de plus en plus convoitée pour sa tranquillité et sa beauté naturelle, est parfaitement située entre la vie urbaine et la sérénité de la Riviera Maya. Soulam est plus qu'un lieu de vie; c'est une expérience qui combine le luxe contemporain avec l'authenticité des Caraïbes mexicaines, créant un espace où chaque jour se sent comme des vacances.",
         "price": "Desde $3,508,099 MXN",
-        "image":  "images/soulam/pre-venta-soulam-puerto-morelos-mexico-10.webp",
+        "image": "images/soulam/pre-venta-soulam-puerto-morelos-mexico-10.webp",
         "alt": "Preventa Soulam Puerto Morelos",
         "location": "Puerto Morelos",
         "type": "condo",
@@ -1192,13 +1129,12 @@
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-02.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-03.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-04.webp",
-            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-05.webp",            
+            "images/soulam/pre-venta-soulam-puerto-morelos-mexico-05.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-07.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-08.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-09.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-11.webp",
             "images/soulam/pre-venta-soulam-puerto-morelos-mexico-12.webp"
-            
         ],
         "features": [
             "Entrega Diciembre 2026",
@@ -1228,9 +1164,7 @@
             "Lavanderia",
             "Valet parking",
             "Conexion electrica para autos electricos"
-
         ],
-
         "amenities_en": [
             "Pool",
             "Gym",
@@ -1253,23 +1187,24 @@
             "Service de voiturier",
             "Station de recharge pour voitures électriques"
         ],
-        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.0096179861063!2d-86.87440447480051!3d20.851374402896578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89750470fdff%3A0x1a41f52fc42265b3!2sSOULAM!5e1!3m2!1ses!2smx!4v1776473232305!5m2!1ses!2smx",
-        "status": "pre-venta",
-        "lat": 20.851494, 
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d582.0096179861063!2d-86.87440447480051!3d20.851374402896578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89750470fdff%3A0x1a41f52fc42265b3!2sSOULAM!5e1!3m2!1ses!2smx!4v1776473232305!5m2!1ses!2smx",
+        "status": "Pre-Sale",
+        "lat": 20.851494,
         "lng": -86.874498
     },
     {
         "id": 22,
-        "title": "Village Blu Pre-venta Puerto Morelos",
-        "descripton":"Village Blu es un desarrollo Premium ubicado en el corazon de Puerto Morelos.",
+        "sku": "TCR-V022",
+        "title": "Village Blu Pre-Sale Puerto Morelos",
+        "descripton": "Village Blu es un desarrollo Premium ubicado en el corazon de Puerto Morelos.",
         "extendedDescription": "Los beach aparments de Village Blu en Puerto Morelos sorprenden por su arquitectura de autor y sus amplios espacios, perfectamente distribuidos para brindar comodidad y estilo. Cada unidad de una racámara y desde 64m2, está diseñada para ofrecer una experiencia acogedora y funcional, ideal tanto para quienes buscan relajarse junto al mar como para quienes desean invertir en una propiedad totalmente rentable con alto potencial de renta vacacional, en Puerto Morelos la joya de la Riviera Maya, departamentos listos para vivir la experiencia de tener un segundo hogar a unos pasos de la playa. Village Blu forma parte de Blu Residences Collection, y junto a Porto Blu y Sole Blu, comparten una misma esencia: estilo de vida frente al mar, diseño de autor con la mas alta calidad y ubicación privilegiada, en el centro en donde todo sucede. Todos son proyectos de Eleva Capital Group, desarrolladora premium con visión y experiencia en crear espacios único en las mejores zonas de Cancún y la Riviera Maya.",
         "extendedDescription_en": "The beach apartments of Village Blu in Puerto Morelos stand out for their signature architecture and spacious layouts, perfectly designed to provide comfort and style. Each one-bedroom unit, starting from 64m2, is designed to offer a cozy and functional experience, ideal for those looking to relax by the sea or for those seeking to invest in a property with high rental potential in Puerto Morelos, the jewel of the Riviera Maya. Ready-to-live apartments that allow you to experience having a second home just steps from the beach. Village Blu is part of the Blu Residences Collection, and along with Porto Blu and Sole Blu, they share the same essence: beachfront lifestyle, signature design with the highest quality, and privileged location in the heart of where everything happens. All are projects by Eleva Capital Group, a premium developer with vision and experience in creating unique spaces in the best areas of Cancún and the Riviera Maya.",
         "extendedDescription_fr": "Les appartements de plage de Village Blu à Puerto Morelos se distinguent par leur architecture de signature et leurs aménagements spacieux, parfaitement conçus pour offrir confort et style. Chaque unité d'une chambre, à partir de 64m2, est conçue pour offrir une expérience chaleureuse et fonctionnelle, idéale pour ceux qui cherchent à se détendre au bord de la mer ou pour ceux qui souhaitent investir dans une propriété avec un fort potentiel de location à Puerto Morelos, le joyau de la Riviera Maya. Des appartements prêts à vivre qui vous permettent de vivre l'expérience d'avoir une seconde maison à quelques pas de la plage. Village Blu fait partie de la collection Blu Residences, et avec Porto Blu et Sole Blu, ils partagent la même essence : un style de vie en bord de mer, un design de signature avec la plus haute qualité, et un emplacement privilégié au cœur de là où tout se passe. Tous sont des projets d'Eleva Capital Group, un développeur premium avec vision et expérience dans la création d'espaces uniques dans les meilleures zones de Cancún et de la Riviera Maya.",
         "price": "Desde $300,000| USD",
         "image": "images/village/pre-venta-village-blue-puerto-morelos-mexico-17.webp",
-        "alt": "Pre-venta Village Blu Puerto Morelos",
+        "alt": "Pre-Sale Village Blu Puerto Morelos",
         "location": "Puerto Morelos",
-        "type": "condo",
+        "type": "pre-sale",
         "bedrooms": "1",
         "bathrooms": "1",
         "area": "63m²",
@@ -1297,7 +1232,7 @@
             "images/village/pre-venta-village-blue-puerto-morelos-mexico-22.webp",
             "images/village/pre-venta-village-blue-puerto-morelos-mexico-21.webp",
             "images/village/pre-venta-village-blue-puerto-morelos-mexico-19.webp",
-            "images/village/pre-venta-village-blue-puerto-morelos-mexico-20.webp"   
+            "images/village/pre-venta-village-blue-puerto-morelos-mexico-20.webp"
         ],
         "features": [
             "Entrega Verano 2027",
@@ -1328,7 +1263,6 @@
             "Valet parking",
             "Acceso inteligente",
             "Terraza lounge"
-
         ],
         "amenities_en": [
             "Pool",
@@ -1341,7 +1275,6 @@
             "Valet parking",
             "Smart access",
             "Terrace lounge"
-
         ],
         "amenities_fr": [
             "Piscine",
@@ -1355,23 +1288,24 @@
             "Accès intelligent",
             "Terrasse lounge"
         ],
-        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d76.97698361564817!2d-86.87549408086032!3d20.849384002292123!2m2!1f65.53934118611187!2f4.283366372314002!3m2!1i1024!2i768!4f56.2253759436026!5e1!3m2!1ses!2smx!4v1776556479343!5m2!1ses!2smx",
-        "status": "pre-venta",
-        "lat": 20.849413, 
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d76.97698361564817!2d-86.87549408086032!3d20.849384002292123!2m2!1f65.53934118611187!2f4.283366372314002!3m2!1i1024!2i768!4f56.2253759436026!5e1!3m2!1ses!2smx!4v1776556479343!5m2!1ses!2smx",
+        "status": "pre-sale",
+        "lat": 20.849413,
         "lng": -86.875354
     },
     {
         "id": 23,
-        "title": "Sole Blu Ocean Living Pre-venta Puerto Morelos",
-        "description":"Un exclusivo desarrollo residencial de lujo frente al mar en Puerto Morelos",
-        "extendedDescription":"Sole Blu es el desarrollo residencial más completo de Puerto Morelos, con más de 16,000 m2 de construcción en una ubicación privilegiada frente al mar. Se basa en tres pilares: ubicación premium, acabados de lujo y espacios óptimos. Ofrece 75 departamentos exclusivos con diversas configuraciones. Departamentos de 1 recámara con opción flexible a 2, para hasta 6 huéspedes y 2 baños. Departamentos de 2 recámaras con opción flexible a 3, para hasta 10 huéspedes y 3 baños. Departamentos de 3 recámaras + Rooftop con opción flexible a 4, para hasta 12 huéspedes y 4 baños. Opciones de Lock-off en modelos seleccionados. El desarrollo cuenta con amenidades de primer nivel diseñadas para disfrutar el entorno caribeño: Acceso directo y privado a la playa. Rooftop con vista al océano, alberca (roof pool) y pool bar. Gimnasio, área de BBQ y asoleaderos. Espacios funcionales como Coworking, sala de juntas y zona WiFi. Servicios adicionales: Lobby, elevadores, estacionamiento para autos y bicicletas, CCTV y política Pet Friendly. Club de Playa exclusivo. Beneficios de inversión: Retorno de inversión (ROI) estimado del 10% anual. Administración 'Full Service' disponible por Eleva Capital Group para gestión de rentas vacacionales. Alta rentabilidad y plusvalía comprobada en la zona. Situado en la zona de playa más privilegiada de Puerto Morelos, a 25 minutos del Aeropuerto Internacional de Cancún y cerca de la Ruta de los Cenotes.",
-        "extendedDescription_en":"Sole Blu is the most comprehensive residential development in Puerto Morelos, with over 16,000 m2 of construction in a privileged beachfront location. It is based on three pillars: premium location, luxury finishes, and optimal spaces. It offers 75 exclusive apartments with various configurations. 1-bedroom apartments with flexible option for 2, accommodating up to 6 guests and 2 bathrooms. 2-bedroom apartments with flexible option for 3, accommodating up to 10 guests and 3 bathrooms. 3-bedroom + Rooftop apartments with flexible option for 4, accommodating up to 12 guests and 4 bathrooms. Lock-off options in selected models. The development features top-level amenities designed to enjoy the Caribbean environment: Direct and private beach access. Rooftop with ocean view, rooftop pool, and pool bar. Gym, BBQ area, and sun loungers. Functional spaces such as Coworking, meeting room, and WiFi zone. Additional services: Lobby, elevators, parking for cars and bicycles, CCTV, and Pet Friendly policy. Exclusive Beach Club. Investment benefits: Estimated annual Return on Investment (ROI) of 10%. 'Full Service' management available by Eleva Capital Group for vacation rental management. High profitability and proven appreciation in the area. Located in the most privileged beach area of Puerto Morelos, 25 minutes from Cancún International Airport and close to the Cenote Route.",
-        "extendedDescription_fr":"Sole Blu est le développement résidentiel le plus complet de Puerto Morelos, avec plus de 16 000 m2 de construction dans un emplacement privilégié en bord de mer. Il repose sur trois piliers : emplacement premium, finitions de luxe et espaces optimaux. Il offre 75 appartements exclusifs avec diverses configurations. Appartements de 1 chambre avec option flexible pour 2, pouvant accueillir jusqu'à 6 personnes et 2 salles de bain. Appartements de 2 chambres avec option flexible pour 3, pouvant accueillir jusqu'à 10 personnes et 3 salles de bain. Appartements de 3 chambres + Rooftop avec option flexible pour 4, pouvant accueillir jusqu'à 12 personnes et 4 salles de bain. Options de Lock-off dans les modèles sélectionnés. Le développement dispose d'aménagements de premier ordre conçus pour profiter de l'environnement caribéen : Accès direct et privé à la plage. Rooftop avec vue sur l'océan, piscine sur le toit et pool bar. Gymnase, espace BBQ et chaises longues. Espaces fonctionnels tels que Coworking, salle de réunion et zone WiFi. Services supplémentaires : Lobby, ascenseurs, parking pour voitures et vélos, CCTV et politique Pet Friendly. Club de plage exclusif. Avantages d'investissement : Retour sur investissement (ROI) estimé à 10% annuel. Gestion 'Full Service' disponible par Eleva Capital Group pour la gestion des locations de vacances. Haute rentabilité et appréciation prouvée dans la zone. Situé dans la zone de plage la plus privilégiée de Puerto Morelos, à 25 minutes de l'aéroport international de Cancún et proche de la Route des Cenotes.",
+        "sku": "TCR-V023",
+        "title": "Sole Blu Ocean Living Pre-Sale Puerto Morelos",
+        "description": "Un exclusivo desarrollo residencial de lujo frente al mar en Puerto Morelos",
+        "extendedDescription": "Sole Blu es el desarrollo residencial más completo de Puerto Morelos, con más de 16,000 m2 de construcción en una ubicación privilegiada frente al mar. Se basa en tres pilares: ubicación premium, acabados de lujo y espacios óptimos. Ofrece 75 departamentos exclusivos con diversas configuraciones. Departamentos de 1 recámara con opción flexible a 2, para hasta 6 huéspedes y 2 baños. Departamentos de 2 recámaras con opción flexible a 3, para hasta 10 huéspedes y 3 baños. Departamentos de 3 recámaras + Rooftop con opción flexible a 4, para hasta 12 huéspedes y 4 baños. Opciones de Lock-off en modelos seleccionados. El desarrollo cuenta con amenidades de primer nivel diseñadas para disfrutar el entorno caribeño: Acceso directo y privado a la playa. Rooftop con vista al océano, alberca (roof pool) y pool bar. Gimnasio, área de BBQ y asoleaderos. Espacios funcionales como Coworking, sala de juntas y zona WiFi. Servicios adicionales: Lobby, elevadores, estacionamiento para autos y bicicletas, CCTV y política Pet Friendly. Club de Playa exclusivo. Beneficios de inversión: Retorno de inversión (ROI) estimado del 10% anual. Administración 'Full Service' disponible por Eleva Capital Group para gestión de rentas vacacionales. Alta rentabilidad y plusvalía comprobada en la zona. Situado en la zona de playa más privilegiada de Puerto Morelos, a 25 minutos del Aeropuerto Internacional de Cancún y cerca de la Ruta de los Cenotes.",
+        "extendedDescription_en": "Sole Blu is the most comprehensive residential development in Puerto Morelos, with over 16,000 m2 of construction in a privileged beachfront location. It is based on three pillars: premium location, luxury finishes, and optimal spaces. It offers 75 exclusive apartments with various configurations. 1-bedroom apartments with flexible option for 2, accommodating up to 6 guests and 2 bathrooms. 2-bedroom apartments with flexible option for 3, accommodating up to 10 guests and 3 bathrooms. 3-bedroom + Rooftop apartments with flexible option for 4, accommodating up to 12 guests and 4 bathrooms. Lock-off options in selected models. The development features top-level amenities designed to enjoy the Caribbean environment: Direct and private beach access. Rooftop with ocean view, rooftop pool, and pool bar. Gym, BBQ area, and sun loungers. Functional spaces such as Coworking, meeting room, and WiFi zone. Additional services: Lobby, elevators, parking for cars and bicycles, CCTV, and Pet Friendly policy. Exclusive Beach Club. Investment benefits: Estimated annual Return on Investment (ROI) of 10%. 'Full Service' management available by Eleva Capital Group for vacation rental management. High profitability and proven appreciation in the area. Located in the most privileged beach area of Puerto Morelos, 25 minutes from Cancún International Airport and close to the Cenote Route.",
+        "extendedDescription_fr": "Sole Blu est le développement résidentiel le plus complet de Puerto Morelos, avec plus de 16 000 m2 de construction dans un emplacement privilégié en bord de mer. Il repose sur trois piliers : emplacement premium, finitions de luxe et espaces optimaux. Il offre 75 appartements exclusifs avec diverses configurations. Appartements de 1 chambre avec option flexible pour 2, pouvant accueillir jusqu'à 6 personnes et 2 salles de bain. Appartements de 2 chambres avec option flexible pour 3, pouvant accueillir jusqu'à 10 personnes et 3 salles de bain. Appartements de 3 chambres + Rooftop avec option flexible pour 4, pouvant accueillir jusqu'à 12 personnes et 4 salles de bain. Options de Lock-off dans les modèles sélectionnés. Le développement dispose d'aménagements de premier ordre conçus pour profiter de l'environnement caribéen : Accès direct et privé à la plage. Rooftop avec vue sur l'océan, piscine sur le toit et pool bar. Gymnase, espace BBQ et chaises longues. Espaces fonctionnels tels que Coworking, salle de réunion et zone WiFi. Services supplémentaires : Lobby, ascenseurs, parking pour voitures et vélos, CCTV et politique Pet Friendly. Club de plage exclusif. Avantages d'investissement : Retour sur investissement (ROI) estimé à 10% annuel. Gestion 'Full Service' disponible par Eleva Capital Group pour la gestion des locations de vacances. Haute rentabilité et appréciation prouvée dans la zone. Situé dans la zone de plage la plus privilégiée de Puerto Morelos, à 25 minutes de l'aéroport international de Cancún et proche de la Route des Cenotes.",
         "price": "Desde $440,000 USD",
         "image": "images/sole-blu/pre-venta-sole-blu-puerto-morelos-mexico-02.webp",
         "alt": "Pre-venta Sole Blu Puerto Morelos",
         "location": "Puerto Morelos",
-        "type": "condo",
+        "type": "pre-sale",
         "bedrooms": "1, 2 y 3",
         "bathrooms": "2, 3 y 4",
         "area": "28m² a 116",
@@ -1443,19 +1377,19 @@
             "Lobby, ascenseurs, parking pour voitures et vélos, CCTV et politique d'accueil des animaux de compagnie",
             "Club de plage exclusif"
         ],
-
-        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.7076418492325!2d-86.8730396725259!3d20.85324897927161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89c70008f0ab%3A0x1c09ee6d3c6b6633!2sSole%20BLU%20Ocean%20Living!5e1!3m2!1ses!2smx!4v1776565652009!5m2!1ses!2smx",
-        "status": "pre-venta",
-        "lat": 20.852848, 
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1062.7076418492325!2d-86.8730396725259!3d20.85324897927161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e89c70008f0ab%3A0x1c09ee6d3c6b6633!2sSole%20BLU%20Ocean%20Living!5e1!3m2!1ses!2smx!4v1776565652009!5m2!1ses!2smx",
+        "status": "pre-sale",
+        "lat": 20.852848,
         "lng": -86.873501
     },
     {
         "id": 24,
-        "title": "Departamento en Venta en Selva Escondida II Puerto Morelos",
-        "description":"Departamento en venta en Selva Escondida II, Puerto Morelos, Quintana Roo",
-        "extendedDescription":"Descubre tu oasis privado en el corazón de la selva de Puerto Morelos. Este departamento en venta en Selva Escondida II te ofrece la oportunidad de vivir rodeado de naturaleza, con la comodidad de estar a solo minutos de las playas más hermosas del Caribe Mexicano. Con un diseño moderno y espacios abiertos, este hogar es perfecto para quienes buscan una vida tranquila sin renunciar a las comodidades urbanas. Disfruta de amaneceres impresionantes desde tu terraza privada, sumérgete en la piscina rodeada de vegetación exuberante y explora los senderos naturales que te conectan con la belleza única de la selva. Selva Escondida II es más que un lugar para vivir; es una experiencia que combina el lujo con la naturaleza, creando un refugio perfecto para aquellos que buscan un estilo de vida auténtico en Puerto Morelos.",
-        "extendedDescription_en":"Discover your private oasis in the heart of the Puerto Morelos jungle. This apartment for sale in Selva Escondida II offers you the opportunity to live surrounded by nature, with the convenience of being just minutes from the most beautiful beaches of the Mexican Caribbean. With a modern design and open spaces, this home is perfect for those seeking a peaceful life without sacrificing urban comforts. Enjoy stunning sunrises from your private terrace, immerse yourself in the pool surrounded by lush vegetation, and explore the natural trails that connect you with the unique beauty of the jungle. Selva Escondida II is more than a place to live; it's an experience that combines luxury with nature, creating a perfect refuge for those seeking an authentic lifestyle in Puerto Morelos.",
-        "extendedDescription_fr":"Découvrez votre oasis privée au cœur de la jungle de Puerto Morelos. Cet appartement à vendre à Selva Escondida II vous offre l'opportunité de vivre entouré par la nature, avec la commodité d'être à seulement quelques minutes des plus belles plages du Mexique. Avec un design moderne et des espaces ouverts, cette maison est parfaite pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains. Profitez de magnifiques levers de soleil depuis votre terrasse privée, plongez dans la piscine entourée d'une végétation luxuriante et explorez les sentiers naturels qui vous connectent à la beauté unique de la jungle. Selva Escondida II est plus qu'un lieu de vie; c'est une expérience qui combine luxe et nature, créant un refuge parfait pour ceux qui recherchent un style de vie authentique à Puerto Morelos.",
+        "sku": "TCR-V024",
+        "title": "Apartment for Sale in Selva Escondida II Puerto Morelos, Mexico",
+        "description": "Departamento en venta en Selva Escondida II, Puerto Morelos, Quintana Roo",
+        "extendedDescription": "Descubre tu oasis privado en el corazón de la selva de Puerto Morelos. Este departamento en venta en Selva Escondida II te ofrece la oportunidad de vivir rodeado de naturaleza, con la comodidad de estar a solo minutos de las playas más hermosas del Caribe Mexicano. Con un diseño moderno y espacios abiertos, este hogar es perfecto para quienes buscan una vida tranquila sin renunciar a las comodidades urbanas. Disfruta de amaneceres impresionantes desde tu terraza privada, sumérgete en la piscina rodeada de vegetación exuberante y explora los senderos naturales que te conectan con la belleza única de la selva. Selva Escondida II es más que un lugar para vivir; es una experiencia que combina el lujo con la naturaleza, creando un refugio perfecto para aquellos que buscan un estilo de vida auténtico en Puerto Morelos.",
+        "extendedDescription_en": "Discover your private oasis in the heart of the Puerto Morelos jungle. This apartment for sale in Selva Escondida II offers you the opportunity to live surrounded by nature, with the convenience of being just minutes from the most beautiful beaches of the Mexican Caribbean. With a modern design and open spaces, this home is perfect for those seeking a peaceful life without sacrificing urban comforts. Enjoy stunning sunrises from your private terrace, immerse yourself in the pool surrounded by lush vegetation, and explore the natural trails that connect you with the unique beauty of the jungle. Selva Escondida II is more than a place to live; it's an experience that combines luxury with nature, creating a perfect refuge for those seeking an authentic lifestyle in Puerto Morelos.",
+        "extendedDescription_fr": "Découvrez votre oasis privée au cœur de la jungle de Puerto Morelos. Cet appartement à vendre à Selva Escondida II vous offre l'opportunité de vivre entouré par la nature, avec la commodité d'être à seulement quelques minutes des plus belles plages du Mexique. Avec un design moderne et des espaces ouverts, cette maison est parfaite pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains. Profitez de magnifiques levers de soleil depuis votre terrasse privée, plongez dans la piscine entourée d'une végétation luxuriante et explorez les sentiers naturels qui vous connectent à la beauté unique de la jungle. Selva Escondida II est plus qu'un lieu de vie; c'est une expérience qui combine luxe et nature, créant un refuge parfait pour ceux qui recherchent un style de vie authentique à Puerto Morelos.",
         "price": "$2,750,000 MXN",
         "image": "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
         "alt": "Departamento en venta en Selva Escondida II Puerto Morelos",
@@ -1485,7 +1419,7 @@
             "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-02.webp",
             "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-19.webp",
             "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-10.webp",
-            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-03.webp"            
+            "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-03.webp"
         ],
         "features": [
             "Departamento de 2 recámaras y 2 baños",
@@ -1518,7 +1452,6 @@
             "Cancha de usos múltiples",
             "Área de juegos infantiles",
             "Alberca solo para mayores de edad"
-
         ],
         "amenities_en": [
             "Pool",
@@ -1530,7 +1463,6 @@
             "Multipurpose court",
             "Children's play area",
             "Adults-only pool"
-
         ],
         "amenities_fr": [
             "Piscine",
@@ -1543,81 +1475,80 @@
             "Aire de jeux pour enfants",
             "Piscine réservée aux adultes"
         ],
-        "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.7942443352533!2d-86.9028136073444!3d20.87402708940307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1776823948584!5m2!1ses!2smx",
-        "status": "NUevo Ingreso",
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.7942443352533!2d-86.9028136073444!3d20.87402708940307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1776823948584!5m2!1ses!2smx",
+        "status": "New listing",
         "lat": 20.873924,
-        "lng":  -86.902192
-
+        "lng": -86.902192
     },
-        {
-            "id": 25,
-            "title": "Departamento en Venta Strella Puerto Morelos",
-            "description":"Departamento en venta en Strella, Puerto Morelos, Quintana Roo",
-            "extendedDescription":" Strella Puerto Morelos es un desarrollo residencial de lujo ubicado en el corazón de Puerto Morelos, Quintana Roo. Este exclusivo proyecto ofrece departamentos de alta gama diseñados para brindar comodidad y estilo en un entorno paradisíaco. Con una arquitectura moderna y acabados de primera calidad, Strella se destaca por su diseño innovador y su enfoque en la sostenibilidad. Los residentes pueden disfrutar de una amplia gama de amenidades, incluyendo una piscina infinita con vista al mar, gimnasio completamente equipado, áreas verdes, y acceso directo a la playa. Además, Strella Puerto Morelos se encuentra cerca de restaurantes, tiendas y atracciones turísticas, lo que lo convierte en el lugar ideal para aquellos que buscan una vida tranquila sin renunciar a las comodidades urbanas.",
-            "extendedDescription_en":"Strella Puerto Morelos is a luxury residential development located in the heart of Puerto Morelos, Quintana Roo. This exclusive project offers high-end apartments designed to provide comfort and style in a paradisiacal setting. With modern architecture and top-quality finishes, Strella stands out for its innovative design and focus on sustainability. Residents can enjoy a wide range of amenities, including an infinity pool with ocean views, a fully equipped gym, green areas, and direct beach access. Additionally, Strella Puerto Morelos is close to restaurants, shops, and tourist attractions, making it the ideal place for those seeking a peaceful life without sacrificing urban comforts.",
-            "extendedDescription_fr":"Strella Puerto Morelos est un développement résidentiel de luxe situé au cœur de Puerto Morelos, Quintana Roo. Ce projet exclusif propose des appartements haut de gamme conçus pour offrir confort et style dans un cadre paradisiaque. Avec une architecture moderne et des finitions de première qualité, Strella se distingue par son design innovant et son accent sur la durabilité. Les résidents peuvent profiter d'une large gamme d'aménagements, y compris une piscine à débordement avec vue sur l'océan, une salle de sport entièrement équipée, des espaces verts et un accès direct à la plage. De plus, Strella Puerto Morelos est proche des restaurants, des magasins et des attractions touristiques, ce qui en fait l'endroit idéal pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains.",
-            "price": "$430,000 USD",
-            "image": "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
-            "alt": "Departamento en venta en Strella Puerto Morelos",
-            "location": "Puerto Morelos",
-            "type": "condo",
-            "bedrooms": "3",
-            "bathrooms": "2",
-            "squareFeet": "",
-            "area": "120m²",
-            "youtubeUrl": "",
-            "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/strella/strella.html",
-            "galleryPhotos": [
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-02.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-03.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-04.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-05.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-06.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-07.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-08.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-09.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-10.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-11.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-12.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-13.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-14.webp",
-                "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-15.webp"
-
-            ],
-            "features": [
-                "Departamento de 3 recámaras y 2 baños",
-                "Diseño moderno con acabados de lujo",
-                "Piscina infinita con vista al mar"
-            ],
-            "features_en": [
-                "3-bedroom, 2-bathroom apartment",
-                "Modern design with luxury finishes",
-                "Infinity pool with ocean view"
-            ],
-            "features_fr": [
-                "Appartement de 3 chambres et 2 salles de bain",
-                "Design moderne avec finitions de luxe",
-                "Piscine à débordement avec vue sur l'océan"
-            ],
-            "amenities": [
-                "Piscina infinita con vista al mar",
-                "Áreas verdes",
-                "Acceso directo a la playa"
-            ],
-            "amenities_en": [
-                "Infinity pool with ocean view",
-                "Green areas",
-                "Direct beach access"
-            ],
-            "amenities_fr": [
-                "Piscine à débordement avec vue sur l'océan",
-                "Espaces verts",
-                "Accès direct à la plage"
-            ],
-            "googleMapsEmbedUrl":"https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205.32952450448644!2d-86.87746723267034!3d20.84778055133789!2m3!1f182.88961388403752!2f0!3f0!3m2!1i1024!2i768!4f35!5e1!3m2!1ses!2smx!4v1779146091247!5m2!1ses!2smx",
-            "status": "Nuevo Ingreso",
-            "lat": 20.847586, 
-            "lng": -86.877433
-        }
+    {
+        "id": 25,
+        "sku": "TCR-V025",
+        "title": "Apartment for Sale in Strella Puerto Morelos, Mexico",
+        "description": "Departamento en venta en Strella, Puerto Morelos, Quintana Roo",
+        "extendedDescription": " Strella Puerto Morelos es un desarrollo residencial de lujo ubicado en el corazón de Puerto Morelos, Quintana Roo. Este exclusivo proyecto ofrece departamentos de alta gama diseñados para brindar comodidad y estilo en un entorno paradisíaco. Con una arquitectura moderna y acabados de primera calidad, Strella se destaca por su diseño innovador y su enfoque en la sostenibilidad. Los residentes pueden disfrutar de una amplia gama de amenidades, incluyendo una piscina infinita con vista al mar, gimnasio completamente equipado, áreas verdes, y acceso directo a la playa. Además, Strella Puerto Morelos se encuentra cerca de restaurantes, tiendas y atracciones turísticas, lo que lo convierte en el lugar ideal para aquellos que buscan una vida tranquila sin renunciar a las comodidades urbanas.",
+        "extendedDescription_en": "Strella Puerto Morelos is a luxury residential development located in the heart of Puerto Morelos, Quintana Roo. This exclusive project offers high-end apartments designed to provide comfort and style in a paradisiacal setting. With modern architecture and top-quality finishes, Strella stands out for its innovative design and focus on sustainability. Residents can enjoy a wide range of amenities, including an infinity pool with ocean views, a fully equipped gym, green areas, and direct beach access. Additionally, Strella Puerto Morelos is close to restaurants, shops, and tourist attractions, making it the ideal place for those seeking a peaceful life without sacrificing urban comforts.",
+        "extendedDescription_fr": "Strella Puerto Morelos est un développement résidentiel de luxe situé au cœur de Puerto Morelos, Quintana Roo. Ce projet exclusif propose des appartements haut de gamme conçus pour offrir confort et style dans un cadre paradisiaque. Avec une architecture moderne et des finitions de première qualité, Strella se distingue par son design innovant et son accent sur la durabilité. Les résidents peuvent profiter d'une large gamme d'aménagements, y compris une piscine à débordement avec vue sur l'océan, une salle de sport entièrement équipée, des espaces verts et un accès direct à la plage. De plus, Strella Puerto Morelos est proche des restaurants, des magasins et des attractions touristiques, ce qui en fait l'endroit idéal pour ceux qui recherchent une vie paisible sans sacrifier les conforts urbains.",
+        "price": "$430,000 USD",
+        "image": "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
+        "alt": "Departamento en venta en Strella Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "condo",
+        "bedrooms": "3",
+        "bathrooms": "2",
+        "squareFeet": "",
+        "area": "120m²",
+        "youtubeUrl": "",
+        "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/strella/strella.html",
+        "galleryPhotos": [
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-01.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-02.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-03.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-04.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-05.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-06.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-07.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-08.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-09.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-10.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-11.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-12.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-13.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-14.webp",
+            "images/strella/departamento-en-venta-puerto-morelos-strella-mexico-15.webp"
+        ],
+        "features": [
+            "Departamento de 3 recámaras y 2 baños",
+            "Diseño moderno con acabados de lujo",
+            "Piscina infinita con vista al mar"
+        ],
+        "features_en": [
+            "3-bedroom, 2-bathroom apartment",
+            "Modern design with luxury finishes",
+            "Infinity pool with ocean view"
+        ],
+        "features_fr": [
+            "Appartement de 3 chambres et 2 salles de bain",
+            "Design moderne avec finitions de luxe",
+            "Piscine à débordement avec vue sur l'océan"
+        ],
+        "amenities": [
+            "Piscina infinita con vista al mar",
+            "Áreas verdes",
+            "Acceso directo a la playa"
+        ],
+        "amenities_en": [
+            "Infinity pool with ocean view",
+            "Green areas",
+            "Direct beach access"
+        ],
+        "amenities_fr": [
+            "Piscine à débordement avec vue sur l'océan",
+            "Espaces verts",
+            "Accès direct à la plage"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205.32952450448644!2d-86.87746723267034!3d20.84778055133789!2m3!1f182.88961388403752!2f0!3f0!3m2!1i1024!2i768!4f35!5e1!3m2!1ses!2smx!4v1779146091247!5m2!1ses!2smx",
+        "status": "New listing",
+        "lat": 20.847586,
+        "lng": -86.877433
+    }
 ]

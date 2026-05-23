@@ -1,3 +1,4 @@
+
 /* =========================================
    CLASES UTILITARIAS
    ========================================= */
@@ -1164,24 +1165,24 @@ header {
     }
 }
 /* Map y Badge: Vendido */
-.badge-vendida
+.badge-sold
  { 
     background-color: #dc3545; 
 }
 
 
-.badge-reservada {
+.badge-on-hold {
     background-color: #f39c12; 
     color: #ffffff;
 }
-.badge-pre-venta { 
+.badge-pre-sale { 
     background-color: #a78408fc; 
 }
 
-.badge-nuevo-ingreso { 
+.badge-new-listing { 
     background-color: #f6835c; 
 }
-.badge-oferta-especial { 
+.badge-special-offer { 
     background-color: #F59E0B; /* O puedes usar #ff0000 para rojo puro */
     color: #ffffff;
 }
