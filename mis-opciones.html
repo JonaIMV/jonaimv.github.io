@@ -43,10 +43,10 @@
     <div id="cookie-banner" class="cookie-consent-banner" style="display: none;">
         <div class="banner-content">
             <p>
-                Utilizamos cookies para mejorar tu experiencia de navegación. Al hacer clic en "Aceptar", consientes su uso.
-                <a href="privacy.html" target="_blank">Leer Aviso de Privacidad</a>
+                We use cookies to improve your browsing experience and analyze site traffic. By clicking "Accept," you consent to their use.
+                <a href="privacy.html" target="_blank">Read Privacy Policy</a>
             </p>
-            <button id="accept-cookies-btn" class="cookie-btn">Aceptar</button>
+            <button id="accept-cookies-btn" class="cookie-btn">Accept</button>
         </div>
     </div>
 
@@ -64,10 +64,10 @@
             <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="for-sale.html">En Venta</a></li>
-                    <li><a href="contact-us.html">Contáctanos</a></li>
-                    <li><a href="privacy.html">Aviso de Privacidad</a></li>
-                    <li><a href="#puerto-morelos.html">Puerto Morelos en 360°</a></li>
+                    <li><a href="for-sale.html">For Sale</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#puerto-morelos.html">Puerto Morelos in 360°</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,8 +76,8 @@
     <div class="curated-header-container" style="text-align: center; padding: 20px 15px; margin-top: 80px;">
         <div class="expiration-warning" style="background: rgba(26, 107, 114, 0.1); border-left: 4px solid #1a6b72; padding: 15px; max-width: 800px; margin: 0 auto; border-radius: 8px;">
             <i class="icon-clock"></i> 
-            Este enlace personalizado caducará en 3 días. <br>
-            <strong style="color: #1a6b72;">Descarga los PDFs para guardar la información permanentemente.</strong>
+            This personalized link will expire in 3 days. <br>
+            <strong style="color: #1a6b72;">Download the PDFs to save the information permanently.</strong>
         </div>
     </div>
     <section class="map-section" style="max-width: 1200px; margin: 20px auto; padding: 0 15px;">
@@ -85,7 +85,7 @@
     </section>
     
     <main id="options-container" class="properties-grid" style="min-height: 50vh; padding: 40px 15px;">
-        <div class="loader" style="text-align: center; width: 100%; grid-column: 1/-1;">Generando tu propuesta personalizada...</div>
+        <div class="loader" style="text-align: center; width: 100%; grid-column: 1/-1;">Generating your personalized proposal...</div>
     </main>
 
     <footer class="site-footer">
@@ -93,24 +93,24 @@
             <div class="footer-col brand-col">
                 <h3 class="footer-logo" data-wg-notranslate>TuCasa Caribe Realty</h3>
                 <p class="footer-desc">
-                    Conectando sueños con el paraíso.<br>
+                    Connecting dreams with the paradise.<br>
                     Puerto Morelos, Quintana Roo, México.
                 </p>
                 <p class="copyright">
-                    &copy; <span id="year"></span> Todos los derechos reservados.
+                    &copy; <span id="year"></span> All rights reserved.
                 </p>
             </div>
             <div class="footer-col links-col">
-                <h4>Explorar</h4>
+                <h4>Explore</h4>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="for-sale.html">Propiedades en Venta</a></li>
-                    <li><a href="contact-us.html">Contacto</a></li>
-                    <li><a href="privacy.html">Aviso de Privacidad</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="for-sale.html">Properties for Sale</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col contact-col">
-                <h4>Hablemos</h4>
+                <h4>Let's Talk</h4>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <a href="mailto:jonaimv@gmail.com">jonaimv@gmail.com</a>
@@ -133,22 +133,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script type="module" src="scripts/main.js"></script>
-    
-    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-    <script>
-        Weglot.initialize({
-            api_key: 'wg_a2cb1c59b2e716631c099a2f42f138a12',
-            appendTo: '#weglot-nav-container',
-            // Bloqueamos clases específicas para no gastar cuota de traducción en marcas o tecnicismos
-            exclude_blocks: ['.brand-name', '.footer-logo', '.price'] 
-        });
-
-        Weglot.on("languageChanged", function(newLang) {
-            gtag('event', 'cambio_idioma_weglot', {
-                'idioma_seleccionado': newLang
-            });
-        });
-    </script>
+    <script type="module" src="scripts/main.js"></script>    
 </body>
 </html>
