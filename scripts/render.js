@@ -195,12 +195,18 @@ function getEmbedUrl(url) {
     }
     // ----------------------------------------------
 
-    return `
+    // Asegúrate de que esta variable exista arriba en tu función:
+// const skuHtml = property.sku ? `<span style="display: block; font-size: 0.9rem; color: #6c757d; font-weight: bold; letter-spacing: 1px; margin-bottom: 5px;">REF: ${property.sku}</span>` : '';
+
+return `
         <article class="property-detail-article">
             <button class="back-button" onclick="window.location.href='for-sale.html'">← Back to List</button>
-            <h1 class="reveal-bottom">${property.title}</h1>
+            
+            ${property.sku ? `<span style="display: block; font-size: 0.9rem; color: #6c757d; font-weight: bold; letter-spacing: 1px; margin-bottom: 5px; margin-top: 15px;">REF: ${property.sku}</span>` : ''}
+            
+            <h1 class="reveal-bottom" style="margin-top: 5px;">${property.title}</h1>
+            
             <div class="action-buttons reveal-bottom" style="display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap;">
-    
                 <button class="share-btn" onclick="compartirPropiedad('${property.title}')" style="background-color: var(--primary-color); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
                     <i class="fas fa-share-alt"></i> Share
                 </button>
@@ -208,7 +214,6 @@ function getEmbedUrl(url) {
                 <button class="print-btn" onclick="imprimirFichaPropiedad()" style="background-color: var(--text-dark); color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: var(--transition);">
                     <i class="fas fa-print"></i> Save PDF / Print
                 </button>
-
             </div>
             
             <p class="property-price-tag reveal-bottom">${detailPriceHtml}</p>
@@ -223,37 +228,23 @@ function getEmbedUrl(url) {
             
             ${youtubeHtml}
             
-            <div class="multilingual-content-wrapper reveal-bottom" data-wg-notranslate="true">
-                <div class="lang-tabs-container">
-                    <span class="lang-label" style="font-weight:bold; margin-right:10px;">Language:</span>
-                    <div class="lang-tabs">
-                        <button class="lang-btn active" onclick="switchPropertyLanguage('es'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'espanol'});"><img src="https://flagcdn.com/w40/mx.png" style="width:20px;"> Español</button>
-                        
-                        <button class="lang-btn" onclick="switchPropertyLanguage('en'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'ingles'});"><img src="https://flagcdn.com/w40/us.png" style="width:20px;"> English</button>
-                        
-                        <button class="lang-btn" onclick="switchPropertyLanguage('fr'); gtag('event', 'cambio_idioma', {'idioma_seleccionado': 'frances'});"><img src="https://flagcdn.com/w40/fr.png" style="width:20px;"> Français</button>
-                    </div>
-                </div>
-
-                <div id="content-es" class="lang-content active-content">
-                    <section><h2>Descripción Completa</h2><p>${descriptionES}</p></section>
-                    <section><h2>Características</h2><ul class="features-list">${featuresHtmlES}</ul></section>
-                </div>
-                <div id="content-en" class="lang-content">
-                    <section><h2>Full Description</h2><p>${descriptionEN}</p></section>
-                    <section><h2>Features</h2><ul class="features-list">${featuresHtmlEN}</ul></section>
-                </div>
-                <div id="content-fr" class="lang-content">
-                    <section><h2>Description Complète</h2><p>${descriptionFR}</p></section>
-                    <section><h2>Caractéristiques</h2><ul class="features-list">${featuresHtmlFR}</ul></section>
-                </div>
+            <div class="property-description-wrapper reveal-bottom">
+                <section>
+                    <h2>Full Description</h2>
+                    <p>${descriptionEN}</p> 
+                </section>
+                
+                <section>
+                    <h2>Features</h2>
+                    <ul class="features-list">${featuresHtmlEN}</ul> 
+                </section>
             </div>
+            
             ${mapHtml}
             ${schemaMarkupHtml}
         </article>
     `;
 }
-
 // --- FUNCIONES EXPORTADAS ---
 
 export function renderProperties(propertiesArray, container) {
