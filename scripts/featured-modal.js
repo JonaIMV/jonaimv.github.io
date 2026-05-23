@@ -2,9 +2,9 @@
 
 // Datos de la Propiedad Destacada
 const featuredData = {
-    title: "Retiro, rentabilidad y estilo de vida en un solo lugar.", 
+    title: "Retirement, profitability and lifestyle in one place.", 
     subtitle: "Puerto Morelos",
-    description: "Departamento en VENTA Selva Escndida II, exclusiva ubicacion junto a la alberca.",
+    description: "Department for SALE Selva Escndida II, exclusive location next to the pool.",
     image: "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
     link: "for-sale.html?id=24"
 };
@@ -20,9 +20,9 @@ function getFeaturedContent() {
             <img src="${featuredData.image}" alt="Propiedad Destacada" decoding="sync">
         </div>
         
-        <a href="${featuredData.link}" class="popup-cta-btn" onclick="gtag('event', 'clic_popup_destacado', { 'propiedad_destacada': '${featuredData.title}' });">Ver Detalles</a>
+        <a href="${featuredData.link}" class="popup-cta-btn" onclick="gtag('event', 'clic_popup_destacado', { 'propiedad_destacada': '${featuredData.title}' });">View Details</a>
         
-        <button class="popup-close-link" id="btn-close-text">No gracias, solo quiero ver</button>
+        <button class="popup-close-link" id="btn-close-text">No thanks, just want to see</button>
     </div>
     `;
 }
