@@ -1476,7 +1476,7 @@
             "Piscine réservée aux adultes"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.7942443352533!2d-86.9028136073444!3d20.87402708940307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1776823948584!5m2!1ses!2smx",
-        "status": "New listing",
+        "status": "on Hold",
         "lat": 20.873924,
         "lng": -86.902192
     },
@@ -1550,5 +1550,81 @@
         "status": "New listing",
         "lat": 20.847586,
         "lng": -86.877433
+    },
+    {
+        "id": 26,
+        "sku": "TCR-V026",
+        "title": "Beautiful House for Sale in Palma Real Puerto Morelos, Mexico",
+        "description": "Casa en venta en Palma Real, Puerto Morelos, Quintana Roo",
+        "extendedDescription": "Descubre la casa de tus sueños en Palma Real, Puerto Morelos Quintana Roo. Esta hermosa propiedad ofrece un estilo de vida único, combinando lujo, comodidad y la belleza natural del Caribe Mexicano. Con un diseño arquitectónico moderno y espacios amplios, esta casa es perfecta para familias que buscan un hogar acogedor y elegante. Disfruta de un jardín privado, una piscina refrescante y áreas al aire libre ideales para el entretenimiento. La ubicación privilegiada de Palma Real te permite estar cerca de las playas, restaurantes y tiendas locales, brindándote lo mejor de la vida en Puerto Morelos.",
+        "extendedDescription_en": "Discover your dream home in Palma Real, Puerto Morelos, Quintana Roo. This beautiful property offers a unique lifestyle, combining luxury, comfort, and the natural beauty of the Mexican Caribbean. With modern architectural design and spacious areas, this house is perfect for families seeking a cozy and elegant home. Enjoy a private garden, a refreshing pool, and outdoor areas ideal for entertaining. The privileged location of Palma Real allows you to be close to beaches, restaurants, and local shops, providing you with the best of life in Puerto Morelos.",
+        "extendedDescription_fr": "Découvrez la maison de vos rêves à Palma Real, Puerto Morelos, Quintana Roo. Cette magnifique propriété offre un style de vie unique, combinant luxe, confort et beauté naturelle des Caraïbes mexicaines. Avec un design architectural moderne et des espaces spacieux, cette maison est parfaite pour les familles à la recherche d'un foyer confortable et élégant. Profitez d'un jardin privé, d'une piscine rafraîchissante et d'espaces extérieurs idéaux pour recevoir. L'emplacement privilégié de Palma Real vous permet d'être proche des plages, des restaurants et des boutiques locales, vous offrant le meilleur de la vie à Puerto Morelos.",
+        "price": "$3,500,000 MXN",
+        "image":"images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-21.webp",
+        "alt": "Casa en venta en Palma Real Puerto Morelos",
+        "location": "Puerto Morelos",
+        "type": "house",
+        "bedrooms": "4",
+        "bathrooms": "3",
+        "area": "171m²",
+        "youtubeUrl": "",
+        "virtualTourUrl": "https://cdn.tucasacariberealty.com/virtualtours/palma-real-ii/palma-real-ii.html",
+        "galleryPhotos": [
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-01.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-02.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-03.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-04.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-05.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-06.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-07.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-08.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-09.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-10.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-11.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-12.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-13.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-14.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-15.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-16.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-17.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-18.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-19.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-20.webp",
+            "images/palma-real-ii/casa-en-venta-puerto-morelos-quintana-roo-21.webp"
+        ],
+        "features": [
+            "Casa de 4 recámaras y 3 baños",
+            "Diseño moderno con acabados de lujo",
+            "Jardín privado"
+        ],
+        "features_en": [
+            "4-bedroom, 3-bathroom house",
+            "Modern design with luxury finishes",
+            "Private garden"
+        ],
+        "features_fr": [
+            "Maison de 4 chambres et 3 salles de bain",
+            "Design moderne avec finitions de luxe",
+            "Jardin privé"
+        ],
+        "amenities": [
+            "Piscina",
+            "Área de niños",
+            "Áreas al aire libre para entretenimiento"
+        ],
+        "amenities_en": [
+            "Pool",
+            "Children's area",
+            "Outdoor areas for entertaining"
+        ],
+        "amenities_fr": [
+            "Piscine",
+            "Aire de jeux pour enfants",
+            "Espaces extérieurs pour recevoir"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.17099627102436!2d-86.8955880835484!3d20.86682196884371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1782839318023!5m2!1ses!2smx",
+        "status": "New listing",
+        "lat": 20.866700, 
+        "lng": -86.895802
     }
 ]

@@ -6,7 +6,7 @@
     "image": "images/faro-portada.jpg",
     "lat": 20.8467,
     "lng": -86.8755,
-    "tourUrl": "https://tusitio.com/panellum/faro.html" 
+    "tourUrl": "" 
   },
   {
     "id": "tour-restaurante",
@@ -15,6 +15,6 @@
     "image": "images/mariscos-portada.jpg",
     "lat": 20.8480,
     "lng": -86.8740,
-    "tourUrl": "https://tusitio.com/panellum/restaurante.html"
+    "tourUrl": ""
   }
 ]
