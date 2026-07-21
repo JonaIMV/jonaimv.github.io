@@ -931,7 +931,7 @@
             "Accès aux sentiers naturels"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d745.9384110164036!2d-86.90401046085695!3d20.86371681843654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1774416096292!5m2!1ses!2smx",
-        "status": "New listing",
+        "status": "Available",
         "lat": 20.864057,
         "lng": -86.904318
     },
@@ -1013,7 +1013,7 @@
             "Accès aux sentiers naturels"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.54480548159484!2d-86.8971089031409!3d20.87228292190456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1775013008511!5m2!1ses!2smx",
-        "status": "New listing",
+        "status": "Not Available",
         "lat": 20.872454,
         "lng": -86.897252
     },
@@ -1476,7 +1476,7 @@
             "Piscine réservée aux adultes"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.7942443352533!2d-86.9028136073444!3d20.87402708940307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1776823948584!5m2!1ses!2smx",
-        "status": "on Hold",
+        "status": "Available",
         "lat": 20.873924,
         "lng": -86.902192
     },
@@ -1547,7 +1547,7 @@
             "Accès direct à la plage"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205.32952450448644!2d-86.87746723267034!3d20.84778055133789!2m3!1f182.88961388403752!2f0!3f0!3m2!1i1024!2i768!4f35!5e1!3m2!1ses!2smx!4v1779146091247!5m2!1ses!2smx",
-        "status": "New listing",
+        "status": "Available",
         "lat": 20.847586,
         "lng": -86.877433
     },
@@ -1623,7 +1623,7 @@
             "Espaces extérieurs pour recevoir"
         ],
         "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d492.17099627102436!2d-86.8955880835484!3d20.86682196884371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1782839318023!5m2!1ses!2smx",
-        "status": "New listing",
+        "status": "On Hold",
         "lat": 20.866700, 
         "lng": -86.895802
     }
