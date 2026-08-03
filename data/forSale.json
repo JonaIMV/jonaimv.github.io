@@ -1626,5 +1626,95 @@
         "status": "On Hold",
         "lat": 20.866700, 
         "lng": -86.895802
+    },
+    {
+        "id": 27,
+        "sku": "TCR-V027",
+        "title": "Land for Sale Playa del Carmen, Mexico",
+        "description": "Terreno en Venta Mayakoba Senderos Poniente, PLaya del Carmen, Quintana Roo, ",
+        "extendedDescription": "Terreno en Venta Mayakoba Senderos Poniente, PLaya del Carmen, Quintana Roo, a solo 5 minutos de la playa y a 10 minutos del centro de Playa del Carmen. Este terreno ofrece una oportunidad única para construir la casa de tus sueños en una ubicación privilegiada dentro del exclusivo desarrollo de Mayakoba. Con acceso a amenidades de primer nivel, incluyendo restaurantes y áreas recreativas, este terreno es ideal para aquellos que buscan un estilo de vida lujoso y tranquilo en el corazón del Caribe Mexicano.",
+        "extendedDescription_en": "Land for Sale Mayakoba Senderos Poniente, Playa del Carmen, Quintana Roo, just 5 minutes from the beach and 10 minutes from downtown Playa del Carmen. This land offers a unique opportunity to build your dream home in a privileged location within the exclusive Mayakoba development. With access to top-level amenities, including restaurants and recreational areas, this land is ideal for those seeking a luxurious and peaceful lifestyle in the heart of the Mexican Caribbean.",
+        "extendedDescription_fr": "Terrain à vendre Mayakoba Senderos Poniente, Playa del Carmen, Quintana Roo, à seulement 5 minutes de la plage et à 10 minutes du centre-ville de Playa del Carmen. Ce terrain offre une opportunité unique de construire la maison de vos rêves dans un emplacement privilégié au sein du développement exclusif de Mayakoba. Avec un accès à des commodités de premier ordre, y compris des restaurants et des espaces récréatifs, ce terrain est idéal pour ceux qui recherchent un style de vie luxueux et paisible au cœur des Caraïbes mexicaines.",
+        "price": "$1,550,000 MXN",
+        "image": "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-02.webp",
+        "alt": "Terreno en venta Mayakoba Senderos Poniente Playa del Carmen",
+        "location": "Playa del Carmen",
+        "type": "land",
+        "bedrooms": "",
+        "bathrooms": "",
+        "area": " 166m²",
+        "youtubeUrl": "",
+        "virtualTourUrl": "",
+        "galleryPhotos": [
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-02.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-01.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-03.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-04.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-05.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-06.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-07.webp",
+            "images/mayakoba/terreno-en-venta-playa-del-carmen-quintana-roo-08.webp"
+        ],
+        "features": [
+            "Terreno de 166m²",
+            "Ubicación privilegiada en Mayakoba",
+            "Acceso a amenidades de primer nivel",
+            "2 canchas de paddel",
+            "Mesa de ping pong",
+            "Alberca de Nado",
+            "2 canchas de tenis"
+        ],
+        "features_en": [
+            "166m² land",
+            "Privileged location in Mayakoba",
+            "Access to top-level amenities",
+            "2 paddle courts",
+            "Ping pong table",
+            "Swimming pool",
+            "2 tennis courts"
+        ],
+        "features_fr": [
+            "Terrain de 166m²",
+            "Emplacement privilégié à Mayakoba",
+            "Accès à des commodités de premier ordre",
+            "2 courts de paddle",
+            "Table de ping-pong",
+            "Piscine",
+            "2 courts de tennis"
+        ],
+        "amenities": [
+            "Senderos peatonales",
+            "Parques y áreas naturales",
+            "Seguridad 24/7",
+            "Conexión subterránea.",
+            "Infraestructura urbana de primer nivel",
+            "Iluminación ecológica en parques y avenidas",
+            "Entrada restringida con acceso por tarjeta.",
+            "Club social y deportivo"
+        ],
+        "amenities_en": [
+            "Walking trails",
+            "Parks and natural areas",
+            "24/7 Security",
+            "Underground connection.",
+            "Top-level urban infrastructure",
+            "Eco-friendly lighting in parks and avenues",
+            "Restricted entrance with card access.",
+            "Social and sports club"
+        ],
+        "amenities_fr": [
+            "Sentiers pédestres",
+            "Parcs et espaces naturels",
+            "Sécurité 24/7",
+            "Connexion souterraine.",
+            "Infrastructure urbaine de premier niveau",
+            "Éclairage écologique dans les parcs et les avenues",
+            "Entrée restreinte avec accès par carte.",
+            "Club social et sportif"
+        ],
+        "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d664.6944944333276!2d-87.05133895836929!3d20.69674667012543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQxJzQ5LjYiTiA4N8KwMDMnMDQuNSJX!5e1!3m2!1ses!2smx!4v1785789509788!5m2!1ses!2smx",
+        "status": "Available",
+        "lat": 20.697121,
+        "lng":  -87.051242
     }
 ]

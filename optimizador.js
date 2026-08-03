@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp'); // <- Agregamos el compresor
 
-const carpetaPropiedad = 'palma-real-ii'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
-const nombreSEO = 'Casa en Venta Puerto Morelos Quintana Roo'; // Cambia esto por el nombre SEO que quieres usar en los ALT y nombres de archivo
+const carpetaPropiedad = 'mayakoba'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
+const nombreSEO = 'Terreno en Venta Playa del Carmen Quintana Roo'; // Cambia esto por el nombre SEO que quieres usar en los ALT y nombres de archivo
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
@@ -55,8 +55,8 @@ async function optimizarPropiedad() {
         try {
             // MAGIA DE COMPRESIÓN CON SHARP
             await sharp(rutaViejaFisica)
-                .resize({ width: 1600, withoutEnlargement: true }) // Máximo 1600px de ancho
-                .webp({ quality: 80 }) // Calidad al 80% (excelente para web)
+                .resize({ width: 2000, withoutEnlargement: true }) // Máximo 2000px de ancho
+                .webp({ quality: 90 }) // Calidad al 90% (excelente para web)
                 .toFile(rutaNuevaFisica);
 
             // Si el nombre o extensión cambió, borramos el original pesado para ahorrar espacio
