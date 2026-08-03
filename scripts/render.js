@@ -36,7 +36,7 @@ function getEmbedUrl(url) {
         const photos = property.galleryPhotos;
         if (!photos || photos.length === 0) return '';
         
-        // 1. Datos base
+        // 1. Datos base (Tu lógica SEO intacta)
         const titleES = property.title ? property.title.replace(/"/g, '&quot;') : 'Propiedad';
         const loc = property.location || 'Riviera Maya';
         const beds = property.bedrooms || '';
@@ -56,13 +56,26 @@ function getEmbedUrl(url) {
         const seoEN = `${beds} Bedroom ${typeEN} for sale in ${loc}`;
         const seoFR = `${typeFR} ${beds} chambres à vendre à ${loc}`;
 
-        // 3. EL NUEVO ORDEN: Inglés primero, luego Francés, luego Español al final
+        // 3. Alt text dinámico
         const getAltText = (index) => `${seoEN} | ${seoFR} | ${titleES} - Image ${index}`;
         
+        // --- 🚨 NUEVO: LÓGICA INTELIGENTE PARA FOTOS/VIDEOS ---
+        const getMediaTag = (url, index) => {
+            const isVideo = url.toLowerCase().endsWith('.mp4') || url.toLowerCase().endsWith('.webm');
+            
+            if (isVideo) {
+                // Si es video: Sin sonido, reproducción automática, en bucle y adaptado al contenedor
+                return `<video src="${url}" autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"></video>`;
+            } else {
+                // Si es foto: Imagen normal con tu texto SEO
+                return `<img src="${url}" alt="${getAltText(index)}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;">`;
+            }
+        };
+
         let html = '<div class="bento-grid-container">';
         
-        // 1. Principal (🛡️ Escudo Weglot añadido)
-        html += `<div class="bento-main"><img src="${photos[0]}" alt="${getAltText(1)}" data-wg-notranslate></div>`;
+        // 1. Principal
+        html += `<div class="bento-main">${getMediaTag(photos[0], 1)}</div>`;
 
         // 2. Secundarias
         if (photos.length > 1) {
@@ -73,30 +86,29 @@ function getEmbedUrl(url) {
                     const remaining = photos.length - 5;
                     html += `
                         <div class="view-all-wrapper">
-                            <img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>
-                            <div class="view-all-overlay"><span>+${remaining} fotos</span></div>
+                            ${getMediaTag(photos[i], i+1)}
+                            <!-- Lo pasé a inglés "Photos" para tu nuevo mercado -->
+                            <div class="view-all-overlay"><span>+${remaining} Photos</span></div>
                         </div>`;
                 } else {
-                    // 🛡️ Escudo Weglot añadido
-                    html += `<img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>`;
+                    html += getMediaTag(photos[i], i+1);
                 }
             }
             html += '</div>';
         }
         
-        // 3. Ocultas
+        // 3. Ocultas (Para que el Lightbox las encuentre al hacer clic)
         if (photos.length > 5) {
             html += '<div class="hidden-gallery-photos" style="display: none;">';
             for (let i = 5; i < photos.length; i++) {
-                // 🛡️ Escudo Weglot añadido
-                html += `<img src="${photos[i]}" alt="${getAltText(i+1)}" data-wg-notranslate>`;
+                html += getMediaTag(photos[i], i+1);
             }
             html += '</div>';
         }
 
         html += '</div>';
         return html;
-    }
+}
 
     function generateDetailHtml(property) {
         const galleryHtml = generateBentoGalleryHtml(property); 
