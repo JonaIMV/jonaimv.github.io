@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp'); // <- Agregamos el compresor
 
-const carpetaPropiedad = 'mayakoba'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
-const nombreSEO = 'Terreno en Venta Playa del Carmen Quintana Roo'; // Cambia esto por el nombre SEO que quieres usar en los ALT y nombres de archivo
+const carpetaPropiedad = 'selva-II-19-b'; // Cambia esto por el nombre de tu subcarpeta dentro de /images
+const nombreSEO = 'departamento en Venta Selva Escondida II Puerto Morelos Quintana Roo'; // Cambia esto por el nombre SEO que quieres usar en los ALT y nombres de archivo
 
 // Rutas basadas en la estructura
 const rutaImagenes = path.join('./images', carpetaPropiedad);
