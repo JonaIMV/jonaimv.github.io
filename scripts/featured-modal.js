@@ -5,7 +5,7 @@ const featuredData = {
     title: "Retirement, profitability and lifestyle in one place.", 
     subtitle: "Puerto Morelos",
     description: "Department for SALE Selva Escndida II, exclusive location next to the pool.",
-    image: "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
+    image: "images/selva-II-19-b/departamento-en-venta-selva-escondida-ii-puerto-morelos-quintana-roo-10.webp",
     link: "for-sale.html?id=28"
 };
 
