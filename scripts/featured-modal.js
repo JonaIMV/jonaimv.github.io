@@ -6,7 +6,7 @@ const featuredData = {
     subtitle: "Puerto Morelos",
     description: "Department for SALE Selva Escndida II, exclusive location next to the pool.",
     image: "images/selva-II/departamento-en-venta-puerto-morelos-selva-escondida-ii-mexico-08.webp",
-    link: "for-sale.html?id=24"
+    link: "for-sale.html?id=28"
 };
 
 function getFeaturedContent() {
