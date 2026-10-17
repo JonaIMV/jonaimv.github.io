@@ -21,7 +21,7 @@ import { imprimirFichaPropiedad } from './share.js';
 import { initAccordionScroll } from './accordion.js';
 import { initPuertoMorelos360 } from './puerto-morelos-360.js'; // Nueva función para esa página
 import { initCuratedPage } from './curated-logic.js';
-
+import { initChatbot } from './chatbot.js';
 window.compartirPropiedad = compartirPropiedad;
 window.imprimirFichaPropiedad = imprimirFichaPropiedad;
 // Helper para obtener ID de la URL
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initSlideshow();
     initAccordionScroll();
     initCuratedPage();
-    
+    initChatbot();
 
     if (document.querySelector('.pm-360-container')) {
         initPuertoMorelos360();
