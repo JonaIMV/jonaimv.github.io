@@ -2,6 +2,11 @@
 export function initChatbot() {
     // 1. Inyectar el HTML del Widget en el DOM
     const chatHtml = `
+        <div class="chat-tooltip" id="chat-tooltip">
+            <span id="tooltip-text"></span>
+            <span class="close-tooltip" id="close-tooltip">&times;</span>
+        </div>
+
         <button id="chat-fab" class="chat-widget-btn">
             <img src="images/casacaribe.svg" alt="Chat Assistant" class="starfish-icon">
         </button>
@@ -49,7 +54,45 @@ export function initChatbot() {
     const sendBtn = document.getElementById('send-chat');
     const chips = document.querySelectorAll('.chat-chip');
     const quickActions = document.getElementById('quick-actions');
+    const tooltip = document.getElementById('chat-tooltip');
+    const closeTooltipBtn = document.getElementById('close-tooltip');
+    const tooltipTextContainer = document.getElementById('tooltip-text');
 
+    // Lista de ganchos aleatorios
+    const tooltipMessages = [
+        "Hi! Want to see the estimated ROI for this property? 📈",
+        "Questions about buying in Mexico? I can guide you. 🇲🇽",
+        "Want a 360° Virtual Tour of our listings? Ask me how! 🏘️",
+        "Hi! Looking for a specific property or budget? Let me help. 🔍"
+    ];
+
+    // Lógica del Tooltip: Mostrar un mensaje aleatorio después de 4 segundos
+    setTimeout(() => {
+        if (!chatWindow.classList.contains('active') && !sessionStorage.getItem('tooltip_closed')) {
+            // Elegir mensaje al azar
+            const randomIndex = Math.floor(Math.random() * tooltipMessages.length);
+            tooltipTextContainer.textContent = tooltipMessages[randomIndex];
+            
+            // Mostrar la burbuja
+            tooltip.classList.add('show');
+        }
+    }, 4000);
+
+    // Cerrar tooltip con la X sin abrir el chat
+    closeTooltipBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); 
+        tooltip.classList.remove('show');
+        sessionStorage.setItem('tooltip_closed', 'true'); 
+    });
+
+    // Ocultar el tooltip al abrir el chat
+    fab.addEventListener('click', () => {
+        tooltip.classList.remove('show');
+        sessionStorage.setItem('tooltip_closed', 'true');
+        
+        chatWindow.classList.add('active');
+        fab.style.display = 'none'; 
+    });
     // 3. Abrir y Cerrar Ventana
     fab.addEventListener('click', () => {
         chatWindow.classList.add('active');

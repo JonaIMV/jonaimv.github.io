@@ -3692,3 +3692,57 @@ aside h2, aside h3 {
         border-radius: 0; max-height: 100vh;
     }
 }
+/* Tooltip Burbuja del Chatbot */
+.chat-tooltip {
+    position: fixed;
+    bottom: 260px; /* Esto lo mueve por encima de tu botón de la estrella */
+    right: 25px;
+    background: #ffffff;
+    color: #1a6b72;
+    padding: 12px 30px 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 0.95rem;
+    font-family: system-ui, -apple-system, sans-serif; /* Fuerza la fuente limpia del chat */
+    font-weight: 500;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    border-left: 4px solid #1a6b72;
+    max-width: 250px;
+    line-height: 1.4;
+}
+
+.chat-tooltip.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* El triángulo que apunta al botón */
+.chat-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: 15px;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+/* Botón de cerrar la burbuja */
+.close-tooltip {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-tooltip:hover {
+    color: #333;
+}
