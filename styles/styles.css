@@ -1172,7 +1172,9 @@ header {
 .badge-unavailable { 
     background-color: #6c757d; 
 }
-
+.badge-huge-opportunity { 
+    background-color: #28a745; 
+}
 
 .badge-on-hold {
     background-color: #f39c12; 
