@@ -1169,6 +1169,9 @@ header {
  { 
     background-color: #dc3545; 
 }
+.badge-unavailable { 
+    background-color: #6c757d; 
+}
 
 
 .badge-on-hold {
